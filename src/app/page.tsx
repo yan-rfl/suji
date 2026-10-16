@@ -331,30 +331,35 @@ export default function DashboardPage() {
 
         {/* Step 2: Multi-Mode Selector (Randomized across cards) */}
         <div className="space-y-3">
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-            <div className="flex items-center gap-2">
-              <label className="text-xs font-bold uppercase tracking-wider text-zinc-400">
-                2. Practice Modes (Select Multiple to Randomize)
-              </label>
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5">
+            <div className="flex items-start sm:items-center justify-between sm:justify-start gap-2.5 w-full sm:w-auto">
+              <div className="flex flex-col sm:flex-row sm:items-center gap-0.5 sm:gap-2">
+                <label className="text-xs font-bold uppercase tracking-wider text-zinc-400">
+                  2. Practice Modes
+                </label>
+                <span className="text-[11px] text-zinc-500 font-normal">
+                  (Select Multiple to Randomize)
+                </span>
+              </div>
               <span 
-                className="px-2 py-0.5 rounded-full text-[10px] font-bold flex items-center gap-1"
+                className="px-2.5 py-1 rounded-full text-[10px] font-bold flex items-center gap-1 shrink-0 whitespace-nowrap self-start sm:self-auto"
                 style={{
                   backgroundColor: theme.badgeBg,
                   color: theme.badgeText,
                   border: `1px solid ${theme.badgeBorder}`
                 }}
               >
-                <Shuffle size={11} />
+                <Shuffle size={11} className="shrink-0" />
                 <span>{selectedModes.length} Selected</span>
               </span>
             </div>
 
             {/* Quick preset buttons */}
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 overflow-x-auto pb-1 sm:pb-0 scrollbar-none">
               <button
                 type="button"
                 onClick={selectAllModes}
-                className="text-xs font-semibold text-zinc-400 hover:text-zinc-100 transition-colors cursor-pointer"
+                className="text-xs font-semibold text-zinc-400 hover:text-zinc-100 transition-colors cursor-pointer whitespace-nowrap"
               >
                 Select All 5
               </button>
@@ -362,7 +367,7 @@ export default function DashboardPage() {
               <button
                 type="button"
                 onClick={() => setSelectedModes(['meaning-to-hanzi-desktop', 'meaning-to-hanzi-mobile'])}
-                className="text-xs font-semibold text-zinc-400 hover:text-zinc-100 transition-colors cursor-pointer"
+                className="text-xs font-semibold text-zinc-400 hover:text-zinc-100 transition-colors cursor-pointer whitespace-nowrap"
               >
                 Writing Focus
               </button>
@@ -370,7 +375,7 @@ export default function DashboardPage() {
               <button
                 type="button"
                 onClick={() => setSelectedModes(['hanzi-to-meaning', 'sentence-context', 'audio-quiz'])}
-                className="text-xs font-semibold text-zinc-400 hover:text-zinc-100 transition-colors cursor-pointer"
+                className="text-xs font-semibold text-zinc-400 hover:text-zinc-100 transition-colors cursor-pointer whitespace-nowrap"
               >
                 Recognition Focus
               </button>

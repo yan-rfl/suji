@@ -8,6 +8,31 @@
     --theme-primary-rgb: 248, 181, 30;
     --theme-primary-hover: #dfa013;
     --theme-primary-light: rgba(248, 181, 30, 0.12);
+    --nav-bg: rgba(9, 9, 11, 0.88);
+    --nav-border: rgba(39, 39, 42, 0.8);
+    --nav-text: #f4f4f5;
+    --nav-muted: #a1a1aa;
+    --nav-active-bg: rgba(39, 39, 42, 0.7);
+  }
+
+  @media (prefers-color-scheme: light) {
+    :root {
+      --nav-bg: rgba(255, 255, 255, 0.94);
+      --nav-border: rgba(228, 228, 231, 0.95);
+      --nav-text: #18181b;
+      --nav-muted: #71717a;
+      --nav-active-bg: rgba(244, 244, 245, 0.95);
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --nav-bg: rgba(9, 9, 11, 0.88);
+      --nav-border: rgba(39, 39, 42, 0.8);
+      --nav-text: #f4f4f5;
+      --nav-muted: #a1a1aa;
+      --nav-active-bg: rgba(39, 39, 42, 0.7);
+    }
   }
 
   body {

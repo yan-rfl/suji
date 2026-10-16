@@ -1,11 +1,11 @@
 {
-  "name": "Suji 速记 - Personal HSK 1–5 Learning App",
+  "name": "Suji 速记 - Personal HSK 1–6 Learning App",
   "short_name": "Suji 速记",
-  "description": "Master HSK 1–5 Mandarin vocabulary with spaced repetition, stroke order writing, and native audio.",
+  "description": "Master HSK 1–6 Mandarin vocabulary with spaced repetition, stroke order writing, and native audio.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#09090b",
-  "theme_color": "#dc2626",
+  "theme_color": "#09090b",
   "orientation": "portrait-primary",
   "icons": [
     {

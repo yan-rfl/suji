@@ -242,7 +242,7 @@ export const QuizCard: React.FC<QuizCardProps> = ({
         {quizMode === 'audio-quiz' && (
           <div className="space-y-5 w-full flex flex-col items-center">
             <div 
-              className="p-6 rounded-full border animate-pulse"
+              className="p-5 rounded-full border animate-pulse"
               style={{
                 backgroundColor: theme.lightBg,
                 borderColor: `rgba(${theme.rgb}, 0.35)`
@@ -251,7 +251,7 @@ export const QuizCard: React.FC<QuizCardProps> = ({
               <AudioButton text={word.hanzi} size="lg" />
             </div>
             <p className="text-sm text-zinc-400">
-              Listen to the Mandarin audio and identify the character and meaning
+              Listen to the Mandarin audio and enter the Hanzi character:
             </p>
 
             {isRevealed ? (
@@ -261,14 +261,23 @@ export const QuizCard: React.FC<QuizCardProps> = ({
                 <p className="text-zinc-300">{word.translations.join(', ')}</p>
               </div>
             ) : (
-              <button
-                type="button"
-                onClick={handleReveal}
-                className="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-zinc-800 hover:bg-zinc-700 text-zinc-200 text-sm font-medium border border-zinc-700 transition-colors cursor-pointer"
-              >
-                <Eye size={16} />
-                <span>Show Character & Meaning</span>
-              </button>
+              <div className="w-full max-w-md space-y-3">
+                <DesktopInput
+                  targetHanzi={word.hanzi}
+                  onSuccess={() => {
+                    setIsRevealed(true);
+                  }}
+                  disabled={isRevealed}
+                />
+                <button
+                  type="button"
+                  onClick={handleReveal}
+                  className="flex items-center justify-center gap-1.5 mx-auto text-xs text-zinc-400 hover:text-zinc-200 transition-colors py-1 cursor-pointer"
+                >
+                  <Eye size={14} />
+                  <span>Don&apos;t know? Reveal character & meaning</span>
+                </button>
+              </div>
             )}
           </div>
         )}

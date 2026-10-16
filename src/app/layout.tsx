@@ -6,9 +6,9 @@ import { LevelProvider } from '@/context/LevelContext';
 import { Navbar } from '@/components/Navbar';
 
 export const metadata: Metadata = {
-  title: 'Suji (速记) - Personal HSK 1–5 Learning App',
+  title: 'Suji (速记) - Personal HSK 1–6 Learning App',
   description:
-    'Master HSK 1–5 Mandarin vocabulary using spaced repetition (SM-2), device-adaptive quizzes, stroke-order drawing, and native audio.',
+    'Master HSK 1–6 Mandarin vocabulary using spaced repetition (SM-2), device-adaptive quizzes, stroke-order drawing, and native audio.',
   manifest: '/manifest.json',
   icons: {
     icon: '/icon.svg',
@@ -16,13 +16,16 @@ export const metadata: Metadata = {
   },
   appleWebApp: {
     capable: true,
-    statusBarStyle: 'black-translucent',
+    statusBarStyle: 'default',
     title: 'Suji 速记',
   },
 };
 
 export const viewport: Viewport = {
-  themeColor: '#f8b51e',
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#ffffff' },
+    { media: '(prefers-color-scheme: dark)', color: '#09090b' },
+  ],
   width: 'device-width',
   initialScale: 1,
   maximumScale: 1,

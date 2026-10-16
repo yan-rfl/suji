@@ -31,7 +31,13 @@ export const Navbar: React.FC = () => {
   return (
     <>
       {/* Desktop & Tablet Top Navbar */}
-      <header className="sticky top-0 z-40 w-full border-b border-zinc-800/80 bg-zinc-950/80 backdrop-blur-md">
+      <header 
+        className="sticky top-0 z-40 w-full border-b backdrop-blur-md transition-colors"
+        style={{ 
+          backgroundColor: 'var(--nav-bg)', 
+          borderColor: 'var(--nav-border)' 
+        }}
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           {/* Logo Brand */}
           <Link href="/" className="flex items-center gap-3 group">
@@ -45,7 +51,10 @@ export const Navbar: React.FC = () => {
               速
             </div>
             <div className="flex flex-col">
-              <span className="font-bold text-lg tracking-tight text-zinc-100 flex items-center gap-1.5">
+              <span 
+                className="font-bold text-lg tracking-tight flex items-center gap-1.5"
+                style={{ color: 'var(--nav-text)' }}
+              >
                 Suji <span style={{ color: theme.primary }} className="font-serif font-medium">速记</span>
                 <span 
                   className="px-2 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider"
@@ -58,7 +67,10 @@ export const Navbar: React.FC = () => {
                   HSK {currentLevel}
                 </span>
               </span>
-              <span className="text-[10px] text-zinc-400 -mt-0.5 hidden sm:inline">
+              <span 
+                className="text-[10px] -mt-0.5 hidden sm:inline"
+                style={{ color: 'var(--nav-muted)' }}
+              >
                 Personal Mandarin Mastery
               </span>
             </div>
@@ -122,7 +134,13 @@ export const Navbar: React.FC = () => {
       </header>
 
       {/* Mobile Bottom Navigation Bar */}
-      <nav className="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-zinc-950/90 border-t border-zinc-800/90 backdrop-blur-lg px-6 py-2 flex items-center justify-around">
+      <nav 
+        className="md:hidden fixed bottom-0 left-0 right-0 z-40 border-t backdrop-blur-lg px-6 py-2 flex items-center justify-around transition-colors"
+        style={{ 
+          backgroundColor: 'var(--nav-bg)', 
+          borderColor: 'var(--nav-border)' 
+        }}
+      >
         {navItems.map((item) => {
           const Icon = item.icon;
           const isActive = pathname === item.href;
@@ -131,9 +149,9 @@ export const Navbar: React.FC = () => {
               key={item.href}
               href={item.href}
               className={`flex flex-col items-center gap-1 py-1 px-3 text-[11px] font-medium transition-colors ${
-                isActive ? 'font-semibold' : 'text-zinc-400 hover:text-zinc-200'
+                isActive ? 'font-semibold' : 'hover:opacity-80'
               }`}
-              style={{ color: isActive ? theme.primary : undefined }}
+              style={{ color: isActive ? theme.primary : 'var(--nav-muted)' }}
             >
               <Icon size={20} className={isActive ? 'stroke-[2.5]' : ''} />
               <span>{item.label}</span>
@@ -143,9 +161,9 @@ export const Navbar: React.FC = () => {
         <Link
           href="/login"
           className={`flex flex-col items-center gap-1 py-1 px-3 text-[11px] font-medium transition-colors ${
-            pathname === '/login' ? 'font-semibold' : 'text-zinc-400 hover:text-zinc-200'
+            pathname === '/login' ? 'font-semibold' : 'hover:opacity-80'
           }`}
-          style={{ color: pathname === '/login' ? theme.primary : undefined }}
+          style={{ color: pathname === '/login' ? theme.primary : 'var(--nav-muted)' }}
         >
           <UserIcon size={20} className={pathname === '/login' ? 'stroke-[2.5]' : ''} />
           <span>Account</span>
