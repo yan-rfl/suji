@@ -28,12 +28,17 @@ export const PWAInstaller: React.FC = () => {
     const isIOSDevice = /iphone|ipad|ipod/.test(userAgent);
     setIsIOS(isIOSDevice);
 
-    // Register service worker if supported
+    // Register service worker if supported and trigger immediate update check
     if ('serviceWorker' in navigator && process.env.NODE_ENV === 'production') {
       window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/sw.js').catch((err) => {
-          console.warn('SW registration failed:', err);
-        });
+        navigator.serviceWorker
+          .register('/sw.js')
+          .then((reg) => {
+            reg.update().catch(() => {});
+          })
+          .catch((err) => {
+            console.warn('SW registration failed:', err);
+          });
       });
     }
 

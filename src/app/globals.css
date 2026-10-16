@@ -13,6 +13,7 @@
     --nav-text: #f4f4f5;
     --nav-muted: #a1a1aa;
     --nav-active-bg: rgba(39, 39, 42, 0.7);
+    color-scheme: dark light;
   }
 
   @media (prefers-color-scheme: light) {
@@ -22,6 +23,7 @@
       --nav-text: #18181b;
       --nav-muted: #71717a;
       --nav-active-bg: rgba(244, 244, 245, 0.95);
+      color-scheme: light;
     }
   }
 
@@ -32,6 +34,7 @@
       --nav-text: #f4f4f5;
       --nav-muted: #a1a1aa;
       --nav-active-bg: rgba(39, 39, 42, 0.7);
+      color-scheme: dark;
     }
   }
 

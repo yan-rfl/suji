@@ -85,15 +85,15 @@ export const Navbar: React.FC = () => {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-medium transition-all ${
-                    isActive
-                      ? 'bg-zinc-800 text-white shadow-sm'
-                      : 'text-zinc-400 hover:text-zinc-200 hover:bg-zinc-900'
-                  }`}
+                  className="flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-medium transition-all"
+                  style={{
+                    backgroundColor: isActive ? 'var(--nav-active-bg)' : 'transparent',
+                    color: isActive ? 'var(--nav-text)' : 'var(--nav-muted)',
+                  }}
                 >
                   <Icon 
                     size={16} 
-                    style={{ color: isActive ? theme.primary : undefined }} 
+                    style={{ color: isActive ? theme.primary : 'var(--nav-muted)' }} 
                   />
                   <span>{item.label}</span>
                 </Link>
@@ -105,7 +105,7 @@ export const Navbar: React.FC = () => {
           <div className="flex items-center gap-2 sm:gap-3">
             {/* Streak Pill */}
             <div 
-              className="flex items-center gap-1 sm:gap-1.5 px-2.5 py-1.5 sm:px-3 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-400 text-xs font-semibold"
+              className="flex items-center gap-1 sm:gap-1.5 px-2.5 py-1.5 sm:px-3 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-500 dark:text-amber-400 text-xs font-semibold"
               title={`${stats.currentStreak} day study streak!`}
             >
               <Flame size={14} className="fill-amber-500 text-amber-500 animate-pulse" />
@@ -118,11 +118,12 @@ export const Navbar: React.FC = () => {
             {/* User Account Button */}
             <Link
               href="/login"
-              className={`flex items-center gap-2 p-1.5 sm:px-3 sm:py-1.5 rounded-xl text-xs font-medium border transition-colors ${
-                user && !user.isAnonymous
-                  ? 'bg-zinc-900 text-zinc-200 border-zinc-700 hover:bg-zinc-800'
-                  : 'bg-zinc-900 text-zinc-400 border-zinc-800 hover:text-zinc-200 hover:bg-zinc-800'
-              }`}
+              className="flex items-center gap-2 p-1.5 sm:px-3 sm:py-1.5 rounded-xl text-xs font-medium border transition-colors"
+              style={{
+                backgroundColor: 'var(--nav-active-bg)',
+                borderColor: 'var(--nav-border)',
+                color: user && !user.isAnonymous ? 'var(--nav-text)' : 'var(--nav-muted)',
+              }}
             >
               <UserIcon size={15} />
               <span className="hidden sm:inline">
