@@ -90,13 +90,13 @@ export const Navbar: React.FC = () => {
           </nav>
 
           {/* Right Header Section: Streak, PWA, User */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2 sm:gap-3">
             {/* Streak Pill */}
             <div 
-              className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-400 text-xs font-semibold"
+              className="flex items-center gap-1 sm:gap-1.5 px-2.5 py-1.5 sm:px-3 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-400 text-xs font-semibold"
               title={`${stats.currentStreak} day study streak!`}
             >
-              <Flame size={15} className="fill-amber-500 text-amber-500 animate-pulse" />
+              <Flame size={14} className="fill-amber-500 text-amber-500 animate-pulse" />
               <span>{stats.currentStreak} {stats.currentStreak === 1 ? 'day' : 'days'}</span>
             </div>
 
