@@ -156,25 +156,37 @@ function QuizEngineContent() {
     }
   };
 
-  // Allow switching the mode of the current card on-the-fly
-  const setCardMode = (newMode: QuizMode) => {
+  // Toggle a mode in or out of the active randomization pool
+  const toggleActiveMode = (mode: QuizMode) => {
+    let newModes: QuizMode[];
+    if (activeModes.includes(mode)) {
+      if (activeModes.length <= 1) {
+        return; // Prevent deselecting all modes - keep at least one active
+      }
+      newModes = activeModes.filter((m) => m !== mode);
+    } else {
+      newModes = [...activeModes, mode];
+    }
+
+    setActiveModes(newModes);
+
+    // Update remaining session cards to reflect the new active pool
     setSessionCards((prev) => {
       const next = [...prev];
-      if (next[currentIndex]) {
-        next[currentIndex] = { ...next[currentIndex], mode: newMode };
+      // If current card's mode was just disabled, immediately reassign it to one of the active modes
+      if (next[currentIndex] && !newModes.includes(next[currentIndex].mode)) {
+        const replacementMode = newModes[Math.floor(Math.random() * newModes.length)];
+        next[currentIndex] = { ...next[currentIndex], mode: replacementMode };
+      }
+      // Reassign upcoming cards to draw from the updated activeModes
+      for (let i = currentIndex + 1; i < next.length; i++) {
+        const randomMode = newModes[Math.floor(Math.random() * newModes.length)];
+        next[i] = { ...next[i], mode: randomMode };
       }
       return next;
     });
   };
 
-  // Shuffle current card to another random active mode
-  const shuffleCurrentCardMode = () => {
-    const otherModes = activeModes.length > 1 
-      ? activeModes.filter((m) => m !== sessionCards[currentIndex]?.mode)
-      : activeModes;
-    const randomMode = otherModes[Math.floor(Math.random() * otherModes.length)];
-    setCardMode(randomMode);
-  };
 
   const restartSession = () => {
     const shuffled = [...allLevelWords].sort(() => 0.5 - Math.random());
@@ -333,11 +345,11 @@ function QuizEngineContent() {
             <span className="hidden sm:inline">Dashboard</span>
           </Link>
 
-          {/* Active Mode Pill with Shuffle indicator & manual switcher */}
+          {/* Active Mode Pill with Shuffle indicator & Mode Toggler */}
           <div className="flex items-center gap-2">
             <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-zinc-900 border border-zinc-800 text-xs font-medium text-zinc-200">
               {activeModes.length > 1 && (
-                <span title="Randomized across selected modes">
+                <span title={`Randomizing across ${activeModes.length} modes`}>
                   <Shuffle size={13} className="text-red-400 animate-pulse" />
                 </span>
               )}
@@ -345,7 +357,7 @@ function QuizEngineContent() {
               <span className="font-semibold">{currentModeInfo.name}</span>
             </div>
 
-            {/* Quick in-session mode switcher pills */}
+            {/* 5 Mode Toggle Buttons to actively enable/disable modes from the shuffle */}
             <div className="flex items-center gap-1 bg-zinc-900 p-1 rounded-xl border border-zinc-800">
               {ALL_MODES.map((mode) => {
                 const info = modeDescriptions[mode];
@@ -357,25 +369,32 @@ function QuizEngineContent() {
                   <button
                     key={mode}
                     type="button"
-                    onClick={() => setCardMode(mode)}
-                    className={`p-1.5 rounded-lg transition-colors relative ${
+                    onClick={() => toggleActiveMode(mode)}
+                    className={`p-1.5 rounded-lg transition-all duration-150 relative cursor-pointer ${
                       isCurrent
-                        ? 'bg-red-600 text-white shadow-sm'
+                        ? 'bg-red-600 text-white shadow-md ring-2 ring-white/40'
                         : isInPool
-                        ? 'text-zinc-300 hover:text-white hover:bg-zinc-800'
-                        : 'text-zinc-600 hover:text-zinc-400 hover:bg-zinc-800'
+                        ? 'bg-zinc-800 text-zinc-200 hover:text-white hover:bg-zinc-700 border border-zinc-700/60'
+                        : 'text-zinc-600 hover:text-zinc-400 hover:bg-zinc-800/40 opacity-40 hover:opacity-75'
                     }`}
-                    title={`Switch current card to: ${info.name}`}
+                    title={
+                      isInPool
+                        ? activeModes.length === 1
+                          ? `${info.name} (Active - only mode remaining)`
+                          : `Active: Click to disable ${info.name} from shuffle`
+                        : `Inactive: Click to enable ${info.name} in shuffle`
+                    }
                   >
-                    <Icon size={14} />
+                    <Icon size={15} />
                     {isInPool && !isCurrent && (
-                      <span className="absolute bottom-0.5 right-0.5 w-1 h-1 rounded-full bg-red-400" />
+                      <span className="absolute bottom-0.5 right-0.5 w-1.5 h-1.5 rounded-full bg-red-500 shadow-sm" />
                     )}
                   </button>
                 );
               })}
             </div>
           </div>
+
 
           <div className="text-xs font-mono font-bold text-zinc-400">
             {currentIndex + 1} / {sessionCards.length}
