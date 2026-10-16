@@ -1,5 +1,13 @@
 import { initializeApp, getApps, getApp, FirebaseApp } from 'firebase/app';
-import { getAuth, Auth, GoogleAuthProvider } from 'firebase/auth';
+import { 
+  getAuth, 
+  initializeAuth,
+  browserLocalPersistence, 
+  indexedDBLocalPersistence, 
+  browserPopupRedirectResolver,
+  Auth, 
+  GoogleAuthProvider 
+} from 'firebase/auth';
 import { getFirestore, Firestore } from 'firebase/firestore';
 
 const firebaseConfig = {
@@ -22,14 +30,22 @@ let auth: Auth | undefined;
 let db: Firestore | undefined;
 let googleProvider: GoogleAuthProvider | undefined;
 
-if (typeof window !== 'undefined' || isFirebaseConfigured) {
+if (typeof window !== 'undefined' && isFirebaseConfigured) {
   try {
-    if (isFirebaseConfigured) {
-      app = !getApps().length ? initializeApp(firebaseConfig) : getApp();
+    app = !getApps().length ? initializeApp(firebaseConfig) : getApp();
+
+    try {
+      auth = initializeAuth(app, {
+        persistence: [indexedDBLocalPersistence, browserLocalPersistence],
+        popupRedirectResolver: browserPopupRedirectResolver,
+      });
+    } catch {
       auth = getAuth(app);
-      db = getFirestore(app);
-      googleProvider = new GoogleAuthProvider();
     }
+
+    db = getFirestore(app);
+    googleProvider = new GoogleAuthProvider();
+    googleProvider.setCustomParameters({ prompt: 'select_account' });
   } catch (error) {
     console.warn('Firebase initialization error, fallback to offline local mode:', error);
   }

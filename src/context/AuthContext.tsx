@@ -4,10 +4,11 @@ import React, { createContext, useContext, useEffect, useState } from 'react';
 import { 
   onAuthStateChanged, 
   signInWithPopup, 
+  signInWithRedirect,
+  getRedirectResult,
   signInWithEmailAndPassword,
   createUserWithEmailAndPassword,
   signOut as firebaseSignOut,
-  signInAnonymously,
   User as FirebaseUser 
 } from 'firebase/auth';
 import { auth, googleProvider, isFirebaseConfigured } from '@/lib/firebase';
@@ -35,6 +36,23 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     // If Firebase Auth is configured and available
     if (isFirebaseConfigured && auth) {
+      // Check for redirect result if popup was blocked/redirect was used
+      getRedirectResult(auth)
+        .then((result) => {
+          if (result?.user) {
+            setUser({
+              uid: result.user.uid,
+              email: result.user.email,
+              displayName: result.user.displayName || result.user.email?.split('@')[0] || 'Learner',
+              photoURL: result.user.photoURL,
+              isAnonymous: false,
+            });
+          }
+        })
+        .catch((err) => {
+          console.warn('Redirect sign-in check:', err);
+        });
+
       const unsubscribe = onAuthStateChanged(auth, (fbUser: FirebaseUser | null) => {
         if (fbUser) {
           setUser({
@@ -88,7 +106,20 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     if (!isFirebaseConfigured || !auth || !googleProvider) {
       throw new Error('Firebase is not configured. Please supply NEXT_PUBLIC_FIREBASE_* keys in your .env.local file.');
     }
-    await signInWithPopup(auth, googleProvider);
+    try {
+      await signInWithPopup(auth, googleProvider);
+    } catch (popupErr: any) {
+      console.warn('Google popup error, attempting redirect fallback:', popupErr);
+      if (
+        popupErr.code === 'auth/internal-error' || 
+        popupErr.code === 'auth/popup-blocked' ||
+        popupErr.code === 'auth/cancelled-popup-request'
+      ) {
+        await signInWithRedirect(auth, googleProvider);
+      } else {
+        throw popupErr;
+      }
+    }
   };
 
   const loginWithEmail = async (email: string, pass: string) => {
