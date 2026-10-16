@@ -9,11 +9,14 @@ import {
   Home, 
   Flame, 
   User as UserIcon,
-  Sparkles
+  Sparkles,
+  Sun,
+  Moon
 } from 'lucide-react';
 import { useAuth } from '@/context/AuthContext';
 import { useProgress } from '@/context/ProgressContext';
 import { useLevel } from '@/context/LevelContext';
+import { useTheme } from '@/context/ThemeContext';
 import { PWAInstaller } from './PWAInstaller';
 
 export const Navbar: React.FC = () => {
@@ -21,6 +24,7 @@ export const Navbar: React.FC = () => {
   const { user } = useAuth();
   const { stats } = useProgress();
   const { currentLevel, theme } = useLevel();
+  const { resolvedTheme, toggleTheme } = useTheme();
 
   const navItems = [
     { label: 'Dashboard', href: '/', icon: Home },
@@ -114,6 +118,27 @@ export const Navbar: React.FC = () => {
 
             {/* PWA Install Trigger */}
             <PWAInstaller />
+
+            {/* Theme Toggle Button */}
+            <button
+              type="button"
+              onClick={toggleTheme}
+              aria-label={`Switch to ${resolvedTheme === 'dark' ? 'light' : 'dark'} mode`}
+              title={`Currently in ${resolvedTheme} mode. Click to switch to ${resolvedTheme === 'dark' ? 'light' : 'dark'} mode.`}
+              className="p-1.5 sm:px-2.5 sm:py-1.5 rounded-xl text-xs font-medium border transition-all active:scale-95 cursor-pointer flex items-center gap-1.5"
+              style={{
+                backgroundColor: 'var(--nav-active-bg)',
+                borderColor: 'var(--nav-border)',
+                color: 'var(--nav-text)',
+              }}
+            >
+              {resolvedTheme === 'dark' ? (
+                <Sun size={15} className="text-amber-400" />
+              ) : (
+                <Moon size={15} className="text-indigo-600" />
+              )}
+              <span className="hidden lg:inline text-[11px] capitalize">{resolvedTheme}</span>
+            </button>
 
             {/* User Account Button */}
             <Link

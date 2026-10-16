@@ -65,8 +65,8 @@ export const DesktopInput: React.FC<DesktopInputProps> = ({
 
   return (
     <div className="w-full max-w-md mx-auto flex flex-col items-center gap-3">
-      <div className="flex items-center gap-2 text-xs text-zinc-400">
-        <Keyboard size={14} className="text-zinc-500" />
+      <div className="flex items-center gap-2 text-xs text-zinc-600 dark:text-zinc-400">
+        <Keyboard size={14} className="text-zinc-500 dark:text-zinc-400" />
         <span>Type using your Chinese Pinyin IME:</span>
       </div>
 
@@ -93,12 +93,12 @@ export const DesktopInput: React.FC<DesktopInputProps> = ({
           autoComplete="off"
           autoCorrect="off"
           spellCheck="false"
-          className={`w-full px-5 py-3.5 text-center text-2xl font-medium rounded-2xl bg-zinc-900 border-2 transition-all outline-none ${
+          className={`w-full px-5 py-3.5 text-center text-2xl font-medium rounded-2xl bg-white dark:bg-zinc-900 border-2 transition-all outline-none shadow-sm ${
             hasEvaluated
               ? isCorrect
-                ? 'border-emerald-500 text-emerald-400 bg-emerald-950/20'
-                : 'border-rose-500 text-rose-400 bg-rose-950/20'
-              : 'border-zinc-700 text-zinc-100 placeholder:text-zinc-600'
+                ? 'border-emerald-500 text-emerald-600 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/20'
+                : 'border-rose-500 text-rose-600 dark:text-rose-400 bg-rose-50 dark:bg-rose-950/20'
+              : 'border-zinc-300 dark:border-zinc-700 text-zinc-900 dark:text-zinc-100 placeholder:text-zinc-400 dark:placeholder:text-zinc-600'
           }`}
           style={
             !hasEvaluated
@@ -113,11 +113,11 @@ export const DesktopInput: React.FC<DesktopInputProps> = ({
         {hasEvaluated && (
           <div className="absolute right-4 flex items-center">
             {isCorrect ? (
-              <span className="p-1 rounded-full bg-emerald-500/20 text-emerald-400">
+              <span className="p-1 rounded-full bg-emerald-100 dark:bg-emerald-500/20 text-emerald-600 dark:text-emerald-400">
                 <Check size={20} />
               </span>
             ) : (
-              <span className="p-1 rounded-full bg-rose-500/20 text-rose-400">
+              <span className="p-1 rounded-full bg-rose-100 dark:bg-rose-500/20 text-rose-600 dark:text-rose-400">
                 <X size={20} />
               </span>
             )}
@@ -142,8 +142,8 @@ export const DesktopInput: React.FC<DesktopInputProps> = ({
       </div>
 
       {hasEvaluated && !isCorrect && (
-        <div className="text-sm text-rose-400 animate-fadeIn">
-          Target character was: <span className="font-bold text-lg text-white ml-1">{targetHanzi}</span>
+        <div className="text-sm text-rose-600 dark:text-rose-400 animate-fadeIn">
+          Target character was: <span className="font-bold text-lg text-zinc-900 dark:text-white ml-1">{targetHanzi}</span>
         </div>
       )}
     </div>

@@ -245,7 +245,7 @@ function QuizEngineContent() {
           className="w-12 h-12 border-4 border-t-transparent rounded-full animate-spin mx-auto" 
           style={{ borderColor: theme.primary, borderTopColor: 'transparent' }}
         />
-        <h2 className="text-lg font-bold text-zinc-200">Preparing HSK {currentLevel} Session...</h2>
+        <h2 className="text-lg font-bold text-zinc-800 dark:text-zinc-200">Preparing HSK {currentLevel} Session...</h2>
       </div>
     );
   }
@@ -263,7 +263,7 @@ function QuizEngineContent() {
 
     return (
       <div className="max-w-xl mx-auto px-4 py-8 space-y-8 animate-fadeIn">
-        <div className="bg-zinc-900 border border-zinc-800 rounded-3xl p-6 md:p-8 text-center space-y-6 shadow-2xl">
+        <div className="bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-3xl p-6 md:p-8 text-center space-y-6 shadow-xl dark:shadow-2xl">
           <div 
             className="w-16 h-16 rounded-full flex items-center justify-center mx-auto"
             style={{
@@ -276,39 +276,39 @@ function QuizEngineContent() {
           </div>
 
           <div className="space-y-2">
-            <h1 className="text-3xl font-extrabold text-white">
+            <h1 className="text-3xl font-extrabold text-zinc-900 dark:text-white">
               Session Completed! 恭喜！
             </h1>
-            <p className="text-sm text-zinc-400">
+            <p className="text-sm text-zinc-600 dark:text-zinc-400">
               Your HSK {currentLevel} spaced repetition memory intervals have been updated in your profile.
             </p>
           </div>
 
           {/* Stats Summary */}
-          <div className="grid grid-cols-3 gap-3 py-4 border-y border-zinc-800">
-            <div className="p-3 bg-zinc-950/50 rounded-2xl">
-              <div className="text-2xl font-bold text-zinc-100">
+          <div className="grid grid-cols-3 gap-3 py-4 border-y border-zinc-200 dark:border-zinc-800">
+            <div className="p-3 bg-zinc-50 dark:bg-zinc-950/50 rounded-2xl border border-zinc-200 dark:border-zinc-800/80">
+              <div className="text-2xl font-bold text-zinc-900 dark:text-zinc-100">
                 {sessionResults.length}
               </div>
-              <div className="text-xs text-zinc-400">Cards Studied</div>
+              <div className="text-xs text-zinc-500 dark:text-zinc-400">Cards Studied</div>
             </div>
-            <div className="p-3 bg-zinc-950/50 rounded-2xl">
-              <div className="text-2xl font-bold text-emerald-400">
+            <div className="p-3 bg-zinc-50 dark:bg-zinc-950/50 rounded-2xl border border-zinc-200 dark:border-zinc-800/80">
+              <div className="text-2xl font-bold text-emerald-600 dark:text-emerald-400">
                 {goodEasyCount}
               </div>
-              <div className="text-xs text-zinc-400">Recalled</div>
+              <div className="text-xs text-zinc-500 dark:text-zinc-400">Recalled</div>
             </div>
-            <div className="p-3 bg-zinc-950/50 rounded-2xl">
-              <div className="text-2xl font-bold text-amber-400">
+            <div className="p-3 bg-zinc-50 dark:bg-zinc-950/50 rounded-2xl border border-zinc-200 dark:border-zinc-800/80">
+              <div className="text-2xl font-bold text-amber-600 dark:text-amber-400">
                 {againCount}
               </div>
-              <div className="text-xs text-zinc-400">Need Practice</div>
+              <div className="text-xs text-zinc-500 dark:text-zinc-400">Need Practice</div>
             </div>
           </div>
 
           {/* Practice Mode Breakdown */}
-          <div className="space-y-2 text-left bg-zinc-950/40 p-4 rounded-2xl border border-zinc-800/60">
-            <div className="text-xs font-semibold uppercase tracking-wider text-zinc-400 flex items-center gap-1.5">
+          <div className="space-y-2 text-left bg-zinc-50 dark:bg-zinc-950/40 p-4 rounded-2xl border border-zinc-200 dark:border-zinc-800/60">
+            <div className="text-xs font-semibold uppercase tracking-wider text-zinc-500 dark:text-zinc-400 flex items-center gap-1.5">
               <Shuffle size={13} style={{ color: theme.primary }} />
               <span>Mixed Modes Completed:</span>
             </div>
@@ -319,11 +319,11 @@ function QuizEngineContent() {
                 return (
                   <div
                     key={mode}
-                    className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-zinc-900 border border-zinc-800 text-xs text-zinc-300 font-medium"
+                    className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-xs text-zinc-700 dark:text-zinc-300 font-medium shadow-sm"
                   >
                     <Icon size={14} style={{ color: theme.primary }} />
                     <span>{info?.name}:</span>
-                    <strong className="text-white">{count}</strong>
+                    <strong className="text-zinc-900 dark:text-white">{count}</strong>
                   </div>
                 );
               })}
@@ -346,7 +346,7 @@ function QuizEngineContent() {
             </button>
             <Link
               href="/"
-              className="flex-1 flex items-center justify-center py-3 px-4 rounded-xl bg-zinc-800 hover:bg-zinc-700 text-zinc-200 font-semibold text-sm transition-colors border border-zinc-700"
+              className="flex-1 flex items-center justify-center py-3 px-4 rounded-xl bg-zinc-100 hover:bg-zinc-200 dark:bg-zinc-800 dark:hover:bg-zinc-700 text-zinc-800 dark:text-zinc-200 font-semibold text-sm transition-colors border border-zinc-300 dark:border-zinc-700"
             >
               Return to Dashboard
             </Link>
@@ -361,7 +361,7 @@ function QuizEngineContent() {
   if (!currentCard) {
     return (
       <div className="max-w-xl mx-auto px-4 py-16 text-center space-y-4">
-        <h2 className="text-xl font-bold text-zinc-200">No review cards available for HSK {currentLevel}.</h2>
+        <h2 className="text-xl font-bold text-zinc-800 dark:text-zinc-200">No review cards available for HSK {currentLevel}.</h2>
         <Link
           href="/"
           className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-white font-medium text-sm"
@@ -383,7 +383,7 @@ function QuizEngineContent() {
         <div className="flex items-center justify-between gap-3">
           <Link
             href="/"
-            className="flex items-center gap-1.5 text-xs font-semibold text-zinc-400 hover:text-zinc-200 transition-colors"
+            className="flex items-center gap-1.5 text-xs font-semibold text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200 transition-colors"
           >
             <ArrowLeft size={16} />
             <span className="hidden sm:inline">Dashboard</span>
@@ -391,7 +391,7 @@ function QuizEngineContent() {
 
           {/* Active Mode Pill with Shuffle indicator & Mode Toggler */}
           <div className="flex items-center gap-2">
-            <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-zinc-900 border border-zinc-800 text-xs font-medium text-zinc-200">
+            <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-xs font-medium text-zinc-800 dark:text-zinc-200 shadow-sm">
               {activeModes.length > 1 && (
                 <span title={`Randomizing across ${activeModes.length} active modes`}>
                   <Shuffle size={13} style={{ color: theme.primary }} className="animate-pulse" />
@@ -402,7 +402,7 @@ function QuizEngineContent() {
             </div>
 
             {/* 5 Mode Toggle Buttons to actively enable/disable modes from the shuffle */}
-            <div className="flex items-center gap-1 bg-zinc-900 p-1 rounded-xl border border-zinc-800 shadow-inner">
+            <div className="flex items-center gap-1 bg-zinc-100 dark:bg-zinc-900 p-1 rounded-xl border border-zinc-200 dark:border-zinc-800 shadow-inner">
               {ALL_MODES.map((mode) => {
                 const info = modeDescriptions[mode];
                 const Icon = info.icon;
@@ -418,8 +418,8 @@ function QuizEngineContent() {
                       isCurrent
                         ? 'text-white shadow-md ring-2 ring-white/40'
                         : isInPool
-                        ? 'bg-zinc-800 text-zinc-200 hover:text-white hover:bg-zinc-700 border border-zinc-700/60'
-                        : 'text-zinc-600 hover:text-zinc-400 hover:bg-zinc-800/40 opacity-40 hover:opacity-75'
+                        ? 'bg-white dark:bg-zinc-800 text-zinc-800 dark:text-zinc-200 hover:text-zinc-900 dark:hover:text-white hover:bg-zinc-50 dark:hover:bg-zinc-700 border border-zinc-200 dark:border-zinc-700/60 shadow-sm'
+                        : 'text-zinc-400 dark:text-zinc-600 hover:text-zinc-600 dark:hover:text-zinc-400 hover:bg-zinc-200/50 dark:hover:bg-zinc-800/40 opacity-40 hover:opacity-75'
                     }`}
                     style={
                       isCurrent
@@ -451,13 +451,13 @@ function QuizEngineContent() {
             </div>
           </div>
 
-          <div className="text-xs font-mono font-bold text-zinc-400">
+          <div className="text-xs font-mono font-bold text-zinc-500 dark:text-zinc-400">
             {currentIndex + 1} / {sessionCards.length}
           </div>
         </div>
 
         {/* Progress Bar styled with current level color */}
-        <div className="w-full bg-zinc-800 h-2 rounded-full overflow-hidden">
+        <div className="w-full bg-zinc-200 dark:bg-zinc-800 h-2 rounded-full overflow-hidden">
           <div
             className="h-full rounded-full transition-all duration-300"
             style={{

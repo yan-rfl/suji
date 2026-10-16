@@ -61,7 +61,7 @@ export const AudioButton: React.FC<AudioButtonProps> = ({
       className={`inline-flex items-center justify-center gap-1.5 rounded-full transition-all duration-200 active:scale-95 cursor-pointer ${
         isPlaying
           ? 'text-white shadow-md ring-2 ring-white/40'
-          : 'bg-zinc-800/80 text-zinc-300 hover:bg-zinc-700 hover:text-white border border-zinc-700/60'
+          : 'bg-zinc-100 hover:bg-zinc-200 text-zinc-700 hover:text-zinc-900 border-zinc-300/80 dark:bg-zinc-800/80 dark:hover:bg-zinc-700 dark:text-zinc-300 dark:hover:text-white border dark:border-zinc-700/60 shadow-sm'
       } ${sizeClasses[size]} ${className}`}
       style={
         isPlaying

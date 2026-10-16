@@ -21,18 +21,18 @@ import { WordDetailModal } from '@/components/WordDetailModal';
 
 const statusStyles: Record<string, { bg: string; text: string; border: string }> = {
   new: {
-    bg: 'bg-zinc-800/80',
-    text: 'text-zinc-400',
-    border: 'border-zinc-700/60',
+    bg: 'bg-zinc-100 dark:bg-zinc-800/80',
+    text: 'text-zinc-600 dark:text-zinc-400',
+    border: 'border-zinc-200 dark:border-zinc-700/60',
   },
   learning: {
     bg: 'bg-amber-500/10',
-    text: 'text-amber-400',
+    text: 'text-amber-600 dark:text-amber-400',
     border: 'border-amber-500/30',
   },
   mastered: {
     bg: 'bg-emerald-500/10',
-    text: 'text-emerald-400',
+    text: 'text-emerald-600 dark:text-emerald-400',
     border: 'border-emerald-500/30',
   },
 };
@@ -114,17 +114,17 @@ export default function DictionaryPage() {
       <div className="space-y-4">
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
           <div>
-            <h1 className="text-3xl font-black text-zinc-100 flex items-center gap-3">
+            <h1 className="text-3xl font-black text-zinc-900 dark:text-zinc-100 flex items-center gap-3">
               <BookOpen style={{ color: theme.primary }} size={30} />
               <span>HSK Dictionary & Vocabulary</span>
             </h1>
-            <p className="text-sm text-zinc-400 mt-1">
+            <p className="text-sm text-zinc-500 dark:text-zinc-400 mt-1">
               Search vocabulary, hear authentic pronunciation, and explore stroke order animations
             </p>
           </div>
 
           {/* HSK Level Switcher with persistent global level */}
-          <div className="flex items-center gap-1.5 p-1 rounded-2xl bg-zinc-900 border border-zinc-800 overflow-x-auto max-w-full">
+          <div className="flex items-center gap-1.5 p-1 rounded-2xl bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 overflow-x-auto max-w-full">
             {[1, 2, 3, 4, 5, 6].map((lvl) => {
               const isSelected = currentLevel === lvl;
               const lvlTheme = HSK_THEMES[lvl] || HSK_THEMES[1];
@@ -136,7 +136,7 @@ export default function DictionaryPage() {
                   className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all whitespace-nowrap cursor-pointer ${
                     isSelected
                       ? 'text-white shadow-md'
-                      : 'text-zinc-400 hover:text-zinc-200 hover:bg-zinc-800'
+                      : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200 hover:bg-zinc-200/60 dark:hover:bg-zinc-800'
                   }`}
                   style={
                     isSelected
@@ -160,20 +160,20 @@ export default function DictionaryPage() {
           <div className="relative flex-1">
             <Search
               size={18}
-              className="absolute left-4 top-1/2 -translate-y-1/2 text-zinc-500"
+              className="absolute left-4 top-1/2 -translate-y-1/2 text-zinc-400 dark:text-zinc-500"
             />
             <input
               type="text"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder="Search Hanzi, Pinyin (e.g. ni hao), or English..."
-              className="w-full pl-11 pr-10 py-3 rounded-2xl bg-zinc-900 border border-zinc-800 focus:border-[var(--theme-primary)] text-zinc-100 placeholder:text-zinc-500 text-sm outline-none transition-all"
+              className="w-full pl-11 pr-10 py-3 rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 focus:border-[var(--theme-primary)] text-zinc-900 dark:text-zinc-100 placeholder:text-zinc-400 dark:placeholder:text-zinc-500 text-sm outline-none transition-all shadow-sm"
             />
             {searchQuery && (
               <button
                 type="button"
                 onClick={() => setSearchQuery('')}
-                className="absolute right-3.5 top-1/2 -translate-y-1/2 p-1 text-zinc-500 hover:text-zinc-200"
+                className="absolute right-3.5 top-1/2 -translate-y-1/2 p-1 text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200"
               >
                 <X size={16} />
               </button>
@@ -181,14 +181,14 @@ export default function DictionaryPage() {
           </div>
 
           {/* Status Filter Buttons */}
-          <div className="flex items-center gap-1.5 p-1 rounded-2xl bg-zinc-900 border border-zinc-800 overflow-x-auto">
+          <div className="flex items-center gap-1.5 p-1 rounded-2xl bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 overflow-x-auto">
             <button
               type="button"
               onClick={() => setStatusFilter('all')}
               className={`px-3 py-2 rounded-xl text-xs font-semibold transition-colors whitespace-nowrap cursor-pointer ${
                 statusFilter === 'all'
-                  ? 'bg-zinc-800 text-white shadow-sm'
-                  : 'text-zinc-400 hover:text-zinc-200'
+                  ? 'bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white shadow-sm'
+                  : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200'
               }`}
             >
               All ({counts.total})
@@ -198,8 +198,8 @@ export default function DictionaryPage() {
               onClick={() => setStatusFilter('new')}
               className={`px-3 py-2 rounded-xl text-xs font-semibold transition-colors whitespace-nowrap cursor-pointer ${
                 statusFilter === 'new'
-                  ? 'bg-zinc-800 text-white shadow-sm'
-                  : 'text-zinc-400 hover:text-zinc-200'
+                  ? 'bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white shadow-sm'
+                  : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200'
               }`}
             >
               New ({counts.newCount})
@@ -209,8 +209,8 @@ export default function DictionaryPage() {
               onClick={() => setStatusFilter('learning')}
               className={`px-3 py-2 rounded-xl text-xs font-semibold transition-colors whitespace-nowrap cursor-pointer ${
                 statusFilter === 'learning'
-                  ? 'bg-amber-500/20 text-amber-300 shadow-sm'
-                  : 'text-zinc-400 hover:text-amber-300'
+                  ? 'bg-amber-100 dark:bg-amber-500/20 text-amber-700 dark:text-amber-300 shadow-sm'
+                  : 'text-zinc-600 dark:text-zinc-400 hover:text-amber-600 dark:hover:text-amber-300'
               }`}
             >
               Learning ({counts.learningCount})
@@ -220,8 +220,8 @@ export default function DictionaryPage() {
               onClick={() => setStatusFilter('mastered')}
               className={`px-3 py-2 rounded-xl text-xs font-semibold transition-colors whitespace-nowrap cursor-pointer ${
                 statusFilter === 'mastered'
-                  ? 'bg-emerald-500/20 text-emerald-300 shadow-sm'
-                  : 'text-zinc-400 hover:text-emerald-300'
+                  ? 'bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300 shadow-sm'
+                  : 'text-zinc-600 dark:text-zinc-400 hover:text-emerald-600 dark:hover:text-emerald-300'
               }`}
             >
               Mastered ({counts.masteredCount})
@@ -232,15 +232,15 @@ export default function DictionaryPage() {
         {/* Scope Selector: Full Syllabus vs Level-Specific New Words */}
         {currentLevel > 1 && (
           <div className="flex items-center gap-2 pt-1 flex-wrap">
-            <span className="text-xs text-zinc-400 font-medium">Syllabus Scope:</span>
-            <div className="flex items-center gap-1.5 p-1 rounded-2xl bg-zinc-900 border border-zinc-800">
+            <span className="text-xs text-zinc-500 dark:text-zinc-400 font-medium">Syllabus Scope:</span>
+            <div className="flex items-center gap-1.5 p-1 rounded-2xl bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800">
               <button
                 type="button"
                 onClick={() => setLevelScope('all')}
                 className={`px-3 py-1.5 rounded-xl text-xs font-semibold transition-colors cursor-pointer ${
                   levelScope === 'all'
-                    ? 'bg-zinc-800 text-white shadow-sm'
-                    : 'text-zinc-400 hover:text-zinc-200'
+                    ? 'bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white shadow-sm'
+                    : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200'
                 }`}
               >
                 All HSK {currentLevel} Syllabus ({words.length})
@@ -251,7 +251,7 @@ export default function DictionaryPage() {
                 className={`px-3 py-1.5 rounded-xl text-xs font-semibold transition-colors cursor-pointer ${
                   levelScope === 'new-only'
                     ? 'text-white shadow-sm'
-                    : 'text-zinc-400 hover:text-zinc-200'
+                    : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200'
                 }`}
                 style={levelScope === 'new-only' ? { backgroundColor: theme.primary } : undefined}
               >
@@ -269,12 +269,12 @@ export default function DictionaryPage() {
             className="w-10 h-10 border-4 border-t-transparent rounded-full animate-spin mx-auto" 
             style={{ borderColor: theme.primary, borderTopColor: 'transparent' }}
           />
-          <p className="text-sm text-zinc-400">Loading HSK {currentLevel} vocabulary...</p>
+          <p className="text-sm text-zinc-500 dark:text-zinc-400">Loading HSK {currentLevel} vocabulary...</p>
         </div>
       ) : filteredWords.length === 0 ? (
-        <div className="py-20 text-center bg-zinc-900/40 rounded-3xl border border-zinc-800/80 p-8 space-y-3">
-          <BookOpen size={40} className="mx-auto text-zinc-600" />
-          <h3 className="text-lg font-bold text-zinc-300">No words found</h3>
+        <div className="py-20 text-center bg-white dark:bg-zinc-900/40 rounded-3xl border border-zinc-200 dark:border-zinc-800/80 p-8 space-y-3 shadow-sm">
+          <BookOpen size={40} className="mx-auto text-zinc-400 dark:text-zinc-600" />
+          <h3 className="text-lg font-bold text-zinc-800 dark:text-zinc-300">No words found</h3>
           <p className="text-sm text-zinc-500 max-w-sm mx-auto">
             Try adjusting your search query or switching your status filter.
           </p>
@@ -289,13 +289,13 @@ export default function DictionaryPage() {
               <div
                 key={word.id}
                 onClick={() => setActiveModalWord(word)}
-                className="group relative bg-zinc-900/80 hover:bg-zinc-800/90 border border-zinc-800 hover:border-zinc-700/80 rounded-2xl p-4 transition-all duration-200 cursor-pointer shadow-md hover:shadow-xl hover:-translate-y-0.5 flex flex-col justify-between"
+                className="group relative bg-white dark:bg-zinc-900/80 hover:bg-zinc-50 dark:hover:bg-zinc-800/90 border border-zinc-200 dark:border-zinc-800 hover:border-zinc-300 dark:hover:border-zinc-700/80 rounded-2xl p-4 transition-all duration-200 cursor-pointer shadow-sm hover:shadow-md hover:-translate-y-0.5 flex flex-col justify-between"
               >
                 {/* Card Top: Hanzi & Audio */}
                 <div className="flex items-start justify-between gap-2">
                   <div className="space-y-1">
                     <span 
-                      className="text-3xl font-bold text-zinc-100 font-serif tracking-wide transition-colors group-hover:opacity-90"
+                      className="text-3xl font-bold text-zinc-900 dark:text-zinc-100 font-serif tracking-wide transition-colors group-hover:opacity-90"
                       style={{ color: undefined }}
                     >
                       {word.hanzi}
@@ -311,13 +311,13 @@ export default function DictionaryPage() {
 
                 {/* Card Center: English Translations */}
                 <div className="my-3">
-                  <p className="text-xs text-zinc-300 line-clamp-2 leading-relaxed">
+                  <p className="text-xs text-zinc-600 dark:text-zinc-300 line-clamp-2 leading-relaxed">
                     {word.translations.join(', ')}
                   </p>
                 </div>
 
                 {/* Card Bottom: Part of Speech & Mastery Badge */}
-                <div className="flex items-center justify-between pt-2 border-t border-zinc-800/60 text-[11px]">
+                <div className="flex items-center justify-between pt-2 border-t border-zinc-100 dark:border-zinc-800/60 text-[11px]">
                   <div className="flex items-center gap-1.5">
                     <span 
                       className="px-1.5 py-0.2 rounded text-[10px] font-bold"
@@ -329,7 +329,7 @@ export default function DictionaryPage() {
                     >
                       HSK {word.level}
                     </span>
-                    <span className="text-zinc-500 capitalize">
+                    <span className="text-zinc-400 dark:text-zinc-500 capitalize">
                       {word.partOfSpeech || 'word'}
                     </span>
                   </div>

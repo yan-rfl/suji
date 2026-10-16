@@ -5,7 +5,7 @@ import { ProgressProvider } from '@/context/ProgressContext';
 import { LevelProvider } from '@/context/LevelContext';
 import { Navbar } from '@/components/Navbar';
 
-import { ThemeColorSync } from '@/components/ThemeColorSync';
+import { ThemeProvider } from '@/context/ThemeContext';
 
 export const metadata: Metadata = {
   title: 'Suji (速记) - Personal HSK 1–6 Learning App',
@@ -41,14 +41,22 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="zh-CN" className="dark">
+    <html lang="zh-CN" suppressHydrationWarning>
       <head>
         <script
           dangerouslySetInnerHTML={{
             __html: `
               (function() {
                 try {
-                  var isDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+                  var saved = localStorage.getItem('suji_theme_mode');
+                  var isDark = saved === 'dark' || (!saved || saved === 'system') && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+                  if (isDark) {
+                    document.documentElement.classList.add('dark');
+                    document.documentElement.classList.remove('light');
+                  } else {
+                    document.documentElement.classList.remove('dark');
+                    document.documentElement.classList.add('light');
+                  }
                   var color = isDark ? '#09090b' : '#ffffff';
                   var meta = document.querySelector('meta[name="theme-color"]:not([media])');
                   if (!meta) {
@@ -63,15 +71,16 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="min-h-screen bg-zinc-950 text-zinc-100 flex flex-col font-sans">
-        <ThemeColorSync />
+      <body className="min-h-screen bg-zinc-50 dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100 flex flex-col font-sans transition-colors duration-150">
         <AuthProvider>
-          <ProgressProvider>
-            <LevelProvider>
-              <Navbar />
-              <main className="flex-1 pb-24 md:pb-12">{children}</main>
-            </LevelProvider>
-          </ProgressProvider>
+          <ThemeProvider>
+            <ProgressProvider>
+              <LevelProvider>
+                <Navbar />
+                <main className="flex-1 pb-24 md:pb-12">{children}</main>
+              </LevelProvider>
+            </ProgressProvider>
+          </ThemeProvider>
         </AuthProvider>
       </body>
     </html>

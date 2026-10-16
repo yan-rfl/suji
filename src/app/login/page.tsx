@@ -132,15 +132,15 @@ export default function LoginPage() {
     <div className="max-w-xl mx-auto px-4 py-8 space-y-8 animate-fadeIn">
       {/* If User is Already Signed In */}
       {user && !user.isAnonymous ? (
-        <div className="bg-zinc-900 border border-zinc-800 rounded-3xl p-6 md:p-8 space-y-6 shadow-2xl">
+        <div className="bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-3xl p-6 md:p-8 space-y-6 shadow-2xl">
           <div className="flex items-center gap-4">
             <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-red-600 to-red-800 flex items-center justify-center text-white text-2xl font-bold font-serif shadow-lg shadow-red-900/40">
               {user.displayName?.charAt(0).toUpperCase() || 'S'}
             </div>
             <div>
-              <h2 className="text-2xl font-bold text-white">{user.displayName}</h2>
-              <p className="text-sm text-zinc-400">{user.email}</p>
-              <div className="flex items-center gap-1.5 mt-1 text-xs text-emerald-400">
+              <h2 className="text-2xl font-bold text-zinc-900 dark:text-white">{user.displayName}</h2>
+              <p className="text-sm text-zinc-500 dark:text-zinc-400">{user.email}</p>
+              <div className="flex items-center gap-1.5 mt-1 text-xs text-emerald-600 dark:text-emerald-400">
                 <Cloud size={13} />
                 <span>Cloud Sync Active (Firestore)</span>
               </div>
@@ -148,21 +148,21 @@ export default function LoginPage() {
           </div>
 
           {/* User Progress Summary */}
-          <div className="grid grid-cols-3 gap-3 p-4 bg-zinc-950/60 rounded-2xl border border-zinc-800">
+          <div className="grid grid-cols-3 gap-3 p-4 bg-zinc-50 dark:bg-zinc-950/60 rounded-2xl border border-zinc-200 dark:border-zinc-800">
             <div className="text-center">
-              <div className="text-xl font-bold text-amber-400 flex items-center justify-center gap-1">
+              <div className="text-xl font-bold text-amber-500 dark:text-amber-400 flex items-center justify-center gap-1">
                 <Flame size={16} />
                 <span>{stats.currentStreak}</span>
               </div>
-              <div className="text-[11px] text-zinc-400 mt-0.5">Day Streak</div>
+              <div className="text-[11px] text-zinc-500 dark:text-zinc-400 mt-0.5">Day Streak</div>
             </div>
             <div className="text-center">
-              <div className="text-xl font-bold text-zinc-100">{stats.totalWordsReviewed}</div>
-              <div className="text-[11px] text-zinc-400 mt-0.5">Reviews</div>
+              <div className="text-xl font-bold text-zinc-900 dark:text-zinc-100">{stats.totalWordsReviewed}</div>
+              <div className="text-[11px] text-zinc-500 dark:text-zinc-400 mt-0.5">Reviews</div>
             </div>
             <div className="text-center">
-              <div className="text-xl font-bold text-emerald-400">{stats.wordsMastered}</div>
-              <div className="text-[11px] text-zinc-400 mt-0.5">Mastered</div>
+              <div className="text-xl font-bold text-emerald-600 dark:text-emerald-400">{stats.wordsMastered}</div>
+              <div className="text-[11px] text-zinc-500 dark:text-zinc-400 mt-0.5">Mastered</div>
             </div>
           </div>
 
@@ -170,7 +170,7 @@ export default function LoginPage() {
             <button
               type="button"
               onClick={handleSignOut}
-              className="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-zinc-800 hover:bg-zinc-700 text-zinc-200 font-semibold text-sm transition-colors border border-zinc-700"
+              className="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-zinc-100 hover:bg-zinc-200 dark:bg-zinc-800 dark:hover:bg-zinc-700 text-zinc-800 dark:text-zinc-200 font-semibold text-sm transition-colors border border-zinc-300 dark:border-zinc-700"
             >
               <LogOut size={16} />
               <span>Sign Out</span>
@@ -179,33 +179,33 @@ export default function LoginPage() {
             <button
               type="button"
               onClick={handleResetData}
-              className="w-full flex items-center justify-center gap-1.5 py-2 px-3 text-xs text-zinc-500 hover:text-rose-400 transition-colors"
+              className="w-full flex items-center justify-center gap-1.5 py-2 px-3 text-xs text-zinc-500 hover:text-rose-500 dark:hover:text-rose-400 transition-colors"
             >
               <RotateCcw size={13} />
               <span>Reset SRS Progress & Streaks</span>
             </button>
             {resetConfirm && (
-              <p className="text-xs text-emerald-400 text-center">Progress has been reset.</p>
+              <p className="text-xs text-emerald-600 dark:text-emerald-400 text-center">Progress has been reset.</p>
             )}
           </div>
         </div>
       ) : (
         /* Sign In / Register Card */
-        <div className="bg-zinc-900 border border-zinc-800 rounded-3xl p-6 md:p-8 space-y-6 shadow-2xl">
+        <div className="bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-3xl p-6 md:p-8 space-y-6 shadow-2xl">
           <div className="text-center space-y-2">
             <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-red-500 to-red-700 flex items-center justify-center text-white mx-auto shadow-lg shadow-red-900/40 font-serif font-black text-xl">
               速
             </div>
-            <h1 className="text-2xl md:text-3xl font-extrabold text-white">
+            <h1 className="text-2xl md:text-3xl font-extrabold text-zinc-900 dark:text-white">
               Suji <span className="font-serif text-red-500 font-medium">速记</span> Account
             </h1>
-            <p className="text-xs md:text-sm text-zinc-400">
+            <p className="text-xs md:text-sm text-zinc-500 dark:text-zinc-400">
               Sync your flashcards and SM-2 memory intervals across all your devices
             </p>
           </div>
 
           {/* Mode Switcher Tabs */}
-          <div className="grid grid-cols-2 gap-1.5 p-1 bg-zinc-950 rounded-2xl border border-zinc-800">
+          <div className="grid grid-cols-2 gap-1.5 p-1 bg-zinc-100 dark:bg-zinc-950 rounded-2xl border border-zinc-200 dark:border-zinc-800">
             <button
               type="button"
               onClick={() => {
@@ -214,8 +214,8 @@ export default function LoginPage() {
               }}
               className={`py-2 px-3 text-xs font-bold rounded-xl transition-all ${
                 activeTab === 'signin'
-                  ? 'bg-zinc-800 text-white shadow-sm'
-                  : 'text-zinc-400 hover:text-zinc-200'
+                  ? 'bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white shadow-sm'
+                  : 'text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200'
               }`}
             >
               Sign In
@@ -229,7 +229,7 @@ export default function LoginPage() {
               className={`py-2 px-3 text-xs font-bold rounded-xl transition-all ${
                 activeTab === 'register'
                   ? 'bg-red-600 text-white shadow-sm'
-                  : 'text-zinc-400 hover:text-zinc-200'
+                  : 'text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200'
               }`}
             >
               Create Account
@@ -237,8 +237,8 @@ export default function LoginPage() {
           </div>
 
           {errorMsg && (
-            <div className="p-3.5 bg-rose-950/40 border border-rose-800/60 rounded-xl text-rose-300 text-xs flex items-start gap-2.5">
-              <AlertTriangle size={16} className="shrink-0 mt-0.5 text-rose-400" />
+            <div className="p-3.5 bg-rose-50 dark:bg-rose-950/40 border border-rose-200 dark:border-rose-800/60 rounded-xl text-rose-700 dark:text-rose-300 text-xs flex items-start gap-2.5">
+              <AlertTriangle size={16} className="shrink-0 mt-0.5 text-rose-500 dark:text-rose-400" />
               <span className="leading-relaxed">{errorMsg}</span>
             </div>
           )}
@@ -248,7 +248,7 @@ export default function LoginPage() {
             type="button"
             onClick={handleGoogleSignIn}
             disabled={isSubmitting}
-            className="w-full flex items-center justify-center gap-3 py-3 px-4 rounded-xl bg-white hover:bg-zinc-100 text-zinc-900 font-bold text-sm transition-all shadow-md active:scale-98"
+            className="w-full flex items-center justify-center gap-3 py-3 px-4 rounded-xl bg-zinc-50 hover:bg-zinc-100 dark:bg-zinc-800 dark:hover:bg-zinc-700 text-zinc-800 dark:text-zinc-100 font-bold text-sm transition-all border border-zinc-200 dark:border-zinc-700 shadow-sm active:scale-98"
           >
             <svg className="w-4 h-4" viewBox="0 0 24 24">
               <path
@@ -272,34 +272,34 @@ export default function LoginPage() {
           </button>
 
           <div className="flex items-center gap-3 my-1">
-            <div className="flex-1 border-t border-zinc-800" />
-            <span className="text-[11px] uppercase tracking-wider text-zinc-500 font-semibold">
+            <div className="flex-1 border-t border-zinc-200 dark:border-zinc-800" />
+            <span className="text-[11px] uppercase tracking-wider text-zinc-400 dark:text-zinc-500 font-semibold">
               Or with email
             </span>
-            <div className="flex-1 border-t border-zinc-800" />
+            <div className="flex-1 border-t border-zinc-200 dark:border-zinc-800" />
           </div>
 
           {/* Email / Password Form */}
           <form onSubmit={handleSubmit} className="space-y-3.5">
             <div className="space-y-1">
-              <label className="text-xs text-zinc-400 font-medium">Email Address</label>
+              <label className="text-xs text-zinc-600 dark:text-zinc-400 font-medium">Email Address</label>
               <div className="relative">
-                <Mail size={16} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-zinc-500" />
+                <Mail size={16} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-zinc-400 dark:text-zinc-500" />
                 <input
                   type="email"
                   required
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="scholar@example.com"
-                  className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-zinc-950 border border-zinc-800 focus:border-red-500 text-sm outline-none text-zinc-200 transition-colors"
+                  className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-zinc-50 dark:bg-zinc-950 border border-zinc-300 dark:border-zinc-800 focus:border-red-500 text-sm outline-none text-zinc-900 dark:text-zinc-200 placeholder:text-zinc-400 dark:placeholder:text-zinc-600 transition-colors"
                 />
               </div>
             </div>
 
             <div className="space-y-1">
-              <label className="text-xs text-zinc-400 font-medium">Password</label>
+              <label className="text-xs text-zinc-600 dark:text-zinc-400 font-medium">Password</label>
               <div className="relative">
-                <Lock size={16} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-zinc-500" />
+                <Lock size={16} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-zinc-400 dark:text-zinc-500" />
                 <input
                   type="password"
                   required
@@ -307,7 +307,7 @@ export default function LoginPage() {
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   placeholder="At least 6 characters"
-                  className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-zinc-950 border border-zinc-800 focus:border-red-500 text-sm outline-none text-zinc-200 transition-colors"
+                  className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-zinc-50 dark:bg-zinc-950 border border-zinc-300 dark:border-zinc-800 focus:border-red-500 text-sm outline-none text-zinc-900 dark:text-zinc-200 placeholder:text-zinc-400 dark:placeholder:text-zinc-600 transition-colors"
                 />
               </div>
             </div>
@@ -315,10 +315,10 @@ export default function LoginPage() {
             <button
               type="submit"
               disabled={isSubmitting}
-              className={`w-full py-3 px-4 rounded-xl text-white font-bold text-sm transition-all shadow-md active:scale-98 mt-2 ${
+              className={`w-full py-3 px-4 rounded-xl text-white font-bold text-sm transition-all shadow-md active:scale-98 mt-2 cursor-pointer ${
                 activeTab === 'register'
                   ? 'bg-red-600 hover:bg-red-500 shadow-red-900/30'
-                  : 'bg-zinc-100 hover:bg-white text-zinc-900 shadow-zinc-900/30 font-extrabold'
+                  : 'bg-zinc-900 hover:bg-zinc-800 text-white dark:bg-zinc-100 dark:hover:bg-white dark:text-zinc-900 shadow-sm font-extrabold'
               }`}
             >
               {isSubmitting
@@ -330,13 +330,13 @@ export default function LoginPage() {
           </form>
 
           {/* Standalone Offline / Guest Option */}
-          <div className="pt-3 border-t border-zinc-800/80">
+          <div className="pt-3 border-t border-zinc-200 dark:border-zinc-800/80">
             <button
               type="button"
               onClick={handleContinueAsGuest}
-              className="w-full py-2.5 px-4 rounded-xl bg-zinc-950 hover:bg-zinc-800/80 text-zinc-400 hover:text-zinc-200 text-xs font-semibold border border-zinc-800 transition-colors flex items-center justify-center gap-2"
+              className="w-full py-2.5 px-4 rounded-xl bg-zinc-50 hover:bg-zinc-100 dark:bg-zinc-950 dark:hover:bg-zinc-800/80 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200 text-xs font-semibold border border-zinc-200 dark:border-zinc-800 transition-colors flex items-center justify-center gap-2 cursor-pointer"
             >
-              <Zap size={14} className="text-amber-400" />
+              <Zap size={14} className="text-amber-500 dark:text-amber-400" />
               <span>Continue in Offline Local Mode (No Account Required)</span>
             </button>
           </div>

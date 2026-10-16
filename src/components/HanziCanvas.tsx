@@ -51,6 +51,7 @@ export const HanziCanvas: React.FC<HanziCanvasProps> = ({
 
         if (!isMounted || !containerRef.current) return;
 
+        const isDark = typeof document !== 'undefined' ? document.documentElement.classList.contains('dark') : true;
         const writer = HanziWriter.create(containerRef.current, activeChar, {
           width: size,
           height: size,
@@ -58,8 +59,8 @@ export const HanziCanvas: React.FC<HanziCanvasProps> = ({
           showOutline: mode === 'quiz' ? showOutline : true,
           showCharacter: mode !== 'quiz',
           strokeColor: '#f43f5e',
-          outlineColor: '#52525b',
-          drawingColor: '#38bdf8',
+          outlineColor: isDark ? '#52525b' : '#94a3b8',
+          drawingColor: isDark ? '#38bdf8' : '#0284c7',
           strokeAnimationSpeed: 1.2,
           delayBetweenStrokes: 150,
           highlightColor: '#22c55e',
@@ -155,7 +156,7 @@ export const HanziCanvas: React.FC<HanziCanvasProps> = ({
     <div className={`flex flex-col items-center select-none ${className}`}>
       {/* Character switcher tabs for multi-character words */}
       {characters.length > 1 && (
-        <div className="flex items-center gap-2 mb-3 bg-zinc-900/80 p-1 rounded-xl border border-zinc-800">
+        <div className="flex items-center gap-2 mb-3 bg-zinc-100 dark:bg-zinc-900/80 p-1 rounded-xl border border-zinc-200 dark:border-zinc-800">
           {characters.map((char, idx) => (
             <button
               key={`${char}-${idx}`}
@@ -164,12 +165,12 @@ export const HanziCanvas: React.FC<HanziCanvasProps> = ({
               className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-medium transition-all ${
                 activeCharIndex === idx
                   ? 'bg-red-600 text-white shadow-sm'
-                  : 'text-zinc-400 hover:text-zinc-200 hover:bg-zinc-800'
+                  : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200 hover:bg-zinc-200 dark:hover:bg-zinc-800'
               }`}
             >
               <span>{char}</span>
               {completedChars[idx] && (
-                <CheckCircle2 size={14} className="text-emerald-400" />
+                <CheckCircle2 size={14} className="text-emerald-500 dark:text-emerald-400" />
               )}
             </button>
           ))}
@@ -177,10 +178,10 @@ export const HanziCanvas: React.FC<HanziCanvasProps> = ({
       )}
 
       {/* Drawing Canvas Area with traditional Mi Zi Ge guidelines */}
-      <div className="relative rounded-2xl bg-zinc-950 border-2 border-red-900/40 shadow-inner p-2 overflow-hidden">
+      <div className="relative rounded-2xl bg-amber-50/40 dark:bg-zinc-950 border-2 border-red-200 dark:border-red-900/40 shadow-inner p-2 overflow-hidden">
         {/* Traditional Rice Grid (米字格) SVG overlay behind character */}
         <svg
-          className="absolute inset-0 w-full h-full pointer-events-none opacity-20"
+          className="absolute inset-0 w-full h-full pointer-events-none opacity-25 dark:opacity-20"
           xmlns="http://www.w3.org/2000/svg"
         >
           <line x1="0" y1="0" x2="100%" y2="100%" stroke="#dc2626" strokeDasharray="4,4" strokeWidth="1" />
@@ -201,7 +202,7 @@ export const HanziCanvas: React.FC<HanziCanvasProps> = ({
               type="button"
               onClick={handleAnimate}
               disabled={isAnimating}
-              className="flex items-center gap-1 px-3 py-1.5 bg-zinc-800 hover:bg-zinc-700 text-zinc-200 text-xs font-medium rounded-lg transition-colors border border-zinc-700"
+              className="flex items-center gap-1 px-3 py-1.5 bg-zinc-100 hover:bg-zinc-200 dark:bg-zinc-800 dark:hover:bg-zinc-700 text-zinc-700 dark:text-zinc-200 text-xs font-medium rounded-lg transition-colors border border-zinc-200 dark:border-zinc-700 shadow-sm"
             >
               <Play size={13} className={isAnimating ? 'animate-spin' : ''} />
               <span>{isAnimating ? 'Writing...' : 'Play Stroke Order'}</span>
@@ -209,7 +210,7 @@ export const HanziCanvas: React.FC<HanziCanvasProps> = ({
             <button
               type="button"
               onClick={handleReset}
-              className="p-1.5 bg-zinc-800 hover:bg-zinc-700 text-zinc-300 rounded-lg transition-colors border border-zinc-700"
+              className="p-1.5 bg-zinc-100 hover:bg-zinc-200 dark:bg-zinc-800 dark:hover:bg-zinc-700 text-zinc-700 dark:text-zinc-300 rounded-lg transition-colors border border-zinc-200 dark:border-zinc-700 shadow-sm"
               title="Reset"
             >
               <RotateCcw size={14} />
@@ -217,13 +218,13 @@ export const HanziCanvas: React.FC<HanziCanvasProps> = ({
           </>
         ) : (
           <div className="flex items-center gap-3">
-            <span className="text-xs text-zinc-400">
+            <span className="text-xs text-zinc-600 dark:text-zinc-400">
               Draw character with finger or mouse
             </span>
             <button
               type="button"
               onClick={handleHint}
-              className="flex items-center gap-1 px-2.5 py-1 bg-amber-500/10 text-amber-300 hover:bg-amber-500/20 text-xs font-medium rounded-md border border-amber-500/30 transition-colors"
+              className="flex items-center gap-1 px-2.5 py-1 bg-amber-500/10 text-amber-700 dark:text-amber-300 hover:bg-amber-500/20 text-xs font-medium rounded-md border border-amber-500/30 transition-colors"
               title="Give stroke hint"
             >
               <HelpCircle size={13} />
@@ -232,7 +233,7 @@ export const HanziCanvas: React.FC<HanziCanvasProps> = ({
             <button
               type="button"
               onClick={handleReset}
-              className="flex items-center gap-1 px-2.5 py-1 bg-zinc-800 text-zinc-300 hover:bg-zinc-700 text-xs font-medium rounded-md border border-zinc-700 transition-colors"
+              className="flex items-center gap-1 px-2.5 py-1 bg-zinc-100 hover:bg-zinc-200 dark:bg-zinc-800 dark:hover:bg-zinc-700 text-zinc-700 dark:text-zinc-300 text-xs font-medium rounded-md border border-zinc-200 dark:border-zinc-700 transition-colors shadow-sm"
             >
               <RotateCcw size={13} />
               <span>Retry</span>

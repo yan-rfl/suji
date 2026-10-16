@@ -107,13 +107,13 @@ export const PWAInstaller: React.FC = () => {
           onClick={() => setShowIOSModal(false)}
         >
           <div 
-            className="w-full max-w-sm bg-zinc-900 border border-zinc-800 rounded-3xl p-6 space-y-5 shadow-2xl relative"
+            className="w-full max-w-sm bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-3xl p-6 space-y-5 shadow-2xl relative"
             onClick={(e) => e.stopPropagation()}
           >
             <button
               type="button"
               onClick={() => setShowIOSModal(false)}
-              className="absolute top-4 right-4 p-1.5 rounded-full text-zinc-400 hover:text-white hover:bg-zinc-800 transition-colors"
+              className="absolute top-4 right-4 p-1.5 rounded-full text-zinc-400 hover:text-zinc-700 dark:hover:text-white hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
               aria-label="Close"
             >
               <X size={18} />
@@ -127,13 +127,13 @@ export const PWAInstaller: React.FC = () => {
                 <Smartphone size={22} />
               </div>
               <div>
-                <h3 className="text-base font-bold text-zinc-100">Install Suji on iOS</h3>
-                <p className="text-xs text-zinc-400">Add to your iPhone Home Screen</p>
+                <h3 className="text-base font-bold text-zinc-900 dark:text-zinc-100">Install Suji on iOS</h3>
+                <p className="text-xs text-zinc-500 dark:text-zinc-400">Add to your iPhone Home Screen</p>
               </div>
             </div>
 
-            <div className="space-y-3 text-xs text-zinc-300">
-              <div className="flex items-start gap-3 p-3 rounded-2xl bg-zinc-950/70 border border-zinc-800/80">
+            <div className="space-y-3 text-xs text-zinc-700 dark:text-zinc-300">
+              <div className="flex items-start gap-3 p-3 rounded-2xl bg-zinc-50 dark:bg-zinc-950/70 border border-zinc-200 dark:border-zinc-800/80">
                 <span 
                   className="w-6 h-6 rounded-full flex items-center justify-center font-bold text-white shrink-0 mt-0.5"
                   style={{ backgroundColor: theme.primary }}
@@ -141,11 +141,11 @@ export const PWAInstaller: React.FC = () => {
                   1
                 </span>
                 <p className="leading-relaxed">
-                  In <strong className="text-zinc-100">Safari</strong>, tap the <strong className="text-zinc-100">Share</strong> button at the bottom of your screen <span className="inline-flex items-center p-1 bg-zinc-800 rounded text-zinc-300 ml-1"><Share size={12} /></span>.
+                  In <strong className="text-zinc-900 dark:text-zinc-100">Safari</strong>, tap the <strong className="text-zinc-900 dark:text-zinc-100">Share</strong> button at the bottom of your screen <span className="inline-flex items-center p-1 bg-zinc-200 dark:bg-zinc-800 rounded text-zinc-800 dark:text-zinc-300 ml-1"><Share size={12} /></span>.
                 </p>
               </div>
 
-              <div className="flex items-start gap-3 p-3 rounded-2xl bg-zinc-950/70 border border-zinc-800/80">
+              <div className="flex items-start gap-3 p-3 rounded-2xl bg-zinc-50 dark:bg-zinc-950/70 border border-zinc-200 dark:border-zinc-800/80">
                 <span 
                   className="w-6 h-6 rounded-full flex items-center justify-center font-bold text-white shrink-0 mt-0.5"
                   style={{ backgroundColor: theme.primary }}
@@ -153,11 +153,11 @@ export const PWAInstaller: React.FC = () => {
                   2
                 </span>
                 <p className="leading-relaxed">
-                  Scroll down the menu and tap <strong className="text-zinc-100">Add to Home Screen</strong> <span className="inline-flex items-center p-1 bg-zinc-800 rounded text-zinc-300 ml-1"><PlusSquare size={12} /></span>.
+                  Scroll down the menu and tap <strong className="text-zinc-900 dark:text-zinc-100">Add to Home Screen</strong> <span className="inline-flex items-center p-1 bg-zinc-200 dark:bg-zinc-800 rounded text-zinc-800 dark:text-zinc-300 ml-1"><PlusSquare size={12} /></span>.
                 </p>
               </div>
 
-              <div className="flex items-start gap-3 p-3 rounded-2xl bg-zinc-950/70 border border-zinc-800/80">
+              <div className="flex items-start gap-3 p-3 rounded-2xl bg-zinc-50 dark:bg-zinc-950/70 border border-zinc-200 dark:border-zinc-800/80">
                 <span 
                   className="w-6 h-6 rounded-full flex items-center justify-center font-bold text-white shrink-0 mt-0.5"
                   style={{ backgroundColor: theme.primary }}
@@ -165,7 +165,7 @@ export const PWAInstaller: React.FC = () => {
                   3
                 </span>
                 <p className="leading-relaxed">
-                  Tap <strong className="text-zinc-100">Add</strong> in the top-right corner. Suji will appear right on your home screen!
+                  Tap <strong className="text-zinc-900 dark:text-zinc-100">Add</strong> in the top-right corner. Suji will appear right on your home screen!
                 </p>
               </div>
             </div>
@@ -189,13 +189,13 @@ export const PWAInstaller: React.FC = () => {
           onClick={() => setShowOtherModal(false)}
         >
           <div 
-            className="w-full max-w-sm bg-zinc-900 border border-zinc-800 rounded-3xl p-6 space-y-5 shadow-2xl relative"
+            className="w-full max-w-sm bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-3xl p-6 space-y-5 shadow-2xl relative"
             onClick={(e) => e.stopPropagation()}
           >
             <button
               type="button"
               onClick={() => setShowOtherModal(false)}
-              className="absolute top-4 right-4 p-1.5 rounded-full text-zinc-400 hover:text-white hover:bg-zinc-800 transition-colors"
+              className="absolute top-4 right-4 p-1.5 rounded-full text-zinc-400 hover:text-zinc-700 dark:hover:text-white hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
               aria-label="Close"
             >
               <X size={18} />
@@ -209,21 +209,21 @@ export const PWAInstaller: React.FC = () => {
                 <Download size={22} />
               </div>
               <div>
-                <h3 className="text-base font-bold text-zinc-100">Install Suji</h3>
-                <p className="text-xs text-zinc-400">Install as a standalone PWA</p>
+                <h3 className="text-base font-bold text-zinc-900 dark:text-zinc-100">Install Suji</h3>
+                <p className="text-xs text-zinc-500 dark:text-zinc-400">Install as a standalone PWA</p>
               </div>
             </div>
 
-            <div className="space-y-3 text-xs text-zinc-300">
+            <div className="space-y-3 text-xs text-zinc-700 dark:text-zinc-300">
               <p className="leading-relaxed">
                 To install Suji on your device:
               </p>
-              <div className="p-3.5 rounded-2xl bg-zinc-950/70 border border-zinc-800/80 space-y-2">
+              <div className="p-3.5 rounded-2xl bg-zinc-50 dark:bg-zinc-950/70 border border-zinc-200 dark:border-zinc-800/80 space-y-2">
                 <p className="leading-relaxed">
-                  1. Tap the browser menu (<strong className="text-zinc-100">⋮</strong> or <strong className="text-zinc-100">⋯</strong>) in the corner of your browser.
+                  1. Tap the browser menu (<strong className="text-zinc-900 dark:text-zinc-100">⋮</strong> or <strong className="text-zinc-900 dark:text-zinc-100">⋯</strong>) in the corner of your browser.
                 </p>
                 <p className="leading-relaxed">
-                  2. Select <strong className="text-zinc-100">&quot;Install app&quot;</strong> or <strong className="text-zinc-100">&quot;Add to Home screen&quot;</strong>.
+                  2. Select <strong className="text-zinc-900 dark:text-zinc-100">&quot;Install app&quot;</strong> or <strong className="text-zinc-900 dark:text-zinc-100">&quot;Add to Home screen&quot;</strong>.
                 </p>
               </div>
             </div>
