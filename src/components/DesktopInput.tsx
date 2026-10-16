@@ -2,6 +2,7 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import { Check, X, ArrowRight, Keyboard } from 'lucide-react';
+import { useLevel } from '@/context/LevelContext';
 
 interface DesktopInputProps {
   targetHanzi: string;
@@ -21,6 +22,7 @@ export const DesktopInput: React.FC<DesktopInputProps> = ({
   const [hasEvaluated, setHasEvaluated] = useState(false);
   const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
   const inputRef = useRef<HTMLInputElement>(null);
+  const { theme } = useLevel();
 
   // Auto focus input on mount or target change
   useEffect(() => {
@@ -84,7 +86,6 @@ export const DesktopInput: React.FC<DesktopInputProps> = ({
           onCompositionStart={() => setIsComposing(true)}
           onCompositionEnd={(e) => {
             setIsComposing(false);
-            // In case composition ends and completes text
             setInputVal((e.target as HTMLInputElement).value);
           }}
           onKeyDown={handleKeyDown}
@@ -97,8 +98,15 @@ export const DesktopInput: React.FC<DesktopInputProps> = ({
               ? isCorrect
                 ? 'border-emerald-500 text-emerald-400 bg-emerald-950/20'
                 : 'border-rose-500 text-rose-400 bg-rose-950/20'
-              : 'border-zinc-700 focus:border-red-500 text-zinc-100 placeholder:text-zinc-600'
+              : 'border-zinc-700 text-zinc-100 placeholder:text-zinc-600'
           }`}
+          style={
+            !hasEvaluated
+              ? {
+                  borderColor: undefined,
+                }
+              : undefined
+          }
         />
 
         {/* Verification indicator icon */}
@@ -122,7 +130,11 @@ export const DesktopInput: React.FC<DesktopInputProps> = ({
           type="button"
           onClick={handleVerify}
           disabled={disabled || !inputVal.trim()}
-          className="flex-1 flex items-center justify-center gap-2 py-3 px-4 bg-red-600 hover:bg-red-500 disabled:opacity-50 disabled:cursor-not-allowed text-white font-medium rounded-xl transition-all shadow-md shadow-red-900/20 active:scale-98"
+          className="flex-1 flex items-center justify-center gap-2 py-3 px-4 disabled:opacity-50 disabled:cursor-not-allowed text-white font-medium rounded-xl transition-all shadow-md active:scale-98 cursor-pointer"
+          style={{
+            backgroundColor: theme.primary,
+            boxShadow: `0 4px 14px rgba(${theme.rgb}, 0.35)`
+          }}
         >
           <span>Verify Hanzi</span>
           <ArrowRight size={16} />

@@ -13,12 +13,14 @@ import {
 } from 'lucide-react';
 import { useAuth } from '@/context/AuthContext';
 import { useProgress } from '@/context/ProgressContext';
+import { useLevel } from '@/context/LevelContext';
 import { PWAInstaller } from './PWAInstaller';
 
 export const Navbar: React.FC = () => {
   const pathname = usePathname();
   const { user } = useAuth();
   const { stats } = useProgress();
+  const { currentLevel, theme } = useLevel();
 
   const navItems = [
     { label: 'Dashboard', href: '/', icon: Home },
@@ -33,15 +35,31 @@ export const Navbar: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           {/* Logo Brand */}
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-red-500 to-red-700 flex items-center justify-center text-white font-serif font-black text-xl shadow-lg shadow-red-900/40 group-hover:scale-105 transition-transform">
+            <div 
+              className="w-9 h-9 rounded-xl flex items-center justify-center text-white font-serif font-black text-xl shadow-lg transition-transform group-hover:scale-105"
+              style={{ 
+                backgroundColor: theme.primary,
+                boxShadow: `0 4px 14px rgba(${theme.rgb}, 0.35)`
+              }}
+            >
               速
             </div>
             <div className="flex flex-col">
-              <span className="font-bold text-lg tracking-tight text-zinc-100 flex items-center gap-1">
-                Suji <span className="text-red-500 font-serif font-medium">速记</span>
+              <span className="font-bold text-lg tracking-tight text-zinc-100 flex items-center gap-1.5">
+                Suji <span style={{ color: theme.primary }} className="font-serif font-medium">速记</span>
+                <span 
+                  className="px-2 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider"
+                  style={{
+                    backgroundColor: theme.badgeBg,
+                    color: theme.badgeText,
+                    border: `1px solid ${theme.badgeBorder}`
+                  }}
+                >
+                  HSK {currentLevel}
+                </span>
               </span>
-              <span className="text-[10px] text-zinc-400 -mt-1 hidden sm:inline">
-                HSK 1–5 Mastery
+              <span className="text-[10px] text-zinc-400 -mt-0.5 hidden sm:inline">
+                Personal Mandarin Mastery
               </span>
             </div>
           </Link>
@@ -61,7 +79,10 @@ export const Navbar: React.FC = () => {
                       : 'text-zinc-400 hover:text-zinc-200 hover:bg-zinc-900'
                   }`}
                 >
-                  <Icon size={16} className={isActive ? 'text-red-500' : ''} />
+                  <Icon 
+                    size={16} 
+                    style={{ color: isActive ? theme.primary : undefined }} 
+                  />
                   <span>{item.label}</span>
                 </Link>
               );
@@ -110,8 +131,9 @@ export const Navbar: React.FC = () => {
               key={item.href}
               href={item.href}
               className={`flex flex-col items-center gap-1 py-1 px-3 text-[11px] font-medium transition-colors ${
-                isActive ? 'text-red-500 font-semibold' : 'text-zinc-400 hover:text-zinc-200'
+                isActive ? 'font-semibold' : 'text-zinc-400 hover:text-zinc-200'
               }`}
+              style={{ color: isActive ? theme.primary : undefined }}
             >
               <Icon size={20} className={isActive ? 'stroke-[2.5]' : ''} />
               <span>{item.label}</span>
@@ -121,8 +143,9 @@ export const Navbar: React.FC = () => {
         <Link
           href="/login"
           className={`flex flex-col items-center gap-1 py-1 px-3 text-[11px] font-medium transition-colors ${
-            pathname === '/login' ? 'text-red-500 font-semibold' : 'text-zinc-400 hover:text-zinc-200'
+            pathname === '/login' ? 'font-semibold' : 'text-zinc-400 hover:text-zinc-200'
           }`}
+          style={{ color: pathname === '/login' ? theme.primary : undefined }}
         >
           <UserIcon size={20} className={pathname === '/login' ? 'stroke-[2.5]' : ''} />
           <span>Account</span>

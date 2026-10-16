@@ -23,6 +23,7 @@ import {
 } from 'lucide-react';
 import { useProgress } from '@/context/ProgressContext';
 import { useAuth } from '@/context/AuthContext';
+import { useLevel, HSK_THEMES } from '@/context/LevelContext';
 import { getAllHSKWords } from '@/lib/hskData';
 import { HSKWord, QuizMode } from '@/types/hsk';
 
@@ -38,9 +39,9 @@ export default function DashboardPage() {
   const router = useRouter();
   const { stats, srsData, isWordDue } = useProgress();
   const { user } = useAuth();
+  const { currentLevel, setCurrentLevel, theme } = useLevel();
 
   const [allWords, setAllWords] = useState<HSKWord[]>([]);
-  const [selectedLevel, setSelectedLevel] = useState<number>(1);
   const [selectedModes, setSelectedModes] = useState<QuizMode[]>([
     'hanzi-to-meaning',
     'sentence-context',
@@ -83,6 +84,7 @@ export default function DashboardPage() {
       mastered,
       learning,
       percentage,
+      color: HSK_THEMES[lvl]?.primary || '#f8b51e',
     };
   });
 
@@ -101,11 +103,11 @@ export default function DashboardPage() {
   };
 
   const handleStartCustomQuiz = () => {
-    router.push(`/quiz?level=${selectedLevel}&modes=${selectedModes.join(',')}&count=${sessionCount}`);
+    router.push(`/quiz?level=${currentLevel}&modes=${selectedModes.join(',')}&count=${sessionCount}`);
   };
 
   const handleStartSRSReview = () => {
-    router.push(`/quiz?srsOnly=true&modes=${selectedModes.join(',')}&count=20`);
+    router.push(`/quiz?srsOnly=true&level=${currentLevel}&modes=${selectedModes.join(',')}&count=20`);
   };
 
   const modeDescriptions: Record<QuizMode, { title: string; desc: string; icon: any }> = {
@@ -138,20 +140,33 @@ export default function DashboardPage() {
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-10">
-      {/* Welcome Banner & Daily Streak */}
-      <div className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-red-950 via-zinc-900 to-zinc-950 border border-red-900/30 p-6 md:p-8 shadow-2xl">
+      {/* Welcome Banner & Daily Streak styled with dynamic Level color */}
+      <div 
+        className="relative overflow-hidden rounded-3xl bg-zinc-900 border p-6 md:p-8 shadow-2xl transition-colors duration-300"
+        style={{
+          borderColor: `rgba(${theme.rgb}, 0.3)`,
+          background: `radial-gradient(ellipse at top left, rgba(${theme.rgb}, 0.15), rgba(24, 24, 27, 0.95) 70%)`
+        }}
+      >
         <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
           <div className="space-y-2">
-            <div className="flex items-center gap-2">
-              <span className="px-3 py-1 rounded-full text-xs font-semibold bg-red-600/30 text-red-300 border border-red-500/30">
-                HSK Spaced Repetition (SM-2)
+            <div className="flex items-center gap-2 flex-wrap">
+              <span 
+                className="px-3 py-1 rounded-full text-xs font-semibold"
+                style={{
+                  backgroundColor: theme.badgeBg,
+                  color: theme.badgeText,
+                  border: `1px solid ${theme.badgeBorder}`
+                }}
+              >
+                HSK {currentLevel} Active Track
               </span>
               <span className="text-xs text-zinc-400">
                 Welcome back, <strong className="text-zinc-200">{user?.displayName || 'Learner'}</strong>
               </span>
             </div>
             <h1 className="text-3xl md:text-4xl font-black text-white tracking-tight">
-              Suji <span className="font-serif text-red-500">速记</span> Flashcards
+              Suji <span className="font-serif font-medium" style={{ color: theme.primary }}>速记</span> Flashcards
             </h1>
             <p className="text-zinc-300 text-sm md:text-base max-w-xl">
               Master HSK 1–5 Mandarin through science-backed SM-2 active recall, device-adaptive typing, stroke drawing, and authentic speech.
@@ -159,10 +174,10 @@ export default function DashboardPage() {
           </div>
 
           {/* Quick Review Action Card */}
-          <div className="flex flex-col sm:flex-row items-center gap-4 bg-zinc-900/90 p-5 rounded-2xl border border-zinc-800 shadow-xl backdrop-blur-md">
+          <div className="flex flex-col sm:flex-row items-center gap-4 bg-zinc-950/80 p-5 rounded-2xl border border-zinc-800 shadow-xl backdrop-blur-md">
             <div className="text-center sm:text-left">
               <div className="text-xs text-zinc-400 font-medium">SRS Due Today</div>
-              <div className="text-3xl font-black text-red-500">
+              <div className="text-3xl font-black" style={{ color: theme.primary }}>
                 {dueCount} <span className="text-sm font-normal text-zinc-400">words</span>
               </div>
             </div>
@@ -170,7 +185,11 @@ export default function DashboardPage() {
               type="button"
               onClick={handleStartSRSReview}
               disabled={dueCount === 0}
-              className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-red-600 hover:bg-red-500 disabled:opacity-40 disabled:cursor-not-allowed text-white font-semibold text-sm transition-all shadow-lg shadow-red-900/30 active:scale-95"
+              className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl disabled:opacity-40 disabled:cursor-not-allowed text-white font-semibold text-sm transition-all shadow-lg active:scale-95"
+              style={{
+                backgroundColor: theme.primary,
+                boxShadow: `0 4px 16px rgba(${theme.rgb}, 0.3)`
+              }}
             >
               <Zap size={16} />
               <span>Review Now</span>
@@ -178,8 +197,11 @@ export default function DashboardPage() {
           </div>
         </div>
 
-        {/* Decorative background Hanzi watermark */}
-        <div className="absolute -right-8 -bottom-10 text-9xl font-black font-serif text-red-500/5 select-none pointer-events-none">
+        {/* Decorative background Hanzi watermark with theme color */}
+        <div 
+          className="absolute -right-8 -bottom-10 text-9xl font-black font-serif select-none pointer-events-none opacity-5 transition-colors"
+          style={{ color: theme.primary }}
+        >
           速
         </div>
       </div>
@@ -236,7 +258,7 @@ export default function DashboardPage() {
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-zinc-800 pb-5">
           <div>
             <h2 className="text-2xl font-bold text-zinc-100 flex items-center gap-2">
-              <BrainCircuit className="text-red-500" size={24} />
+              <BrainCircuit style={{ color: theme.primary }} size={24} />
               <span>Launch Quiz Session</span>
             </h2>
             <p className="text-sm text-zinc-400 mt-1">
@@ -245,36 +267,55 @@ export default function DashboardPage() {
           </div>
           <Link
             href="/dictionary"
-            className="flex items-center gap-1.5 text-xs font-semibold text-red-400 hover:text-red-300 transition-colors"
+            className="flex items-center gap-1.5 text-xs font-semibold hover:opacity-80 transition-colors"
+            style={{ color: theme.primary }}
           >
             <span>Browse Dictionary</span>
             <ChevronRight size={14} />
           </Link>
         </div>
 
-        {/* Step 1: Select HSK Level */}
+        {/* Step 1: Select HSK Level (Global persistence) */}
         <div className="space-y-3">
-          <label className="text-xs font-bold uppercase tracking-wider text-zinc-400">
-            1. Select Target HSK Level
-          </label>
+          <div className="flex items-center justify-between">
+            <label className="text-xs font-bold uppercase tracking-wider text-zinc-400">
+              1. Select Target HSK Level
+            </label>
+            <span className="text-[11px] text-zinc-500">
+              Persists across Dictionary and Quiz Engine
+            </span>
+          </div>
           <div className="grid grid-cols-2 sm:grid-cols-5 gap-3">
-            {[1, 2, 3, 4, 5].map((lvl) => (
-              <button
-                key={lvl}
-                type="button"
-                onClick={() => setSelectedLevel(lvl)}
-                className={`py-3 px-4 rounded-2xl border text-center transition-all ${
-                  selectedLevel === lvl
-                    ? 'bg-red-600 text-white border-red-500 shadow-md shadow-red-900/30'
-                    : 'bg-zinc-950/60 text-zinc-300 border-zinc-800 hover:border-zinc-700 hover:bg-zinc-800/50'
-                }`}
-              >
-                <div className="font-bold text-base">HSK {lvl}</div>
-                <div className={`text-xs mt-0.5 ${selectedLevel === lvl ? 'text-red-100' : 'text-zinc-500'}`}>
-                  {lvl === 1 ? 'Beginner' : lvl === 2 ? 'Elementary' : lvl === 3 ? 'Intermediate' : lvl === 4 ? 'Upper-Int' : 'Advanced'}
-                </div>
-              </button>
-            ))}
+            {[1, 2, 3, 4, 5].map((lvl) => {
+              const isSelected = currentLevel === lvl;
+              const lvlTheme = HSK_THEMES[lvl] || HSK_THEMES[1];
+              return (
+                <button
+                  key={lvl}
+                  type="button"
+                  onClick={() => setCurrentLevel(lvl)}
+                  className={`py-3 px-4 rounded-2xl border text-center transition-all cursor-pointer ${
+                    isSelected
+                      ? 'text-white shadow-md'
+                      : 'bg-zinc-950/60 text-zinc-300 border-zinc-800 hover:border-zinc-700 hover:bg-zinc-800/50'
+                  }`}
+                  style={
+                    isSelected
+                      ? {
+                          backgroundColor: lvlTheme.primary,
+                          borderColor: lvlTheme.primary,
+                          boxShadow: `0 4px 16px rgba(${lvlTheme.rgb}, 0.35)`,
+                        }
+                      : undefined
+                  }
+                >
+                  <div className="font-bold text-base">HSK {lvl}</div>
+                  <div className={`text-xs mt-0.5 ${isSelected ? 'text-white/90' : 'text-zinc-500'}`}>
+                    {lvl === 1 ? 'Beginner' : lvl === 2 ? 'Elementary' : lvl === 3 ? 'Intermediate' : lvl === 4 ? 'Upper-Int' : 'Advanced'}
+                  </div>
+                </button>
+              );
+            })}
           </div>
         </div>
 
@@ -285,7 +326,14 @@ export default function DashboardPage() {
               <label className="text-xs font-bold uppercase tracking-wider text-zinc-400">
                 2. Practice Modes (Select Multiple to Randomize)
               </label>
-              <span className="px-2 py-0.5 rounded-full text-[10px] font-bold bg-red-500/20 text-red-300 border border-red-500/30 flex items-center gap-1">
+              <span 
+                className="px-2 py-0.5 rounded-full text-[10px] font-bold flex items-center gap-1"
+                style={{
+                  backgroundColor: theme.badgeBg,
+                  color: theme.badgeText,
+                  border: `1px solid ${theme.badgeBorder}`
+                }}
+              >
                 <Shuffle size={11} />
                 <span>{selectedModes.length} Selected</span>
               </span>
@@ -296,7 +344,7 @@ export default function DashboardPage() {
               <button
                 type="button"
                 onClick={selectAllModes}
-                className="text-xs font-semibold text-zinc-400 hover:text-red-400 transition-colors"
+                className="text-xs font-semibold text-zinc-400 hover:text-zinc-100 transition-colors cursor-pointer"
               >
                 Select All 5
               </button>
@@ -304,7 +352,7 @@ export default function DashboardPage() {
               <button
                 type="button"
                 onClick={() => setSelectedModes(['meaning-to-hanzi-desktop', 'meaning-to-hanzi-mobile'])}
-                className="text-xs font-semibold text-zinc-400 hover:text-red-400 transition-colors"
+                className="text-xs font-semibold text-zinc-400 hover:text-zinc-100 transition-colors cursor-pointer"
               >
                 Writing Focus
               </button>
@@ -312,7 +360,7 @@ export default function DashboardPage() {
               <button
                 type="button"
                 onClick={() => setSelectedModes(['hanzi-to-meaning', 'sentence-context', 'audio-quiz'])}
-                className="text-xs font-semibold text-zinc-400 hover:text-red-400 transition-colors"
+                className="text-xs font-semibold text-zinc-400 hover:text-zinc-100 transition-colors cursor-pointer"
               >
                 Recognition Focus
               </button>
@@ -334,11 +382,24 @@ export default function DashboardPage() {
                   onClick={() => toggleMode(mode)}
                   className={`p-4 rounded-2xl border text-left flex items-start gap-3 transition-all relative group cursor-pointer ${
                     isSelected
-                      ? 'bg-zinc-800/90 text-white border-red-500/80 ring-1 ring-red-500/50 shadow-md'
+                      ? 'bg-zinc-800/90 text-white shadow-md'
                       : 'bg-zinc-950/50 text-zinc-400 border-zinc-800/80 hover:border-zinc-700 hover:text-zinc-200'
                   }`}
+                  style={
+                    isSelected
+                      ? {
+                          borderColor: theme.primary,
+                          boxShadow: `0 2px 10px rgba(${theme.rgb}, 0.2)`
+                        }
+                      : undefined
+                  }
                 >
-                  <div className={`p-2.5 rounded-xl shrink-0 ${isSelected ? 'bg-red-600 text-white' : 'bg-zinc-800 text-zinc-500'}`}>
+                  <div 
+                    className={`p-2.5 rounded-xl shrink-0 transition-colors ${
+                      isSelected ? 'text-white' : 'bg-zinc-800 text-zinc-500'
+                    }`}
+                    style={isSelected ? { backgroundColor: theme.primary } : undefined}
+                  >
                     <Icon size={18} />
                   </div>
                   <div className="flex-1 min-w-0 pr-6">
@@ -347,7 +408,14 @@ export default function DashboardPage() {
                         {title}
                       </span>
                       {isRecommended && (
-                        <span className="px-1.5 py-0.2 rounded text-[9px] bg-red-500/20 text-red-300 border border-red-500/30">
+                        <span 
+                          className="px-1.5 py-0.2 rounded text-[9px] font-medium"
+                          style={{
+                            backgroundColor: theme.badgeBg,
+                            color: theme.badgeText,
+                            border: `1px solid ${theme.badgeBorder}`
+                          }}
+                        >
                           Rec
                         </span>
                       )}
@@ -358,7 +426,10 @@ export default function DashboardPage() {
                   {/* Checkbox indicator */}
                   <div className="absolute top-3.5 right-3.5">
                     {isSelected ? (
-                      <div className="w-5 h-5 rounded-full bg-red-600 text-white flex items-center justify-center shadow-sm">
+                      <div 
+                        className="w-5 h-5 rounded-full text-white flex items-center justify-center shadow-sm"
+                        style={{ backgroundColor: theme.primary }}
+                      >
                         <Check size={12} strokeWidth={3} />
                       </div>
                     ) : (
@@ -385,7 +456,7 @@ export default function DashboardPage() {
                   key={num}
                   type="button"
                   onClick={() => setSessionCount(num)}
-                  className={`px-3 py-1 rounded-lg text-xs font-semibold transition-colors ${
+                  className={`px-3 py-1 rounded-lg text-xs font-semibold transition-colors cursor-pointer ${
                     sessionCount === num
                       ? 'bg-zinc-800 text-white'
                       : 'text-zinc-400 hover:text-zinc-200'
@@ -400,7 +471,11 @@ export default function DashboardPage() {
           <button
             type="button"
             onClick={handleStartCustomQuiz}
-            className="w-full sm:w-auto flex items-center justify-center gap-2 px-8 py-3.5 rounded-2xl bg-red-600 hover:bg-red-500 text-white font-bold text-sm transition-all shadow-xl shadow-red-900/30 active:scale-95"
+            className="w-full sm:w-auto flex items-center justify-center gap-2 px-8 py-3.5 rounded-2xl text-white font-bold text-sm transition-all shadow-xl active:scale-95 cursor-pointer"
+            style={{
+              backgroundColor: theme.primary,
+              boxShadow: `0 4px 18px rgba(${theme.rgb}, 0.35)`
+            }}
           >
             <Play size={18} />
             <span>Start Practice Session ({selectedModes.length} {selectedModes.length === 1 ? 'mode' : 'mixed modes'})</span>
@@ -415,17 +490,24 @@ export default function DashboardPage() {
           {levelCounts.map((item) => (
             <div
               key={item.level}
-              className="bg-zinc-900/60 border border-zinc-800/80 rounded-2xl p-4 space-y-3"
+              className={`bg-zinc-900/60 border rounded-2xl p-4 space-y-3 transition-colors ${
+                currentLevel === item.level ? 'border-zinc-700 bg-zinc-900/90' : 'border-zinc-800/80'
+              }`}
             >
               <div className="flex items-center justify-between">
                 <span className="font-bold text-sm text-zinc-200">HSK {item.level}</span>
-                <span className="text-xs font-mono font-bold text-red-400">{item.percentage}%</span>
+                <span className="text-xs font-mono font-bold" style={{ color: item.color }}>
+                  {item.percentage}%
+                </span>
               </div>
               {/* Progress bar */}
               <div className="w-full bg-zinc-800 h-2 rounded-full overflow-hidden">
                 <div
-                  className="bg-red-500 h-full rounded-full transition-all duration-500"
-                  style={{ width: `${item.percentage}%` }}
+                  className="h-full rounded-full transition-all duration-500"
+                  style={{ 
+                    width: `${item.percentage}%`,
+                    backgroundColor: item.color
+                  }}
                 />
               </div>
               <div className="flex items-center justify-between text-[11px] text-zinc-400">

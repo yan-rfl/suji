@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect, Suspense, useMemo } from 'react';
+import React, { useState, useEffect, useRef, Suspense, useMemo } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { 
@@ -22,6 +22,7 @@ import confetti from 'canvas-confetti';
 import { HSKWord, QuizMode, SRSGrade } from '@/types/hsk';
 import { getAllHSKWords, getHSKWords } from '@/lib/hskData';
 import { useProgress } from '@/context/ProgressContext';
+import { useLevel } from '@/context/LevelContext';
 import { QuizCard } from '@/components/QuizCard';
 
 const ALL_MODES: QuizMode[] = [
@@ -41,6 +42,7 @@ function QuizEngineContent() {
   const searchParams = useSearchParams();
   const router = useRouter();
   const { recordReview, isWordDue, stats } = useProgress();
+  const { currentLevel, setCurrentLevel, theme } = useLevel();
 
   const levelParam = searchParams.get('level');
   const modesParam = searchParams.get('modes');
@@ -48,8 +50,16 @@ function QuizEngineContent() {
   const countParam = searchParams.get('count');
   const srsOnlyParam = searchParams.get('srsOnly') === 'true';
 
-  const [currentLevel, setCurrentLevel] = useState<number>(levelParam ? parseInt(levelParam, 10) : 1);
-  
+  // Sync levelParam to global currentLevel if explicitly passed in URL
+  useEffect(() => {
+    if (levelParam) {
+      const parsed = parseInt(levelParam, 10);
+      if (parsed >= 1 && parsed <= 5 && parsed !== currentLevel) {
+        setCurrentLevel(parsed);
+      }
+    }
+  }, [levelParam, currentLevel, setCurrentLevel]);
+
   // Parse multiple active modes
   const parsedModes = useMemo<QuizMode[]>(() => {
     if (modesParam) {
@@ -63,6 +73,9 @@ function QuizEngineContent() {
   }, [modesParam, modeParam]);
 
   const [activeModes, setActiveModes] = useState<QuizMode[]>(parsedModes);
+  const activeModesRef = useRef<QuizMode[]>(parsedModes);
+  activeModesRef.current = activeModes;
+
   const [sessionCards, setSessionCards] = useState<SessionCard[]>([]);
   const [allLevelWords, setAllLevelWords] = useState<HSKWord[]>([]);
   const [currentIndex, setCurrentIndex] = useState<number>(0);
@@ -70,12 +83,13 @@ function QuizEngineContent() {
   const [isSessionComplete, setIsSessionComplete] = useState<boolean>(false);
   const [sessionResults, setSessionResults] = useState<{ word: HSKWord; mode: QuizMode; grade: SRSGrade }[]>([]);
 
-  // Update active modes if URL changes
+  // Update active modes if URL search params change
   useEffect(() => {
     setActiveModes(parsedModes);
+    activeModesRef.current = parsedModes;
   }, [parsedModes]);
 
-  // Load vocabulary for session and randomize modes for each card
+  // Load vocabulary for session - intentionally DO NOT depend on activeModes to prevent resetting on toggle!
   useEffect(() => {
     let isMounted = true;
     setIsLoading(true);
@@ -85,12 +99,12 @@ function QuizEngineContent() {
         let pool: HSKWord[] = [];
         if (srsOnlyParam) {
           pool = await getAllHSKWords();
-          // Filter to words due for review
           const dueList = pool.filter((w) => isWordDue(w.id));
           if (dueList.length > 0) {
             pool = dueList;
           }
         } else {
+          // Use current global HSK level
           pool = await getHSKWords(currentLevel);
         }
 
@@ -103,9 +117,13 @@ function QuizEngineContent() {
         const targetCount = countParam ? parseInt(countParam, 10) : 15;
         const selected = shuffled.slice(0, targetCount);
 
-        // Assign randomized mode from activeModes to each card
+        const currentActivePool = activeModesRef.current.length > 0
+          ? activeModesRef.current
+          : ['hanzi-to-meaning'];
+
+        // Assign randomized mode from current active pool to each card
         const cards: SessionCard[] = selected.map((word) => {
-          const randomMode = activeModes[Math.floor(Math.random() * activeModes.length)];
+          const randomMode = currentActivePool[Math.floor(Math.random() * currentActivePool.length)];
           return { word, mode: randomMode };
         });
 
@@ -125,7 +143,7 @@ function QuizEngineContent() {
     return () => {
       isMounted = false;
     };
-  }, [currentLevel, countParam, srsOnlyParam, activeModes]);
+  }, [currentLevel, countParam, srsOnlyParam]);
 
   // Handle grading of current card
   const handleGrade = async (grade: SRSGrade) => {
@@ -151,15 +169,17 @@ function QuizEngineContent() {
         particleCount: 110,
         spread: 75,
         origin: { y: 0.6 },
-        colors: ['#ef4444', '#f59e0b', '#10b981', '#3b82f6', '#8b5cf6'],
+        colors: [theme.primary, '#f59e0b', '#10b981', '#3b82f6', '#8b5cf6'],
       });
     }
   };
 
-  // Toggle a mode in or out of the active randomization pool
+  // Toggle a mode in or out of the active randomization pool without resetting the session
   const toggleActiveMode = (mode: QuizMode) => {
     let newModes: QuizMode[];
-    if (activeModes.includes(mode)) {
+    const isDisabling = activeModes.includes(mode);
+
+    if (isDisabling) {
       if (activeModes.length <= 1) {
         return; // Prevent deselecting all modes - keep at least one active
       }
@@ -169,24 +189,32 @@ function QuizEngineContent() {
     }
 
     setActiveModes(newModes);
+    activeModesRef.current = newModes;
 
-    // Update remaining session cards to reflect the new active pool
     setSessionCards((prev) => {
       const next = [...prev];
-      // If current card's mode was just disabled, immediately reassign it to one of the active modes
-      if (next[currentIndex] && !newModes.includes(next[currentIndex].mode)) {
+      const currentCard = next[currentIndex];
+
+      // ONLY if the disabled mode is the mode of the CURRENT question,
+      // change the current question's mode to one of the remaining active modes!
+      if (currentCard && isDisabling && currentCard.mode === mode) {
         const replacementMode = newModes[Math.floor(Math.random() * newModes.length)];
-        next[currentIndex] = { ...next[currentIndex], mode: replacementMode };
+        next[currentIndex] = { ...currentCard, mode: replacementMode };
       }
-      // Reassign upcoming cards to draw from the updated activeModes
+      // If the current question's mode was NOT the one disabled, next[currentIndex] is untouched!
+
+      // For future/upcoming cards in the session (i > currentIndex),
+      // update any card that was set to the disabled mode
       for (let i = currentIndex + 1; i < next.length; i++) {
-        const randomMode = newModes[Math.floor(Math.random() * newModes.length)];
-        next[i] = { ...next[i], mode: randomMode };
+        if (!newModes.includes(next[i].mode)) {
+          const replacementMode = newModes[Math.floor(Math.random() * newModes.length)];
+          next[i] = { ...next[i], mode: replacementMode };
+        }
       }
+
       return next;
     });
   };
-
 
   const restartSession = () => {
     const shuffled = [...allLevelWords].sort(() => 0.5 - Math.random());
@@ -212,8 +240,11 @@ function QuizEngineContent() {
   if (isLoading) {
     return (
       <div className="max-w-xl mx-auto py-24 text-center space-y-4">
-        <div className="w-12 h-12 border-4 border-red-500 border-t-transparent rounded-full animate-spin mx-auto" />
-        <h2 className="text-lg font-bold text-zinc-200">Preparing Quiz Session...</h2>
+        <div 
+          className="w-12 h-12 border-4 border-t-transparent rounded-full animate-spin mx-auto" 
+          style={{ borderColor: theme.primary, borderTopColor: 'transparent' }}
+        />
+        <h2 className="text-lg font-bold text-zinc-200">Preparing HSK {currentLevel} Session...</h2>
       </div>
     );
   }
@@ -232,7 +263,14 @@ function QuizEngineContent() {
     return (
       <div className="max-w-xl mx-auto px-4 py-8 space-y-8 animate-fadeIn">
         <div className="bg-zinc-900 border border-zinc-800 rounded-3xl p-6 md:p-8 text-center space-y-6 shadow-2xl">
-          <div className="w-16 h-16 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 flex items-center justify-center mx-auto">
+          <div 
+            className="w-16 h-16 rounded-full flex items-center justify-center mx-auto"
+            style={{
+              backgroundColor: theme.badgeBg,
+              color: theme.primary,
+              border: `1px solid ${theme.badgeBorder}`
+            }}
+          >
             <Award size={36} />
           </div>
 
@@ -241,7 +279,7 @@ function QuizEngineContent() {
               Session Completed! 恭喜！
             </h1>
             <p className="text-sm text-zinc-400">
-              Your spaced repetition memory intervals have been updated in your profile.
+              Your HSK {currentLevel} spaced repetition memory intervals have been updated in your profile.
             </p>
           </div>
 
@@ -270,7 +308,7 @@ function QuizEngineContent() {
           {/* Practice Mode Breakdown */}
           <div className="space-y-2 text-left bg-zinc-950/40 p-4 rounded-2xl border border-zinc-800/60">
             <div className="text-xs font-semibold uppercase tracking-wider text-zinc-400 flex items-center gap-1.5">
-              <Shuffle size={13} className="text-red-400" />
+              <Shuffle size={13} style={{ color: theme.primary }} />
               <span>Mixed Modes Completed:</span>
             </div>
             <div className="flex flex-wrap gap-2 pt-1">
@@ -282,7 +320,7 @@ function QuizEngineContent() {
                     key={mode}
                     className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-zinc-900 border border-zinc-800 text-xs text-zinc-300 font-medium"
                   >
-                    <Icon size={14} className="text-red-400" />
+                    <Icon size={14} style={{ color: theme.primary }} />
                     <span>{info?.name}:</span>
                     <strong className="text-white">{count}</strong>
                   </div>
@@ -296,7 +334,11 @@ function QuizEngineContent() {
             <button
               type="button"
               onClick={restartSession}
-              className="flex-1 flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-red-600 hover:bg-red-500 text-white font-bold text-sm transition-all shadow-lg shadow-red-900/30 active:scale-95"
+              className="flex-1 flex items-center justify-center gap-2 py-3 px-4 rounded-xl text-white font-bold text-sm transition-all shadow-lg active:scale-95 cursor-pointer"
+              style={{
+                backgroundColor: theme.primary,
+                boxShadow: `0 4px 16px rgba(${theme.rgb}, 0.35)`
+              }}
             >
               <RotateCcw size={16} />
               <span>Study More Words</span>
@@ -318,10 +360,11 @@ function QuizEngineContent() {
   if (!currentCard) {
     return (
       <div className="max-w-xl mx-auto px-4 py-16 text-center space-y-4">
-        <h2 className="text-xl font-bold text-zinc-200">No review cards available.</h2>
+        <h2 className="text-xl font-bold text-zinc-200">No review cards available for HSK {currentLevel}.</h2>
         <Link
           href="/"
-          className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-red-600 text-white font-medium text-sm"
+          className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-white font-medium text-sm"
+          style={{ backgroundColor: theme.primary }}
         >
           Back to Dashboard
         </Link>
@@ -349,16 +392,16 @@ function QuizEngineContent() {
           <div className="flex items-center gap-2">
             <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-zinc-900 border border-zinc-800 text-xs font-medium text-zinc-200">
               {activeModes.length > 1 && (
-                <span title={`Randomizing across ${activeModes.length} modes`}>
-                  <Shuffle size={13} className="text-red-400 animate-pulse" />
+                <span title={`Randomizing across ${activeModes.length} active modes`}>
+                  <Shuffle size={13} style={{ color: theme.primary }} className="animate-pulse" />
                 </span>
               )}
-              <CurrentModeIcon size={14} className="text-red-400" />
+              <CurrentModeIcon size={14} style={{ color: theme.primary }} />
               <span className="font-semibold">{currentModeInfo.name}</span>
             </div>
 
             {/* 5 Mode Toggle Buttons to actively enable/disable modes from the shuffle */}
-            <div className="flex items-center gap-1 bg-zinc-900 p-1 rounded-xl border border-zinc-800">
+            <div className="flex items-center gap-1 bg-zinc-900 p-1 rounded-xl border border-zinc-800 shadow-inner">
               {ALL_MODES.map((mode) => {
                 const info = modeDescriptions[mode];
                 const Icon = info.icon;
@@ -372,11 +415,20 @@ function QuizEngineContent() {
                     onClick={() => toggleActiveMode(mode)}
                     className={`p-1.5 rounded-lg transition-all duration-150 relative cursor-pointer ${
                       isCurrent
-                        ? 'bg-red-600 text-white shadow-md ring-2 ring-white/40'
+                        ? 'text-white shadow-md ring-2 ring-white/40'
                         : isInPool
                         ? 'bg-zinc-800 text-zinc-200 hover:text-white hover:bg-zinc-700 border border-zinc-700/60'
                         : 'text-zinc-600 hover:text-zinc-400 hover:bg-zinc-800/40 opacity-40 hover:opacity-75'
                     }`}
+                    style={
+                      isCurrent
+                        ? {
+                            backgroundColor: theme.primary,
+                            borderColor: theme.primary,
+                            boxShadow: `0 2px 10px rgba(${theme.rgb}, 0.35)`
+                          }
+                        : undefined
+                    }
                     title={
                       isInPool
                         ? activeModes.length === 1
@@ -387,7 +439,10 @@ function QuizEngineContent() {
                   >
                     <Icon size={15} />
                     {isInPool && !isCurrent && (
-                      <span className="absolute bottom-0.5 right-0.5 w-1.5 h-1.5 rounded-full bg-red-500 shadow-sm" />
+                      <span 
+                        className="absolute bottom-0.5 right-0.5 w-1.5 h-1.5 rounded-full shadow-sm"
+                        style={{ backgroundColor: theme.primary }}
+                      />
                     )}
                   </button>
                 );
@@ -395,18 +450,18 @@ function QuizEngineContent() {
             </div>
           </div>
 
-
           <div className="text-xs font-mono font-bold text-zinc-400">
             {currentIndex + 1} / {sessionCards.length}
           </div>
         </div>
 
-        {/* Progress Bar */}
+        {/* Progress Bar styled with current level color */}
         <div className="w-full bg-zinc-800 h-2 rounded-full overflow-hidden">
           <div
-            className="bg-red-500 h-full rounded-full transition-all duration-300"
+            className="h-full rounded-full transition-all duration-300"
             style={{
               width: `${((currentIndex + 1) / sessionCards.length) * 100}%`,
+              backgroundColor: theme.primary,
             }}
           />
         </div>
@@ -414,7 +469,7 @@ function QuizEngineContent() {
 
       {/* Main Flashcard Quiz Card */}
       <QuizCard
-        key={`${currentCard.word.id}-${currentCard.mode}-${currentIndex}`}
+        key={`${currentCard.word.id}-${currentCard.mode}`}
         word={currentCard.word}
         quizMode={currentCard.mode}
         allWords={allLevelWords}
@@ -429,7 +484,7 @@ export default function QuizPage() {
     <Suspense
       fallback={
         <div className="max-w-xl mx-auto py-24 text-center">
-          <div className="w-10 h-10 border-4 border-red-500 border-t-transparent rounded-full animate-spin mx-auto" />
+          <div className="w-10 h-10 border-4 border-amber-500 border-t-transparent rounded-full animate-spin mx-auto" />
         </div>
       }
     >

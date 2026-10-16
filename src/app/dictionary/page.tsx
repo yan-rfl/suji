@@ -15,26 +15,45 @@ import {
 import { HSKWord, MasteryStatus } from '@/types/hsk';
 import { getHSKWords, searchWords } from '@/lib/hskData';
 import { useProgress } from '@/context/ProgressContext';
+import { useLevel, HSK_THEMES } from '@/context/LevelContext';
 import { AudioButton } from '@/components/AudioButton';
 import { WordDetailModal } from '@/components/WordDetailModal';
 
+const statusStyles: Record<string, { bg: string; text: string; border: string }> = {
+  new: {
+    bg: 'bg-zinc-800/80',
+    text: 'text-zinc-400',
+    border: 'border-zinc-700/60',
+  },
+  learning: {
+    bg: 'bg-amber-500/10',
+    text: 'text-amber-400',
+    border: 'border-amber-500/30',
+  },
+  mastered: {
+    bg: 'bg-emerald-500/10',
+    text: 'text-emerald-400',
+    border: 'border-emerald-500/30',
+  },
+};
+
 export default function DictionaryPage() {
   const { getWordStatus, getWordSRS } = useProgress();
+  const { currentLevel, setCurrentLevel, theme } = useLevel();
 
-  const [selectedLevel, setSelectedLevel] = useState<number>(1);
   const [words, setWords] = useState<HSKWord[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [statusFilter, setStatusFilter] = useState<'all' | MasteryStatus>('all');
   const [activeModalWord, setActiveModalWord] = useState<HSKWord | null>(null);
 
-  // Fetch words for selected level
+  // Fetch words for global currentLevel
   useEffect(() => {
     let isMounted = true;
     setLoading(true);
 
     async function loadLevelWords() {
-      const data = await getHSKWords(selectedLevel);
+      const data = await getHSKWords(currentLevel);
       if (isMounted) {
         setWords(data);
         setLoading(false);
@@ -46,7 +65,7 @@ export default function DictionaryPage() {
     return () => {
       isMounted = false;
     };
-  }, [selectedLevel]);
+  }, [currentLevel]);
 
   // Filter and search words
   const filteredWords = useMemo(() => {
@@ -81,25 +100,6 @@ export default function DictionaryPage() {
     return { total: words.length, newCount, learningCount, masteredCount };
   }, [words, getWordStatus]);
 
-const statusStyles: Record<string, { bg: string; text: string; border: string }> = {
-  new: {
-    bg: 'bg-zinc-800/80',
-    text: 'text-zinc-400',
-    border: 'border-zinc-700/60',
-  },
-  learning: {
-    bg: 'bg-amber-500/10',
-    text: 'text-amber-400',
-    border: 'border-amber-500/30',
-  },
-  mastered: {
-    bg: 'bg-emerald-500/10',
-    text: 'text-emerald-400',
-    border: 'border-emerald-500/30',
-  },
-};
-
-
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
       {/* Header & Level Tabs */}
@@ -107,7 +107,7 @@ const statusStyles: Record<string, { bg: string; text: string; border: string }>
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
           <div>
             <h1 className="text-3xl font-black text-zinc-100 flex items-center gap-3">
-              <BookOpen className="text-red-500" size={30} />
+              <BookOpen style={{ color: theme.primary }} size={30} />
               <span>HSK Dictionary & Vocabulary</span>
             </h1>
             <p className="text-sm text-zinc-400 mt-1">
@@ -115,22 +115,34 @@ const statusStyles: Record<string, { bg: string; text: string; border: string }>
             </p>
           </div>
 
-          {/* HSK Level Switcher */}
+          {/* HSK Level Switcher with persistent global level */}
           <div className="flex items-center gap-1.5 p-1 rounded-2xl bg-zinc-900 border border-zinc-800 overflow-x-auto max-w-full">
-            {[1, 2, 3, 4, 5].map((lvl) => (
-              <button
-                key={lvl}
-                type="button"
-                onClick={() => setSelectedLevel(lvl)}
-                className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all whitespace-nowrap ${
-                  selectedLevel === lvl
-                    ? 'bg-red-600 text-white shadow-md'
-                    : 'text-zinc-400 hover:text-zinc-200 hover:bg-zinc-800'
-                }`}
-              >
-                HSK {lvl}
-              </button>
-            ))}
+            {[1, 2, 3, 4, 5].map((lvl) => {
+              const isSelected = currentLevel === lvl;
+              const lvlTheme = HSK_THEMES[lvl] || HSK_THEMES[1];
+              return (
+                <button
+                  key={lvl}
+                  type="button"
+                  onClick={() => setCurrentLevel(lvl)}
+                  className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all whitespace-nowrap cursor-pointer ${
+                    isSelected
+                      ? 'text-white shadow-md'
+                      : 'text-zinc-400 hover:text-zinc-200 hover:bg-zinc-800'
+                  }`}
+                  style={
+                    isSelected
+                      ? {
+                          backgroundColor: lvlTheme.primary,
+                          boxShadow: `0 2px 10px rgba(${lvlTheme.rgb}, 0.35)`
+                        }
+                      : undefined
+                  }
+                >
+                  HSK {lvl}
+                </button>
+              );
+            })}
           </div>
         </div>
 
@@ -147,7 +159,7 @@ const statusStyles: Record<string, { bg: string; text: string; border: string }>
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder="Search Hanzi, Pinyin (e.g. ni hao), or English..."
-              className="w-full pl-11 pr-10 py-3 rounded-2xl bg-zinc-900 border border-zinc-800 focus:border-red-500 text-zinc-100 placeholder:text-zinc-500 text-sm outline-none transition-all"
+              className="w-full pl-11 pr-10 py-3 rounded-2xl bg-zinc-900 border border-zinc-800 focus:border-[var(--theme-primary)] text-zinc-100 placeholder:text-zinc-500 text-sm outline-none transition-all"
             />
             {searchQuery && (
               <button
@@ -165,7 +177,7 @@ const statusStyles: Record<string, { bg: string; text: string; border: string }>
             <button
               type="button"
               onClick={() => setStatusFilter('all')}
-              className={`px-3 py-2 rounded-xl text-xs font-semibold transition-colors whitespace-nowrap ${
+              className={`px-3 py-2 rounded-xl text-xs font-semibold transition-colors whitespace-nowrap cursor-pointer ${
                 statusFilter === 'all'
                   ? 'bg-zinc-800 text-white shadow-sm'
                   : 'text-zinc-400 hover:text-zinc-200'
@@ -176,7 +188,7 @@ const statusStyles: Record<string, { bg: string; text: string; border: string }>
             <button
               type="button"
               onClick={() => setStatusFilter('new')}
-              className={`px-3 py-2 rounded-xl text-xs font-semibold transition-colors whitespace-nowrap ${
+              className={`px-3 py-2 rounded-xl text-xs font-semibold transition-colors whitespace-nowrap cursor-pointer ${
                 statusFilter === 'new'
                   ? 'bg-zinc-800 text-white shadow-sm'
                   : 'text-zinc-400 hover:text-zinc-200'
@@ -187,7 +199,7 @@ const statusStyles: Record<string, { bg: string; text: string; border: string }>
             <button
               type="button"
               onClick={() => setStatusFilter('learning')}
-              className={`px-3 py-2 rounded-xl text-xs font-semibold transition-colors whitespace-nowrap ${
+              className={`px-3 py-2 rounded-xl text-xs font-semibold transition-colors whitespace-nowrap cursor-pointer ${
                 statusFilter === 'learning'
                   ? 'bg-amber-500/20 text-amber-300 shadow-sm'
                   : 'text-zinc-400 hover:text-amber-300'
@@ -198,7 +210,7 @@ const statusStyles: Record<string, { bg: string; text: string; border: string }>
             <button
               type="button"
               onClick={() => setStatusFilter('mastered')}
-              className={`px-3 py-2 rounded-xl text-xs font-semibold transition-colors whitespace-nowrap ${
+              className={`px-3 py-2 rounded-xl text-xs font-semibold transition-colors whitespace-nowrap cursor-pointer ${
                 statusFilter === 'mastered'
                   ? 'bg-emerald-500/20 text-emerald-300 shadow-sm'
                   : 'text-zinc-400 hover:text-emerald-300'
@@ -213,8 +225,11 @@ const statusStyles: Record<string, { bg: string; text: string; border: string }>
       {/* Vocabulary Cards Grid */}
       {loading ? (
         <div className="py-20 text-center space-y-3">
-          <div className="w-10 h-10 border-4 border-red-500 border-t-transparent rounded-full animate-spin mx-auto" />
-          <p className="text-sm text-zinc-400">Loading HSK {selectedLevel} vocabulary...</p>
+          <div 
+            className="w-10 h-10 border-4 border-t-transparent rounded-full animate-spin mx-auto" 
+            style={{ borderColor: theme.primary, borderTopColor: 'transparent' }}
+          />
+          <p className="text-sm text-zinc-400">Loading HSK {currentLevel} vocabulary...</p>
         </div>
       ) : filteredWords.length === 0 ? (
         <div className="py-20 text-center bg-zinc-900/40 rounded-3xl border border-zinc-800/80 p-8 space-y-3">
@@ -239,10 +254,13 @@ const statusStyles: Record<string, { bg: string; text: string; border: string }>
                 {/* Card Top: Hanzi & Audio */}
                 <div className="flex items-start justify-between gap-2">
                   <div className="space-y-1">
-                    <span className="text-3xl font-bold text-zinc-100 font-serif tracking-wide group-hover:text-red-400 transition-colors">
+                    <span 
+                      className="text-3xl font-bold text-zinc-100 font-serif tracking-wide transition-colors group-hover:opacity-90"
+                      style={{ color: undefined }}
+                    >
                       {word.hanzi}
                     </span>
-                    <p className="text-sm font-medium text-red-400/90">
+                    <p className="text-sm font-medium" style={{ color: theme.primary }}>
                       {word.pinyin}
                     </p>
                   </div>

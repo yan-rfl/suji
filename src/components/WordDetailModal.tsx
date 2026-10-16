@@ -45,7 +45,10 @@ export const WordDetailModal: React.FC<WordDetailModalProps> = ({ word, onClose 
 
         {/* Level & Status Badges */}
         <div className="flex items-center gap-2 mb-4">
-          <span className="px-3 py-1 rounded-full text-xs font-bold bg-red-600 text-white tracking-wider">
+          <span 
+            className="px-3 py-1 rounded-full text-xs font-bold text-white tracking-wider"
+            style={{ backgroundColor: HSK_THEMES[word.level]?.primary || '#f8b51e' }}
+          >
             HSK {word.level}
           </span>
           <span
@@ -73,7 +76,13 @@ export const WordDetailModal: React.FC<WordDetailModalProps> = ({ word, onClose 
             <h2 className="text-3xl font-bold text-zinc-100 font-serif">{word.hanzi}</h2>
             <AudioButton text={word.hanzi} size="md" />
           </div>
-          <p className="text-xl font-medium text-red-400">{word.pinyin}</p>
+          <p 
+            className="text-xl font-medium"
+            style={{ color: HSK_THEMES[word.level]?.primary || '#f8b51e' }}
+          >
+            {word.pinyin}
+          </p>
+
           <p className="text-base text-zinc-300 font-medium">
             {word.translations.join(', ')}
           </p>

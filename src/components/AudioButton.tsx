@@ -1,8 +1,9 @@
 'use client';
 
 import React, { useState } from 'react';
-import { Volume2, VolumeX } from 'lucide-react';
+import { Volume2 } from 'lucide-react';
 import { tts } from '@/lib/tts';
+import { useLevel } from '@/context/LevelContext';
 
 interface AudioButtonProps {
   text: string;
@@ -20,6 +21,7 @@ export const AudioButton: React.FC<AudioButtonProps> = ({
   showLabel = false,
 }) => {
   const [isPlaying, setIsPlaying] = useState(false);
+  const { theme } = useLevel();
 
   const handlePlay = (e: React.MouseEvent) => {
     e.stopPropagation();
@@ -56,11 +58,20 @@ export const AudioButton: React.FC<AudioButtonProps> = ({
       onClick={handlePlay}
       aria-label={`Listen to pronunciation for ${text}`}
       title="Listen to native Mandarin pronunciation"
-      className={`inline-flex items-center justify-center gap-1.5 rounded-full transition-all duration-200 active:scale-95 ${
+      className={`inline-flex items-center justify-center gap-1.5 rounded-full transition-all duration-200 active:scale-95 cursor-pointer ${
         isPlaying
-          ? 'bg-red-500 text-white shadow-md shadow-red-500/30 ring-2 ring-red-400'
+          ? 'text-white shadow-md ring-2 ring-white/40'
           : 'bg-zinc-800/80 text-zinc-300 hover:bg-zinc-700 hover:text-white border border-zinc-700/60'
       } ${sizeClasses[size]} ${className}`}
+      style={
+        isPlaying
+          ? {
+              backgroundColor: theme.primary,
+              borderColor: theme.primary,
+              boxShadow: `0 2px 10px rgba(${theme.rgb}, 0.45)`,
+            }
+          : undefined
+      }
     >
       <Volume2
         size={iconSizes[size]}
