@@ -117,15 +117,16 @@ function QuizEngineContent() {
         const targetCount = countParam ? parseInt(countParam, 10) : 15;
         const selected = shuffled.slice(0, targetCount);
 
-        const currentActivePool = activeModesRef.current.length > 0
+        const currentActivePool: QuizMode[] = activeModesRef.current.length > 0
           ? activeModesRef.current
-          : ['hanzi-to-meaning'];
+          : ['hanzi-to-meaning' as QuizMode];
 
         // Assign randomized mode from current active pool to each card
         const cards: SessionCard[] = selected.map((word) => {
           const randomMode = currentActivePool[Math.floor(Math.random() * currentActivePool.length)];
           return { word, mode: randomMode };
         });
+
 
         setSessionCards(cards);
         setCurrentIndex(0);

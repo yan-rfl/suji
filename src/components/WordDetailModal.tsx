@@ -7,6 +7,7 @@ import { AudioButton } from './AudioButton';
 import { X, Calendar, Award, Zap, Repeat } from 'lucide-react';
 import { useProgress } from '@/context/ProgressContext';
 import { formatInterval } from '@/lib/srs';
+import { HSK_THEMES } from '@/context/LevelContext';
 
 interface WordDetailModalProps {
   word: HSKWord | null;
