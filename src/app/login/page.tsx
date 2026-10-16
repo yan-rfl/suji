@@ -91,15 +91,23 @@ export default function LoginPage() {
       console.warn('Google sign-in error:', err);
       const code = err?.code || '';
       if (code === 'auth/popup-closed-by-user') {
-        setErrorMsg('The sign-in window was closed.');
+        setErrorMsg('The sign-in popup was closed before completing.');
+      } else if (code === 'auth/unauthorized-domain') {
+        const domain = typeof window !== 'undefined' ? window.location.hostname : 'your domain';
+        setErrorMsg(
+          `Domain not authorized (${domain}). In Firebase Console ➔ Authentication ➔ Settings ➔ Authorized Domains, click "Add domain" and enter "${domain}".`
+        );
       } else if (code === 'auth/internal-error') {
-        setErrorMsg('Google sign-in encountered a connection issue. Try Email sign-in or Offline Guest Mode.');
+        setErrorMsg(
+          'Google sign-in encountered an internal error. In Firebase Console ➔ Authentication ➔ Sign-in method ➔ Google, ensure it is Enabled and has a Support Email selected.'
+        );
       } else {
-        setErrorMsg(err.message || 'Google sign-in failed. Check your network connection.');
+        setErrorMsg(`Google sign-in failed: ${err.message || code || 'Unknown error'}`);
       }
     } finally {
       setIsSubmitting(false);
     }
+
   };
 
   const handleSignOut = async () => {
