@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect, Suspense } from 'react';
+import React, { useState, useEffect, Suspense, useMemo } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { 
@@ -15,7 +15,8 @@ import {
   FileText, 
   Headphones,
   Award,
-  Zap
+  Zap,
+  Shuffle
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { HSKWord, QuizMode, SRSGrade } from '@/types/hsk';
@@ -23,26 +24,58 @@ import { getAllHSKWords, getHSKWords } from '@/lib/hskData';
 import { useProgress } from '@/context/ProgressContext';
 import { QuizCard } from '@/components/QuizCard';
 
+const ALL_MODES: QuizMode[] = [
+  'hanzi-to-meaning',
+  'meaning-to-hanzi-desktop',
+  'meaning-to-hanzi-mobile',
+  'sentence-context',
+  'audio-quiz',
+];
+
+interface SessionCard {
+  word: HSKWord;
+  mode: QuizMode;
+}
+
 function QuizEngineContent() {
   const searchParams = useSearchParams();
   const router = useRouter();
   const { recordReview, isWordDue, stats } = useProgress();
 
   const levelParam = searchParams.get('level');
+  const modesParam = searchParams.get('modes');
   const modeParam = searchParams.get('mode') as QuizMode | null;
   const countParam = searchParams.get('count');
   const srsOnlyParam = searchParams.get('srsOnly') === 'true';
 
   const [currentLevel, setCurrentLevel] = useState<number>(levelParam ? parseInt(levelParam, 10) : 1);
-  const [currentMode, setCurrentMode] = useState<QuizMode>(modeParam || 'hanzi-to-meaning');
-  const [sessionWords, setSessionWords] = useState<HSKWord[]>([]);
+  
+  // Parse multiple active modes
+  const parsedModes = useMemo<QuizMode[]>(() => {
+    if (modesParam) {
+      const list = modesParam.split(',').filter((m) => ALL_MODES.includes(m as QuizMode)) as QuizMode[];
+      if (list.length > 0) return list;
+    }
+    if (modeParam && ALL_MODES.includes(modeParam)) {
+      return [modeParam];
+    }
+    return ['hanzi-to-meaning', 'sentence-context', 'audio-quiz'];
+  }, [modesParam, modeParam]);
+
+  const [activeModes, setActiveModes] = useState<QuizMode[]>(parsedModes);
+  const [sessionCards, setSessionCards] = useState<SessionCard[]>([]);
   const [allLevelWords, setAllLevelWords] = useState<HSKWord[]>([]);
   const [currentIndex, setCurrentIndex] = useState<number>(0);
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [isSessionComplete, setIsSessionComplete] = useState<boolean>(false);
-  const [sessionResults, setSessionResults] = useState<{ word: HSKWord; grade: SRSGrade }[]>([]);
+  const [sessionResults, setSessionResults] = useState<{ word: HSKWord; mode: QuizMode; grade: SRSGrade }[]>([]);
 
-  // Load vocabulary for session
+  // Update active modes if URL changes
+  useEffect(() => {
+    setActiveModes(parsedModes);
+  }, [parsedModes]);
+
+  // Load vocabulary for session and randomize modes for each card
   useEffect(() => {
     let isMounted = true;
     setIsLoading(true);
@@ -70,7 +103,13 @@ function QuizEngineContent() {
         const targetCount = countParam ? parseInt(countParam, 10) : 15;
         const selected = shuffled.slice(0, targetCount);
 
-        setSessionWords(selected);
+        // Assign randomized mode from activeModes to each card
+        const cards: SessionCard[] = selected.map((word) => {
+          const randomMode = activeModes[Math.floor(Math.random() * activeModes.length)];
+          return { word, mode: randomMode };
+        });
+
+        setSessionCards(cards);
         setCurrentIndex(0);
         setIsSessionComplete(false);
         setSessionResults([]);
@@ -86,49 +125,76 @@ function QuizEngineContent() {
     return () => {
       isMounted = false;
     };
-  }, [currentLevel, countParam, srsOnlyParam]);
+  }, [currentLevel, countParam, srsOnlyParam, activeModes]);
 
   // Handle grading of current card
   const handleGrade = async (grade: SRSGrade) => {
-    const currentWord = sessionWords[currentIndex];
-    if (!currentWord) return;
+    const currentCard = sessionCards[currentIndex];
+    if (!currentCard) return;
 
     // Record review in SRS engine
-    await recordReview(currentWord.id, grade);
+    await recordReview(currentCard.word.id, grade);
 
-    // Track results for final recap
-    setSessionResults((prev) => [...prev, { word: currentWord, grade }]);
+    // Track results with mode for final recap
+    setSessionResults((prev) => [
+      ...prev,
+      { word: currentCard.word, mode: currentCard.mode, grade },
+    ]);
 
     // Move to next card or finish session
-    if (currentIndex + 1 < sessionWords.length) {
+    if (currentIndex + 1 < sessionCards.length) {
       setCurrentIndex((prev) => prev + 1);
     } else {
       setIsSessionComplete(true);
       // Fire celebration confetti!
       confetti({
-        particleCount: 100,
-        spread: 70,
+        particleCount: 110,
+        spread: 75,
         origin: { y: 0.6 },
         colors: ['#ef4444', '#f59e0b', '#10b981', '#3b82f6', '#8b5cf6'],
       });
     }
   };
 
+  // Allow switching the mode of the current card on-the-fly
+  const setCardMode = (newMode: QuizMode) => {
+    setSessionCards((prev) => {
+      const next = [...prev];
+      if (next[currentIndex]) {
+        next[currentIndex] = { ...next[currentIndex], mode: newMode };
+      }
+      return next;
+    });
+  };
+
+  // Shuffle current card to another random active mode
+  const shuffleCurrentCardMode = () => {
+    const otherModes = activeModes.length > 1 
+      ? activeModes.filter((m) => m !== sessionCards[currentIndex]?.mode)
+      : activeModes;
+    const randomMode = otherModes[Math.floor(Math.random() * otherModes.length)];
+    setCardMode(randomMode);
+  };
+
   const restartSession = () => {
     const shuffled = [...allLevelWords].sort(() => 0.5 - Math.random());
     const targetCount = countParam ? parseInt(countParam, 10) : 15;
-    setSessionWords(shuffled.slice(0, targetCount));
+    const cards: SessionCard[] = shuffled.slice(0, targetCount).map((word) => {
+      const randomMode = activeModes[Math.floor(Math.random() * activeModes.length)];
+      return { word, mode: randomMode };
+    });
+    setSessionCards(cards);
     setCurrentIndex(0);
     setIsSessionComplete(false);
     setSessionResults([]);
   };
 
-  const modeIcons: Record<QuizMode, any> = {
-    'hanzi-to-meaning': BookOpen,
-    'meaning-to-hanzi-desktop': Keyboard,
-    'meaning-to-hanzi-mobile': PenTool,
-    'sentence-context': FileText,
-    'audio-quiz': Headphones,
+  const modeDescriptions: Record<QuizMode, { name: string; icon: any }> = {
+    'hanzi-to-meaning': { name: 'Hanzi → Meaning', icon: BookOpen },
+    'meaning-to-hanzi-desktop': { name: 'IME Typing', icon: Keyboard },
+    'meaning-to-hanzi-mobile': { name: 'Stroke Order', icon: PenTool },
+    'sentence-context': { name: 'Sentence Cloze', icon: FileText },
+    'audio-quiz': { name: 'Mandarin Audio', icon: Headphones },
   };
 
   if (isLoading) {
@@ -144,6 +210,12 @@ function QuizEngineContent() {
   if (isSessionComplete) {
     const againCount = sessionResults.filter((r) => r.grade < 3).length;
     const goodEasyCount = sessionResults.filter((r) => r.grade >= 3).length;
+
+    // Count breakdown per mode
+    const modeCounts = sessionResults.reduce((acc, curr) => {
+      acc[curr.mode] = (acc[curr.mode] || 0) + 1;
+      return acc;
+    }, {} as Record<string, number>);
 
     return (
       <div className="max-w-xl mx-auto px-4 py-8 space-y-8 animate-fadeIn">
@@ -183,6 +255,30 @@ function QuizEngineContent() {
             </div>
           </div>
 
+          {/* Practice Mode Breakdown */}
+          <div className="space-y-2 text-left bg-zinc-950/40 p-4 rounded-2xl border border-zinc-800/60">
+            <div className="text-xs font-semibold uppercase tracking-wider text-zinc-400 flex items-center gap-1.5">
+              <Shuffle size={13} className="text-red-400" />
+              <span>Mixed Modes Completed:</span>
+            </div>
+            <div className="flex flex-wrap gap-2 pt-1">
+              {Object.entries(modeCounts).map(([mode, count]) => {
+                const info = modeDescriptions[mode as QuizMode];
+                const Icon = info?.icon || BookOpen;
+                return (
+                  <div
+                    key={mode}
+                    className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-zinc-900 border border-zinc-800 text-xs text-zinc-300 font-medium"
+                  >
+                    <Icon size={14} className="text-red-400" />
+                    <span>{info?.name}:</span>
+                    <strong className="text-white">{count}</strong>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+
           {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-3">
             <button
@@ -205,9 +301,9 @@ function QuizEngineContent() {
     );
   }
 
-  const currentWord = sessionWords[currentIndex];
+  const currentCard = sessionCards[currentIndex];
 
-  if (!currentWord) {
+  if (!currentCard) {
     return (
       <div className="max-w-xl mx-auto px-4 py-16 text-center space-y-4">
         <h2 className="text-xl font-bold text-zinc-200">No review cards available.</h2>
@@ -221,52 +317,68 @@ function QuizEngineContent() {
     );
   }
 
+  const currentModeInfo = modeDescriptions[currentCard.mode];
+  const CurrentModeIcon = currentModeInfo.icon;
+
   return (
     <div className="max-w-3xl mx-auto px-4 py-6 space-y-6">
       {/* Top Session Navigation & Progress Bar */}
       <div className="flex flex-col gap-3">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between gap-3">
           <Link
             href="/"
             className="flex items-center gap-1.5 text-xs font-semibold text-zinc-400 hover:text-zinc-200 transition-colors"
           >
             <ArrowLeft size={16} />
-            <span>Dashboard</span>
+            <span className="hidden sm:inline">Dashboard</span>
           </Link>
 
-          {/* Quick Mode Switcher Dropdown / Pills */}
-          <div className="flex items-center gap-1 bg-zinc-900 p-1 rounded-xl border border-zinc-800">
-            {(
-              [
-                'hanzi-to-meaning',
-                'meaning-to-hanzi-desktop',
-                'meaning-to-hanzi-mobile',
-                'sentence-context',
-                'audio-quiz',
-              ] as QuizMode[]
-            ).map((mode) => {
-              const Icon = modeIcons[mode];
-              const isActive = currentMode === mode;
-              return (
-                <button
-                  key={mode}
-                  type="button"
-                  onClick={() => setCurrentMode(mode)}
-                  className={`p-1.5 rounded-lg transition-colors ${
-                    isActive
-                      ? 'bg-red-600 text-white shadow-sm'
-                      : 'text-zinc-400 hover:text-zinc-200 hover:bg-zinc-800'
-                  }`}
-                  title={mode}
-                >
-                  <Icon size={14} />
-                </button>
-              );
-            })}
+          {/* Active Mode Pill with Shuffle indicator & manual switcher */}
+          <div className="flex items-center gap-2">
+            <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-zinc-900 border border-zinc-800 text-xs font-medium text-zinc-200">
+              {activeModes.length > 1 && (
+                <span title="Randomized across selected modes">
+                  <Shuffle size={13} className="text-red-400 animate-pulse" />
+                </span>
+              )}
+              <CurrentModeIcon size={14} className="text-red-400" />
+              <span className="font-semibold">{currentModeInfo.name}</span>
+            </div>
+
+            {/* Quick in-session mode switcher pills */}
+            <div className="flex items-center gap-1 bg-zinc-900 p-1 rounded-xl border border-zinc-800">
+              {ALL_MODES.map((mode) => {
+                const info = modeDescriptions[mode];
+                const Icon = info.icon;
+                const isCurrent = currentCard.mode === mode;
+                const isInPool = activeModes.includes(mode);
+
+                return (
+                  <button
+                    key={mode}
+                    type="button"
+                    onClick={() => setCardMode(mode)}
+                    className={`p-1.5 rounded-lg transition-colors relative ${
+                      isCurrent
+                        ? 'bg-red-600 text-white shadow-sm'
+                        : isInPool
+                        ? 'text-zinc-300 hover:text-white hover:bg-zinc-800'
+                        : 'text-zinc-600 hover:text-zinc-400 hover:bg-zinc-800'
+                    }`}
+                    title={`Switch current card to: ${info.name}`}
+                  >
+                    <Icon size={14} />
+                    {isInPool && !isCurrent && (
+                      <span className="absolute bottom-0.5 right-0.5 w-1 h-1 rounded-full bg-red-400" />
+                    )}
+                  </button>
+                );
+              })}
+            </div>
           </div>
 
           <div className="text-xs font-mono font-bold text-zinc-400">
-            {currentIndex + 1} / {sessionWords.length}
+            {currentIndex + 1} / {sessionCards.length}
           </div>
         </div>
 
@@ -275,7 +387,7 @@ function QuizEngineContent() {
           <div
             className="bg-red-500 h-full rounded-full transition-all duration-300"
             style={{
-              width: `${((currentIndex + 1) / sessionWords.length) * 100}%`,
+              width: `${((currentIndex + 1) / sessionCards.length) * 100}%`,
             }}
           />
         </div>
@@ -283,9 +395,9 @@ function QuizEngineContent() {
 
       {/* Main Flashcard Quiz Card */}
       <QuizCard
-        key={`${currentWord.id}-${currentMode}`}
-        word={currentWord}
-        quizMode={currentMode}
+        key={`${currentCard.word.id}-${currentCard.mode}-${currentIndex}`}
+        word={currentCard.word}
+        quizMode={currentCard.mode}
         allWords={allLevelWords}
         onGrade={handleGrade}
       />

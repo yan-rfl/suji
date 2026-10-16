@@ -17,12 +17,22 @@ import {
   FileText, 
   Sparkles,
   ChevronRight,
-  TrendingUp
+  TrendingUp,
+  Check,
+  Shuffle
 } from 'lucide-react';
 import { useProgress } from '@/context/ProgressContext';
 import { useAuth } from '@/context/AuthContext';
 import { getAllHSKWords } from '@/lib/hskData';
 import { HSKWord, QuizMode } from '@/types/hsk';
+
+const ALL_MODES: QuizMode[] = [
+  'hanzi-to-meaning',
+  'meaning-to-hanzi-desktop',
+  'meaning-to-hanzi-mobile',
+  'sentence-context',
+  'audio-quiz',
+];
 
 export default function DashboardPage() {
   const router = useRouter();
@@ -31,17 +41,22 @@ export default function DashboardPage() {
 
   const [allWords, setAllWords] = useState<HSKWord[]>([]);
   const [selectedLevel, setSelectedLevel] = useState<number>(1);
-  const [selectedMode, setSelectedMode] = useState<QuizMode>('hanzi-to-meaning');
+  const [selectedModes, setSelectedModes] = useState<QuizMode[]>([
+    'hanzi-to-meaning',
+    'sentence-context',
+    'audio-quiz',
+  ]);
   const [sessionCount, setSessionCount] = useState<number>(15);
   const [isMobileDevice, setIsMobileDevice] = useState<boolean>(false);
 
   useEffect(() => {
-    // Detect mobile touch device for smart default quiz mode recommendation
     if (typeof window !== 'undefined') {
       const isMobile = window.matchMedia('(pointer: coarse)').matches || window.innerWidth < 768;
       setIsMobileDevice(isMobile);
       if (isMobile) {
-        // If mobile, default to stroke order drawing or hanzi-to-meaning
+        setSelectedModes(['hanzi-to-meaning', 'meaning-to-hanzi-mobile', 'audio-quiz']);
+      } else {
+        setSelectedModes(['hanzi-to-meaning', 'meaning-to-hanzi-desktop', 'sentence-context', 'audio-quiz']);
       }
     }
 
@@ -71,23 +86,37 @@ export default function DashboardPage() {
     };
   });
 
+  const toggleMode = (mode: QuizMode) => {
+    if (selectedModes.includes(mode)) {
+      if (selectedModes.length > 1) {
+        setSelectedModes(selectedModes.filter((m) => m !== mode));
+      }
+    } else {
+      setSelectedModes([...selectedModes, mode]);
+    }
+  };
+
+  const selectAllModes = () => {
+    setSelectedModes([...ALL_MODES]);
+  };
+
   const handleStartCustomQuiz = () => {
-    router.push(`/quiz?level=${selectedLevel}&mode=${selectedMode}&count=${sessionCount}`);
+    router.push(`/quiz?level=${selectedLevel}&modes=${selectedModes.join(',')}&count=${sessionCount}`);
   };
 
   const handleStartSRSReview = () => {
-    router.push(`/quiz?srsOnly=true&count=20`);
+    router.push(`/quiz?srsOnly=true&modes=${selectedModes.join(',')}&count=20`);
   };
 
   const modeDescriptions: Record<QuizMode, { title: string; desc: string; icon: any }> = {
     'hanzi-to-meaning': {
       title: 'Hanzi → Meaning',
-      desc: 'Read character; recognize pinyin and definition',
+      desc: 'Read character; identify pinyin & English definition',
       icon: BookOpen,
     },
     'meaning-to-hanzi-desktop': {
       title: 'Meaning → IME Typing',
-      desc: 'Desktop keyboard input with Pinyin IME',
+      desc: 'Type Hanzi using your desktop keyboard Pinyin IME',
       icon: Keyboard,
     },
     'meaning-to-hanzi-mobile': {
@@ -97,12 +126,12 @@ export default function DashboardPage() {
     },
     'sentence-context': {
       title: 'Contextual Cloze',
-      desc: 'Real example sentence fill-in-the-blank quiz',
+      desc: 'Real example sentence fill-in-the-blank practice',
       icon: FileText,
     },
     'audio-quiz': {
       title: 'Mandarin Audio Quiz',
-      desc: 'Listen without visual hints; recall character',
+      desc: 'Listen without visual hints; test ear & recall character',
       icon: Headphones,
     },
   };
@@ -211,7 +240,7 @@ export default function DashboardPage() {
               <span>Launch Quiz Session</span>
             </h2>
             <p className="text-sm text-zinc-400 mt-1">
-              Select your HSK level, device-adaptive mode, and session length
+              Select multiple practice modes to randomly vary question types during your session
             </p>
           </div>
           <Link
@@ -249,20 +278,51 @@ export default function DashboardPage() {
           </div>
         </div>
 
-        {/* Step 2: Device-Adaptive Mode Selector */}
+        {/* Step 2: Multi-Mode Selector (Randomized across cards) */}
         <div className="space-y-3">
-          <div className="flex items-center justify-between">
-            <label className="text-xs font-bold uppercase tracking-wider text-zinc-400">
-              2. Choose Practice Mode
-            </label>
-            <span className="text-[11px] text-zinc-500">
-              {isMobileDevice ? 'Mobile detected: Touch stroke mode recommended' : 'Desktop detected: IME input recommended'}
-            </span>
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div className="flex items-center gap-2">
+              <label className="text-xs font-bold uppercase tracking-wider text-zinc-400">
+                2. Practice Modes (Select Multiple to Randomize)
+              </label>
+              <span className="px-2 py-0.5 rounded-full text-[10px] font-bold bg-red-500/20 text-red-300 border border-red-500/30 flex items-center gap-1">
+                <Shuffle size={11} />
+                <span>{selectedModes.length} Selected</span>
+              </span>
+            </div>
+
+            {/* Quick preset buttons */}
+            <div className="flex items-center gap-2">
+              <button
+                type="button"
+                onClick={selectAllModes}
+                className="text-xs font-semibold text-zinc-400 hover:text-red-400 transition-colors"
+              >
+                Select All 5
+              </button>
+              <span className="text-zinc-700">•</span>
+              <button
+                type="button"
+                onClick={() => setSelectedModes(['meaning-to-hanzi-desktop', 'meaning-to-hanzi-mobile'])}
+                className="text-xs font-semibold text-zinc-400 hover:text-red-400 transition-colors"
+              >
+                Writing Focus
+              </button>
+              <span className="text-zinc-700">•</span>
+              <button
+                type="button"
+                onClick={() => setSelectedModes(['hanzi-to-meaning', 'sentence-context', 'audio-quiz'])}
+                className="text-xs font-semibold text-zinc-400 hover:text-red-400 transition-colors"
+              >
+                Recognition Focus
+              </button>
+            </div>
           </div>
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
-            {(Object.keys(modeDescriptions) as QuizMode[]).map((mode) => {
+            {ALL_MODES.map((mode) => {
               const { title, desc, icon: Icon } = modeDescriptions[mode];
-              const isSelected = selectedMode === mode;
+              const isSelected = selectedModes.includes(mode);
               const isRecommended =
                 (isMobileDevice && mode === 'meaning-to-hanzi-mobile') ||
                 (!isMobileDevice && mode === 'meaning-to-hanzi-desktop');
@@ -271,31 +331,48 @@ export default function DashboardPage() {
                 <button
                   key={mode}
                   type="button"
-                  onClick={() => setSelectedMode(mode)}
-                  className={`p-4 rounded-2xl border text-left flex items-start gap-3 transition-all relative ${
+                  onClick={() => toggleMode(mode)}
+                  className={`p-4 rounded-2xl border text-left flex items-start gap-3 transition-all relative group cursor-pointer ${
                     isSelected
-                      ? 'bg-zinc-800/90 text-white border-red-500 ring-1 ring-red-500 shadow-lg'
-                      : 'bg-zinc-950/50 text-zinc-300 border-zinc-800 hover:border-zinc-700 hover:bg-zinc-800/40'
+                      ? 'bg-zinc-800/90 text-white border-red-500/80 ring-1 ring-red-500/50 shadow-md'
+                      : 'bg-zinc-950/50 text-zinc-400 border-zinc-800/80 hover:border-zinc-700 hover:text-zinc-200'
                   }`}
                 >
-                  <div className={`p-2.5 rounded-xl ${isSelected ? 'bg-red-600 text-white' : 'bg-zinc-800 text-zinc-400'}`}>
+                  <div className={`p-2.5 rounded-xl shrink-0 ${isSelected ? 'bg-red-600 text-white' : 'bg-zinc-800 text-zinc-500'}`}>
                     <Icon size={18} />
                   </div>
-                  <div className="flex-1 min-w-0">
-                    <div className="flex items-center gap-2">
-                      <span className="font-semibold text-sm">{title}</span>
+                  <div className="flex-1 min-w-0 pr-6">
+                    <div className="flex items-center gap-1.5 flex-wrap">
+                      <span className={`font-semibold text-sm ${isSelected ? 'text-white' : 'text-zinc-300'}`}>
+                        {title}
+                      </span>
                       {isRecommended && (
-                        <span className="px-1.5 py-0.5 rounded text-[10px] bg-red-500/20 text-red-300 border border-red-500/30">
-                          Recommended
+                        <span className="px-1.5 py-0.2 rounded text-[9px] bg-red-500/20 text-red-300 border border-red-500/30">
+                          Rec
                         </span>
                       )}
                     </div>
                     <p className="text-xs text-zinc-400 mt-1 leading-relaxed">{desc}</p>
                   </div>
+
+                  {/* Checkbox indicator */}
+                  <div className="absolute top-3.5 right-3.5">
+                    {isSelected ? (
+                      <div className="w-5 h-5 rounded-full bg-red-600 text-white flex items-center justify-center shadow-sm">
+                        <Check size={12} strokeWidth={3} />
+                      </div>
+                    ) : (
+                      <div className="w-5 h-5 rounded-full border border-zinc-700 bg-zinc-900 group-hover:border-zinc-600" />
+                    )}
+                  </div>
                 </button>
               );
             })}
           </div>
+
+          <p className="text-[11px] text-zinc-500 italic">
+            Each card in your session will be randomly assigned one of the {selectedModes.length} selected modes.
+          </p>
         </div>
 
         {/* Step 3: Session Count & Launch Button */}
@@ -326,7 +403,7 @@ export default function DashboardPage() {
             className="w-full sm:w-auto flex items-center justify-center gap-2 px-8 py-3.5 rounded-2xl bg-red-600 hover:bg-red-500 text-white font-bold text-sm transition-all shadow-xl shadow-red-900/30 active:scale-95"
           >
             <Play size={18} />
-            <span>Start Practice Session</span>
+            <span>Start Practice Session ({selectedModes.length} {selectedModes.length === 1 ? 'mode' : 'mixed modes'})</span>
           </button>
         </div>
       </div>
