@@ -1,0 +1,133 @@
+'use client';
+
+import React from 'react';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { 
+  BookOpen, 
+  BrainCircuit, 
+  Home, 
+  Flame, 
+  User as UserIcon,
+  Sparkles
+} from 'lucide-react';
+import { useAuth } from '@/context/AuthContext';
+import { useProgress } from '@/context/ProgressContext';
+import { PWAInstaller } from './PWAInstaller';
+
+export const Navbar: React.FC = () => {
+  const pathname = usePathname();
+  const { user } = useAuth();
+  const { stats } = useProgress();
+
+  const navItems = [
+    { label: 'Dashboard', href: '/', icon: Home },
+    { label: 'Dictionary', href: '/dictionary', icon: BookOpen },
+    { label: 'Quiz Engine', href: '/quiz', icon: BrainCircuit },
+  ];
+
+  return (
+    <>
+      {/* Desktop & Tablet Top Navbar */}
+      <header className="sticky top-0 z-40 w-full border-b border-zinc-800/80 bg-zinc-950/80 backdrop-blur-md">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+          {/* Logo Brand */}
+          <Link href="/" className="flex items-center gap-3 group">
+            <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-red-500 to-red-700 flex items-center justify-center text-white font-serif font-black text-xl shadow-lg shadow-red-900/40 group-hover:scale-105 transition-transform">
+              速
+            </div>
+            <div className="flex flex-col">
+              <span className="font-bold text-lg tracking-tight text-zinc-100 flex items-center gap-1">
+                Suji <span className="text-red-500 font-serif font-medium">速记</span>
+              </span>
+              <span className="text-[10px] text-zinc-400 -mt-1 hidden sm:inline">
+                HSK 1–5 Mastery
+              </span>
+            </div>
+          </Link>
+
+          {/* Nav Links (Desktop) */}
+          <nav className="hidden md:flex items-center gap-1">
+            {navItems.map((item) => {
+              const Icon = item.icon;
+              const isActive = pathname === item.href;
+              return (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className={`flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-medium transition-all ${
+                    isActive
+                      ? 'bg-zinc-800 text-white shadow-sm'
+                      : 'text-zinc-400 hover:text-zinc-200 hover:bg-zinc-900'
+                  }`}
+                >
+                  <Icon size={16} className={isActive ? 'text-red-500' : ''} />
+                  <span>{item.label}</span>
+                </Link>
+              );
+            })}
+          </nav>
+
+          {/* Right Header Section: Streak, PWA, User */}
+          <div className="flex items-center gap-3">
+            {/* Streak Pill */}
+            <div 
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-400 text-xs font-semibold"
+              title={`${stats.currentStreak} day study streak!`}
+            >
+              <Flame size={15} className="fill-amber-500 text-amber-500 animate-pulse" />
+              <span>{stats.currentStreak} {stats.currentStreak === 1 ? 'day' : 'days'}</span>
+            </div>
+
+            {/* PWA Install Trigger */}
+            <PWAInstaller />
+
+            {/* User Account Button */}
+            <Link
+              href="/login"
+              className={`flex items-center gap-2 p-1.5 sm:px-3 sm:py-1.5 rounded-xl text-xs font-medium border transition-colors ${
+                user && !user.isAnonymous
+                  ? 'bg-zinc-900 text-zinc-200 border-zinc-700 hover:bg-zinc-800'
+                  : 'bg-zinc-900 text-zinc-400 border-zinc-800 hover:text-zinc-200 hover:bg-zinc-800'
+              }`}
+            >
+              <UserIcon size={15} />
+              <span className="hidden sm:inline">
+                {user ? (user.displayName || 'Learner') : 'Account'}
+              </span>
+            </Link>
+          </div>
+        </div>
+      </header>
+
+      {/* Mobile Bottom Navigation Bar */}
+      <nav className="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-zinc-950/90 border-t border-zinc-800/90 backdrop-blur-lg px-6 py-2 flex items-center justify-around">
+        {navItems.map((item) => {
+          const Icon = item.icon;
+          const isActive = pathname === item.href;
+          return (
+            <Link
+              key={item.href}
+              href={item.href}
+              className={`flex flex-col items-center gap-1 py-1 px-3 text-[11px] font-medium transition-colors ${
+                isActive ? 'text-red-500 font-semibold' : 'text-zinc-400 hover:text-zinc-200'
+              }`}
+            >
+              <Icon size={20} className={isActive ? 'stroke-[2.5]' : ''} />
+              <span>{item.label}</span>
+            </Link>
+          );
+        })}
+        <Link
+          href="/login"
+          className={`flex flex-col items-center gap-1 py-1 px-3 text-[11px] font-medium transition-colors ${
+            pathname === '/login' ? 'text-red-500 font-semibold' : 'text-zinc-400 hover:text-zinc-200'
+          }`}
+        >
+          <UserIcon size={20} className={pathname === '/login' ? 'stroke-[2.5]' : ''} />
+          <span>Account</span>
+        </Link>
+      </nav>
+    </>
+  );
+};

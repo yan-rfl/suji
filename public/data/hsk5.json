@@ -1,0 +1,402 @@
+[
+  {
+    "id": "hsk5-001",
+    "level": 5,
+    "hanzi": "哎",
+    "pinyin": "āi",
+    "translations": [
+      "exclamation of surprise or reminding"
+    ],
+    "partOfSpeech": "interjection",
+    "exampleSentence": {
+      "hanzi": "哎，你怎么也在这里？真是太巧了！",
+      "pinyin": "Āi, nǐ zěnme yě zài zhèlǐ? Zhēn shì tài qiǎo le!",
+      "translation": "Hey, how come you are here too? What a coincidence!"
+    }
+  },
+  {
+    "id": "hsk5-002",
+    "level": 5,
+    "hanzi": "唉",
+    "pinyin": "ài",
+    "translations": [
+      "sigh of sadness or regret"
+    ],
+    "partOfSpeech": "interjection",
+    "exampleSentence": {
+      "hanzi": "唉，要是当初能再坚持一下就好了。",
+      "pinyin": "Ài, yàoshi dāngchū néng zài jiānchí yíxià jiù hǎo le.",
+      "translation": "Alas, if only we had persisted a bit longer back then."
+    }
+  },
+  {
+    "id": "hsk5-003",
+    "level": 5,
+    "hanzi": "爱护",
+    "pinyin": "àihù",
+    "translations": [
+      "to cherish",
+      "to protect carefully"
+    ],
+    "partOfSpeech": "verb",
+    "exampleSentence": {
+      "hanzi": "全社会都应当共同爱护自然生态与文化古迹。",
+      "pinyin": "Quán shèhuì dōu yīngdāng gòngtóng àihù zìrán shēngtài yǔ wénhuà gǔjì.",
+      "translation": "The whole society should collectively cherish natural ecology and cultural antiquities."
+    }
+  },
+  {
+    "id": "hsk5-004",
+    "level": 5,
+    "hanzi": "爱惜",
+    "pinyin": "àixī",
+    "translations": [
+      "to treasure",
+      "to value"
+    ],
+    "partOfSpeech": "verb",
+    "exampleSentence": {
+      "hanzi": "我们要爱惜有限的自然资源与宝贵的光阴。",
+      "pinyin": "Wǒmen yào àixī yǒuxiàn de zìrán zīyuán yǔ bǎoguì de guāngyīn.",
+      "translation": "We must treasure finite natural resources and precious time."
+    }
+  },
+  {
+    "id": "hsk5-005",
+    "level": 5,
+    "hanzi": "爱心",
+    "pinyin": "àixīn",
+    "translations": [
+      "compassion",
+      "loving heart"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "志愿者的无私爱心为偏远山区的孩子们点亮了希望之光。",
+      "pinyin": "Zhìyuànzhě de wúsī àixīn wèi piānyuǎn shānqū de háizi men diǎnliàng le xīwàng zhī guāng.",
+      "translation": "The selfless compassion of volunteers lit the beacon of hope for children in remote mountains."
+    }
+  },
+  {
+    "id": "hsk5-006",
+    "level": 5,
+    "hanzi": "安慰",
+    "pinyin": "ānwèi",
+    "translations": [
+      "to comfort",
+      "consolation"
+    ],
+    "partOfSpeech": "verb",
+    "exampleSentence": {
+      "hanzi": "在朋友遭遇挫折时，真诚的安慰与陪伴胜过千言万语。",
+      "pinyin": "Zài péngyou zāoyù cuòzhé shí, zhēnchéng de ānwèi yǔ péibàn shèngguò qiānyán-wànyǔ.",
+      "translation": "When a friend suffers setbacks, sincere consolation and presence outweigh thousands of words."
+    }
+  },
+  {
+    "id": "hsk5-007",
+    "level": 5,
+    "hanzi": "安装",
+    "pinyin": "ānzhuāng",
+    "translations": [
+      "to install",
+      "to mount"
+    ],
+    "partOfSpeech": "verb",
+    "exampleSentence": {
+      "hanzi": "工程师正在为新能源汽车充电桩进行精密的安全安装。",
+      "pinyin": "Gōngchéngshī zhèngzài wèi xīn néngyuán qìchē chōngdiànzhuāng jìnxíng jīngmì de ānquán ānzhuāng.",
+      "translation": "Engineers are carrying out precision safety installation for new energy vehicle charging piles."
+    }
+  },
+  {
+    "id": "hsk5-008",
+    "level": 5,
+    "hanzi": "岸",
+    "pinyin": "àn",
+    "translations": [
+      "shore",
+      "bank",
+      "coast"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "汹涌的波涛一次次温柔地拍打着金色的海岸线。",
+      "pinyin": "Xiōngyǒng de bōtāo yícìcì wēnróu de pāidǎ zhe jīnsè de hǎi'ànxiàn.",
+      "translation": "Surging waves gently slapped against the golden coastline again and again."
+    }
+  },
+  {
+    "id": "hsk5-009",
+    "level": 5,
+    "hanzi": "把握",
+    "pinyin": "bǎwò",
+    "translations": [
+      "to grasp",
+      "to seize",
+      "assurance"
+    ],
+    "partOfSpeech": "verb",
+    "exampleSentence": {
+      "hanzi": "我们要紧紧把握时代的创新脉搏，敢为人先。",
+      "pinyin": "Wǒmen yào jǐnjǐn bǎwò shídài de chuàngxīn màibó, gǎnwéirénxiān.",
+      "translation": "We must firmly grasp the innovative pulse of the era and dare to pioneer."
+    }
+  },
+  {
+    "id": "hsk5-010",
+    "level": 5,
+    "hanzi": "摆",
+    "pinyin": "bǎi",
+    "translations": [
+      "to place",
+      "to arrange",
+      "to swing"
+    ],
+    "partOfSpeech": "verb",
+    "exampleSentence": {
+      "hanzi": "展厅正中央整齐摆放着历代精湛的景泰蓝瓷器。",
+      "pinyin": "Zhǎntīng zhèng zhōngyāng zhěngqí bǎifàng zhe lìdài jīngzhàn de jǐngtài lán cíqì.",
+      "translation": "Exquisite cloisonné porcelain from historical dynasties was neatly arranged right in the center of the exhibition hall."
+    }
+  },
+  {
+    "id": "hsk5-011",
+    "level": 5,
+    "hanzi": "班主任",
+    "pinyin": "bānzhǔrèn",
+    "translations": [
+      "homeroom teacher",
+      "head teacher"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "班主任不仅悉心关照学生的学业，更关注大家的心理成长。",
+      "pinyin": "Bānzhǔrèn bùjǐn xīxīn guānzhào xuésheng de xuéyè, gèng guānzhù dàjiā de xīnlǐ chéngzhǎng.",
+      "translation": "The homeroom teacher not only attentively nurtures students' academics, but also focuses on psychological growth."
+    }
+  },
+  {
+    "id": "hsk5-012",
+    "level": 5,
+    "hanzi": "办理",
+    "pinyin": "bànlǐ",
+    "translations": [
+      "to handle",
+      "to process"
+    ],
+    "partOfSpeech": "verb",
+    "exampleSentence": {
+      "hanzi": "市民服务大厅推行数字化改革，实现了一站式高效办理。",
+      "pinyin": "Shìmín fúwù dàtīng tuīxíng shùzìhuà gǎigé, shíxiàn le yízhànshì gāoxiào bànlǐ.",
+      "translation": "The civic service hall implemented digital reforms, realizing high-efficiency one-stop processing."
+    }
+  },
+  {
+    "id": "hsk5-013",
+    "level": 5,
+    "hanzi": "傍晚",
+    "pinyin": "bàngwǎn",
+    "translations": [
+      "dusk",
+      "toward evening"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "夕阳西下的傍晚时分，微风吹拂着静谧的荷塘。",
+      "pinyin": "Xīyáng xīxià de bàngwǎn shífēn, wēifēng chuīfú zhe jìngmì de hétáng.",
+      "translation": "At dusk when the sunset descended, a gentle breeze caressed the serene lotus pond."
+    }
+  },
+  {
+    "id": "hsk5-014",
+    "level": 5,
+    "hanzi": "包裹",
+    "pinyin": "bāoguǒ",
+    "translations": [
+      "parcel",
+      "package",
+      "to wrap up"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "快递员顶着严寒准时将远方亲人寄来的包裹送达家门。",
+      "pinyin": "Kuàidìyuán dǐngzhe yánhán zhǔnshí jiāng yuǎnfāng qīnrén jìlái de bāoguǒ sòngdá jiāmén.",
+      "translation": "Braving bitter cold, the courier delivered on time to the doorstep the package sent by distant kin."
+    }
+  },
+  {
+    "id": "hsk5-015",
+    "level": 5,
+    "hanzi": "包含",
+    "pinyin": "bāohán",
+    "translations": [
+      "to contain",
+      "to embody"
+    ],
+    "partOfSpeech": "verb",
+    "exampleSentence": {
+      "hanzi": "这份文化保护规划包含了对历史建筑群的全方位修缮举措。",
+      "pinyin": "Zhè fèn wénhuà bǎohù guīhuà bāohán le duì lìshǐ jiànzhùqún de quán fāngwèi xiūshàn jǔcuò.",
+      "translation": "This cultural preservation plan contains comprehensive restoration measures for the historical architecture ensemble."
+    }
+  },
+  {
+    "id": "hsk5-016",
+    "level": 5,
+    "hanzi": "包子",
+    "pinyin": "bāozi",
+    "translations": [
+      "steamed bun"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "天津狗不理包子皮薄馅大，名扬海内外。",
+      "pinyin": "Tiānjīn gǒubùlǐ bāozi pí báo xiàn dà, míngyáng hǎinèiwài.",
+      "translation": "Tianjin Goubuli buns, with thin skin and generous filling, are renowned both at home and abroad."
+    }
+  },
+  {
+    "id": "hsk5-017",
+    "level": 5,
+    "hanzi": "薄",
+    "pinyin": "báo",
+    "translations": [
+      "thin",
+      "flimsy"
+    ],
+    "partOfSpeech": "adjective",
+    "exampleSentence": {
+      "hanzi": "清晨的西湖上笼罩着一层如烟如雾的薄纱。",
+      "pinyin": "Qīngchén de Xīhú shàng lǒngzhào zhe yì céng rú yān rú wù de báo shā.",
+      "translation": "The morning West Lake was shrouded in a thin veil like smoke and mist."
+    }
+  },
+  {
+    "id": "hsk5-018",
+    "level": 5,
+    "hanzi": "宝贝",
+    "pinyin": "bǎobèi",
+    "translations": [
+      "treasure",
+      "darling"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "故宫博物院里珍藏着数以百万计的中华文化瑰宝。",
+      "pinyin": "Gùgōng Bówùyuàn lǐ zhēncáng zhe shù yǐ bǎiwàn jì de zhōnghuá wénhuà guībǎo.",
+      "translation": "The Palace Museum cherishes millions of Chinese cultural treasures."
+    }
+  },
+  {
+    "id": "hsk5-019",
+    "level": 5,
+    "hanzi": "宝贵",
+    "pinyin": "bǎoguì",
+    "translations": [
+      "valuable",
+      "precious"
+    ],
+    "partOfSpeech": "adjective",
+    "exampleSentence": {
+      "hanzi": "实践中积累的实战经验是年轻创业者极其宝贵的财富。",
+      "pinyin": "Shíjiàn zhōng jīlěi de shízhàn jīngyàn shì niánqīng chuàngyèzhě jíqí bǎoguì de cáifù.",
+      "translation": "Combat experience accumulated in practice is an extraordinarily precious wealth for young entrepreneurs."
+    }
+  },
+  {
+    "id": "hsk5-020",
+    "level": 5,
+    "hanzi": "保持",
+    "pinyin": "bǎochí",
+    "translations": [
+      "to maintain",
+      "to preserve"
+    ],
+    "partOfSpeech": "verb",
+    "exampleSentence": {
+      "hanzi": "面对瞬息万变的市场格局，企业需要保持敏锐的洞察力。",
+      "pinyin": "Miànduì shùnxī-wànbiàn de shìchǎng géjú, qǐyè xūyào bǎochí mǐnruì de dòngchálì.",
+      "translation": "Confronted with ever-shifting market landscapes, enterprises must maintain acute discernment."
+    }
+  },
+  {
+    "id": "hsk5-021",
+    "level": 5,
+    "hanzi": "保存",
+    "pinyin": "bǎocún",
+    "translations": [
+      "to preserve",
+      "to save"
+    ],
+    "partOfSpeech": "verb",
+    "exampleSentence": {
+      "hanzi": "数字化档案技术使千年古籍得以原貌永久妥善保存。",
+      "pinyin": "Shùzìhuà dàng'àn jìshù shǐ qiānnián gǔjí déyǐ yuánmào yǒngjiǔ tuǒshàn bǎocún.",
+      "translation": "Digital archival technology enables millennial ancient manuscripts to be permanently preserved in original form."
+    }
+  },
+  {
+    "id": "hsk5-022",
+    "level": 5,
+    "hanzi": "保留",
+    "pinyin": "bǎoliú",
+    "translations": [
+      "to retain",
+      "to reserve"
+    ],
+    "partOfSpeech": "verb",
+    "exampleSentence": {
+      "hanzi": "古城改造在完善基础设施的同时，完整保留了明清风貌。",
+      "pinyin": "Gǔchéng gǎizào zài wánshàn jīchǔ shèshī de tóngshí, wánzhěng bǎoliú le Míng-Qīng fēngmào.",
+      "translation": "The ancient town renewal, while improving infrastructure, completely retained its Ming and Qing dynasty character."
+    }
+  },
+  {
+    "id": "hsk5-023",
+    "level": 5,
+    "hanzi": "保险",
+    "pinyin": "bǎoxiǎn",
+    "translations": [
+      "insurance",
+      "safe"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "完善的社会医疗保险制度为万千家庭筑起了坚实防线。",
+      "pinyin": "Wánshàn de shèhuì yīliáo bǎoxiǎn zhìdù wèi wànqiān jiātíng zhùqǐ le jiānshí fángxiàn.",
+      "translation": "A sound social medical insurance framework builds a solid defense line for millions of households."
+    }
+  },
+  {
+    "id": "hsk5-024",
+    "level": 5,
+    "hanzi": "报道",
+    "pinyin": "bàodào",
+    "translations": [
+      "to report",
+      "news story"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "主流媒体对我国深海载人潜水器的重大突破进行了深度报道。",
+      "pinyin": "Zhǔliú méitǐ duì wǒguó shēnhǎi zàirén qiánshuǐqì de zhòngdà tūpò jìnxíng le shēndù bàodào.",
+      "translation": "Mainstream media carried an in-depth report on the momentous breakthrough of our deep-sea manned submersible."
+    }
+  },
+  {
+    "id": "hsk5-025",
+    "level": 5,
+    "hanzi": "悲观",
+    "pinyin": "bēiguān",
+    "translations": [
+      "pessimistic"
+    ],
+    "partOfSpeech": "adjective",
+    "exampleSentence": {
+      "hanzi": "无论逆境多么严峻，豁达乐观者总能化危机为转机，从不悲观。",
+      "pinyin": "Wúlùn nìjìng duōme yánjùn, huòdá lèguān zhě zǒng néng huà wēijī wéi zhuǎnjī, cóng bù bēiguān.",
+      "translation": "However arduous adversity may be, magnanimous optimists can always transform crisis into opportunity without turning pessimistic."
+    }
+  }
+]

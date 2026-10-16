@@ -1,0 +1,812 @@
+[
+  {
+    "id": "hsk2-001",
+    "level": 2,
+    "hanzi": "帮",
+    "pinyin": "bāng",
+    "translations": [
+      "to help"
+    ],
+    "partOfSpeech": "verb",
+    "exampleSentence": {
+      "hanzi": "请帮我拿一下外套。",
+      "pinyin": "Qǐng bāng wǒ ná yíxià wàitào.",
+      "translation": "Please help me carry my coat."
+    }
+  },
+  {
+    "id": "hsk2-002",
+    "level": 2,
+    "hanzi": "便",
+    "pinyin": "biàn",
+    "translations": [
+      "convenient",
+      "handy"
+    ],
+    "partOfSpeech": "adjective",
+    "exampleSentence": {
+      "hanzi": "坐地铁出行非常方便快捷。",
+      "pinyin": "Zuò dìtiě chūxíng fēicháng fāngbiàn kuàijié.",
+      "translation": "Taking the subway to travel is very convenient and fast."
+    }
+  },
+  {
+    "id": "hsk2-003",
+    "level": 2,
+    "hanzi": "宾馆",
+    "pinyin": "bīnguǎn",
+    "translations": [
+      "hotel"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "这家宾馆的服务十分周到。",
+      "pinyin": "Zhè jiā bīnguǎn de fúwù shífēn zhōudào.",
+      "translation": "This hotel's service is very thoughtful."
+    }
+  },
+  {
+    "id": "hsk2-004",
+    "level": 2,
+    "hanzi": "唱歌",
+    "pinyin": "chànggē",
+    "translations": [
+      "to sing"
+    ],
+    "partOfSpeech": "verb",
+    "exampleSentence": {
+      "hanzi": "她唱歌的声音宛如百灵鸟。",
+      "pinyin": "Tā chànggē de shēngyīn wǎnrú bǎilíngniǎo.",
+      "translation": "Her singing voice is like a lark."
+    }
+  },
+  {
+    "id": "hsk2-005",
+    "level": 2,
+    "hanzi": "出",
+    "pinyin": "chū",
+    "translations": [
+      "to go out",
+      "to exit"
+    ],
+    "partOfSpeech": "verb",
+    "exampleSentence": {
+      "hanzi": "太阳从东方缓缓升出。",
+      "pinyin": "Tàiyáng cóng dōngfāng huǎnhuǎn shēngchū.",
+      "translation": "The sun rose slowly from the east."
+    }
+  },
+  {
+    "id": "hsk2-006",
+    "level": 2,
+    "hanzi": "穿",
+    "pinyin": "chuān",
+    "translations": [
+      "to wear",
+      "to put on"
+    ],
+    "partOfSpeech": "verb",
+    "exampleSentence": {
+      "hanzi": "天冷了，记得多穿一件毛衣。",
+      "pinyin": "Tiān lěng le, jìde duō chuān yí jiàn máoyī.",
+      "translation": "The weather turned cold; remember to wear an extra sweater."
+    }
+  },
+  {
+    "id": "hsk2-007",
+    "level": 2,
+    "hanzi": "次",
+    "pinyin": "cì",
+    "translations": [
+      "time",
+      "occurrence"
+    ],
+    "partOfSpeech": "measure word",
+    "exampleSentence": {
+      "hanzi": "这是我第三次来到美丽的杭州。",
+      "pinyin": "Zhè shì wǒ dì-sān cì lái dào měilì de Hángzhōu.",
+      "translation": "This is my third time coming to beautiful Hangzhou."
+    }
+  },
+  {
+    "id": "hsk2-008",
+    "level": 2,
+    "hanzi": "从",
+    "pinyin": "cóng",
+    "translations": [
+      "from"
+    ],
+    "partOfSpeech": "preposition",
+    "exampleSentence": {
+      "hanzi": "他从早到晚都在实验室工作。",
+      "pinyin": "Tā cóng zǎo dào wǎn dōu zài shíyànshì gōngzuò.",
+      "translation": "He worked in the laboratory from morning to night."
+    }
+  },
+  {
+    "id": "hsk2-009",
+    "level": 2,
+    "hanzi": "错",
+    "pinyin": "cuò",
+    "translations": [
+      "wrong",
+      "mistake"
+    ],
+    "partOfSpeech": "adjective",
+    "exampleSentence": {
+      "hanzi": "不要害怕犯错，从错误中学习。",
+      "pinyin": "Bú yào hàipà fàn cuò, cóng cuòwù zhōng xuéxí.",
+      "translation": "Don't be afraid to make mistakes; learn from them."
+    }
+  },
+  {
+    "id": "hsk2-010",
+    "level": 2,
+    "hanzi": "打篮球",
+    "pinyin": "dǎ lánqiú",
+    "translations": [
+      "to play basketball"
+    ],
+    "partOfSpeech": "verb",
+    "exampleSentence": {
+      "hanzi": "男孩子们在球场上热火朝天地打篮球。",
+      "pinyin": "Nánháizi men zài qiúchǎng shàng rèhuǒcháotiān de dǎ lánqiú.",
+      "translation": "The boys are passionately playing basketball on the court."
+    }
+  },
+  {
+    "id": "hsk2-011",
+    "level": 2,
+    "hanzi": "大家",
+    "pinyin": "dàjiā",
+    "translations": [
+      "everyone"
+    ],
+    "partOfSpeech": "pronoun",
+    "exampleSentence": {
+      "hanzi": "大家请保持安静，讲座马上开始。",
+      "pinyin": "Dàjiā qǐng bǎochí ānjìng, jiǎngzuò mǎshàng kāishǐ.",
+      "translation": "Everyone please keep quiet, the lecture is starting right away."
+    }
+  },
+  {
+    "id": "hsk2-012",
+    "level": 2,
+    "hanzi": "到",
+    "pinyin": "dào",
+    "translations": [
+      "to arrive",
+      "to reach"
+    ],
+    "partOfSpeech": "verb",
+    "exampleSentence": {
+      "hanzi": "高铁准时到达了终点站。",
+      "pinyin": "Gāotiě zhǔnshí dàodá le zhōngdiǎnzhàn.",
+      "translation": "The high-speed train arrived at the terminus on time."
+    }
+  },
+  {
+    "id": "hsk2-013",
+    "level": 2,
+    "hanzi": "得",
+    "pinyin": "de",
+    "translations": [
+      "structural particle for manner/degree"
+    ],
+    "partOfSpeech": "particle",
+    "exampleSentence": {
+      "hanzi": "他跑得飞快，拿下了第一名。",
+      "pinyin": "Tā pǎo de fēikuài, náxià le dì-yī míng.",
+      "translation": "He ran exceedingly fast and clinched first place."
+    }
+  },
+  {
+    "id": "hsk2-014",
+    "level": 2,
+    "hanzi": "等",
+    "pinyin": "děng",
+    "translations": [
+      "to wait"
+    ],
+    "partOfSpeech": "verb",
+    "exampleSentence": {
+      "hanzi": "请在候车室稍等片刻。",
+      "pinyin": "Qǐng zài hòuchēshì shāoděng piànkè.",
+      "translation": "Please wait for a moment in the waiting room."
+    }
+  },
+  {
+    "id": "hsk2-015",
+    "level": 2,
+    "hanzi": "弟弟",
+    "pinyin": "dìdi",
+    "translations": [
+      "younger brother"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "我弟弟是一个好奇心强的男孩。",
+      "pinyin": "Wǒ dìdi shì yí ge hàoqíxīn qiáng de nánhái.",
+      "translation": "My younger brother is a boy full of curiosity."
+    }
+  },
+  {
+    "id": "hsk2-016",
+    "level": 2,
+    "hanzi": "第一",
+    "pinyin": "dì-yī",
+    "translations": [
+      "first",
+      "number one"
+    ],
+    "partOfSpeech": "numeral",
+    "exampleSentence": {
+      "hanzi": "经过努力，他取得了全校第一的优异成绩。",
+      "pinyin": "Jīngguò nǔlì, tā qǔdé le quánxiào dì-yī de yōuyì chéngjì.",
+      "translation": "Through diligence, he attained the school's top outstanding score."
+    }
+  },
+  {
+    "id": "hsk2-017",
+    "level": 2,
+    "hanzi": "懂",
+    "pinyin": "dǒng",
+    "translations": [
+      "to understand"
+    ],
+    "partOfSpeech": "verb",
+    "exampleSentence": {
+      "hanzi": "你懂这首古典诗词的含义吗？",
+      "pinyin": "Nǐ dǒng zhè shǒu gǔdiǎn shīcí de hányì ma?",
+      "translation": "Do you understand the meaning of this classical poem?"
+    }
+  },
+  {
+    "id": "hsk2-018",
+    "level": 2,
+    "hanzi": "对",
+    "pinyin": "duì",
+    "translations": [
+      "correct",
+      "towards"
+    ],
+    "partOfSpeech": "adjective",
+    "exampleSentence": {
+      "hanzi": "你的回答完全正确。",
+      "pinyin": "Nǐ de huídá wánquán zhèngquè.",
+      "translation": "Your answer is completely correct."
+    }
+  },
+  {
+    "id": "hsk2-019",
+    "level": 2,
+    "hanzi": "房间",
+    "pinyin": "fángjiān",
+    "translations": [
+      "room"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "阳光透过窗户洒满了整个房间。",
+      "pinyin": "Yángguāng tòuguò chuānghu sǎmǎn le zhènggè fángjiān.",
+      "translation": "Sunlight streamed through the window, filling the whole room."
+    }
+  },
+  {
+    "id": "hsk2-020",
+    "level": 2,
+    "hanzi": "非常",
+    "pinyin": "fēicháng",
+    "translations": [
+      "very",
+      "extraordinarily"
+    ],
+    "partOfSpeech": "adverb",
+    "exampleSentence": {
+      "hanzi": "这道传统北京烤鸭味道非常纯正。",
+      "pinyin": "Zhè dào chuántǒng Běijīng kǎoyā wèidào fēicháng chúnzhèng.",
+      "translation": "This traditional Peking roast duck tastes extraordinarily authentic."
+    }
+  },
+  {
+    "id": "hsk2-021",
+    "level": 2,
+    "hanzi": "服务员",
+    "pinyin": "fúwùyuán",
+    "translations": [
+      "waiter",
+      "attendant"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "热情的服务员端上了刚出炉的热茶。",
+      "pinyin": "Rèqíng de fúwùyuán duānshàng le gāng chūlú de rè chá.",
+      "translation": "The enthusiastic waiter served the freshly brewed hot tea."
+    }
+  },
+  {
+    "id": "hsk2-022",
+    "level": 2,
+    "hanzi": "高",
+    "pinyin": "gāo",
+    "translations": [
+      "tall",
+      "high"
+    ],
+    "partOfSpeech": "adjective",
+    "exampleSentence": {
+      "hanzi": "泰山是中国著名的崇山峻岭，海拔很高。",
+      "pinyin": "Tàishān shì zhōngguó zhùmíng de chóngshān jùnlǐng, hǎibá hěn gāo.",
+      "translation": "Mount Tai is a famous towering peak in China with a high altitude."
+    }
+  },
+  {
+    "id": "hsk2-023",
+    "level": 2,
+    "hanzi": "告诉",
+    "pinyin": "gàosu",
+    "translations": [
+      "to tell",
+      "to inform"
+    ],
+    "partOfSpeech": "verb",
+    "exampleSentence": {
+      "hanzi": "他把通过考试的好消息告诉了父母。",
+      "pinyin": "Tā bǎ tōngguò kǎoshì de hǎo xiāoxi gàosu le fùmǔ.",
+      "translation": "He told the good news of passing the exam to his parents."
+    }
+  },
+  {
+    "id": "hsk2-024",
+    "level": 2,
+    "hanzi": "哥哥",
+    "pinyin": "gēge",
+    "translations": [
+      "older brother"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "我哥哥正在北京大学攻读计算机硕士。",
+      "pinyin": "Wǒ gēge zhèngzài Běijīng Dàxué gōngdú jìsuànjī shuòshì.",
+      "translation": "My older brother is pursuing a master's degree in computer science at Peking University."
+    }
+  },
+  {
+    "id": "hsk2-025",
+    "level": 2,
+    "hanzi": "给",
+    "pinyin": "gěi",
+    "translations": [
+      "to give"
+    ],
+    "partOfSpeech": "verb",
+    "exampleSentence": {
+      "hanzi": "朋友送给我一本精美的书法画册。",
+      "pinyin": "Péngyou sòng gěi wǒ yì běn jīngměi de shūfǎ huàcè.",
+      "translation": "A friend gave me an exquisite calligraphy album."
+    }
+  },
+  {
+    "id": "hsk2-026",
+    "level": 2,
+    "hanzi": "公共汽车",
+    "pinyin": "gōnggòng qìchē",
+    "translations": [
+      "bus"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "绿色环保的电动公共汽车正在城市里普及。",
+      "pinyin": "Lǜsè huánbǎo de diàndòng gōnggòng qìchē zhèngzài chéngshì lǐ pǔjí.",
+      "translation": "Eco-friendly electric buses are becoming widespread across the city."
+    }
+  },
+  {
+    "id": "hsk2-027",
+    "level": 2,
+    "hanzi": "公司",
+    "pinyin": "gōngsī",
+    "translations": [
+      "company",
+      "corporation"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "这家科技公司致力于开发人工智能产品。",
+      "pinyin": "Zhè jiā kējì gōngsī zhìlì yú kāifā réngōng zhìnéng chǎnpǐn.",
+      "translation": "This tech company is dedicated to developing artificial intelligence products."
+    }
+  },
+  {
+    "id": "hsk2-028",
+    "level": 2,
+    "hanzi": "贵",
+    "pinyin": "guì",
+    "translations": [
+      "expensive",
+      "precious"
+    ],
+    "partOfSpeech": "adjective",
+    "exampleSentence": {
+      "hanzi": "虽然价格昂贵，但这件工艺品质感极佳。",
+      "pinyin": "Suīrán jiàgé ángguì, dàn zhè jiàn gōngyìpǐn zhìgǎn jí jiā.",
+      "translation": "Although the price is expensive, this craft piece has exceptional quality."
+    }
+  },
+  {
+    "id": "hsk2-029",
+    "level": 2,
+    "hanzi": "过",
+    "pinyin": "guò",
+    "translations": [
+      "to pass",
+      "to spend time"
+    ],
+    "partOfSpeech": "verb",
+    "exampleSentence": {
+      "hanzi": "在长城上的那一天过得非常充实难忘。",
+      "pinyin": "Zài Chángchéng shàng de nà yì tiān guò de fēicháng chōngshí nánwàng.",
+      "translation": "The day spent on the Great Wall was extraordinarily fulfilling and memorable."
+    }
+  },
+  {
+    "id": "hsk2-030",
+    "level": 2,
+    "hanzi": "还",
+    "pinyin": "hái",
+    "translations": [
+      "still",
+      "yet",
+      "in addition"
+    ],
+    "partOfSpeech": "adverb",
+    "exampleSentence": {
+      "hanzi": "除了汉语，他还会说流畅的西班牙语。",
+      "pinyin": "Chúle hànyǔ, tā hái huì shuō liúchàng de xībānyáyǔ.",
+      "translation": "In addition to Chinese, he can also speak fluent Spanish."
+    }
+  },
+  {
+    "id": "hsk2-031",
+    "level": 2,
+    "hanzi": "孩子",
+    "pinyin": "háizi",
+    "translations": [
+      "child",
+      "children"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "孩子们在草地上快乐地奔跑嬉戏。",
+      "pinyin": "Háizi men zài cǎodì shàng kuàilè de bēnpǎo xīxì.",
+      "translation": "The children were running and frolicking joyfully on the grass."
+    }
+  },
+  {
+    "id": "hsk2-032",
+    "level": 2,
+    "hanzi": "好吃",
+    "pinyin": "hǎochī",
+    "translations": [
+      "delicious",
+      "tasty"
+    ],
+    "partOfSpeech": "adjective",
+    "exampleSentence": {
+      "hanzi": "四川的麻婆豆腐又麻又辣，特别好吃。",
+      "pinyin": "Sìchuān de mápó dòufu yòu má yòu là, tèbié hǎochī.",
+      "translation": "Sichuan's Mapo Tofu is both numbing and spicy, exceptionally delicious."
+    }
+  },
+  {
+    "id": "hsk2-033",
+    "level": 2,
+    "hanzi": "黑",
+    "pinyin": "hēi",
+    "translations": [
+      "black",
+      "dark"
+    ],
+    "partOfSpeech": "adjective",
+    "exampleSentence": {
+      "hanzi": "夜空深邃黝黑，缀满了闪耀的星光。",
+      "pinyin": "Yèkōng shēnsuì yǒuhēi, zhuìmǎn le shǎnyào de xīngguāng.",
+      "translation": "The night sky was deep and black, studded with shimmering stars."
+    }
+  },
+  {
+    "id": "hsk2-034",
+    "level": 2,
+    "hanzi": "红",
+    "pinyin": "hóng",
+    "translations": [
+      "red"
+    ],
+    "partOfSpeech": "adjective",
+    "exampleSentence": {
+      "hanzi": "中国传统的红灯笼象征着喜庆与团圆。",
+      "pinyin": "Zhōngguó chuántǒng de hóng dēnglong xiàngzhēng zhe xǐqìng yǔ tuányuán.",
+      "translation": "Traditional Chinese red lanterns symbolize festivity and reunion."
+    }
+  },
+  {
+    "id": "hsk2-035",
+    "level": 2,
+    "hanzi": "火车站",
+    "pinyin": "huǒchēzhàn",
+    "translations": [
+      "train station"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "现代化的火车站内人流络绎不绝。",
+      "pinyin": "Xiàndàihuà de huǒchēzhàn nèi rénliú luòyì bù jué.",
+      "translation": "Within the modernized train station, travelers flowed incessantly."
+    }
+  },
+  {
+    "id": "hsk2-036",
+    "level": 2,
+    "hanzi": "机场",
+    "pinyin": "jīchǎng",
+    "translations": [
+      "airport"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "大兴国际机场展现了卓越的建筑设计。",
+      "pinyin": "Dàxīng Guójì Jīchǎng zhǎnxiàn le zhuóyuè de jiànzhù shèjì.",
+      "translation": "Daxing International Airport demonstrates outstanding architectural design."
+    }
+  },
+  {
+    "id": "hsk2-037",
+    "level": 2,
+    "hanzi": "鸡蛋",
+    "pinyin": "jīdàn",
+    "translations": [
+      "egg"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "每天清晨吃一个水煮鸡蛋营养丰富。",
+      "pinyin": "Měitiān qīngchén chī yí ge shuǐzhǔ jīdàn yíngyǎng fēngfù.",
+      "translation": "Eating a boiled egg every morning is richly nutritious."
+    }
+  },
+  {
+    "id": "hsk2-038",
+    "level": 2,
+    "hanzi": "件",
+    "pinyin": "jiàn",
+    "translations": [
+      "measure word for clothes, matters"
+    ],
+    "partOfSpeech": "measure word",
+    "exampleSentence": {
+      "hanzi": "这是一件值得认真对待的重要事情。",
+      "pinyin": "Zhè shì yí jiàn zhíde rènzhēn duìdài de zhòngyào shìqing.",
+      "translation": "This is an important matter worthy of serious consideration."
+    }
+  },
+  {
+    "id": "hsk2-039",
+    "level": 2,
+    "hanzi": "教室",
+    "pinyin": "jiàoshì",
+    "translations": [
+      "classroom"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "阳光明媚的教室里书声琅琅。",
+      "pinyin": "Yángguāng míngmèi de jiàoshì lǐ shūshēng lángláng.",
+      "translation": "The bright sunlit classroom resonated with the sound of reading."
+    }
+  },
+  {
+    "id": "hsk2-040",
+    "level": 2,
+    "hanzi": "姐姐",
+    "pinyin": "jiějie",
+    "translations": [
+      "older sister"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "我的姐姐在医学院潜心钻研医学。",
+      "pinyin": "Wǒ jiějie zài yīxuéyuàn qiánxīn zuānyán yīxué.",
+      "translation": "My older sister is devoting herself to medical research at medical school."
+    }
+  },
+  {
+    "id": "hsk2-041",
+    "level": 2,
+    "hanzi": "介意",
+    "pinyin": "jièyì",
+    "translations": [
+      "to mind",
+      "to take offense"
+    ],
+    "partOfSpeech": "verb",
+    "exampleSentence": {
+      "hanzi": "请问您介意我把窗户开一点透气吗？",
+      "pinyin": "Qǐngwèn nín jièyì wǒ bǎ chuānghu kāi yìdiǎn tòuqì ma?",
+      "translation": "Excuse me, would you mind if I open the window a bit for ventilation?"
+    }
+  },
+  {
+    "id": "hsk2-042",
+    "level": 2,
+    "hanzi": "介绍",
+    "pinyin": "jièshào",
+    "translations": [
+      "to introduce"
+    ],
+    "partOfSpeech": "verb",
+    "exampleSentence": {
+      "hanzi": "请允许我向大家详细介绍项目进展。",
+      "pinyin": "Qǐng yǔnxǔ wǒ xiàng dàjiā xiángxì jièshào xiàngmù jìnzhǎn.",
+      "translation": "Please allow me to introduce the project's progress in detail to everyone."
+    }
+  },
+  {
+    "id": "hsk2-043",
+    "level": 2,
+    "hanzi": "进",
+    "pinyin": "jìn",
+    "translations": [
+      "to enter"
+    ],
+    "partOfSpeech": "verb",
+    "exampleSentence": {
+      "hanzi": "请进，欢迎光临寒舍！",
+      "pinyin": "Qǐng jìn, huānyíng guānglín hánshè!",
+      "translation": "Please come in, welcome to our humble home!"
+    }
+  },
+  {
+    "id": "hsk2-044",
+    "level": 2,
+    "hanzi": "近",
+    "pinyin": "jìn",
+    "translations": [
+      "near",
+      "close"
+    ],
+    "partOfSpeech": "adjective",
+    "exampleSentence": {
+      "hanzi": "学校离我家很近，步行仅需五分钟。",
+      "pinyin": "Xuéxiào lí wǒ jiā hěn jìn, bùxíng jǐn xū wǔ fēnzhōng.",
+      "translation": "The school is very close to my house, only requiring a five-minute walk."
+    }
+  },
+  {
+    "id": "hsk2-045",
+    "level": 2,
+    "hanzi": "就",
+    "pinyin": "jiù",
+    "translations": [
+      "then",
+      "at once",
+      "just"
+    ],
+    "partOfSpeech": "adverb",
+    "exampleSentence": {
+      "hanzi": "做完作业后我就去公园散步。",
+      "pinyin": "Zuòwán zuòyè hòu wǒ jiù qù gōngyuán sànbù.",
+      "translation": "Right after finishing homework, I will go for a walk in the park."
+    }
+  },
+  {
+    "id": "hsk2-046",
+    "level": 2,
+    "hanzi": "觉得",
+    "pinyin": "juéde",
+    "translations": [
+      "to feel",
+      "to think"
+    ],
+    "partOfSpeech": "verb",
+    "exampleSentence": {
+      "hanzi": "我觉得学汉语不仅有趣，还能开阔眼界。",
+      "pinyin": "Wǒ juéde xué hànyǔ bùjǐn yǒuqù, hái néng kāikuò yǎnjiè.",
+      "translation": "I feel that learning Chinese is not only interesting but also broadens horizons."
+    }
+  },
+  {
+    "id": "hsk2-047",
+    "level": 2,
+    "hanzi": "咖啡",
+    "pinyin": "kāfēi",
+    "translations": [
+      "coffee"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "现磨的香浓咖啡能够提神醒脑。",
+      "pinyin": "Xiànmó de xiāngnóng kāfēi nénggòu tíshén xǐngnǎo.",
+      "translation": "Freshly ground aromatic coffee refreshes the mind."
+    }
+  },
+  {
+    "id": "hsk2-048",
+    "level": 2,
+    "hanzi": "开始",
+    "pinyin": "kāishǐ",
+    "translations": [
+      "to begin",
+      "to start"
+    ],
+    "partOfSpeech": "verb",
+    "exampleSentence": {
+      "hanzi": "新的学期正式拉开序幕了。",
+      "pinyin": "Xīn de xuéqī zhèngshì lākāi xùmù le.",
+      "translation": "The new semester has formally commenced."
+    }
+  },
+  {
+    "id": "hsk2-049",
+    "level": 2,
+    "hanzi": "考试",
+    "pinyin": "kǎoshì",
+    "translations": [
+      "examination",
+      "test"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "只要平时踏实努力，期末考试不必焦虑。",
+      "pinyin": "Zhǐyào píngshí tàshi nǔlì, qīmò kǎoshì bú bì jiāolǜ.",
+      "translation": "As long as one works steadily in routine times, one needn't fret over final exams."
+    }
+  },
+  {
+    "id": "hsk2-050",
+    "level": 2,
+    "hanzi": "可能",
+    "pinyin": "kěnéng",
+    "translations": [
+      "maybe",
+      "possible"
+    ],
+    "partOfSpeech": "adverb",
+    "exampleSentence": {
+      "hanzi": "明天下雨的可能性比较大。",
+      "pinyin": "Míngtiān xià yǔ de kěnéngxìng bǐjiào dà.",
+      "translation": "The possibility of rain tomorrow is quite high."
+    }
+  },
+  {
+    "id": "hsk2-051",
+    "level": 2,
+    "hanzi": "可以",
+    "pinyin": "kěyǐ",
+    "translations": [
+      "can",
+      "may"
+    ],
+    "partOfSpeech": "auxiliary verb",
+    "exampleSentence": {
+      "hanzi": "在这里你可以欣赏到全城壮观的夜景。",
+      "pinyin": "Zài zhèlǐ nǐ kěyǐ xīnshǎng dào quánchéng zhuàngguān de yèjǐng.",
+      "translation": "Here you can admire the magnificent night skyline of the entire city."
+    }
+  },
+  {
+    "id": "hsk2-052",
+    "level": 2,
+    "hanzi": "课",
+    "pinyin": "kè",
+    "translations": [
+      "lesson",
+      "class"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "这堂中国古代文学课非常生动有趣。",
+      "pinyin": "Zhè táng zhōngguó gǔdài wénxué kè fēicháng shēngdòng yǒuqù.",
+      "translation": "This classical Chinese literature class is very vivid and engaging."
+    }
+  }
+]

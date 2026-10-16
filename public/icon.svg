@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="sealGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#b91c1c"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+  <!-- Background Rounded Seal -->
+  <rect x="32" y="32" width="448" height="448" rx="96" fill="url(#sealGrad)" filter="url(#shadow)"/>
+  <rect x="48" y="48" width="416" height="416" rx="80" fill="none" stroke="#fecaca" stroke-width="4" stroke-opacity="0.4"/>
+  
+  <!-- Hanzi Character '速' Styled -->
+  <g fill="#ffffff" font-family="'Noto Serif SC', 'Songti SC', 'SimSun', serif" font-weight="900" font-size="280" text-anchor="middle" dominant-baseline="central">
+    <text x="256" y="260">速</text>
+  </g>
+</svg>

@@ -1,0 +1,555 @@
+[
+  {
+    "id": "hsk3-001",
+    "level": 3,
+    "hanzi": "阿姨",
+    "pinyin": "āyí",
+    "translations": [
+      "aunt",
+      "nurse",
+      "helper"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "王阿姨热情地招待了所有客人。",
+      "pinyin": "Wáng āyí rèqíng de zhāodài le suǒyǒu kèrén.",
+      "translation": "Aunt Wang hospitably entertained all the guests."
+    }
+  },
+  {
+    "id": "hsk3-002",
+    "level": 3,
+    "hanzi": "矮",
+    "pinyin": "ǎi",
+    "translations": [
+      "short (height)",
+      "low"
+    ],
+    "partOfSpeech": "adjective",
+    "exampleSentence": {
+      "hanzi": "院子里的竹篱笆修筑得很矮。",
+      "pinyin": "Yuànzi lǐ de zhú líba xiūzhù de hěn ǎi.",
+      "translation": "The bamboo fence in the yard was built quite low."
+    }
+  },
+  {
+    "id": "hsk3-003",
+    "level": 3,
+    "hanzi": "爱好",
+    "pinyin": "àihào",
+    "translations": [
+      "hobby",
+      "interest"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "摄影和旅行是他坚持多年的业余爱好。",
+      "pinyin": "Shèyǐng hé lǚxíng shì tā jiānchí duō nián de yèyú àihào.",
+      "translation": "Photography and travel have been his hobbies for many years."
+    }
+  },
+  {
+    "id": "hsk3-004",
+    "level": 3,
+    "hanzi": "安静",
+    "pinyin": "ānjìng",
+    "translations": [
+      "quiet",
+      "peaceful"
+    ],
+    "partOfSpeech": "adjective",
+    "exampleSentence": {
+      "hanzi": "清晨的湖畔宛如镜面般宁谧安静。",
+      "pinyin": "Qīngchén de húpàn wǎnrú jìngmiàn bān nìngmì ānjìng.",
+      "translation": "The morning lakeshore was as calm and peaceful as a mirror."
+    }
+  },
+  {
+    "id": "hsk3-005",
+    "level": 3,
+    "hanzi": "把",
+    "pinyin": "bǎ",
+    "translations": [
+      "disposal particle",
+      "handle"
+    ],
+    "partOfSpeech": "particle",
+    "exampleSentence": {
+      "hanzi": "请把房间收拾得整整齐齐。",
+      "pinyin": "Qǐng bǎ fángjiān shōushi de zhěngzhěng-qíqí.",
+      "translation": "Please tidy up the room neat and orderly."
+    }
+  },
+  {
+    "id": "hsk3-006",
+    "level": 3,
+    "hanzi": "班",
+    "pinyin": "bān",
+    "translations": [
+      "class",
+      "shift",
+      "team"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "我们全班同学积极组织了一场朗诵会。",
+      "pinyin": "Wǒmen quán bān tóngxué jījí zǔzhī le yì chǎng lǎngsònghuì.",
+      "translation": "Our entire class actively organized a poetry recital."
+    }
+  },
+  {
+    "id": "hsk3-007",
+    "level": 3,
+    "hanzi": "搬",
+    "pinyin": "bān",
+    "translations": [
+      "to move (objects/house)"
+    ],
+    "partOfSpeech": "verb",
+    "exampleSentence": {
+      "hanzi": "他们一家搬进了宽敞明亮的新公寓。",
+      "pinyin": "Tāmen yìjiā bān jìn le kuānchǎng míngliàng de xīn gōngyù.",
+      "translation": "Their family moved into a spacious and bright new apartment."
+    }
+  },
+  {
+    "id": "hsk3-008",
+    "level": 3,
+    "hanzi": "办法",
+    "pinyin": "bànfǎ",
+    "translations": [
+      "method",
+      "solution",
+      "way"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "遇到难题时我们要冷静思索解决办法。",
+      "pinyin": "Yùdào nántí shí wǒmen yào lěngjìng sīsuǒ jiějué bànfǎ.",
+      "translation": "When confronting tough problems, we should calmly reflect on solutions."
+    }
+  },
+  {
+    "id": "hsk3-009",
+    "level": 3,
+    "hanzi": "办公室",
+    "pinyin": "bàngōngshì",
+    "translations": [
+      "office"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "现代化的办公室配备了前沿的办公设备。",
+      "pinyin": "Xiàndàihuà de bàngōngshì pèibèi le qiányán de bàngōng shèbèi.",
+      "translation": "The modern office is equipped with cutting-edge office facilities."
+    }
+  },
+  {
+    "id": "hsk3-010",
+    "level": 3,
+    "hanzi": "半",
+    "pinyin": "bàn",
+    "translations": [
+      "half"
+    ],
+    "partOfSpeech": "numeral",
+    "exampleSentence": {
+      "hanzi": "他用了一个半小时完成了复杂的编程任务。",
+      "pinyin": "Tā yòng le yí ge bàn xiǎoshí wánchéng le fùzá de biānchéng rènwù.",
+      "translation": "He spent an hour and a half completing the complex coding task."
+    }
+  },
+  {
+    "id": "hsk3-011",
+    "level": 3,
+    "hanzi": "包",
+    "pinyin": "bāo",
+    "translations": [
+      "bag",
+      "to wrap",
+      "package"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "双肩包里装着学习必备的笔记本和文具。",
+      "pinyin": "Shuāngjiānbāo lǐ zhuāng zhe xuéxí bìbèi de bǐjìběn hé wénjù.",
+      "translation": "The backpack holds notebooks and stationery indispensable for study."
+    }
+  },
+  {
+    "id": "hsk3-012",
+    "level": 3,
+    "hanzi": "饱",
+    "pinyin": "bǎo",
+    "translations": [
+      "full (from eating)"
+    ],
+    "partOfSpeech": "adjective",
+    "exampleSentence": {
+      "hanzi": "吃饱饭后在林间漫步有益消化。",
+      "pinyin": "Chībǎo fàn hòu zài línjiān mànbù yǒuyì xiāohuà.",
+      "translation": "Strolling in the woods after being full benefits digestion."
+    }
+  },
+  {
+    "id": "hsk3-013",
+    "level": 3,
+    "hanzi": "北方",
+    "pinyin": "běifāng",
+    "translations": [
+      "north",
+      "northern part"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "中国北方的冬天常有漫天飞雪的壮丽奇景。",
+      "pinyin": "Zhōngguó běifāng de dōngtiān cháng yǒu màntiān fēixuě de zhuànglì qíjǐng.",
+      "translation": "Winter in northern China often features magnificent scenes of swirling snowflakes."
+    }
+  },
+  {
+    "id": "hsk3-014",
+    "level": 3,
+    "hanzi": "被",
+    "pinyin": "bèi",
+    "translations": [
+      "passive marker"
+    ],
+    "partOfSpeech": "preposition",
+    "exampleSentence": {
+      "hanzi": "这篇优秀的学术论文被国际期刊收录了。",
+      "pinyin": "Zhè piān yōuxiù de xuéshù lùnwén bèi guójì qīkān shōulù le.",
+      "translation": "This outstanding academic paper was indexed by an international journal."
+    }
+  },
+  {
+    "id": "hsk3-015",
+    "level": 3,
+    "hanzi": "鼻子",
+    "pinyin": "bízi",
+    "translations": [
+      "nose"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "警犬灵敏的鼻子能迅速辨别极其微弱的气味。",
+      "pinyin": "Jǐngquǎn língmǐn de bízi néng xùnsù biànbié jíqí wēiruò de qìwèi.",
+      "translation": "The police dog's acute nose can rapidly discern extremely faint scents."
+    }
+  },
+  {
+    "id": "hsk3-016",
+    "level": 3,
+    "hanzi": "比较",
+    "pinyin": "bǐjiào",
+    "translations": [
+      "comparatively",
+      "to compare"
+    ],
+    "partOfSpeech": "adverb",
+    "exampleSentence": {
+      "hanzi": "这两种方案比较起来，前者更具可行性。",
+      "pinyin": "Zhè liǎng zhǒng fāng'àn bǐjiào qǐlai, qiánzhě gèng jù kěxíngxìng.",
+      "translation": "Comparing these two schemes, the former possesses greater feasibility."
+    }
+  },
+  {
+    "id": "hsk3-017",
+    "level": 3,
+    "hanzi": "比赛",
+    "pinyin": "bǐsài",
+    "translations": [
+      "competition",
+      "match"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "激动人心的足球决赛吸引了数万名热情的观众。",
+      "pinyin": "Jīdòng rénxīn de zúqiú juésài xīyǐn le shù wàn míng rèqíng de guānzhòng.",
+      "translation": "The thrilling soccer final attracted tens of thousands of enthusiastic spectators."
+    }
+  },
+  {
+    "id": "hsk3-018",
+    "level": 3,
+    "hanzi": "必须",
+    "pinyin": "bìxū",
+    "translations": [
+      "must",
+      "have to"
+    ],
+    "partOfSpeech": "auxiliary verb",
+    "exampleSentence": {
+      "hanzi": "进行科学探索必须保持严谨务实的态度。",
+      "pinyin": "Jìnxíng kēxué tànsuǒ bìxū bǎochí yánjǐn wùshí de tàidu.",
+      "translation": "Conducting scientific exploration demands maintaining a rigorous and pragmatic attitude."
+    }
+  },
+  {
+    "id": "hsk3-019",
+    "level": 3,
+    "hanzi": "变化",
+    "pinyin": "biànhuà",
+    "translations": [
+      "change",
+      "transformation"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "改革开放以来，城市的风貌发生了翻天覆地的变化。",
+      "pinyin": "Gǎigé kāifàng yǐlái, chéngshì de fēngmào fāshēng le fāntiānfùdì de biànhuà.",
+      "translation": "Since reform and opening up, the city's appearance underwent earth-shaking changes."
+    }
+  },
+  {
+    "id": "hsk3-020",
+    "level": 3,
+    "hanzi": "表示",
+    "pinyin": "biǎoshì",
+    "translations": [
+      "to express",
+      "to show"
+    ],
+    "partOfSpeech": "verb",
+    "exampleSentence": {
+      "hanzi": "全场观众起立鼓掌，表示由衷的敬佩。",
+      "pinyin": "Quánchǎng guānzhòng qǐlì gǔzhǎng, biǎoshì yóuzhōng de jìngpèi.",
+      "translation": "The entire audience stood and applauded, showing heartfelt admiration."
+    }
+  },
+  {
+    "id": "hsk3-021",
+    "level": 3,
+    "hanzi": "表演",
+    "pinyin": "biǎoyǎn",
+    "translations": [
+      "performance",
+      "to perform"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "精彩纷呈的杂技表演赢得了阵阵掌声。",
+      "pinyin": "Jīngcǎi fēnchéng de zájì biǎoyǎn yíngdé le zhènzhèn zhǎngshēng.",
+      "translation": "The splendid acrobatics performance won round after round of applause."
+    }
+  },
+  {
+    "id": "hsk3-022",
+    "level": 3,
+    "hanzi": "别人",
+    "pinyin": "biéren",
+    "translations": [
+      "other people",
+      "others"
+    ],
+    "partOfSpeech": "pronoun",
+    "exampleSentence": {
+      "hanzi": "尊重别人的意见是建立良好合作的基础。",
+      "pinyin": "Zūnzhòng biéren de yìjiàn shì jiànlì liánghǎo hézuò de jīchǔ.",
+      "translation": "Respecting other people's opinions is the cornerstone of establishing great cooperation."
+    }
+  },
+  {
+    "id": "hsk3-023",
+    "level": 3,
+    "hanzi": "宾馆",
+    "pinyin": "bīnguǎn",
+    "translations": [
+      "hotel"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "那座历史悠久的宾馆坐落在风景如画的湖边。",
+      "pinyin": "Nà zuò lìshǐ yōujiǔ de bīnguǎn zuòluò zài fēngjǐngrùhuà de húbiān.",
+      "translation": "That storied historic hotel is situated beside a picturesque lake."
+    }
+  },
+  {
+    "id": "hsk3-024",
+    "level": 3,
+    "hanzi": "冰箱",
+    "pinyin": "bīngxiāng",
+    "translations": [
+      "refrigerator"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "智能冰箱能够自动监测食品的新鲜程度。",
+      "pinyin": "Zhìnéng bīngxiāng nénggòu zìdòng jiāncè shípǐn de xīnxian chéngdù.",
+      "translation": "The smart refrigerator can automatically monitor the freshness degree of food items."
+    }
+  },
+  {
+    "id": "hsk3-025",
+    "level": 3,
+    "hanzi": "才",
+    "pinyin": "cái",
+    "translations": [
+      "only then",
+      "just"
+    ],
+    "partOfSpeech": "adverb",
+    "exampleSentence": {
+      "hanzi": "经过反复推敲实验，团队才最终攻克了难关。",
+      "pinyin": "Jīngguò fǎnfù tuīqiāo shíyàn, tuánduì cái zuìzhōng gōngkè le nánguān.",
+      "translation": "Only after repeated deliberation and experimentation did the team finally overcome the hurdle."
+    }
+  },
+  {
+    "id": "hsk3-026",
+    "level": 3,
+    "hanzi": "菜单",
+    "pinyin": "càidān",
+    "translations": [
+      "menu"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "服务员递上了一份印制考究的特色菜单。",
+      "pinyin": "Fúwùyuán dìshàng le yí fèn yìnzhì kǎojiu de tèsè càidān.",
+      "translation": "The waiter handed over an exquisitely printed specialty menu."
+    }
+  },
+  {
+    "id": "hsk3-027",
+    "level": 3,
+    "hanzi": "参加",
+    "pinyin": "cānjiā",
+    "translations": [
+      "to participate",
+      "to join"
+    ],
+    "partOfSpeech": "verb",
+    "exampleSentence": {
+      "hanzi": "来自世界各地的学者踊跃参加了此次学术年会。",
+      "pinyin": "Láizì shìjiè gèdì de xuézhě yǒngyuè cānjiā le cǐ cì xuéshù niánhuì.",
+      "translation": "Scholars from all across the globe enthusiastically participated in this annual academic conference."
+    }
+  },
+  {
+    "id": "hsk3-028",
+    "level": 3,
+    "hanzi": "草",
+    "pinyin": "cǎo",
+    "translations": [
+      "grass",
+      "straw"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "春风吹拂下，原野上的青草悄悄破土而出。",
+      "pinyin": "Chūnfēng chuīfú xià, yuányě shàng de qīngcǎo qiāoqiāo pòtǔ ér chū.",
+      "translation": "Under the gentle spring breeze, green grass on the wilderness quietly sprouted from the soil."
+    }
+  },
+  {
+    "id": "hsk3-029",
+    "level": 3,
+    "hanzi": "层",
+    "pinyin": "céng",
+    "translations": [
+      "layer",
+      "floor",
+      "story"
+    ],
+    "partOfSpeech": "measure word",
+    "exampleSentence": {
+      "hanzi": "这座壮丽的摩天大楼高达八十八层。",
+      "pinyin": "Zhè zuò zhuànglì de mótiāndàlóu gāodá bāshíbā céng.",
+      "translation": "This magnificent skyscraper reaches up to eighty-eight stories."
+    }
+  },
+  {
+    "id": "hsk3-030",
+    "level": 3,
+    "hanzi": "差",
+    "pinyin": "chà",
+    "translations": [
+      "differ from",
+      "poor",
+      "lacking"
+    ],
+    "partOfSpeech": "adjective",
+    "exampleSentence": {
+      "hanzi": "虽然基础稍差，但他凭借顽强的毅力迎头赶上。",
+      "pinyin": "Suīrán jīchǔ shāo chà, dàn tā píngjiè wánqiáng de yìlì yíngtóugǎnshàng.",
+      "translation": "Though his initial foundation was slightly poorer, he caught up by virtue of tenacity."
+    }
+  },
+  {
+    "id": "hsk3-031",
+    "level": 3,
+    "hanzi": "超市",
+    "pinyin": "chāoshì",
+    "translations": [
+      "supermarket"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "社区大型超市供应各种新鲜有机的果蔬食品。",
+      "pinyin": "Shèqū dàxíng chāoshì gōngyìng gèzhǒng xīnxian yǒujī de guǒshū shípǐn.",
+      "translation": "The large community supermarket supplies a variety of fresh organic produce."
+    }
+  },
+  {
+    "id": "hsk3-032",
+    "level": 3,
+    "hanzi": "衬衫",
+    "pinyin": "chènshān",
+    "translations": [
+      "shirt"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "他身着一袭得体洁白的衬衫出席正式晚宴。",
+      "pinyin": "Tā shēnzhe yì xí détǐ jiébái de chènshān chūxí zhèngshì wǎnyàn.",
+      "translation": "He wore a tasteful, pristine white shirt to attend the formal gala."
+    }
+  },
+  {
+    "id": "hsk3-033",
+    "level": 3,
+    "hanzi": "城市",
+    "pinyin": "chéngshì",
+    "translations": [
+      "city"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "现代化城市应当兼顾绿色生态与人文底蕴。",
+      "pinyin": "Xiàndàihuà chéngshì yīngdāng jiāngù lǜsè shēngtài yǔ rénwén dǐyùn.",
+      "translation": "Modern cities should balance green ecology with cultural heritage."
+    }
+  },
+  {
+    "id": "hsk3-034",
+    "level": 3,
+    "hanzi": "成绩",
+    "pinyin": "chéngjì",
+    "translations": [
+      "grade",
+      "achievement"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "持之以恒的辛勤付出换来了优异的学业成绩。",
+      "pinyin": "Chízhīyǐhéng de xīnqín fùchū huànlái le yōuyì de xuéyè chéngjì.",
+      "translation": "Persistent, industrious effort brought about superb academic achievements."
+    }
+  },
+  {
+    "id": "hsk3-035",
+    "level": 3,
+    "hanzi": "迟到",
+    "pinyin": "chídào",
+    "translations": [
+      "to arrive late"
+    ],
+    "partOfSpeech": "verb",
+    "exampleSentence": {
+      "hanzi": "在职场交流中，遵守约定不迟到是基本职业素养。",
+      "pinyin": "Zài zhíchǎng jiāoliú zhōng, zūnshǒu yuēdìng bù chídào shì jīběn zhíyè sùyǎng.",
+      "translation": "In professional interactions, keeping appointments without arriving late is essential literacy."
+    }
+  }
+]

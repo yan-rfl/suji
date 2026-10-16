@@ -1,0 +1,398 @@
+[
+  {
+    "id": "hsk4-001",
+    "level": 4,
+    "hanzi": "爱情",
+    "pinyin": "àiqíng",
+    "translations": [
+      "romantic love",
+      "affection"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "真挚的爱情需要彼此坦诚相待与共同成长。",
+      "pinyin": "Zhēnzhì de àiqíng xūyào bǐcǐ tǎnchéng xiāngdài yǔ gòngtóng chéngzhǎng.",
+      "translation": "Sincere romantic love demands reciprocal honesty and joint growth."
+    }
+  },
+  {
+    "id": "hsk4-002",
+    "level": 4,
+    "hanzi": "安排",
+    "pinyin": "ānpái",
+    "translations": [
+      "to arrange",
+      "plan"
+    ],
+    "partOfSpeech": "verb",
+    "exampleSentence": {
+      "hanzi": "秘书合理安排了总经理一整天紧凑的行程。",
+      "pinyin": "Mìshū hélǐ ānpái le zǒngjīnglǐ yì zhěngtiān jǐncòu de xíngchéng.",
+      "translation": "The secretary reasonably arranged the general manager's packed full-day schedule."
+    }
+  },
+  {
+    "id": "hsk4-003",
+    "level": 4,
+    "hanzi": "安全",
+    "pinyin": "ānquán",
+    "translations": [
+      "safe",
+      "safety"
+    ],
+    "partOfSpeech": "adjective",
+    "exampleSentence": {
+      "hanzi": "无论是在生产车间还是户外探险，安全始终位居首位。",
+      "pinyin": "Wúlùn shì zài shēngchǎn chējiān háishi hùwài tànxiǎn, ānquán shǐzhōng wèijū shǒuwèi.",
+      "translation": "Whether in manufacturing workshops or outdoor expeditions, safety always ranks foremost."
+    }
+  },
+  {
+    "id": "hsk4-004",
+    "level": 4,
+    "hanzi": "按时",
+    "pinyin": "ànshí",
+    "translations": [
+      "on time",
+      "on schedule"
+    ],
+    "partOfSpeech": "adverb",
+    "exampleSentence": {
+      "hanzi": "工程团队克服诸多困难，按时交付了高质量项目成果。",
+      "pinyin": "Gōngchéng tuánduì kèfú zhūduō kùnnan, ànshí jiāofù le gāo zhìliàng xiàngmù chéngguǒ.",
+      "translation": "The engineering team overcame manifold hurdles, delivering high-quality deliverables on time."
+    }
+  },
+  {
+    "id": "hsk4-005",
+    "level": 4,
+    "hanzi": "按照",
+    "pinyin": "ànzhào",
+    "translations": [
+      "according to",
+      "in accordance with"
+    ],
+    "partOfSpeech": "preposition",
+    "exampleSentence": {
+      "hanzi": "我们要严格按照既定规章制度与操作规程行事。",
+      "pinyin": "Wǒmen yào yángé ànzhào jìdìng guīzhāng zhìdù yǔ cāozuò guīchéng xíngshì.",
+      "translation": "We must act in strict accordance with established regulations and operating procedures."
+    }
+  },
+  {
+    "id": "hsk4-006",
+    "level": 4,
+    "hanzi": "百分之",
+    "pinyin": "bǎifēnzhī",
+    "translations": [
+      "percent"
+    ],
+    "partOfSpeech": "numeral",
+    "exampleSentence": {
+      "hanzi": "本次顾客满意度调查结果高达百分之九十八。",
+      "pinyin": "Běn cì gùkè mǎnyìdù diàochá jiéguǒ gāodá bǎifēnzhī jiǔshíbā.",
+      "translation": "The outcome of this customer satisfaction survey reached ninety-eight percent."
+    }
+  },
+  {
+    "id": "hsk4-007",
+    "level": 4,
+    "hanzi": "棒",
+    "pinyin": "bàng",
+    "translations": [
+      "fantastic",
+      "stick"
+    ],
+    "partOfSpeech": "adjective",
+    "exampleSentence": {
+      "hanzi": "大家齐心协力呈现了一场非常棒的创新话剧。",
+      "pinyin": "Dàjiā qíxīn xiélì chéngxiàn le yì chǎng fēicháng bàng de chuàngxīn huàjù.",
+      "translation": "Everyone united efforts to present an extraordinarily fantastic innovative stage play."
+    }
+  },
+  {
+    "id": "hsk4-008",
+    "level": 4,
+    "hanzi": "包子",
+    "pinyin": "bāozi",
+    "translations": [
+      "steamed stuffed bun"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "热气腾腾的灌汤包子散发着诱人的鲜美肉香。",
+      "pinyin": "Rèqì-téngténg de guàntāng bāozi sànfā zhe yòurén de xiānměi ròuxiāng.",
+      "translation": "Steaming soup-filled buns exuded an alluring savory aroma."
+    }
+  },
+  {
+    "id": "hsk4-009",
+    "level": 4,
+    "hanzi": "保护",
+    "pinyin": "bǎohù",
+    "translations": [
+      "to protect",
+      "protection"
+    ],
+    "partOfSpeech": "verb",
+    "exampleSentence": {
+      "hanzi": "保护地球生态环境是全人类休戚与共的使命。",
+      "pinyin": "Bǎohù dìqiú shēngtài huánjìng shì quán rénlèi xiūqī-yǔgòng de shǐmìng.",
+      "translation": "Protecting Earth's ecology is the shared mission of all humankind."
+    }
+  },
+  {
+    "id": "hsk4-010",
+    "level": 4,
+    "hanzi": "保证",
+    "pinyin": "bǎozhèng",
+    "translations": [
+      "to guarantee",
+      "assurance"
+    ],
+    "partOfSpeech": "verb",
+    "exampleSentence": {
+      "hanzi": "企业必须保证产品品质以赢得消费者的长久信赖。",
+      "pinyin": "Qǐyè bìxū bǎozhèng chǎnpǐn pǐnzhì yǐ yíngdé xiāofèizhě de chángjiǔ xìnlài.",
+      "translation": "Enterprises must guarantee product quality to win enduring consumer trust."
+    }
+  },
+  {
+    "id": "hsk4-011",
+    "level": 4,
+    "hanzi": "抱",
+    "pinyin": "bào",
+    "translations": [
+      "to hold",
+      "to hug"
+    ],
+    "partOfSpeech": "verb",
+    "exampleSentence": {
+      "hanzi": "母亲深情地抱起熟睡中的婴儿轻声哼唱催眠曲。",
+      "pinyin": "Mǔqīn shēnqíng de bào qǐ shúshuì zhōng de yīng'ér qīngshēng hēngchàng cuīmiánqǔ.",
+      "translation": "The mother tenderly hugged the slumbering infant and softly hummed a lullaby."
+    }
+  },
+  {
+    "id": "hsk4-012",
+    "level": 4,
+    "hanzi": "抱歉",
+    "pinyin": "bàoqiàn",
+    "translations": [
+      "to apologize",
+      "sorry"
+    ],
+    "partOfSpeech": "adjective",
+    "exampleSentence": {
+      "hanzi": "非常抱歉给您的工作带来了不必要的困扰。",
+      "pinyin": "Fēicháng bàoqiàn gěi nín de gōngzuò dàilái le bú bìyào de kùnrǎo.",
+      "translation": "Extremely sorry for bringing unnecessary disruption to your work."
+    }
+  },
+  {
+    "id": "hsk4-013",
+    "level": 4,
+    "hanzi": "报名",
+    "pinyin": "bàomíng",
+    "translations": [
+      "to register",
+      "to sign up"
+    ],
+    "partOfSpeech": "verb",
+    "exampleSentence": {
+      "hanzi": "众多青年才俊踊跃报名参加全球创新科技大赛。",
+      "pinyin": "Zhòngduō qīngnián cáijùn yǒngyuè bàomíng cānjiā quánqiú chuàngxīn kējì dàsài.",
+      "translation": "Multitudes of young talents enthusiastically signed up for the global innovation tech contest."
+    }
+  },
+  {
+    "id": "hsk4-014",
+    "level": 4,
+    "hanzi": "本来",
+    "pinyin": "běnlái",
+    "translations": [
+      "originally",
+      "at first"
+    ],
+    "partOfSpeech": "adverb",
+    "exampleSentence": {
+      "hanzi": "这项规划本来打算下季度推行，现已提前启动。",
+      "pinyin": "Zhè xiàng guīhuà běnlái dǎsuàn xià jìdù tuīxíng, xiàn yǐ tíqián qǐdòng.",
+      "translation": "This initiative was originally slated for rollout next quarter, but has now commenced ahead of time."
+    }
+  },
+  {
+    "id": "hsk4-015",
+    "level": 4,
+    "hanzi": "笨",
+    "pinyin": "bèn",
+    "translations": [
+      "clumsy",
+      "foolish"
+    ],
+    "partOfSpeech": "adjective",
+    "exampleSentence": {
+      "hanzi": "勤能补拙，即使自认笨拙也能靠坚持取得成功。",
+      "pinyin": "Qín néng bǔ zhuō, jíshǐ zì rèn bènzhuō yě néng kào jiānchí qǔdé chénggōng.",
+      "translation": "Diligence remedies clumsiness; even if one feels clumsy, persistence yields triumph."
+    }
+  },
+  {
+    "id": "hsk4-016",
+    "level": 4,
+    "hanzi": "笔记本",
+    "pinyin": "bǐjìběn",
+    "translations": [
+      "notebook",
+      "laptop"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "轻便且性能出众的笔记本电脑是现代办公利器。",
+      "pinyin": "Qīngbiàn qiě xìngnéng chūzhòng de bǐjìběn diànnǎo shì xiàndài bàngōng lìqì.",
+      "translation": "Lightweight laptop computers with exceptional performance are modern productivity powerhouses."
+    }
+  },
+  {
+    "id": "hsk4-017",
+    "level": 4,
+    "hanzi": "毕业",
+    "pinyin": "bìyè",
+    "translations": [
+      "to graduate"
+    ],
+    "partOfSpeech": "verb",
+    "exampleSentence": {
+      "hanzi": "大学毕业典礼上，毕业生们满怀憧憬迈向新征程。",
+      "pinyin": "Dàxué bìyè diǎnlǐ shàng, bìyèshēng men mǎnhuái chōngjǐng màixiàng xīn zhēngchéng.",
+      "translation": "At the university commencement ceremony, graduates stepped forward into new journeys with great aspiration."
+    }
+  },
+  {
+    "id": "hsk4-018",
+    "level": 4,
+    "hanzi": "遍",
+    "pinyin": "biàn",
+    "translations": [
+      "all over",
+      "time (occurrence)"
+    ],
+    "partOfSpeech": "measure word",
+    "exampleSentence": {
+      "hanzi": "这部传世经典文学著作值得我们反复细读三遍。",
+      "pinyin": "Zhè bù chuánshì jīngdiǎn wénxué zhùzuò zhíde wǒmen fǎnfù xìdú sān biàn.",
+      "translation": "This timeless literary classic is worthy of our repeated thorough perusal three times."
+    }
+  },
+  {
+    "id": "hsk4-019",
+    "level": 4,
+    "hanzi": "标准",
+    "pinyin": "biāozhǔn",
+    "translations": [
+      "standard",
+      "criterion"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "团队树立了极为严格的产品质量检验标准。",
+      "pinyin": "Tuánduì shùlì le jíqí yángé de chǎnpǐn zhìliàng jiǎnyàn biāozhǔn.",
+      "translation": "The team established extremely rigorous product quality inspection standards."
+    }
+  },
+  {
+    "id": "hsk4-020",
+    "level": 4,
+    "hanzi": "表格",
+    "pinyin": "biǎogé",
+    "translations": [
+      "table",
+      "form"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "请在提交申请前仔细核对电子表格里的每项数据。",
+      "pinyin": "Qǐng zài tíjiāo shēnqǐng qián zǐxì h किसानोंé diànzǐ biǎogé lǐ de měi xiàng shùjù.",
+      "translation": "Please carefully verify each data point in the spreadsheet before submitting the application."
+    }
+  },
+  {
+    "id": "hsk4-021",
+    "level": 4,
+    "hanzi": "表达",
+    "pinyin": "biǎodá",
+    "translations": [
+      "to express",
+      "to convey"
+    ],
+    "partOfSpeech": "verb",
+    "exampleSentence": {
+      "hanzi": "诗人用极其凝练优美的词句表达了对祖国的挚爱。",
+      "pinyin": "Shīrén yòng jíqí níngliàn yōuměi de cíjù biǎodá le duì zǔguó de zhì'ài.",
+      "translation": "The poet conveyed profound devotion to the motherland using succinct and poetic verse."
+    }
+  },
+  {
+    "id": "hsk4-022",
+    "level": 4,
+    "hanzi": "表格",
+    "pinyin": "biǎogé",
+    "translations": [
+      "table",
+      "form"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "请务必真实准确地填写个人信息统计表格。",
+      "pinyin": "Qǐng wùbì zhēnshí zhǔnquè de tiánxiě gèrén xìnxī tǒngjì biǎogé.",
+      "translation": "Please be sure to genuinely and accurately fill out the personal information table."
+    }
+  },
+  {
+    "id": "hsk4-023",
+    "level": 4,
+    "hanzi": "并",
+    "pinyin": "bìng",
+    "translations": [
+      "and",
+      "furthermore",
+      "actually"
+    ],
+    "partOfSpeech": "conjunction",
+    "exampleSentence": {
+      "hanzi": "这道方案不仅切实可行，并且能大幅削减运营成本。",
+      "pinyin": "Zhè dào fāng'àn bùjǐn qièshí kěxíng, bìngqiě néng dàfú xuējiǎn yùnyíng chéngběn.",
+      "translation": "This scheme is not only feasible, but furthermore can drastically curb operational costs."
+    }
+  },
+  {
+    "id": "hsk4-024",
+    "level": 4,
+    "hanzi": "博士",
+    "pinyin": "bóshì",
+    "translations": [
+      "doctor (PhD)"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "他经过多年潜心钻研，终于获得了人工智能博士学位。",
+      "pinyin": "Tā jīngguò duō nián qiánxīn zuānyán, zhōngyú huòdé le réngōng zhìnéng bóshì xuéwèi.",
+      "translation": "After years of dedicated scholarly research, he finally earned a PhD in Artificial Intelligence."
+    }
+  },
+  {
+    "id": "hsk4-025",
+    "level": 4,
+    "hanzi": "不但",
+    "pinyin": "búdàn",
+    "translations": [
+      "not only"
+    ],
+    "partOfSpeech": "conjunction",
+    "exampleSentence": {
+      "hanzi": "这项前沿科技不但极具创新性，而且具备广阔的应用前景。",
+      "pinyin": "Zhè xiàng qiányán kējì búdàn jí jù chuàngxīnxìng, érqiě jùbèi guǎngkuò de yìngyòng qiánjǐng.",
+      "translation": "This frontier technology not only possesses tremendous innovation, but also embraces broad application prospects."
+    }
+  }
+]
