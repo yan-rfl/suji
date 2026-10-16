@@ -8,7 +8,7 @@ export interface ExampleSentence {
 
 export interface HSKWord {
   id: string;
-  level: 1 | 2 | 3 | 4 | 5;
+  level: 1 | 2 | 3 | 4 | 5 | 6;
   hanzi: string;
   pinyin: string;
   translations: string[];

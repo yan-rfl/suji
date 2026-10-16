@@ -3,10 +3,10 @@ import { HSKWord } from '@/types/hsk';
 const cachedData: Record<number, HSKWord[]> = {};
 
 /**
- * Fetch vocabulary for a specific HSK level (1 to 5)
+ * Fetch vocabulary for a specific HSK level (1 to 6)
  */
 export async function getHSKWords(level: number): Promise<HSKWord[]> {
-  if (level < 1 || level > 5) return [];
+  if (level < 1 || level > 6) return [];
 
   if (cachedData[level]) {
     return cachedData[level];
@@ -27,12 +27,10 @@ export async function getHSKWords(level: number): Promise<HSKWord[]> {
 }
 
 /**
- * Fetch vocabulary across all HSK 1-5 levels
+ * Fetch vocabulary across all HSK 1-6 levels (5,000 total words)
  */
 export async function getAllHSKWords(): Promise<HSKWord[]> {
-  const levels = [1, 2, 3, 4, 5];
-  const results = await Promise.all(levels.map((lvl) => getHSKWords(lvl)));
-  return results.flat();
+  return getHSKWords(6);
 }
 
 /**

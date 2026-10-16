@@ -73,14 +73,16 @@ export default function DashboardPage() {
   const dueCount = dueWords.length;
 
   // Level breakdowns
-  const levelCounts = [1, 2, 3, 4, 5].map((lvl) => {
-    const lvlWords = allWords.filter((w) => w.level === lvl);
-    const mastered = lvlWords.filter((w) => srsData[w.id]?.status === 'mastered').length;
-    const learning = lvlWords.filter((w) => srsData[w.id]?.status === 'learning').length;
-    const percentage = lvlWords.length > 0 ? Math.round((mastered / lvlWords.length) * 100) : 0;
+  const levelCounts = [1, 2, 3, 4, 5, 6].map((lvl) => {
+    const cumulativeWords = allWords.filter((w) => w.level <= lvl);
+    const newWords = allWords.filter((w) => w.level === lvl);
+    const mastered = cumulativeWords.filter((w) => srsData[w.id]?.status === 'mastered').length;
+    const learning = cumulativeWords.filter((w) => srsData[w.id]?.status === 'learning').length;
+    const percentage = cumulativeWords.length > 0 ? Math.round((mastered / cumulativeWords.length) * 100) : 0;
     return {
       level: lvl,
-      total: lvlWords.length,
+      total: cumulativeWords.length,
+      newCount: newWords.length,
       mastered,
       learning,
       percentage,
@@ -285,10 +287,18 @@ export default function DashboardPage() {
               Persists across Dictionary and Quiz Engine
             </span>
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-5 gap-3">
-            {[1, 2, 3, 4, 5].map((lvl) => {
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+            {[1, 2, 3, 4, 5, 6].map((lvl) => {
               const isSelected = currentLevel === lvl;
               const lvlTheme = HSK_THEMES[lvl] || HSK_THEMES[1];
+              const levelNames: Record<number, string> = {
+                1: 'Beginner',
+                2: 'Elementary',
+                3: 'Intermediate',
+                4: 'Upper-Int',
+                5: 'Advanced',
+                6: 'Mastery',
+              };
               return (
                 <button
                   key={lvl}
@@ -311,7 +321,7 @@ export default function DashboardPage() {
                 >
                   <div className="font-bold text-base">HSK {lvl}</div>
                   <div className={`text-xs mt-0.5 ${isSelected ? 'text-white/90' : 'text-zinc-500'}`}>
-                    {lvl === 1 ? 'Beginner' : lvl === 2 ? 'Elementary' : lvl === 3 ? 'Intermediate' : lvl === 4 ? 'Upper-Int' : 'Advanced'}
+                    {levelNames[lvl]}
                   </div>
                 </button>
               );
@@ -486,7 +496,7 @@ export default function DashboardPage() {
       {/* HSK Mastery Progress Breakdown */}
       <div className="space-y-4">
         <h3 className="text-lg font-bold text-zinc-200">HSK Level Mastery Status</h3>
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
           {levelCounts.map((item) => (
             <div
               key={item.level}
@@ -510,9 +520,16 @@ export default function DashboardPage() {
                   }}
                 />
               </div>
-              <div className="flex items-center justify-between text-[11px] text-zinc-400">
-                <span>{item.mastered} Mastered</span>
-                <span>{item.total} Total</span>
+              <div className="space-y-0.5 text-[11px] text-zinc-400">
+                <div className="flex items-center justify-between">
+                  <span>{item.mastered} Mastered</span>
+                  <span className="font-medium text-zinc-300">{item.total.toLocaleString()} Total</span>
+                </div>
+                {item.level > 1 && (
+                  <div className="text-[10px] text-zinc-500 text-right">
+                    +{item.newCount.toLocaleString()} new
+                  </div>
+                )}
               </div>
             </div>
           ))}

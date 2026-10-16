@@ -49,15 +49,24 @@ export const HSK_THEMES: Record<number, LevelTheme> = {
   badgeBorder: 'rgba(187, 16, 25, 0.45)',
   badgeText: '#f87171',
 },
-5: {
-  primary: '#1a3f76',
-  rgb: '26, 63, 118',
-  hover: '#173768',
-  lightBg: 'rgba(26, 63, 118, 0.15)',
-  badgeBg: 'rgba(26, 63, 118, 0.22)',
-  badgeBorder: 'rgba(26, 63, 118, 0.45)',
-  badgeText: '#60a5fa',
-},
+  5: {
+    primary: '#1a3f76',
+    rgb: '26, 63, 118',
+    hover: '#173768',
+    lightBg: 'rgba(26, 63, 118, 0.15)',
+    badgeBg: 'rgba(26, 63, 118, 0.22)',
+    badgeBorder: 'rgba(26, 63, 118, 0.45)',
+    badgeText: '#60a5fa',
+  },
+  6: {
+    primary: '#6a3669',
+    rgb: '106, 54, 105',
+    hover: '#572b56',
+    lightBg: 'rgba(106, 54, 105, 0.15)',
+    badgeBg: 'rgba(106, 54, 105, 0.22)',
+    badgeBorder: 'rgba(106, 54, 105, 0.45)',
+    badgeText: '#f3e8ff',
+  },
 };
 
 interface LevelContextType {
@@ -79,7 +88,7 @@ export function LevelProvider({ children }: { children: React.ReactNode }) {
       const saved = localStorage.getItem(LOCAL_LEVEL_KEY);
       if (saved) {
         const parsed = parseInt(saved, 10);
-        if (parsed >= 1 && parsed <= 5) {
+        if (parsed >= 1 && parsed <= 6) {
           setCurrentLevelState(parsed);
           applyThemeVariables(parsed);
         }
@@ -103,7 +112,7 @@ export function LevelProvider({ children }: { children: React.ReactNode }) {
   };
 
   const setCurrentLevel = (level: number) => {
-    if (level < 1 || level > 5) return;
+    if (level < 1 || level > 6) return;
     setCurrentLevelState(level);
     applyThemeVariables(level);
     try {

@@ -12,7 +12,8 @@ const STATIC_ASSETS = [
   '/data/hsk2.json',
   '/data/hsk3.json',
   '/data/hsk4.json',
-  '/data/hsk5.json'
+  '/data/hsk5.json',
+  '/data/hsk6.json'
 ];
 
 self.addEventListener('install', (event) => {

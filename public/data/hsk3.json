@@ -1,5 +1,4387 @@
 [
   {
+    "id": "hsk1-001",
+    "level": 1,
+    "hanzi": "爱",
+    "pinyin": "ài",
+    "translations": [
+      "to love"
+    ],
+    "partOfSpeech": "verb",
+    "exampleSentence": {
+      "hanzi": "父母深爱着自己的孩子。",
+      "pinyin": "Fùmǔ shēn ài zhe zìjǐ de háizi.",
+      "translation": "Parents deeply love their children."
+    }
+  },
+  {
+    "id": "hsk1-002",
+    "level": 1,
+    "hanzi": "八",
+    "pinyin": "bā",
+    "translations": [
+      "eight"
+    ],
+    "partOfSpeech": "numeral",
+    "exampleSentence": {
+      "hanzi": "八在中国象征吉祥。",
+      "pinyin": "Bā zài zhōngguó xiàngzhēng jíxiáng.",
+      "translation": "Eight symbolizes good fortune in China."
+    }
+  },
+  {
+    "id": "hsk1-003",
+    "level": 1,
+    "hanzi": "爸爸",
+    "pinyin": "bàba",
+    "translations": [
+      "father",
+      "dad"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "我爸爸喜欢打羽毛球。",
+      "pinyin": "Wǒ bàba xǐhuan dǎ yǔmáoqiú.",
+      "translation": "My dad likes playing badminton."
+    }
+  },
+  {
+    "id": "hsk1-004",
+    "level": 1,
+    "hanzi": "杯子",
+    "pinyin": "bēi zi",
+    "translations": [
+      "cup",
+      "glass",
+      "CL:個|个",
+      "支",
+      "枝[zhī]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk1-005",
+    "level": 1,
+    "hanzi": "北京",
+    "pinyin": "Běijīng",
+    "translations": [
+      "Beijing"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "北京是中国的首都。",
+      "pinyin": "Běijīng shì zhōngguó de shǒudū.",
+      "translation": "Beijing is the capital of China."
+    }
+  },
+  {
+    "id": "hsk1-006",
+    "level": 1,
+    "hanzi": "本",
+    "pinyin": "běn",
+    "translations": [
+      "measure word for books"
+    ],
+    "partOfSpeech": "measure word",
+    "exampleSentence": {
+      "hanzi": "桌上有一本词典。",
+      "pinyin": "Zhuō shàng yǒu yì běn cídiǎn.",
+      "translation": "There is a dictionary on the table."
+    }
+  },
+  {
+    "id": "hsk1-007",
+    "level": 1,
+    "hanzi": "不客气",
+    "pinyin": "bù kèqi",
+    "translations": [
+      "you're welcome",
+      "don't mention it"
+    ],
+    "partOfSpeech": "phrase",
+    "exampleSentence": {
+      "hanzi": "不用谢，不客气。",
+      "pinyin": "Bù yòng xiè, bù kèqi.",
+      "translation": "No need to thank me, you're welcome."
+    }
+  },
+  {
+    "id": "hsk1-008",
+    "level": 1,
+    "hanzi": "不",
+    "pinyin": "bù",
+    "translations": [
+      "not",
+      "no"
+    ],
+    "partOfSpeech": "adverb",
+    "exampleSentence": {
+      "hanzi": "我不是医生，我是老师。",
+      "pinyin": "Wǒ bú shì yīshēng, wǒ shì lǎoshī.",
+      "translation": "I am not a doctor; I am a teacher."
+    }
+  },
+  {
+    "id": "hsk1-009",
+    "level": 1,
+    "hanzi": "菜",
+    "pinyin": "cài",
+    "translations": [
+      "dish",
+      "vegetables"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "桌上摆满了丰盛的菜肴。",
+      "pinyin": "Zhuō shàng bǎimǎn le fēngshèng de càiyáo.",
+      "translation": "The table was filled with sumptuous dishes."
+    }
+  },
+  {
+    "id": "hsk1-010",
+    "level": 1,
+    "hanzi": "茶",
+    "pinyin": "chá",
+    "translations": [
+      "tea"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "绿茶是中国传统饮品。",
+      "pinyin": "Lǜchá shì zhōngguó chuántǒng yǐnpǐn.",
+      "translation": "Green tea is a traditional Chinese drink."
+    }
+  },
+  {
+    "id": "hsk1-011",
+    "level": 1,
+    "hanzi": "吃",
+    "pinyin": "chī",
+    "translations": [
+      "to eat"
+    ],
+    "partOfSpeech": "verb",
+    "exampleSentence": {
+      "hanzi": "我们要养成健康吃早餐的习惯。",
+      "pinyin": "Wǒmen yào yǎngchéng jiànkāng chī zǎocān de xíguàn.",
+      "translation": "We should form a healthy habit of eating breakfast."
+    }
+  },
+  {
+    "id": "hsk1-012",
+    "level": 1,
+    "hanzi": "出租车",
+    "pinyin": "chūzūchē",
+    "translations": [
+      "taxi"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "我们在路边拦了一辆出租车。",
+      "pinyin": "Wǒmen zài lùbiān lán le yí liàng chūzūchē.",
+      "translation": "We hailed a taxi by the roadside."
+    }
+  },
+  {
+    "id": "hsk1-013",
+    "level": 1,
+    "hanzi": "打电话",
+    "pinyin": "dǎ diàn huà",
+    "translations": [
+      "to make a telephone call"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk1-014",
+    "level": 1,
+    "hanzi": "大",
+    "pinyin": "dà",
+    "translations": [
+      "big",
+      "large"
+    ],
+    "partOfSpeech": "adjective",
+    "exampleSentence": {
+      "hanzi": "北京是一个充满活力的大城市。",
+      "pinyin": "Běijīng shì yí ge chōngmǎn huólì de dà chéngshì.",
+      "translation": "Beijing is a big city full of vitality."
+    }
+  },
+  {
+    "id": "hsk1-015",
+    "level": 1,
+    "hanzi": "的",
+    "pinyin": "de",
+    "translations": [
+      "possessive particle"
+    ],
+    "partOfSpeech": "particle",
+    "exampleSentence": {
+      "hanzi": "这是我的中文笔记本。",
+      "pinyin": "Zhè shì wǒ de zhōngwén bǐjìběn.",
+      "translation": "This is my Chinese notebook."
+    }
+  },
+  {
+    "id": "hsk1-016",
+    "level": 1,
+    "hanzi": "点",
+    "pinyin": "diǎn",
+    "translations": [
+      "point",
+      "dot",
+      "drop",
+      "speck",
+      "o'clock",
+      "point (in space or time)",
+      "to draw a dot",
+      "to check on a list",
+      "to choose",
+      "to order (food in a restaurant)",
+      "to touch briefly",
+      "to hint",
+      "to light",
+      "to ignite",
+      "to pour a liquid drop by drop",
+      "(old) one fifth of a two-hour watch 更[gēng]",
+      "dot stroke in Chinese characters",
+      "classifier for items"
+    ],
+    "partOfSpeech": "qt"
+  },
+  {
+    "id": "hsk1-017",
+    "level": 1,
+    "hanzi": "电脑",
+    "pinyin": "diàn nǎo",
+    "translations": [
+      "computer",
+      "CL:臺|台[tái]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk1-018",
+    "level": 1,
+    "hanzi": "电视",
+    "pinyin": "diàn shì",
+    "translations": [
+      "television",
+      "TV",
+      "CL:臺|台",
+      "個|个[gè]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk1-019",
+    "level": 1,
+    "hanzi": "电影",
+    "pinyin": "diàn yǐng",
+    "translations": [
+      "movie",
+      "film",
+      "CL:部",
+      "片",
+      "幕",
+      "場|场[chǎng]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk1-020",
+    "level": 1,
+    "hanzi": "东西",
+    "pinyin": "dōng xi",
+    "translations": [
+      "thing",
+      "stuff",
+      "person",
+      "CL:個|个",
+      "件[jiàn]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk1-021",
+    "level": 1,
+    "hanzi": "都",
+    "pinyin": "dōu",
+    "translations": [
+      "all",
+      "both"
+    ],
+    "partOfSpeech": "adverb",
+    "exampleSentence": {
+      "hanzi": "他们都是优秀的工程师。",
+      "pinyin": "Tāmen dōu shì yōuxiù de gōngchéngshī.",
+      "translation": "They are all excellent engineers."
+    }
+  },
+  {
+    "id": "hsk1-022",
+    "level": 1,
+    "hanzi": "读",
+    "pinyin": "dú",
+    "translations": [
+      "to read aloud"
+    ],
+    "partOfSpeech": "verb",
+    "exampleSentence": {
+      "hanzi": "清晨大声朗读有助于记忆。",
+      "pinyin": "Qīngchén dàshēng lǎngdú yǒu zhù yú jìyì.",
+      "translation": "Reading aloud in the early morning helps memory."
+    }
+  },
+  {
+    "id": "hsk1-023",
+    "level": 1,
+    "hanzi": "对不起",
+    "pinyin": "duìbuqǐ",
+    "translations": [
+      "sorry",
+      "excuse me"
+    ],
+    "partOfSpeech": "phrase",
+    "exampleSentence": {
+      "hanzi": "对不起，我来晚了。",
+      "pinyin": "Duìbuqǐ, wǒ lái wǎn le.",
+      "translation": "Sorry, I am late."
+    }
+  },
+  {
+    "id": "hsk1-024",
+    "level": 1,
+    "hanzi": "多",
+    "pinyin": "duō",
+    "translations": [
+      "many",
+      "much"
+    ],
+    "partOfSpeech": "adjective",
+    "exampleSentence": {
+      "hanzi": "公园里有许多盛开的鲜花。",
+      "pinyin": "Gōngyuán lǐ yǒu xǔduō shèngkāi de xiānhuā.",
+      "translation": "There are many blooming flowers in the park."
+    }
+  },
+  {
+    "id": "hsk1-025",
+    "level": 1,
+    "hanzi": "多少",
+    "pinyin": "duōshao",
+    "translations": [
+      "how many",
+      "how much"
+    ],
+    "partOfSpeech": "pronoun",
+    "exampleSentence": {
+      "hanzi": "这件衣服多少钱？",
+      "pinyin": "Zhè jiàn yīfu duōshao qián?",
+      "translation": "How much is this piece of clothing?"
+    }
+  },
+  {
+    "id": "hsk1-026",
+    "level": 1,
+    "hanzi": "儿子",
+    "pinyin": "érzi",
+    "translations": [
+      "son"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "他的儿子今年读初中。",
+      "pinyin": "Tā de érzi jīnnián dú chūzhōng.",
+      "translation": "His son attends junior high school this year."
+    }
+  },
+  {
+    "id": "hsk1-027",
+    "level": 1,
+    "hanzi": "二",
+    "pinyin": "èr",
+    "translations": [
+      "two"
+    ],
+    "partOfSpeech": "numeral",
+    "exampleSentence": {
+      "hanzi": "他有两个可爱的孩子。",
+      "pinyin": "Tā yǒu liǎng ge kě'ài de háizi.",
+      "translation": "He has two lovely children."
+    }
+  },
+  {
+    "id": "hsk1-028",
+    "level": 1,
+    "hanzi": "饭馆",
+    "pinyin": "fànguǎn",
+    "translations": [
+      "restaurant"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "这家饭馆的水饺很地道。",
+      "pinyin": "Zhè jiā fànguǎn de shuǐjiǎo hěn dìdào.",
+      "translation": "The dumplings in this restaurant are very authentic."
+    }
+  },
+  {
+    "id": "hsk1-029",
+    "level": 1,
+    "hanzi": "飞机",
+    "pinyin": "fēijī",
+    "translations": [
+      "airplane"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "飞机准时降落在机场。",
+      "pinyin": "Fēijī zhǔnshí jiàngluò zài jīchǎng.",
+      "translation": "The airplane landed on time at the airport."
+    }
+  },
+  {
+    "id": "hsk1-030",
+    "level": 1,
+    "hanzi": "分钟",
+    "pinyin": "fēn zhōng",
+    "translations": [
+      "minute"
+    ],
+    "partOfSpeech": "qt"
+  },
+  {
+    "id": "hsk1-031",
+    "level": 1,
+    "hanzi": "高兴",
+    "pinyin": "gāoxìng",
+    "translations": [
+      "happy",
+      "glad"
+    ],
+    "partOfSpeech": "adjective",
+    "exampleSentence": {
+      "hanzi": "今天听到好消息，大家都很高兴。",
+      "pinyin": "Jīntiān tīngdào hǎo xiāoxi, dàjiā dōu hěn gāoxìng.",
+      "translation": "Hearing good news today, everyone is very glad."
+    }
+  },
+  {
+    "id": "hsk1-032",
+    "level": 1,
+    "hanzi": "个",
+    "pinyin": "ge",
+    "translations": [
+      "general measure word"
+    ],
+    "partOfSpeech": "measure word",
+    "exampleSentence": {
+      "hanzi": "我买了一个大苹果。",
+      "pinyin": "Wǒ mǎi le yí ge dà píngguǒ.",
+      "translation": "I bought a big apple."
+    }
+  },
+  {
+    "id": "hsk1-033",
+    "level": 1,
+    "hanzi": "工作",
+    "pinyin": "gōngzuò",
+    "translations": [
+      "to work",
+      "job"
+    ],
+    "partOfSpeech": "verb",
+    "exampleSentence": {
+      "hanzi": "他在科技公司努力工作。",
+      "pinyin": "Tā zài kējì gōngsī nǔlì gōngzuò.",
+      "translation": "He works hard at a tech company."
+    }
+  },
+  {
+    "id": "hsk1-034",
+    "level": 1,
+    "hanzi": "狗",
+    "pinyin": "gǒu",
+    "translations": [
+      "dog"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "忠诚的小狗在门口等主人。",
+      "pinyin": "Zhōngchéng de xiǎogǒu zài ménkǒu děng zhǔrén.",
+      "translation": "The loyal little dog is waiting for its master at the door."
+    }
+  },
+  {
+    "id": "hsk1-035",
+    "level": 1,
+    "hanzi": "汉语",
+    "pinyin": "Hàn yǔ",
+    "translations": [
+      "Chinese language",
+      "CL:門|门[mén]"
+    ],
+    "partOfSpeech": "proper noun"
+  },
+  {
+    "id": "hsk1-036",
+    "level": 1,
+    "hanzi": "好",
+    "pinyin": "hǎo",
+    "translations": [
+      "good",
+      "fine"
+    ],
+    "partOfSpeech": "adjective",
+    "exampleSentence": {
+      "hanzi": "早睡早起是个好习惯。",
+      "pinyin": "Zǎoshuì zǎoqǐ shì ge hǎo xíguàn.",
+      "translation": "Sleeping and waking up early is a good habit."
+    }
+  },
+  {
+    "id": "hsk1-037",
+    "level": 1,
+    "hanzi": "喝",
+    "pinyin": "hē",
+    "translations": [
+      "to drink"
+    ],
+    "partOfSpeech": "verb",
+    "exampleSentence": {
+      "hanzi": "夏天喝冰镇酸梅汤很解渴。",
+      "pinyin": "Xiàtiān hē bīngzhèn suānméitāng hěn jiěkě.",
+      "translation": "Drinking chilled plum juice in summer is very thirst-quenching."
+    }
+  },
+  {
+    "id": "hsk1-038",
+    "level": 1,
+    "hanzi": "和",
+    "pinyin": "hé",
+    "translations": [
+      "and",
+      "with"
+    ],
+    "partOfSpeech": "conjunction",
+    "exampleSentence": {
+      "hanzi": "我和朋友打算去看电影。",
+      "pinyin": "Wǒ hé péngyou dǎsuàn qù kàn diànyǐng.",
+      "translation": "My friend and I plan to go watch a movie."
+    }
+  },
+  {
+    "id": "hsk1-039",
+    "level": 1,
+    "hanzi": "很",
+    "pinyin": "hěn",
+    "translations": [
+      "very",
+      "quite"
+    ],
+    "partOfSpeech": "adverb",
+    "exampleSentence": {
+      "hanzi": "今天天气很好，阳光明媚。",
+      "pinyin": "Jīntiān tiānqì hěn hǎo, yángguāng míngmèi.",
+      "translation": "The weather is very good today, bright and sunny."
+    }
+  },
+  {
+    "id": "hsk1-040",
+    "level": 1,
+    "hanzi": "后面",
+    "pinyin": "hòu mian",
+    "translations": [
+      "rear",
+      "back",
+      "behind",
+      "later",
+      "afterwards"
+    ],
+    "partOfSpeech": "f"
+  },
+  {
+    "id": "hsk1-041",
+    "level": 1,
+    "hanzi": "回",
+    "pinyin": "huí",
+    "translations": [
+      "to curve",
+      "to return",
+      "to revolve"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk1-042",
+    "level": 1,
+    "hanzi": "会",
+    "pinyin": "huì",
+    "translations": [
+      "can",
+      "be possible",
+      "be able to",
+      "will",
+      "be likely to",
+      "be sure to",
+      "to assemble",
+      "to meet",
+      "to gather",
+      "to see",
+      "union",
+      "group",
+      "association",
+      "CL:個|个[gè]",
+      "a moment (Taiwan pr. for this sense is )"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk1-043",
+    "level": 1,
+    "hanzi": "火车站",
+    "pinyin": "huǒchēzhàn",
+    "translations": [
+      "train station"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "现代化的火车站内人流络绎不绝。",
+      "pinyin": "Xiàndàihuà de huǒchēzhàn nèi rénliú luòyì bù jué.",
+      "translation": "Within the modernized train station, travelers flowed incessantly."
+    }
+  },
+  {
+    "id": "hsk1-044",
+    "level": 1,
+    "hanzi": "几",
+    "pinyin": "jǐ",
+    "translations": [
+      "how many",
+      "a few"
+    ],
+    "partOfSpeech": "pronoun",
+    "exampleSentence": {
+      "hanzi": "现在几点了？",
+      "pinyin": "Xiànzài jǐ diǎn le?",
+      "translation": "What time is it now?"
+    }
+  },
+  {
+    "id": "hsk1-045",
+    "level": 1,
+    "hanzi": "家",
+    "pinyin": "jiā",
+    "translations": [
+      "family",
+      "home"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "我爱我的温暖家庭。",
+      "pinyin": "Wǒ ài wǒ de wēnnuǎn jiātíng.",
+      "translation": "I love my warm family."
+    }
+  },
+  {
+    "id": "hsk1-046",
+    "level": 1,
+    "hanzi": "叫",
+    "pinyin": "jiào",
+    "translations": [
+      "to be called",
+      "to call"
+    ],
+    "partOfSpeech": "verb",
+    "exampleSentence": {
+      "hanzi": "这只可爱的小狗叫豆豆。",
+      "pinyin": "Zhè zhī kě'ài de xiǎogǒu jiào Dòudou.",
+      "translation": "This cute little dog is called Doudou."
+    }
+  },
+  {
+    "id": "hsk1-047",
+    "level": 1,
+    "hanzi": "今天",
+    "pinyin": "jīn tiān",
+    "translations": [
+      "today",
+      "at the present",
+      "now"
+    ],
+    "partOfSpeech": "t"
+  },
+  {
+    "id": "hsk1-048",
+    "level": 1,
+    "hanzi": "九",
+    "pinyin": "jiǔ",
+    "translations": [
+      "nine"
+    ],
+    "partOfSpeech": "numeral",
+    "exampleSentence": {
+      "hanzi": "他的考试得了九十分。",
+      "pinyin": "Tā de kǎoshì dé le jiǔshí fēn.",
+      "translation": "He got ninety points on his test."
+    }
+  },
+  {
+    "id": "hsk1-049",
+    "level": 1,
+    "hanzi": "开",
+    "pinyin": "kāi",
+    "translations": [
+      "to open",
+      "to drive"
+    ],
+    "partOfSpeech": "verb",
+    "exampleSentence": {
+      "hanzi": "请打开窗户让空气流通。",
+      "pinyin": "Qǐng dǎkāi chuānghu ràng kōngqì liútōng.",
+      "translation": "Please open the window to let the air circulate."
+    }
+  },
+  {
+    "id": "hsk1-050",
+    "level": 1,
+    "hanzi": "看",
+    "pinyin": "kàn",
+    "translations": [
+      "to look",
+      "to read",
+      "to watch"
+    ],
+    "partOfSpeech": "verb",
+    "exampleSentence": {
+      "hanzi": "我喜欢在周末看电影。",
+      "pinyin": "Wǒ xǐhuan zài zhōumò kàn diànyǐng.",
+      "translation": "I like watching movies on weekends."
+    }
+  },
+  {
+    "id": "hsk1-051",
+    "level": 1,
+    "hanzi": "看见",
+    "pinyin": "kànjiàn",
+    "translations": [
+      "to see",
+      "to catch sight of"
+    ],
+    "partOfSpeech": "verb",
+    "exampleSentence": {
+      "hanzi": "我看见天空中有一道彩虹。",
+      "pinyin": "Wǒ kànjiàn tiānkōng zhōng yǒu yí dào cǎihóng.",
+      "translation": "I saw a rainbow in the sky."
+    }
+  },
+  {
+    "id": "hsk1-052",
+    "level": 1,
+    "hanzi": "块",
+    "pinyin": "kuài",
+    "translations": [
+      "piece",
+      "yuan (money)"
+    ],
+    "partOfSpeech": "measure word",
+    "exampleSentence": {
+      "hanzi": "这块蛋糕真好吃。",
+      "pinyin": "Zhè kuài dàngāo zhēn hǎochī.",
+      "translation": "This piece of cake is really delicious."
+    }
+  },
+  {
+    "id": "hsk1-053",
+    "level": 1,
+    "hanzi": "来",
+    "pinyin": "lái",
+    "translations": [
+      "to come",
+      "to arrive",
+      "to come round",
+      "ever since",
+      "next"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk1-054",
+    "level": 1,
+    "hanzi": "老师",
+    "pinyin": "lǎoshī",
+    "translations": [
+      "teacher"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "王老师教学非常认真。",
+      "pinyin": "Wáng lǎoshī jiàoxué fēicháng rènzhēn.",
+      "translation": "Teacher Wang is very dedicated in teaching."
+    }
+  },
+  {
+    "id": "hsk1-055",
+    "level": 1,
+    "hanzi": "了",
+    "pinyin": "le",
+    "translations": [
+      "aspect particle"
+    ],
+    "partOfSpeech": "particle",
+    "exampleSentence": {
+      "hanzi": "下雨了，出门带把伞。",
+      "pinyin": "Xià yǔ le, chūmén dài bǎ sǎn.",
+      "translation": "It has started raining; take an umbrella when going out."
+    }
+  },
+  {
+    "id": "hsk1-056",
+    "level": 1,
+    "hanzi": "冷",
+    "pinyin": "lěng",
+    "translations": [
+      "cold"
+    ],
+    "partOfSpeech": "adjective",
+    "exampleSentence": {
+      "hanzi": "哈尔滨的冬天非常寒冷。",
+      "pinyin": "Hā'ěrbīn de dōngtiān fēicháng hánlěng.",
+      "translation": "Harbin's winter is very cold."
+    }
+  },
+  {
+    "id": "hsk1-057",
+    "level": 1,
+    "hanzi": "里",
+    "pinyin": "lǐ",
+    "translations": [
+      "li (Chinese mile)",
+      "500 meters (modern)",
+      "home",
+      "hometown",
+      "village",
+      "neighborhood",
+      "administrative unit"
+    ],
+    "partOfSpeech": "f"
+  },
+  {
+    "id": "hsk1-058",
+    "level": 1,
+    "hanzi": "零",
+    "pinyin": "líng",
+    "translations": [
+      "zero",
+      "nought",
+      "zero sign",
+      "fractional",
+      "fragmentary",
+      "odd (of numbers)",
+      "(placed between two numbers to indicate a smaller quantity followed by a larger one)",
+      "fraction",
+      "(in mathematics) remainder (after division)",
+      "extra",
+      "to wither and fall",
+      "to wither"
+    ],
+    "partOfSpeech": "numeral"
+  },
+  {
+    "id": "hsk1-059",
+    "level": 1,
+    "hanzi": "六",
+    "pinyin": "liù",
+    "translations": [
+      "six"
+    ],
+    "partOfSpeech": "numeral",
+    "exampleSentence": {
+      "hanzi": "星期六我们去爬山。",
+      "pinyin": "Xīngqīliù wǒmen qù páshān.",
+      "translation": "We will go mountain climbing on Saturday."
+    }
+  },
+  {
+    "id": "hsk1-060",
+    "level": 1,
+    "hanzi": "妈妈",
+    "pinyin": "māma",
+    "translations": [
+      "mother",
+      "mom"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "妈妈做的饭菜特别香。",
+      "pinyin": "Māma zuò de fàncài tèbié xiāng.",
+      "translation": "The food mom makes is especially delicious."
+    }
+  },
+  {
+    "id": "hsk1-061",
+    "level": 1,
+    "hanzi": "吗",
+    "pinyin": "ma",
+    "translations": [
+      "question particle"
+    ],
+    "partOfSpeech": "particle",
+    "exampleSentence": {
+      "hanzi": "你是第一次来中国吗？",
+      "pinyin": "Nǐ shì dì-yī cì lái zhōngguó ma?",
+      "translation": "Is this your first time coming to China?"
+    }
+  },
+  {
+    "id": "hsk1-062",
+    "level": 1,
+    "hanzi": "买",
+    "pinyin": "mǎi",
+    "translations": [
+      "to buy"
+    ],
+    "partOfSpeech": "verb",
+    "exampleSentence": {
+      "hanzi": "妈妈去超市买了新鲜蔬菜。",
+      "pinyin": "Māma qù chāoshì mǎi le xīnxian shūcài.",
+      "translation": "Mom went to the supermarket and bought fresh vegetables."
+    }
+  },
+  {
+    "id": "hsk1-063",
+    "level": 1,
+    "hanzi": "猫",
+    "pinyin": "māo",
+    "translations": [
+      "cat"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "那只白猫在阳光下睡懒觉。",
+      "pinyin": "Nà zhī bái māo zài yángguāng xià shuì lǎnjiào.",
+      "translation": "That white cat is sleeping lazily in the sunshine."
+    }
+  },
+  {
+    "id": "hsk1-064",
+    "level": 1,
+    "hanzi": "没",
+    "pinyin": "méi",
+    "translations": [
+      "not have",
+      "did not"
+    ],
+    "partOfSpeech": "adverb",
+    "exampleSentence": {
+      "hanzi": "我昨天没有去上班。",
+      "pinyin": "Wǒ zuótiān méiyǒu qù shàngbān.",
+      "translation": "I did not go to work yesterday."
+    }
+  },
+  {
+    "id": "hsk1-065",
+    "level": 1,
+    "hanzi": "没关系",
+    "pinyin": "méi guānxi",
+    "translations": [
+      "it doesn't matter",
+      "that's all right"
+    ],
+    "partOfSpeech": "phrase",
+    "exampleSentence": {
+      "hanzi": "没关系，下次注意就好。",
+      "pinyin": "Méi guānxi, xià cì zhùyì jiù hǎo.",
+      "translation": "It doesn't matter, just be careful next time."
+    }
+  },
+  {
+    "id": "hsk1-066",
+    "level": 1,
+    "hanzi": "米饭",
+    "pinyin": "mǐfàn",
+    "translations": [
+      "cooked rice"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "今天中午我想吃米饭和鱼。",
+      "pinyin": "Jīntiān zhōngwǔ wǒ xiǎng chī mǐfàn hé yú.",
+      "translation": "This noon I want to eat cooked rice and fish."
+    }
+  },
+  {
+    "id": "hsk1-067",
+    "level": 1,
+    "hanzi": "明天",
+    "pinyin": "míng tiān",
+    "translations": [
+      "tomorrow"
+    ],
+    "partOfSpeech": "t"
+  },
+  {
+    "id": "hsk1-068",
+    "level": 1,
+    "hanzi": "名字",
+    "pinyin": "míng zi",
+    "translations": [
+      "name (of a person or thing)",
+      "CL:個|个[gè]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk1-069",
+    "level": 1,
+    "hanzi": "哪",
+    "pinyin": "nǎ",
+    "translations": [
+      "which"
+    ],
+    "partOfSpeech": "pronoun",
+    "exampleSentence": {
+      "hanzi": "你想去哪个城市旅游？",
+      "pinyin": "Nǐ xiǎng qù nǎ ge chéngshì lǚyóu?",
+      "translation": "Which city do you want to travel to?"
+    }
+  },
+  {
+    "id": "hsk1-070",
+    "level": 1,
+    "hanzi": "那",
+    "pinyin": "nà",
+    "translations": [
+      "that"
+    ],
+    "partOfSpeech": "pronoun",
+    "exampleSentence": {
+      "hanzi": "那个人是谁？",
+      "pinyin": "Nà ge rén shì shéi?",
+      "translation": "Who is that person?"
+    }
+  },
+  {
+    "id": "hsk1-071",
+    "level": 1,
+    "hanzi": "呢",
+    "pinyin": "ne",
+    "translations": [
+      "modal particle"
+    ],
+    "partOfSpeech": "particle",
+    "exampleSentence": {
+      "hanzi": "我喝咖啡，你呢？",
+      "pinyin": "Wǒ hē kāfēi, nǐ ne?",
+      "translation": "I drink coffee, what about you?"
+    }
+  },
+  {
+    "id": "hsk1-072",
+    "level": 1,
+    "hanzi": "能",
+    "pinyin": "néng",
+    "translations": [
+      "to be able to",
+      "to be capable of",
+      "ability",
+      "capability",
+      "able",
+      "capable",
+      "can possibly",
+      "(usually used in the negative) to have the possibility of"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk1-073",
+    "level": 1,
+    "hanzi": "你",
+    "pinyin": "nǐ",
+    "translations": [
+      "you (singular)"
+    ],
+    "partOfSpeech": "pronoun",
+    "exampleSentence": {
+      "hanzi": "你叫什么名字？",
+      "pinyin": "Nǐ jiào shénme míngzi?",
+      "translation": "What is your name?"
+    }
+  },
+  {
+    "id": "hsk1-074",
+    "level": 1,
+    "hanzi": "年",
+    "pinyin": "nián",
+    "translations": [
+      "year",
+      "CL:個|个[gè]"
+    ],
+    "partOfSpeech": "qt"
+  },
+  {
+    "id": "hsk1-075",
+    "level": 1,
+    "hanzi": "女儿",
+    "pinyin": "nǚ'ér",
+    "translations": [
+      "daughter"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "我的女儿非常聪明懂事。",
+      "pinyin": "Wǒ de nǚ'ér fēicháng cōngmíng dǒngshì.",
+      "translation": "My daughter is very smart and sensible."
+    }
+  },
+  {
+    "id": "hsk1-076",
+    "level": 1,
+    "hanzi": "朋友",
+    "pinyin": "péngyou",
+    "translations": [
+      "friend"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "有朋自远方来，不亦乐乎。",
+      "pinyin": "Yǒu péng zì yuǎnfāng lái, bù yì yuè hū.",
+      "translation": "Isn't it a pleasure to have friends come from afar."
+    }
+  },
+  {
+    "id": "hsk1-077",
+    "level": 1,
+    "hanzi": "漂亮",
+    "pinyin": "piàoliang",
+    "translations": [
+      "pretty",
+      "beautiful"
+    ],
+    "partOfSpeech": "adjective",
+    "exampleSentence": {
+      "hanzi": "她穿了一件漂亮的新裙子。",
+      "pinyin": "Tā chuān le yí jiàn piàoliang de xīn qúnzi.",
+      "translation": "She wore a beautiful new dress."
+    }
+  },
+  {
+    "id": "hsk1-078",
+    "level": 1,
+    "hanzi": "苹果",
+    "pinyin": "píngguǒ",
+    "translations": [
+      "apple"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "一天一苹果，疾病远离我。",
+      "pinyin": "Yì tiān yì píngguǒ, jíbìng yuǎnlí wǒ.",
+      "translation": "An apple a day keeps the doctor away."
+    }
+  },
+  {
+    "id": "hsk1-079",
+    "level": 1,
+    "hanzi": "七",
+    "pinyin": "qī",
+    "translations": [
+      "seven"
+    ],
+    "partOfSpeech": "numeral",
+    "exampleSentence": {
+      "hanzi": "彩虹有七种颜色。",
+      "pinyin": "Cǎihóng yǒu qī zhǒng yánsè.",
+      "translation": "A rainbow has seven colors."
+    }
+  },
+  {
+    "id": "hsk1-080",
+    "level": 1,
+    "hanzi": "钱",
+    "pinyin": "qián",
+    "translations": [
+      "money"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "时间比金钱更宝贵。",
+      "pinyin": "Shíjiān bǐ jīnqián gèng bǎoguì.",
+      "translation": "Time is more precious than money."
+    }
+  },
+  {
+    "id": "hsk1-081",
+    "level": 1,
+    "hanzi": "前面",
+    "pinyin": "qián miàn",
+    "translations": [
+      "ahead",
+      "in front",
+      "preceding",
+      "above"
+    ],
+    "partOfSpeech": "f"
+  },
+  {
+    "id": "hsk1-082",
+    "level": 1,
+    "hanzi": "请",
+    "pinyin": "qǐng",
+    "translations": [
+      "to ask",
+      "to invite",
+      "please (do sth)",
+      "to treat (to a meal etc)",
+      "to request"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk1-083",
+    "level": 1,
+    "hanzi": "去",
+    "pinyin": "qù",
+    "translations": [
+      "to go",
+      "to go to (a place)",
+      "to cause to go or send (sb)",
+      "to remove",
+      "to get rid of",
+      "(when used either before or after a verb) to go in order to do sth",
+      "to be apart from in space or time",
+      "(after a verb of motion indicates movement away from the speaker)",
+      "(used after certain verbs to indicate detachment or separation)",
+      "(of a time or an event etc) just passed or elapsed"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk1-084",
+    "level": 1,
+    "hanzi": "热",
+    "pinyin": "rè",
+    "translations": [
+      "hot"
+    ],
+    "partOfSpeech": "adjective",
+    "exampleSentence": {
+      "hanzi": "今天天气炎热，适合吃西瓜。",
+      "pinyin": "Jīntiān tiānqì yánrè, shìhé chī xīguā.",
+      "translation": "Today is hot, suitable for eating watermelon."
+    }
+  },
+  {
+    "id": "hsk1-085",
+    "level": 1,
+    "hanzi": "人",
+    "pinyin": "rén",
+    "translations": [
+      "man",
+      "person",
+      "people",
+      "CL:個|个",
+      "位[wèi]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk1-086",
+    "level": 1,
+    "hanzi": "认识",
+    "pinyin": "rènshi",
+    "translations": [
+      "to know",
+      "to recognize"
+    ],
+    "partOfSpeech": "verb",
+    "exampleSentence": {
+      "hanzi": "很高兴在活动中认识新朋友。",
+      "pinyin": "Hěn gāoxìng zài huódòng zhōng rènshi xīn péngyou.",
+      "translation": "Glad to make new friends during the event."
+    }
+  },
+  {
+    "id": "hsk1-087",
+    "level": 1,
+    "hanzi": "日",
+    "pinyin": "rì",
+    "translations": [
+      "sun",
+      "day",
+      "date",
+      "day of the month",
+      "abbr. for 日本 Japan"
+    ],
+    "partOfSpeech": "t"
+  },
+  {
+    "id": "hsk1-088",
+    "level": 1,
+    "hanzi": "三",
+    "pinyin": "sān",
+    "translations": [
+      "three"
+    ],
+    "partOfSpeech": "numeral",
+    "exampleSentence": {
+      "hanzi": "今天下午三点开会。",
+      "pinyin": "Jīntiān xiàwǔ sān diǎn kāihuì.",
+      "translation": "There is a meeting at three this afternoon."
+    }
+  },
+  {
+    "id": "hsk1-089",
+    "level": 1,
+    "hanzi": "商店",
+    "pinyin": "shāngdiàn",
+    "translations": [
+      "store",
+      "shop"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "商店每天早上九点开门。",
+      "pinyin": "Shāngdiàn měitiān zǎoshang jiǔ diǎn kāimén.",
+      "translation": "The store opens at 9:00 every morning."
+    }
+  },
+  {
+    "id": "hsk1-090",
+    "level": 1,
+    "hanzi": "上",
+    "pinyin": "shàng",
+    "translations": [
+      "on top",
+      "upon",
+      "above",
+      "upper",
+      "previous",
+      "first (of multiple parts)",
+      "to climb",
+      "to get onto",
+      "to go up",
+      "to attend (class or university)"
+    ],
+    "partOfSpeech": "f"
+  },
+  {
+    "id": "hsk1-091",
+    "level": 1,
+    "hanzi": "上午",
+    "pinyin": "shàng wǔ",
+    "translations": [
+      "morning",
+      "CL:個|个[gè]"
+    ],
+    "partOfSpeech": "t"
+  },
+  {
+    "id": "hsk1-092",
+    "level": 1,
+    "hanzi": "少",
+    "pinyin": "shǎo",
+    "translations": [
+      "few",
+      "little"
+    ],
+    "partOfSpeech": "adjective",
+    "exampleSentence": {
+      "hanzi": "平时要少吃油炸食品。",
+      "pinyin": "Píngshí yào shǎo chī yóuzhá shípǐn.",
+      "translation": "Usually one should eat less fried food."
+    }
+  },
+  {
+    "id": "hsk1-093",
+    "level": 1,
+    "hanzi": "谁",
+    "pinyin": "shéi",
+    "translations": [
+      "who",
+      "whom"
+    ],
+    "partOfSpeech": "pronoun",
+    "exampleSentence": {
+      "hanzi": "谁在外面敲门？",
+      "pinyin": "Shéi zài wàimiàn qiāo mén?",
+      "translation": "Who is knocking at the door outside?"
+    }
+  },
+  {
+    "id": "hsk1-094",
+    "level": 1,
+    "hanzi": "什么",
+    "pinyin": "shénme",
+    "translations": [
+      "what"
+    ],
+    "partOfSpeech": "pronoun",
+    "exampleSentence": {
+      "hanzi": "今天晚餐吃什么？",
+      "pinyin": "Jīntiān wǎncān chī shénme?",
+      "translation": "What are we eating for dinner today?"
+    }
+  },
+  {
+    "id": "hsk1-095",
+    "level": 1,
+    "hanzi": "十",
+    "pinyin": "shí",
+    "translations": [
+      "ten"
+    ],
+    "partOfSpeech": "numeral",
+    "exampleSentence": {
+      "hanzi": "十分钟后火车出发。",
+      "pinyin": "Shí fēnzhōng hòu huǒchē chūfā.",
+      "translation": "The train departs in ten minutes."
+    }
+  },
+  {
+    "id": "hsk1-096",
+    "level": 1,
+    "hanzi": "时候",
+    "pinyin": "shí hou",
+    "translations": [
+      "time",
+      "length of time",
+      "moment",
+      "period"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk1-097",
+    "level": 1,
+    "hanzi": "是",
+    "pinyin": "shì",
+    "translations": [
+      "is",
+      "are",
+      "am",
+      "yes",
+      "to be"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk1-098",
+    "level": 1,
+    "hanzi": "书",
+    "pinyin": "shū",
+    "translations": [
+      "book",
+      "letter",
+      "CL:本",
+      "冊|册",
+      "部[bù]",
+      "see also 書經|书经 Book of History"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk1-099",
+    "level": 1,
+    "hanzi": "水",
+    "pinyin": "shuǐ",
+    "translations": [
+      "water"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "多喝热水对身体好。",
+      "pinyin": "Duō hē rè shuǐ duì shēntǐ hǎo.",
+      "translation": "Drinking more warm water is good for your health."
+    }
+  },
+  {
+    "id": "hsk1-100",
+    "level": 1,
+    "hanzi": "水果",
+    "pinyin": "shuǐ guǒ",
+    "translations": [
+      "fruit",
+      "CL:個|个[gè]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk1-101",
+    "level": 1,
+    "hanzi": "睡觉",
+    "pinyin": "shuì jiào",
+    "translations": [
+      "to go to bed",
+      "to sleep"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk1-102",
+    "level": 1,
+    "hanzi": "说话",
+    "pinyin": "shuō huà",
+    "translations": [
+      "to speak",
+      "to say",
+      "to talk",
+      "to gossip",
+      "to tell stories",
+      "talk",
+      "word"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk1-103",
+    "level": 1,
+    "hanzi": "四",
+    "pinyin": "sì",
+    "translations": [
+      "four"
+    ],
+    "partOfSpeech": "numeral",
+    "exampleSentence": {
+      "hanzi": "一年有四季。",
+      "pinyin": "Yì nián yǒu sì jì.",
+      "translation": "There are four seasons in a year."
+    }
+  },
+  {
+    "id": "hsk1-104",
+    "level": 1,
+    "hanzi": "岁",
+    "pinyin": "suì",
+    "translations": [
+      "years old (age)"
+    ],
+    "partOfSpeech": "measure word",
+    "exampleSentence": {
+      "hanzi": "我弟弟今年八岁了。",
+      "pinyin": "Wǒ dìdi jīnnián bā suì le.",
+      "translation": "My younger brother is eight years old this year."
+    }
+  },
+  {
+    "id": "hsk1-105",
+    "level": 1,
+    "hanzi": "他",
+    "pinyin": "tā",
+    "translations": [
+      "he",
+      "him"
+    ],
+    "partOfSpeech": "pronoun",
+    "exampleSentence": {
+      "hanzi": "他是我们的汉语老师。",
+      "pinyin": "Tā shì wǒmen de hànyǔ lǎoshī.",
+      "translation": "He is our Chinese teacher."
+    }
+  },
+  {
+    "id": "hsk1-106",
+    "level": 1,
+    "hanzi": "她",
+    "pinyin": "tā",
+    "translations": [
+      "she",
+      "her"
+    ],
+    "partOfSpeech": "pronoun",
+    "exampleSentence": {
+      "hanzi": "她喜欢在图书馆看书。",
+      "pinyin": "Tā xǐhuan zài túshūguǎn kàn shū.",
+      "translation": "She likes reading books in the library."
+    }
+  },
+  {
+    "id": "hsk1-107",
+    "level": 1,
+    "hanzi": "太",
+    "pinyin": "tài",
+    "translations": [
+      "too",
+      "extremely"
+    ],
+    "partOfSpeech": "adverb",
+    "exampleSentence": {
+      "hanzi": "太好了，我们赢了！",
+      "pinyin": "Tài hǎo le, wǒmen yíng le!",
+      "translation": "Great, we won!"
+    }
+  },
+  {
+    "id": "hsk1-108",
+    "level": 1,
+    "hanzi": "天气",
+    "pinyin": "tiānqì",
+    "translations": [
+      "weather"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "明天的天气预报说是晴天。",
+      "pinyin": "Míngtiān de tiānqì yùbào shuō shì qíngtiān.",
+      "translation": "Tomorrow's weather forecast says it will be sunny."
+    }
+  },
+  {
+    "id": "hsk1-109",
+    "level": 1,
+    "hanzi": "听",
+    "pinyin": "tīng",
+    "translations": [
+      "to listen",
+      "to hear"
+    ],
+    "partOfSpeech": "verb",
+    "exampleSentence": {
+      "hanzi": "他在专注地听中文播客。",
+      "pinyin": "Tā zài zhuānzhù de tīng zhōngwén bōkè.",
+      "translation": "He is listening attentively to a Chinese podcast."
+    }
+  },
+  {
+    "id": "hsk1-110",
+    "level": 1,
+    "hanzi": "同学",
+    "pinyin": "tóngxué",
+    "translations": [
+      "classmate"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "他和我是同班同学。",
+      "pinyin": "Tā hé wǒ shì tóngbān tóngxué.",
+      "translation": "He and I are classmates in the same class."
+    }
+  },
+  {
+    "id": "hsk1-111",
+    "level": 1,
+    "hanzi": "喂",
+    "pinyin": "wèi",
+    "translations": [
+      "to feed"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk1-112",
+    "level": 1,
+    "hanzi": "我",
+    "pinyin": "wǒ",
+    "translations": [
+      "I",
+      "me"
+    ],
+    "partOfSpeech": "pronoun",
+    "exampleSentence": {
+      "hanzi": "我是中国语言文学学生。",
+      "pinyin": "Wǒ shì zhōngguó yǔyán wénxué xuésheng.",
+      "translation": "I am a Chinese language and literature student."
+    }
+  },
+  {
+    "id": "hsk1-113",
+    "level": 1,
+    "hanzi": "我们",
+    "pinyin": "wǒmen",
+    "translations": [
+      "we",
+      "us"
+    ],
+    "partOfSpeech": "pronoun",
+    "exampleSentence": {
+      "hanzi": "我们一起去北京吧。",
+      "pinyin": "Wǒmen yìqǐ qù Běijīng ba.",
+      "translation": "Let's go to Beijing together."
+    }
+  },
+  {
+    "id": "hsk1-114",
+    "level": 1,
+    "hanzi": "五",
+    "pinyin": "wǔ",
+    "translations": [
+      "five"
+    ],
+    "partOfSpeech": "numeral",
+    "exampleSentence": {
+      "hanzi": "我们队有五名队员。",
+      "pinyin": "Wǒmen duì yǒu wǔ míng duìyuán.",
+      "translation": "Our team has five members."
+    }
+  },
+  {
+    "id": "hsk1-115",
+    "level": 1,
+    "hanzi": "喜欢",
+    "pinyin": "xǐhuan",
+    "translations": [
+      "to like"
+    ],
+    "partOfSpeech": "verb",
+    "exampleSentence": {
+      "hanzi": "我非常喜欢中国书法艺术。",
+      "pinyin": "Wǒ fēicháng xǐhuan zhōngguó shūfǎ yìshù.",
+      "translation": "I really like Chinese calligraphy art."
+    }
+  },
+  {
+    "id": "hsk1-116",
+    "level": 1,
+    "hanzi": "下",
+    "pinyin": "xià",
+    "translations": [
+      "down",
+      "downwards",
+      "below",
+      "lower",
+      "later",
+      "next (week etc)",
+      "second (of two parts)",
+      "to decline",
+      "to go down"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk1-117",
+    "level": 1,
+    "hanzi": "下午",
+    "pinyin": "xià wǔ",
+    "translations": [
+      "afternoon",
+      "CL:個|个[gè]",
+      "p.m."
+    ],
+    "partOfSpeech": "t"
+  },
+  {
+    "id": "hsk1-118",
+    "level": 1,
+    "hanzi": "下雨",
+    "pinyin": "xià yǔ",
+    "translations": [
+      "to rain",
+      "rainy"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk1-119",
+    "level": 1,
+    "hanzi": "先生",
+    "pinyin": "xiānsheng",
+    "translations": [
+      "Mister",
+      "husband",
+      "gentleman"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "张先生，请这边坐。",
+      "pinyin": "Zhāng xiānsheng, qǐng zhèbiān zuò.",
+      "translation": "Mr. Zhang, please sit this way."
+    }
+  },
+  {
+    "id": "hsk1-120",
+    "level": 1,
+    "hanzi": "现在",
+    "pinyin": "xiàn zài",
+    "translations": [
+      "now",
+      "at present",
+      "at the moment",
+      "modern",
+      "current",
+      "nowadays"
+    ],
+    "partOfSpeech": "t"
+  },
+  {
+    "id": "hsk1-121",
+    "level": 1,
+    "hanzi": "想",
+    "pinyin": "xiǎng",
+    "translations": [
+      "to think",
+      "to miss",
+      "would like to"
+    ],
+    "partOfSpeech": "verb",
+    "exampleSentence": {
+      "hanzi": "我很想念远方的家乡。",
+      "pinyin": "Wǒ hěn xiǎngniàn yuǎnfāng de jiāxiāng.",
+      "translation": "I miss my distant hometown very much."
+    }
+  },
+  {
+    "id": "hsk1-122",
+    "level": 1,
+    "hanzi": "小",
+    "pinyin": "xiǎo",
+    "translations": [
+      "small",
+      "little"
+    ],
+    "partOfSpeech": "adjective",
+    "exampleSentence": {
+      "hanzi": "小河流水潺潺。",
+      "pinyin": "Xiǎo hé liúshuǐ chánchán.",
+      "translation": "The little river flows murmuring."
+    }
+  },
+  {
+    "id": "hsk1-123",
+    "level": 1,
+    "hanzi": "小姐",
+    "pinyin": "xiǎojiě",
+    "translations": [
+      "Miss",
+      "young lady"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "这位小姐正在咨询机票。",
+      "pinyin": "Zhè wèi xiǎojiě zhèngzài zīxún jīpiào.",
+      "translation": "This young lady is inquiring about flight tickets."
+    }
+  },
+  {
+    "id": "hsk1-124",
+    "level": 1,
+    "hanzi": "些",
+    "pinyin": "xiē",
+    "translations": [
+      "some",
+      "few"
+    ],
+    "partOfSpeech": "measure word",
+    "exampleSentence": {
+      "hanzi": "我想买些新鲜水果。",
+      "pinyin": "Wǒ xiǎng mǎi xiē xīnxian shuǐguǒ.",
+      "translation": "I would like to buy some fresh fruit."
+    }
+  },
+  {
+    "id": "hsk1-125",
+    "level": 1,
+    "hanzi": "写",
+    "pinyin": "xiě",
+    "translations": [
+      "to write"
+    ],
+    "partOfSpeech": "verb",
+    "exampleSentence": {
+      "hanzi": "他在练习写毛笔字。",
+      "pinyin": "Tā zài liànxí xiě máobǐzì.",
+      "translation": "He is practicing writing calligraphy with a brush."
+    }
+  },
+  {
+    "id": "hsk1-126",
+    "level": 1,
+    "hanzi": "谢谢",
+    "pinyin": "xièxie",
+    "translations": [
+      "thank you",
+      "thanks"
+    ],
+    "partOfSpeech": "verb",
+    "exampleSentence": {
+      "hanzi": "谢谢你的热情帮助。",
+      "pinyin": "Xièxie nǐ de rèqíng bāngzhù.",
+      "translation": "Thank you for your warm help."
+    }
+  },
+  {
+    "id": "hsk1-127",
+    "level": 1,
+    "hanzi": "星期",
+    "pinyin": "xīng qī",
+    "translations": [
+      "week",
+      "CL:個|个[gè]",
+      "day of the week",
+      "Sunday"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk1-128",
+    "level": 1,
+    "hanzi": "学生",
+    "pinyin": "xuésheng",
+    "translations": [
+      "student"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "图书馆里有很多自习的学生。",
+      "pinyin": "Túshūguǎn lǐ yǒu hěn duō zìxí de xuésheng.",
+      "translation": "There are many students self-studying in the library."
+    }
+  },
+  {
+    "id": "hsk1-129",
+    "level": 1,
+    "hanzi": "学习",
+    "pinyin": "xuéxí",
+    "translations": [
+      "to study",
+      "to learn"
+    ],
+    "partOfSpeech": "verb",
+    "exampleSentence": {
+      "hanzi": "每天坚持学习中文很有收获。",
+      "pinyin": "Měitiān jiānchí xuéxí zhōngwén hěn yǒu shōuhuò.",
+      "translation": "Persisting in studying Chinese every day brings great rewards."
+    }
+  },
+  {
+    "id": "hsk1-130",
+    "level": 1,
+    "hanzi": "学校",
+    "pinyin": "xuéxiào",
+    "translations": [
+      "school"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "我们的学校环境很美。",
+      "pinyin": "Wǒmen de xuéxiào huánjìng hěn měi.",
+      "translation": "Our school environment is very beautiful."
+    }
+  },
+  {
+    "id": "hsk1-131",
+    "level": 1,
+    "hanzi": "一",
+    "pinyin": "yī",
+    "translations": [
+      "one"
+    ],
+    "partOfSpeech": "numeral",
+    "exampleSentence": {
+      "hanzi": "给我一杯热茶，谢谢。",
+      "pinyin": "Gěi wǒ yì bēi rè chá, xièxie.",
+      "translation": "Give me a cup of hot tea, please."
+    }
+  },
+  {
+    "id": "hsk1-132",
+    "level": 1,
+    "hanzi": "衣服",
+    "pinyin": "yī fu",
+    "translations": [
+      "clothes",
+      "CL:件",
+      "套[tào]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk1-133",
+    "level": 1,
+    "hanzi": "医生",
+    "pinyin": "yīshēng",
+    "translations": [
+      "doctor"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "李医生医术非常精湛。",
+      "pinyin": "Lǐ yīshēng yīshù fēicháng jīngzhàn.",
+      "translation": "Doctor Li has superb medical skills."
+    }
+  },
+  {
+    "id": "hsk1-134",
+    "level": 1,
+    "hanzi": "医院",
+    "pinyin": "yīyuàn",
+    "translations": [
+      "hospital"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "生病了要去医院看医生。",
+      "pinyin": "Shēngbìng le yào qù yīyuàn kàn yīshēng.",
+      "translation": "When sick, one should go to the hospital to see a doctor."
+    }
+  },
+  {
+    "id": "hsk1-135",
+    "level": 1,
+    "hanzi": "椅子",
+    "pinyin": "yǐ zi",
+    "translations": [
+      "chair",
+      "CL:把",
+      "套[tào]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk1-136",
+    "level": 1,
+    "hanzi": "有",
+    "pinyin": "yǒu",
+    "translations": [
+      "to have",
+      "there is",
+      "there are",
+      "to exist",
+      "to be"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk1-137",
+    "level": 1,
+    "hanzi": "月",
+    "pinyin": "yuè",
+    "translations": [
+      "moon",
+      "month",
+      "CL:個|个",
+      "輪|轮[lún]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk1-138",
+    "level": 1,
+    "hanzi": "在",
+    "pinyin": "zài",
+    "translations": [
+      "at",
+      "in",
+      "on"
+    ],
+    "partOfSpeech": "preposition",
+    "exampleSentence": {
+      "hanzi": "他在书房认真学习。",
+      "pinyin": "Tā zài shūfáng rènzhēn xuéxí.",
+      "translation": "He is studying diligently in the study room."
+    }
+  },
+  {
+    "id": "hsk1-139",
+    "level": 1,
+    "hanzi": "再见",
+    "pinyin": "zàijiàn",
+    "translations": [
+      "goodbye",
+      "see you again"
+    ],
+    "partOfSpeech": "verb",
+    "exampleSentence": {
+      "hanzi": "明天见，再见！",
+      "pinyin": "Míngtiān jiàn, zàijiàn!",
+      "translation": "See you tomorrow, goodbye!"
+    }
+  },
+  {
+    "id": "hsk1-140",
+    "level": 1,
+    "hanzi": "怎么",
+    "pinyin": "zěnme",
+    "translations": [
+      "how",
+      "why"
+    ],
+    "partOfSpeech": "pronoun",
+    "exampleSentence": {
+      "hanzi": "你怎么去火车站？",
+      "pinyin": "Nǐ zěnme qù huǒchēzhàn?",
+      "translation": "How do you go to the train station?"
+    }
+  },
+  {
+    "id": "hsk1-141",
+    "level": 1,
+    "hanzi": "怎么样",
+    "pinyin": "zěnmeyàng",
+    "translations": [
+      "how is it",
+      "how about"
+    ],
+    "partOfSpeech": "pronoun",
+    "exampleSentence": {
+      "hanzi": "这道中国菜味道怎么样？",
+      "pinyin": "Zhè dào zhōngguó cài wèidào zěnmeyàng?",
+      "translation": "How does this Chinese dish taste?"
+    }
+  },
+  {
+    "id": "hsk1-142",
+    "level": 1,
+    "hanzi": "这",
+    "pinyin": "zhè",
+    "translations": [
+      "this"
+    ],
+    "partOfSpeech": "pronoun",
+    "exampleSentence": {
+      "hanzi": "这是一本很有趣的书。",
+      "pinyin": "Zhè shì yì běn hěn yǒuqù de shū.",
+      "translation": "This is a very interesting book."
+    }
+  },
+  {
+    "id": "hsk1-143",
+    "level": 1,
+    "hanzi": "中国",
+    "pinyin": "Zhōngguó",
+    "translations": [
+      "China"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "中国有着悠久的历史。",
+      "pinyin": "Zhōngguó yǒuzhe yōujiǔ de lìshǐ.",
+      "translation": "China has a long history."
+    }
+  },
+  {
+    "id": "hsk1-144",
+    "level": 1,
+    "hanzi": "中午",
+    "pinyin": "zhōng wǔ",
+    "translations": [
+      "noon",
+      "midday",
+      "CL:個|个[gè]"
+    ],
+    "partOfSpeech": "t"
+  },
+  {
+    "id": "hsk1-145",
+    "level": 1,
+    "hanzi": "住",
+    "pinyin": "zhù",
+    "translations": [
+      "to live",
+      "to stay"
+    ],
+    "partOfSpeech": "verb",
+    "exampleSentence": {
+      "hanzi": "我们在上海住了一个星期。",
+      "pinyin": "Wǒmen zài Shànghǎi zhù le yí ge xīngqī.",
+      "translation": "We stayed in Shanghai for a week."
+    }
+  },
+  {
+    "id": "hsk1-146",
+    "level": 1,
+    "hanzi": "桌子",
+    "pinyin": "zhuō zi",
+    "translations": [
+      "table",
+      "desk",
+      "CL:張|张",
+      "套[tào]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk1-147",
+    "level": 1,
+    "hanzi": "字",
+    "pinyin": "zì",
+    "translations": [
+      "letter",
+      "symbol",
+      "character",
+      "word",
+      "CL:個|个[gè]",
+      "courtesy or style name traditionally given to males aged 20 in dynastic China"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk1-148",
+    "level": 1,
+    "hanzi": "昨天",
+    "pinyin": "zuó tiān",
+    "translations": [
+      "yesterday"
+    ],
+    "partOfSpeech": "t"
+  },
+  {
+    "id": "hsk1-149",
+    "level": 1,
+    "hanzi": "坐",
+    "pinyin": "zuò",
+    "translations": [
+      "to sit",
+      "to travel by"
+    ],
+    "partOfSpeech": "verb",
+    "exampleSentence": {
+      "hanzi": "请坐，我给你倒杯茶。",
+      "pinyin": "Qǐng zuò, wǒ gěi nǐ dào bēi chá.",
+      "translation": "Please sit down, I will pour you a cup of tea."
+    }
+  },
+  {
+    "id": "hsk1-150",
+    "level": 1,
+    "hanzi": "做",
+    "pinyin": "zuò",
+    "translations": [
+      "to do",
+      "to make",
+      "to produce",
+      "to write",
+      "to compose",
+      "to act as",
+      "to engage in",
+      "to hold (a party)",
+      "to be",
+      "to become",
+      "to function (in some capacity)",
+      "to serve as",
+      "to be used for",
+      "to form (a bond or relationship)",
+      "to pretend",
+      "to feign",
+      "to act a part",
+      "to put on appearance"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk2-001",
+    "level": 2,
+    "hanzi": "吧",
+    "pinyin": "ba",
+    "translations": [
+      "(modal particle indicating suggestion or surmise)",
+      "...right?",
+      "...OK?",
+      "...I presume."
+    ],
+    "partOfSpeech": "y"
+  },
+  {
+    "id": "hsk2-002",
+    "level": 2,
+    "hanzi": "白",
+    "pinyin": "bái",
+    "translations": [
+      "white",
+      "snowy",
+      "pure",
+      "bright",
+      "empty",
+      "blank",
+      "plain",
+      "clear",
+      "to make clear",
+      "in vain",
+      "gratuitous",
+      "free of charge",
+      "reactionary",
+      "anti-communist",
+      "funeral",
+      "to stare coldly",
+      "to write wrong character",
+      "to state",
+      "to explain",
+      "vernacular",
+      "spoken lines in opera"
+    ],
+    "partOfSpeech": "adjective"
+  },
+  {
+    "id": "hsk2-003",
+    "level": 2,
+    "hanzi": "百",
+    "pinyin": "bǎi",
+    "translations": [
+      "hundred",
+      "numerous",
+      "all kinds of"
+    ],
+    "partOfSpeech": "numeral"
+  },
+  {
+    "id": "hsk2-004",
+    "level": 2,
+    "hanzi": "帮助",
+    "pinyin": "bāng zhù",
+    "translations": [
+      "assistance",
+      "aid",
+      "to help",
+      "to assist"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk2-005",
+    "level": 2,
+    "hanzi": "报纸",
+    "pinyin": "bào zhǐ",
+    "translations": [
+      "newspaper",
+      "newsprint",
+      "CL:份",
+      "期",
+      "張|张[zhāng]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk2-006",
+    "level": 2,
+    "hanzi": "比",
+    "pinyin": "bǐ",
+    "translations": [
+      "(particle used for comparison and \"-er than\")",
+      "to compare",
+      "to contrast",
+      "to gesture (with hands)",
+      "ratio"
+    ],
+    "partOfSpeech": "preposition"
+  },
+  {
+    "id": "hsk2-007",
+    "level": 2,
+    "hanzi": "别",
+    "pinyin": "bié",
+    "translations": [
+      "to leave",
+      "to depart",
+      "to separate",
+      "to distinguish",
+      "to classify",
+      "other",
+      "another",
+      "do not",
+      "must not",
+      "to pin"
+    ],
+    "partOfSpeech": "adverb"
+  },
+  {
+    "id": "hsk2-008",
+    "level": 2,
+    "hanzi": "长",
+    "pinyin": "cháng",
+    "translations": [
+      "length",
+      "long",
+      "forever",
+      "always",
+      "constantly"
+    ],
+    "partOfSpeech": "adjective"
+  },
+  {
+    "id": "hsk2-009",
+    "level": 2,
+    "hanzi": "唱歌",
+    "pinyin": "chànggē",
+    "translations": [
+      "to sing"
+    ],
+    "partOfSpeech": "verb",
+    "exampleSentence": {
+      "hanzi": "她唱歌的声音宛如百灵鸟。",
+      "pinyin": "Tā chànggē de shēngyīn wǎnrú bǎilíngniǎo.",
+      "translation": "Her singing voice is like a lark."
+    }
+  },
+  {
+    "id": "hsk2-010",
+    "level": 2,
+    "hanzi": "出",
+    "pinyin": "chū",
+    "translations": [
+      "to go out",
+      "to exit"
+    ],
+    "partOfSpeech": "verb",
+    "exampleSentence": {
+      "hanzi": "太阳从东方缓缓升出。",
+      "pinyin": "Tàiyáng cóng dōngfāng huǎnhuǎn shēngchū.",
+      "translation": "The sun rose slowly from the east."
+    }
+  },
+  {
+    "id": "hsk2-011",
+    "level": 2,
+    "hanzi": "穿",
+    "pinyin": "chuān",
+    "translations": [
+      "to wear",
+      "to put on"
+    ],
+    "partOfSpeech": "verb",
+    "exampleSentence": {
+      "hanzi": "天冷了，记得多穿一件毛衣。",
+      "pinyin": "Tiān lěng le, jìde duō chuān yí jiàn máoyī.",
+      "translation": "The weather turned cold; remember to wear an extra sweater."
+    }
+  },
+  {
+    "id": "hsk2-012",
+    "level": 2,
+    "hanzi": "船",
+    "pinyin": "chuán",
+    "translations": [
+      "a boat",
+      "vessel",
+      "ship",
+      "CL:條|条",
+      "艘",
+      "隻|只[zhī]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk2-013",
+    "level": 2,
+    "hanzi": "次",
+    "pinyin": "cì",
+    "translations": [
+      "time",
+      "occurrence"
+    ],
+    "partOfSpeech": "measure word",
+    "exampleSentence": {
+      "hanzi": "这是我第三次来到美丽的杭州。",
+      "pinyin": "Zhè shì wǒ dì-sān cì lái dào měilì de Hángzhōu.",
+      "translation": "This is my third time coming to beautiful Hangzhou."
+    }
+  },
+  {
+    "id": "hsk2-014",
+    "level": 2,
+    "hanzi": "从",
+    "pinyin": "cóng",
+    "translations": [
+      "from"
+    ],
+    "partOfSpeech": "preposition",
+    "exampleSentence": {
+      "hanzi": "他从早到晚都在实验室工作。",
+      "pinyin": "Tā cóng zǎo dào wǎn dōu zài shíyànshì gōngzuò.",
+      "translation": "He worked in the laboratory from morning to night."
+    }
+  },
+  {
+    "id": "hsk2-015",
+    "level": 2,
+    "hanzi": "错",
+    "pinyin": "cuò",
+    "translations": [
+      "wrong",
+      "mistake"
+    ],
+    "partOfSpeech": "adjective",
+    "exampleSentence": {
+      "hanzi": "不要害怕犯错，从错误中学习。",
+      "pinyin": "Bú yào hàipà fàn cuò, cóng cuòwù zhōng xuéxí.",
+      "translation": "Don't be afraid to make mistakes; learn from them."
+    }
+  },
+  {
+    "id": "hsk2-016",
+    "level": 2,
+    "hanzi": "打篮球",
+    "pinyin": "dǎ lánqiú",
+    "translations": [
+      "to play basketball"
+    ],
+    "partOfSpeech": "verb",
+    "exampleSentence": {
+      "hanzi": "男孩子们在球场上热火朝天地打篮球。",
+      "pinyin": "Nánháizi men zài qiúchǎng shàng rèhuǒcháotiān de dǎ lánqiú.",
+      "translation": "The boys are passionately playing basketball on the court."
+    }
+  },
+  {
+    "id": "hsk2-017",
+    "level": 2,
+    "hanzi": "大家",
+    "pinyin": "dàjiā",
+    "translations": [
+      "everyone"
+    ],
+    "partOfSpeech": "pronoun",
+    "exampleSentence": {
+      "hanzi": "大家请保持安静，讲座马上开始。",
+      "pinyin": "Dàjiā qǐng bǎochí ānjìng, jiǎngzuò mǎshàng kāishǐ.",
+      "translation": "Everyone please keep quiet, the lecture is starting right away."
+    }
+  },
+  {
+    "id": "hsk2-018",
+    "level": 2,
+    "hanzi": "但是",
+    "pinyin": "dàn shì",
+    "translations": [
+      "but",
+      "however"
+    ],
+    "partOfSpeech": "conjunction"
+  },
+  {
+    "id": "hsk2-019",
+    "level": 2,
+    "hanzi": "到",
+    "pinyin": "dào",
+    "translations": [
+      "to arrive",
+      "to reach"
+    ],
+    "partOfSpeech": "verb",
+    "exampleSentence": {
+      "hanzi": "高铁准时到达了终点站。",
+      "pinyin": "Gāotiě zhǔnshí dàodá le zhōngdiǎnzhàn.",
+      "translation": "The high-speed train arrived at the terminus on time."
+    }
+  },
+  {
+    "id": "hsk2-020",
+    "level": 2,
+    "hanzi": "得",
+    "pinyin": "de",
+    "translations": [
+      "structural particle for manner/degree"
+    ],
+    "partOfSpeech": "particle",
+    "exampleSentence": {
+      "hanzi": "他跑得飞快，拿下了第一名。",
+      "pinyin": "Tā pǎo de fēikuài, náxià le dì-yī míng.",
+      "translation": "He ran exceedingly fast and clinched first place."
+    }
+  },
+  {
+    "id": "hsk2-021",
+    "level": 2,
+    "hanzi": "得",
+    "pinyin": "de",
+    "translations": [
+      "structural particle for manner/degree"
+    ],
+    "partOfSpeech": "particle",
+    "exampleSentence": {
+      "hanzi": "他跑得飞快，拿下了第一名。",
+      "pinyin": "Tā pǎo de fēikuài, náxià le dì-yī míng.",
+      "translation": "He ran exceedingly fast and clinched first place."
+    }
+  },
+  {
+    "id": "hsk2-022",
+    "level": 2,
+    "hanzi": "弟弟",
+    "pinyin": "dìdi",
+    "translations": [
+      "younger brother"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "我弟弟是一个好奇心强的男孩。",
+      "pinyin": "Wǒ dìdi shì yí ge hàoqíxīn qiáng de nánhái.",
+      "translation": "My younger brother is a boy full of curiosity."
+    }
+  },
+  {
+    "id": "hsk2-023",
+    "level": 2,
+    "hanzi": "第一",
+    "pinyin": "dì-yī",
+    "translations": [
+      "first",
+      "number one"
+    ],
+    "partOfSpeech": "numeral",
+    "exampleSentence": {
+      "hanzi": "经过努力，他取得了全校第一的优异成绩。",
+      "pinyin": "Jīngguò nǔlì, tā qǔdé le quánxiào dì-yī de yōuyì chéngjì.",
+      "translation": "Through diligence, he attained the school's top outstanding score."
+    }
+  },
+  {
+    "id": "hsk2-024",
+    "level": 2,
+    "hanzi": "懂",
+    "pinyin": "dǒng",
+    "translations": [
+      "to understand"
+    ],
+    "partOfSpeech": "verb",
+    "exampleSentence": {
+      "hanzi": "你懂这首古典诗词的含义吗？",
+      "pinyin": "Nǐ dǒng zhè shǒu gǔdiǎn shīcí de hányì ma?",
+      "translation": "Do you understand the meaning of this classical poem?"
+    }
+  },
+  {
+    "id": "hsk2-025",
+    "level": 2,
+    "hanzi": "房间",
+    "pinyin": "fángjiān",
+    "translations": [
+      "room"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "阳光透过窗户洒满了整个房间。",
+      "pinyin": "Yángguāng tòuguò chuānghu sǎmǎn le zhènggè fángjiān.",
+      "translation": "Sunlight streamed through the window, filling the whole room."
+    }
+  },
+  {
+    "id": "hsk2-026",
+    "level": 2,
+    "hanzi": "非常",
+    "pinyin": "fēicháng",
+    "translations": [
+      "very",
+      "extraordinarily"
+    ],
+    "partOfSpeech": "adverb",
+    "exampleSentence": {
+      "hanzi": "这道传统北京烤鸭味道非常纯正。",
+      "pinyin": "Zhè dào chuántǒng Běijīng kǎoyā wèidào fēicháng chúnzhèng.",
+      "translation": "This traditional Peking roast duck tastes extraordinarily authentic."
+    }
+  },
+  {
+    "id": "hsk2-027",
+    "level": 2,
+    "hanzi": "服务员",
+    "pinyin": "fúwùyuán",
+    "translations": [
+      "waiter",
+      "attendant"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "热情的服务员端上了刚出炉的热茶。",
+      "pinyin": "Rèqíng de fúwùyuán duānshàng le gāng chūlú de rè chá.",
+      "translation": "The enthusiastic waiter served the freshly brewed hot tea."
+    }
+  },
+  {
+    "id": "hsk2-028",
+    "level": 2,
+    "hanzi": "高",
+    "pinyin": "gāo",
+    "translations": [
+      "tall",
+      "high"
+    ],
+    "partOfSpeech": "adjective",
+    "exampleSentence": {
+      "hanzi": "泰山是中国著名的崇山峻岭，海拔很高。",
+      "pinyin": "Tàishān shì zhōngguó zhùmíng de chóngshān jùnlǐng, hǎibá hěn gāo.",
+      "translation": "Mount Tai is a famous towering peak in China with a high altitude."
+    }
+  },
+  {
+    "id": "hsk2-029",
+    "level": 2,
+    "hanzi": "告诉",
+    "pinyin": "gàosu",
+    "translations": [
+      "to tell",
+      "to inform"
+    ],
+    "partOfSpeech": "verb",
+    "exampleSentence": {
+      "hanzi": "他把通过考试的好消息告诉了父母。",
+      "pinyin": "Tā bǎ tōngguò kǎoshì de hǎo xiāoxi gàosu le fùmǔ.",
+      "translation": "He told the good news of passing the exam to his parents."
+    }
+  },
+  {
+    "id": "hsk2-030",
+    "level": 2,
+    "hanzi": "哥哥",
+    "pinyin": "gēge",
+    "translations": [
+      "older brother"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "我哥哥正在北京大学攻读计算机硕士。",
+      "pinyin": "Wǒ gēge zhèngzài Běijīng Dàxué gōngdú jìsuànjī shuòshì.",
+      "translation": "My older brother is pursuing a master's degree in computer science at Peking University."
+    }
+  },
+  {
+    "id": "hsk2-031",
+    "level": 2,
+    "hanzi": "给",
+    "pinyin": "gěi",
+    "translations": [
+      "to give"
+    ],
+    "partOfSpeech": "verb",
+    "exampleSentence": {
+      "hanzi": "朋友送给我一本精美的书法画册。",
+      "pinyin": "Péngyou sòng gěi wǒ yì běn jīngměi de shūfǎ huàcè.",
+      "translation": "A friend gave me an exquisite calligraphy album."
+    }
+  },
+  {
+    "id": "hsk2-032",
+    "level": 2,
+    "hanzi": "公共汽车",
+    "pinyin": "gōnggòng qìchē",
+    "translations": [
+      "bus"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "绿色环保的电动公共汽车正在城市里普及。",
+      "pinyin": "Lǜsè huánbǎo de diàndòng gōnggòng qìchē zhèngzài chéngshì lǐ pǔjí.",
+      "translation": "Eco-friendly electric buses are becoming widespread across the city."
+    }
+  },
+  {
+    "id": "hsk2-033",
+    "level": 2,
+    "hanzi": "公斤",
+    "pinyin": "gōng jīn",
+    "translations": [
+      "kilogram (kg)"
+    ],
+    "partOfSpeech": "measure word"
+  },
+  {
+    "id": "hsk2-034",
+    "level": 2,
+    "hanzi": "公司",
+    "pinyin": "gōngsī",
+    "translations": [
+      "company",
+      "corporation"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "这家科技公司致力于开发人工智能产品。",
+      "pinyin": "Zhè jiā kējì gōngsī zhìlì yú kāifā réngōng zhìnéng chǎnpǐn.",
+      "translation": "This tech company is dedicated to developing artificial intelligence products."
+    }
+  },
+  {
+    "id": "hsk2-035",
+    "level": 2,
+    "hanzi": "贵",
+    "pinyin": "guì",
+    "translations": [
+      "expensive",
+      "precious"
+    ],
+    "partOfSpeech": "adjective",
+    "exampleSentence": {
+      "hanzi": "虽然价格昂贵，但这件工艺品质感极佳。",
+      "pinyin": "Suīrán jiàgé ángguì, dàn zhè jiàn gōngyìpǐn zhìgǎn jí jiā.",
+      "translation": "Although the price is expensive, this craft piece has exceptional quality."
+    }
+  },
+  {
+    "id": "hsk2-036",
+    "level": 2,
+    "hanzi": "还",
+    "pinyin": "hái",
+    "translations": [
+      "still",
+      "yet",
+      "in addition"
+    ],
+    "partOfSpeech": "adverb",
+    "exampleSentence": {
+      "hanzi": "除了汉语，他还会说流畅的西班牙语。",
+      "pinyin": "Chúle hànyǔ, tā hái huì shuō liúchàng de xībānyáyǔ.",
+      "translation": "In addition to Chinese, he can also speak fluent Spanish."
+    }
+  },
+  {
+    "id": "hsk2-037",
+    "level": 2,
+    "hanzi": "孩子",
+    "pinyin": "háizi",
+    "translations": [
+      "child",
+      "children"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "孩子们在草地上快乐地奔跑嬉戏。",
+      "pinyin": "Háizi men zài cǎodì shàng kuàilè de bēnpǎo xīxì.",
+      "translation": "The children were running and frolicking joyfully on the grass."
+    }
+  },
+  {
+    "id": "hsk2-038",
+    "level": 2,
+    "hanzi": "好吃",
+    "pinyin": "hǎochī",
+    "translations": [
+      "delicious",
+      "tasty"
+    ],
+    "partOfSpeech": "adjective",
+    "exampleSentence": {
+      "hanzi": "四川的麻婆豆腐又麻又辣，特别好吃。",
+      "pinyin": "Sìchuān de mápó dòufu yòu má yòu là, tèbié hǎochī.",
+      "translation": "Sichuan's Mapo Tofu is both numbing and spicy, exceptionally delicious."
+    }
+  },
+  {
+    "id": "hsk2-039",
+    "level": 2,
+    "hanzi": "号",
+    "pinyin": "hào",
+    "translations": [
+      "ordinal number",
+      "day of a month",
+      "mark",
+      "sign",
+      "business establishment",
+      "size",
+      "ship suffix",
+      "horn (wind instrument)",
+      "bugle call",
+      "assumed name",
+      "to take a pulse",
+      "classifier used to indicate number of people"
+    ],
+    "partOfSpeech": "measure word"
+  },
+  {
+    "id": "hsk2-040",
+    "level": 2,
+    "hanzi": "黑",
+    "pinyin": "hēi",
+    "translations": [
+      "black",
+      "dark"
+    ],
+    "partOfSpeech": "adjective",
+    "exampleSentence": {
+      "hanzi": "夜空深邃黝黑，缀满了闪耀的星光。",
+      "pinyin": "Yèkōng shēnsuì yǒuhēi, zhuìmǎn le shǎnyào de xīngguāng.",
+      "translation": "The night sky was deep and black, studded with shimmering stars."
+    }
+  },
+  {
+    "id": "hsk2-041",
+    "level": 2,
+    "hanzi": "红",
+    "pinyin": "hóng",
+    "translations": [
+      "red"
+    ],
+    "partOfSpeech": "adjective",
+    "exampleSentence": {
+      "hanzi": "中国传统的红灯笼象征着喜庆与团圆。",
+      "pinyin": "Zhōngguó chuántǒng de hóng dēnglong xiàngzhēng zhe xǐqìng yǔ tuányuán.",
+      "translation": "Traditional Chinese red lanterns symbolize festivity and reunion."
+    }
+  },
+  {
+    "id": "hsk2-042",
+    "level": 2,
+    "hanzi": "欢迎",
+    "pinyin": "huān yíng",
+    "translations": [
+      "to welcome",
+      "welcome"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk2-043",
+    "level": 2,
+    "hanzi": "还",
+    "pinyin": "hái",
+    "translations": [
+      "still",
+      "yet",
+      "in addition"
+    ],
+    "partOfSpeech": "adverb",
+    "exampleSentence": {
+      "hanzi": "除了汉语，他还会说流畅的西班牙语。",
+      "pinyin": "Chúle hànyǔ, tā hái huì shuō liúchàng de xībānyáyǔ.",
+      "translation": "In addition to Chinese, he can also speak fluent Spanish."
+    }
+  },
+  {
+    "id": "hsk2-044",
+    "level": 2,
+    "hanzi": "回答",
+    "pinyin": "huí dá",
+    "translations": [
+      "to reply",
+      "to answer",
+      "the answer",
+      "CL:個|个[gè]"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk2-045",
+    "level": 2,
+    "hanzi": "机场",
+    "pinyin": "jīchǎng",
+    "translations": [
+      "airport"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "大兴国际机场展现了卓越的建筑设计。",
+      "pinyin": "Dàxīng Guójì Jīchǎng zhǎnxiàn le zhuóyuè de jiànzhù shèjì.",
+      "translation": "Daxing International Airport demonstrates outstanding architectural design."
+    }
+  },
+  {
+    "id": "hsk2-046",
+    "level": 2,
+    "hanzi": "鸡蛋",
+    "pinyin": "jīdàn",
+    "translations": [
+      "egg"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "每天清晨吃一个水煮鸡蛋营养丰富。",
+      "pinyin": "Měitiān qīngchén chī yí ge shuǐzhǔ jīdàn yíngyǎng fēngfù.",
+      "translation": "Eating a boiled egg every morning is richly nutritious."
+    }
+  },
+  {
+    "id": "hsk2-047",
+    "level": 2,
+    "hanzi": "件",
+    "pinyin": "jiàn",
+    "translations": [
+      "measure word for clothes, matters"
+    ],
+    "partOfSpeech": "measure word",
+    "exampleSentence": {
+      "hanzi": "这是一件值得认真对待的重要事情。",
+      "pinyin": "Zhè shì yí jiàn zhíde rènzhēn duìdài de zhòngyào shìqing.",
+      "translation": "This is an important matter worthy of serious consideration."
+    }
+  },
+  {
+    "id": "hsk2-048",
+    "level": 2,
+    "hanzi": "教室",
+    "pinyin": "jiàoshì",
+    "translations": [
+      "classroom"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "阳光明媚的教室里书声琅琅。",
+      "pinyin": "Yángguāng míngmèi de jiàoshì lǐ shūshēng lángláng.",
+      "translation": "The bright sunlit classroom resonated with the sound of reading."
+    }
+  },
+  {
+    "id": "hsk2-049",
+    "level": 2,
+    "hanzi": "姐姐",
+    "pinyin": "jiějie",
+    "translations": [
+      "older sister"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "我的姐姐在医学院潜心钻研医学。",
+      "pinyin": "Wǒ jiějie zài yīxuéyuàn qiánxīn zuānyán yīxué.",
+      "translation": "My older sister is devoting herself to medical research at medical school."
+    }
+  },
+  {
+    "id": "hsk2-050",
+    "level": 2,
+    "hanzi": "介绍",
+    "pinyin": "jièshào",
+    "translations": [
+      "to introduce"
+    ],
+    "partOfSpeech": "verb",
+    "exampleSentence": {
+      "hanzi": "请允许我向大家详细介绍项目进展。",
+      "pinyin": "Qǐng yǔnxǔ wǒ xiàng dàjiā xiángxì jièshào xiàngmù jìnzhǎn.",
+      "translation": "Please allow me to introduce the project's progress in detail to everyone."
+    }
+  },
+  {
+    "id": "hsk2-051",
+    "level": 2,
+    "hanzi": "进",
+    "pinyin": "jìn",
+    "translations": [
+      "to enter"
+    ],
+    "partOfSpeech": "verb",
+    "exampleSentence": {
+      "hanzi": "请进，欢迎光临寒舍！",
+      "pinyin": "Qǐng jìn, huānyíng guānglín hánshè!",
+      "translation": "Please come in, welcome to our humble home!"
+    }
+  },
+  {
+    "id": "hsk2-052",
+    "level": 2,
+    "hanzi": "近",
+    "pinyin": "jìn",
+    "translations": [
+      "near",
+      "close"
+    ],
+    "partOfSpeech": "adjective",
+    "exampleSentence": {
+      "hanzi": "学校离我家很近，步行仅需五分钟。",
+      "pinyin": "Xuéxiào lí wǒ jiā hěn jìn, bùxíng jǐn xū wǔ fēnzhōng.",
+      "translation": "The school is very close to my house, only requiring a five-minute walk."
+    }
+  },
+  {
+    "id": "hsk2-053",
+    "level": 2,
+    "hanzi": "就",
+    "pinyin": "jiù",
+    "translations": [
+      "then",
+      "at once",
+      "just"
+    ],
+    "partOfSpeech": "adverb",
+    "exampleSentence": {
+      "hanzi": "做完作业后我就去公园散步。",
+      "pinyin": "Zuòwán zuòyè hòu wǒ jiù qù gōngyuán sànbù.",
+      "translation": "Right after finishing homework, I will go for a walk in the park."
+    }
+  },
+  {
+    "id": "hsk2-054",
+    "level": 2,
+    "hanzi": "觉得",
+    "pinyin": "juéde",
+    "translations": [
+      "to feel",
+      "to think"
+    ],
+    "partOfSpeech": "verb",
+    "exampleSentence": {
+      "hanzi": "我觉得学汉语不仅有趣，还能开阔眼界。",
+      "pinyin": "Wǒ juéde xué hànyǔ bùjǐn yǒuqù, hái néng kāikuò yǎnjiè.",
+      "translation": "I feel that learning Chinese is not only interesting but also broadens horizons."
+    }
+  },
+  {
+    "id": "hsk2-055",
+    "level": 2,
+    "hanzi": "咖啡",
+    "pinyin": "kāfēi",
+    "translations": [
+      "coffee"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "现磨的香浓咖啡能够提神醒脑。",
+      "pinyin": "Xiànmó de xiāngnóng kāfēi nénggòu tíshén xǐngnǎo.",
+      "translation": "Freshly ground aromatic coffee refreshes the mind."
+    }
+  },
+  {
+    "id": "hsk2-056",
+    "level": 2,
+    "hanzi": "开始",
+    "pinyin": "kāishǐ",
+    "translations": [
+      "to begin",
+      "to start"
+    ],
+    "partOfSpeech": "verb",
+    "exampleSentence": {
+      "hanzi": "新的学期正式拉开序幕了。",
+      "pinyin": "Xīn de xuéqī zhèngshì lākāi xùmù le.",
+      "translation": "The new semester has formally commenced."
+    }
+  },
+  {
+    "id": "hsk2-057",
+    "level": 2,
+    "hanzi": "考试",
+    "pinyin": "kǎoshì",
+    "translations": [
+      "examination",
+      "test"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "只要平时踏实努力，期末考试不必焦虑。",
+      "pinyin": "Zhǐyào píngshí tàshi nǔlì, qīmò kǎoshì bú bì jiāolǜ.",
+      "translation": "As long as one works steadily in routine times, one needn't fret over final exams."
+    }
+  },
+  {
+    "id": "hsk2-058",
+    "level": 2,
+    "hanzi": "可能",
+    "pinyin": "kěnéng",
+    "translations": [
+      "maybe",
+      "possible"
+    ],
+    "partOfSpeech": "adverb",
+    "exampleSentence": {
+      "hanzi": "明天下雨的可能性比较大。",
+      "pinyin": "Míngtiān xià yǔ de kěnéngxìng bǐjiào dà.",
+      "translation": "The possibility of rain tomorrow is quite high."
+    }
+  },
+  {
+    "id": "hsk2-059",
+    "level": 2,
+    "hanzi": "可以",
+    "pinyin": "kěyǐ",
+    "translations": [
+      "can",
+      "may"
+    ],
+    "partOfSpeech": "auxiliary verb",
+    "exampleSentence": {
+      "hanzi": "在这里你可以欣赏到全城壮观的夜景。",
+      "pinyin": "Zài zhèlǐ nǐ kěyǐ xīnshǎng dào quánchéng zhuàngguān de yèjǐng.",
+      "translation": "Here you can admire the magnificent night skyline of the entire city."
+    }
+  },
+  {
+    "id": "hsk2-060",
+    "level": 2,
+    "hanzi": "课",
+    "pinyin": "kè",
+    "translations": [
+      "lesson",
+      "class"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "这堂中国古代文学课非常生动有趣。",
+      "pinyin": "Zhè táng zhōngguó gǔdài wénxué kè fēicháng shēngdòng yǒuqù.",
+      "translation": "This classical Chinese literature class is very vivid and engaging."
+    }
+  },
+  {
+    "id": "hsk2-061",
+    "level": 2,
+    "hanzi": "快",
+    "pinyin": "kuài",
+    "translations": [
+      "rapid",
+      "quick",
+      "speed",
+      "rate",
+      "soon",
+      "almost",
+      "to make haste",
+      "clever",
+      "sharp (of knives or wits)",
+      "forthright",
+      "plain-spoken",
+      "gratified",
+      "pleased",
+      "pleasant"
+    ],
+    "partOfSpeech": "adjective"
+  },
+  {
+    "id": "hsk2-062",
+    "level": 2,
+    "hanzi": "快乐",
+    "pinyin": "kuài lè",
+    "translations": [
+      "happy",
+      "merry"
+    ],
+    "partOfSpeech": "adjective"
+  },
+  {
+    "id": "hsk2-063",
+    "level": 2,
+    "hanzi": "累",
+    "pinyin": "lèi",
+    "translations": [
+      "tired",
+      "weary",
+      "to strain",
+      "to wear out",
+      "to work hard"
+    ],
+    "partOfSpeech": "adjective"
+  },
+  {
+    "id": "hsk2-064",
+    "level": 2,
+    "hanzi": "离",
+    "pinyin": "lí",
+    "translations": [
+      "to leave",
+      "to part from",
+      "to be away from",
+      "(in giving distances) from",
+      "without (sth)",
+      "independent of",
+      "one of the Eight Trigrams 八卦",
+      "symbolizing fire",
+      "☲"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk2-065",
+    "level": 2,
+    "hanzi": "两",
+    "pinyin": "liǎng",
+    "translations": [
+      "both",
+      "two",
+      "ounce",
+      "some",
+      "a few",
+      "tael",
+      "weight equal to 50 grams"
+    ],
+    "partOfSpeech": "numeral"
+  },
+  {
+    "id": "hsk2-066",
+    "level": 2,
+    "hanzi": "路",
+    "pinyin": "lù",
+    "translations": [
+      "road",
+      "CL:條|条[tiáo]",
+      "journey",
+      "route",
+      "line (bus etc)",
+      "sort",
+      "kind"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk2-067",
+    "level": 2,
+    "hanzi": "旅游",
+    "pinyin": "lǚ yóu",
+    "translations": [
+      "trip",
+      "journey",
+      "tourism",
+      "travel",
+      "tour"
+    ],
+    "partOfSpeech": "verbal noun"
+  },
+  {
+    "id": "hsk2-068",
+    "level": 2,
+    "hanzi": "卖",
+    "pinyin": "mài",
+    "translations": [
+      "to sell",
+      "to betray",
+      "to spare no effort",
+      "to show off or flaunt"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk2-069",
+    "level": 2,
+    "hanzi": "慢",
+    "pinyin": "màn",
+    "translations": [
+      "slow"
+    ],
+    "partOfSpeech": "adjective"
+  },
+  {
+    "id": "hsk2-070",
+    "level": 2,
+    "hanzi": "忙",
+    "pinyin": "máng",
+    "translations": [
+      "busy",
+      "hurriedly",
+      "to hurry",
+      "to rush"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk2-071",
+    "level": 2,
+    "hanzi": "每",
+    "pinyin": "měi",
+    "translations": [
+      "each",
+      "every"
+    ],
+    "partOfSpeech": "pronoun"
+  },
+  {
+    "id": "hsk2-072",
+    "level": 2,
+    "hanzi": "妹妹",
+    "pinyin": "mèi mei",
+    "translations": [
+      "younger sister",
+      "fig. younger woman (esp. girl friend or rival)",
+      "CL:個|个[gè]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk2-073",
+    "level": 2,
+    "hanzi": "门",
+    "pinyin": "mén",
+    "translations": [
+      "gate",
+      "door",
+      "CL:扇[shàn]",
+      "gateway",
+      "doorway",
+      "CL:個|个[gè]",
+      "opening",
+      "valve",
+      "switch",
+      "way to do something",
+      "knack",
+      "family",
+      "house",
+      "(religious) sect",
+      "school (of thought)",
+      "class",
+      "category",
+      "phylum or division (taxonomy)",
+      "classifier for large guns",
+      "classifier for lessons",
+      "subjects",
+      "branches of technology"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk2-074",
+    "level": 2,
+    "hanzi": "男人",
+    "pinyin": "nán rén",
+    "translations": [
+      "a man",
+      "a male",
+      "men",
+      "CL:個|个[gè]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk2-075",
+    "level": 2,
+    "hanzi": "您",
+    "pinyin": "nín",
+    "translations": [
+      "you (courteous",
+      "as opposed to informal 你)"
+    ],
+    "partOfSpeech": "pronoun"
+  },
+  {
+    "id": "hsk2-076",
+    "level": 2,
+    "hanzi": "牛奶",
+    "pinyin": "niú nǎi",
+    "translations": [
+      "cow's milk",
+      "CL:瓶",
+      "杯[bēi]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk2-077",
+    "level": 2,
+    "hanzi": "女人",
+    "pinyin": "nǚ rén",
+    "translations": [
+      "woman"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk2-078",
+    "level": 2,
+    "hanzi": "旁边",
+    "pinyin": "páng biān",
+    "translations": [
+      "lateral",
+      "side",
+      "to the side",
+      "beside"
+    ],
+    "partOfSpeech": "f"
+  },
+  {
+    "id": "hsk2-079",
+    "level": 2,
+    "hanzi": "跑步",
+    "pinyin": "pǎo bù",
+    "translations": [
+      "to walk quickly",
+      "to march",
+      "to run"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk2-080",
+    "level": 2,
+    "hanzi": "便宜",
+    "pinyin": "pián yi",
+    "translations": [
+      "small advantages",
+      "to let sb off lightly",
+      "cheap",
+      "inexpensive"
+    ],
+    "partOfSpeech": "adjective"
+  },
+  {
+    "id": "hsk2-081",
+    "level": 2,
+    "hanzi": "票",
+    "pinyin": "piào",
+    "translations": [
+      "ticket",
+      "ballot",
+      "bank note",
+      "CL:張|张[zhāng]",
+      "person held for ransom",
+      "amateur performance of Chinese opera",
+      "classifier for shipments and business transactions (topolect)"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk2-082",
+    "level": 2,
+    "hanzi": "妻子",
+    "pinyin": "qī zi",
+    "translations": [
+      "wife",
+      "CL:個|个[gè]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk2-083",
+    "level": 2,
+    "hanzi": "起床",
+    "pinyin": "qǐ chuáng",
+    "translations": [
+      "to get out of bed",
+      "to get up"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk2-084",
+    "level": 2,
+    "hanzi": "千",
+    "pinyin": "qiān",
+    "translations": [
+      "a swing"
+    ],
+    "partOfSpeech": "numeral"
+  },
+  {
+    "id": "hsk2-085",
+    "level": 2,
+    "hanzi": "晴",
+    "pinyin": "qíng",
+    "translations": [
+      "clear",
+      "fine (weather)"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk2-086",
+    "level": 2,
+    "hanzi": "去年",
+    "pinyin": "qù nián",
+    "translations": [
+      "last year"
+    ],
+    "partOfSpeech": "t"
+  },
+  {
+    "id": "hsk2-087",
+    "level": 2,
+    "hanzi": "让",
+    "pinyin": "ràng",
+    "translations": [
+      "to yield",
+      "to permit",
+      "to let sb do sth",
+      "to have sb do sth"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk2-088",
+    "level": 2,
+    "hanzi": "上班",
+    "pinyin": "shàng bān",
+    "translations": [
+      "to go to work",
+      "to be on duty",
+      "to start work",
+      "to go to the office"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk2-089",
+    "level": 2,
+    "hanzi": "身体",
+    "pinyin": "shēn tǐ",
+    "translations": [
+      "(human) body",
+      "health",
+      "CL:個|个[gè]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk2-090",
+    "level": 2,
+    "hanzi": "生病",
+    "pinyin": "shēng bìng",
+    "translations": [
+      "to fall ill"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk2-091",
+    "level": 2,
+    "hanzi": "生日",
+    "pinyin": "shēng rì",
+    "translations": [
+      "birthday",
+      "CL:個|个[gè]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk2-092",
+    "level": 2,
+    "hanzi": "时间",
+    "pinyin": "shí jiān",
+    "translations": [
+      "time",
+      "period",
+      "CL:段[duàn]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk2-093",
+    "level": 2,
+    "hanzi": "事情",
+    "pinyin": "shì qing",
+    "translations": [
+      "affair",
+      "matter",
+      "thing",
+      "business",
+      "CL:件",
+      "樁|桩[zhuāng]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk2-094",
+    "level": 2,
+    "hanzi": "手表",
+    "pinyin": "shǒu biǎo",
+    "translations": [
+      "wrist watch",
+      "CL:塊|块",
+      "隻|只",
+      "個|个[gè]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk2-095",
+    "level": 2,
+    "hanzi": "手机",
+    "pinyin": "shǒu jī",
+    "translations": [
+      "cell phone",
+      "mobile phone",
+      "CL:部",
+      "支[zhī]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk2-096",
+    "level": 2,
+    "hanzi": "送",
+    "pinyin": "sòng",
+    "translations": [
+      "to deliver",
+      "to carry",
+      "to give (as a present)",
+      "to present (with)",
+      "to see off",
+      "to send"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk2-097",
+    "level": 2,
+    "hanzi": "所以",
+    "pinyin": "suǒ yǐ",
+    "translations": [
+      "therefore",
+      "as a result",
+      "so"
+    ],
+    "partOfSpeech": "conjunction"
+  },
+  {
+    "id": "hsk2-098",
+    "level": 2,
+    "hanzi": "它",
+    "pinyin": "tā",
+    "translations": [
+      "it"
+    ],
+    "partOfSpeech": "pronoun"
+  },
+  {
+    "id": "hsk2-099",
+    "level": 2,
+    "hanzi": "踢",
+    "pinyin": "tī",
+    "translations": [
+      "to kick",
+      "to play (e.g. soccer)"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk2-100",
+    "level": 2,
+    "hanzi": "题",
+    "pinyin": "tí",
+    "translations": [
+      "topic",
+      "problem for discussion",
+      "exam question",
+      "subject",
+      "to inscribe",
+      "to mention",
+      "CL:個|个",
+      "道[dào]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk2-101",
+    "level": 2,
+    "hanzi": "跳舞",
+    "pinyin": "tiào wǔ",
+    "translations": [
+      "to dance"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk2-102",
+    "level": 2,
+    "hanzi": "外",
+    "pinyin": "wài",
+    "translations": [
+      "outside",
+      "in addition",
+      "foreign",
+      "external"
+    ],
+    "partOfSpeech": "f"
+  },
+  {
+    "id": "hsk2-103",
+    "level": 2,
+    "hanzi": "完",
+    "pinyin": "wán",
+    "translations": [
+      "to finish",
+      "to be over",
+      "whole",
+      "complete",
+      "entire"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk2-104",
+    "level": 2,
+    "hanzi": "玩",
+    "pinyin": "wán",
+    "translations": [
+      "toy",
+      "sth used for amusement",
+      "curio or antique (Taiwan pr. )",
+      "to play",
+      "to have fun",
+      "to trifle with",
+      "to keep sth for entertainment"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk2-105",
+    "level": 2,
+    "hanzi": "晚上",
+    "pinyin": "wǎn shang",
+    "translations": [
+      "evening",
+      "night",
+      "CL:個|个[gè]",
+      "in the evening"
+    ],
+    "partOfSpeech": "t"
+  },
+  {
+    "id": "hsk2-106",
+    "level": 2,
+    "hanzi": "为",
+    "pinyin": "wèi",
+    "translations": [
+      "variant of 為|为",
+      "because of",
+      "for",
+      "to"
+    ],
+    "partOfSpeech": "preposition"
+  },
+  {
+    "id": "hsk2-107",
+    "level": 2,
+    "hanzi": "问",
+    "pinyin": "wèn",
+    "translations": [
+      "to ask"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk2-108",
+    "level": 2,
+    "hanzi": "问题",
+    "pinyin": "wèn tí",
+    "translations": [
+      "question",
+      "problem",
+      "issue",
+      "topic",
+      "CL:個|个[gè]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk2-109",
+    "level": 2,
+    "hanzi": "西瓜",
+    "pinyin": "xī guā",
+    "translations": [
+      "watermelon",
+      "CL:條|条[tiáo]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk2-110",
+    "level": 2,
+    "hanzi": "希望",
+    "pinyin": "xī wàng",
+    "translations": [
+      "to wish for",
+      "to desire",
+      "hope CL:個|个[gè]"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk2-111",
+    "level": 2,
+    "hanzi": "洗",
+    "pinyin": "xǐ",
+    "translations": [
+      "to wash",
+      "to bathe",
+      "to develop (photo)"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk2-112",
+    "level": 2,
+    "hanzi": "向",
+    "pinyin": "xiàng",
+    "translations": [
+      "towards",
+      "to face",
+      "to turn towards",
+      "direction",
+      "to support",
+      "to side with",
+      "shortly before",
+      "formerly",
+      "always",
+      "all along"
+    ],
+    "partOfSpeech": "preposition"
+  },
+  {
+    "id": "hsk2-113",
+    "level": 2,
+    "hanzi": "小时",
+    "pinyin": "xiǎo shí",
+    "translations": [
+      "hour",
+      "CL:個|个[gè]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk2-114",
+    "level": 2,
+    "hanzi": "笑",
+    "pinyin": "xiào",
+    "translations": [
+      "laugh",
+      "smile",
+      "CL:個|个[gè]"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk2-115",
+    "level": 2,
+    "hanzi": "新",
+    "pinyin": "xīn",
+    "translations": [
+      "new",
+      "newly",
+      "meso- (chemistry)"
+    ],
+    "partOfSpeech": "adjective"
+  },
+  {
+    "id": "hsk2-116",
+    "level": 2,
+    "hanzi": "姓",
+    "pinyin": "xìng",
+    "translations": [
+      "family name",
+      "surname",
+      "name",
+      "CL:個|个[gè]"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk2-117",
+    "level": 2,
+    "hanzi": "休息",
+    "pinyin": "xiū xi",
+    "translations": [
+      "rest",
+      "to rest"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk2-118",
+    "level": 2,
+    "hanzi": "雪",
+    "pinyin": "xuě",
+    "translations": [
+      "snow",
+      "snowfall",
+      "CL:場|场[cháng]",
+      "to have the appearance of snow",
+      "to wipe away",
+      "off or out",
+      "to clean"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk2-119",
+    "level": 2,
+    "hanzi": "颜色",
+    "pinyin": "yán sè",
+    "translations": [
+      "color",
+      "CL:個|个[gè]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk2-120",
+    "level": 2,
+    "hanzi": "眼睛",
+    "pinyin": "yǎn jing",
+    "translations": [
+      "eye",
+      "CL:隻|只",
+      "雙|双[shuāng]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk2-121",
+    "level": 2,
+    "hanzi": "羊肉",
+    "pinyin": "yáng ròu",
+    "translations": [
+      "mutton"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk2-122",
+    "level": 2,
+    "hanzi": "药",
+    "pinyin": "yào",
+    "translations": [
+      "medicine",
+      "drug",
+      "cure",
+      "CL:種|种",
+      "服[fù]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk2-123",
+    "level": 2,
+    "hanzi": "要",
+    "pinyin": "yào",
+    "translations": [
+      "important",
+      "vital",
+      "to want",
+      "will",
+      "going to (as future auxiliary)",
+      "may",
+      "must",
+      "(used in a comparison) must be",
+      "probably"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk2-124",
+    "level": 2,
+    "hanzi": "也",
+    "pinyin": "yě",
+    "translations": [
+      "also",
+      "too",
+      "(in Classical Chinese) final particle implying affirmation"
+    ],
+    "partOfSpeech": "adverb"
+  },
+  {
+    "id": "hsk2-125",
+    "level": 2,
+    "hanzi": "已经",
+    "pinyin": "yǐ jīng",
+    "translations": [
+      "already"
+    ],
+    "partOfSpeech": "adverb"
+  },
+  {
+    "id": "hsk2-126",
+    "level": 2,
+    "hanzi": "一起",
+    "pinyin": "yī qǐ",
+    "translations": [
+      "in the same place",
+      "together",
+      "with",
+      "altogether (in total)"
+    ],
+    "partOfSpeech": "s"
+  },
+  {
+    "id": "hsk2-127",
+    "level": 2,
+    "hanzi": "意思",
+    "pinyin": "yì si",
+    "translations": [
+      "idea",
+      "opinion",
+      "meaning",
+      "wish",
+      "desire",
+      "CL:個|个[gè]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk2-128",
+    "level": 2,
+    "hanzi": "阴",
+    "pinyin": "yīn",
+    "translations": [
+      "overcast (weather)",
+      "cloudy",
+      "shady",
+      "Yin (the negative principle of Yin and Yang)",
+      "negative (electric.)",
+      "feminine",
+      "moon",
+      "implicit",
+      "hidden",
+      "genitalia"
+    ],
+    "partOfSpeech": "adjective"
+  },
+  {
+    "id": "hsk2-129",
+    "level": 2,
+    "hanzi": "因为",
+    "pinyin": "yīn wèi",
+    "translations": [
+      "because",
+      "owing to",
+      "on account of"
+    ],
+    "partOfSpeech": "preposition"
+  },
+  {
+    "id": "hsk2-130",
+    "level": 2,
+    "hanzi": "游泳",
+    "pinyin": "yóu yǒng",
+    "translations": [
+      "swimming",
+      "to swim"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk2-131",
+    "level": 2,
+    "hanzi": "右边",
+    "pinyin": "yòu bian",
+    "translations": [
+      "right side",
+      "right",
+      "to the right"
+    ],
+    "partOfSpeech": "f"
+  },
+  {
+    "id": "hsk2-132",
+    "level": 2,
+    "hanzi": "鱼",
+    "pinyin": "yú",
+    "translations": [
+      "fish",
+      "CL:條|条",
+      "尾[wěi]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk2-133",
+    "level": 2,
+    "hanzi": "元",
+    "pinyin": "yuán",
+    "translations": [
+      "Chinese monetary unit",
+      "dollar",
+      "primary",
+      "first"
+    ],
+    "partOfSpeech": "measure word"
+  },
+  {
+    "id": "hsk2-134",
+    "level": 2,
+    "hanzi": "远",
+    "pinyin": "yuǎn",
+    "translations": [
+      "far",
+      "distant",
+      "remote"
+    ],
+    "partOfSpeech": "adjective"
+  },
+  {
+    "id": "hsk2-135",
+    "level": 2,
+    "hanzi": "运动",
+    "pinyin": "yùn dòng",
+    "translations": [
+      "to move",
+      "to exercise",
+      "sports",
+      "exercise",
+      "motion",
+      "movement",
+      "campaign",
+      "CL:場|场[chǎng]"
+    ],
+    "partOfSpeech": "verbal noun"
+  },
+  {
+    "id": "hsk2-136",
+    "level": 2,
+    "hanzi": "再",
+    "pinyin": "zài",
+    "translations": [
+      "again",
+      "once more",
+      "re-",
+      "second",
+      "another",
+      "then (after sth",
+      "and not until then)"
+    ],
+    "partOfSpeech": "adverb"
+  },
+  {
+    "id": "hsk2-137",
+    "level": 2,
+    "hanzi": "早上",
+    "pinyin": "zǎo shang",
+    "translations": [
+      "early morning",
+      "CL:個|个[gè]"
+    ],
+    "partOfSpeech": "t"
+  },
+  {
+    "id": "hsk2-138",
+    "level": 2,
+    "hanzi": "张",
+    "pinyin": "zhāng",
+    "translations": [
+      "to open up",
+      "to spread",
+      "sheet of paper",
+      "classifier for flat objects",
+      "sheet",
+      "classifier for votes"
+    ],
+    "partOfSpeech": "measure word"
+  },
+  {
+    "id": "hsk2-139",
+    "level": 2,
+    "hanzi": "长",
+    "pinyin": "zhǎng",
+    "translations": [
+      "chief",
+      "head",
+      "elder",
+      "to grow",
+      "to develop",
+      "to increase",
+      "to enhance"
+    ],
+    "partOfSpeech": "adjective"
+  },
+  {
+    "id": "hsk2-140",
+    "level": 2,
+    "hanzi": "丈夫",
+    "pinyin": "zhàng fu",
+    "translations": [
+      "husband",
+      "CL:個|个[gè]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk2-141",
+    "level": 2,
+    "hanzi": "找",
+    "pinyin": "zhǎo",
+    "translations": [
+      "to try to find",
+      "to look for",
+      "to call on sb",
+      "to find",
+      "to seek",
+      "to return",
+      "to give change"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk2-142",
+    "level": 2,
+    "hanzi": "着",
+    "pinyin": "zhe",
+    "translations": [
+      "aspect particle indicating action in progress"
+    ],
+    "partOfSpeech": "particle"
+  },
+  {
+    "id": "hsk2-143",
+    "level": 2,
+    "hanzi": "真",
+    "pinyin": "zhēn",
+    "translations": [
+      "really",
+      "truly",
+      "indeed",
+      "real",
+      "true",
+      "genuine"
+    ],
+    "partOfSpeech": "adverb"
+  },
+  {
+    "id": "hsk2-144",
+    "level": 2,
+    "hanzi": "正在",
+    "pinyin": "zhèng zài",
+    "translations": [
+      "in the process of (doing something or happening)",
+      "while (doing)"
+    ],
+    "partOfSpeech": "adverb"
+  },
+  {
+    "id": "hsk2-145",
+    "level": 2,
+    "hanzi": "知道",
+    "pinyin": "zhī dào",
+    "translations": [
+      "to know",
+      "to be aware of",
+      "also pron. [zhī dao]"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk2-146",
+    "level": 2,
+    "hanzi": "准备",
+    "pinyin": "zhǔn bèi",
+    "translations": [
+      "preparation",
+      "to prepare",
+      "to intend",
+      "to be about to",
+      "reserve (fund)"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk2-147",
+    "level": 2,
+    "hanzi": "自行车",
+    "pinyin": "zì xíng chē",
+    "translations": [
+      "bicycle",
+      "bike",
+      "CL:輛|辆[liàng]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk2-148",
+    "level": 2,
+    "hanzi": "走",
+    "pinyin": "zǒu",
+    "translations": [
+      "to walk",
+      "to go",
+      "to run",
+      "to move (of vehicle)",
+      "to visit",
+      "to leave",
+      "to go away",
+      "to die (euph.)",
+      "from",
+      "through",
+      "away (in compound verbs",
+      "such as 撤走)",
+      "to change (shape",
+      "form",
+      "meaning)"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk2-149",
+    "level": 2,
+    "hanzi": "最",
+    "pinyin": "zuì",
+    "translations": [
+      "most",
+      "the most",
+      "-est (superlative suffix)"
+    ],
+    "partOfSpeech": "adverb"
+  },
+  {
+    "id": "hsk2-150",
+    "level": 2,
+    "hanzi": "左边",
+    "pinyin": "zuǒ bian",
+    "translations": [
+      "left",
+      "the left side",
+      "to the left of"
+    ],
+    "partOfSpeech": "f"
+  },
+  {
     "id": "hsk3-001",
     "level": 3,
     "hanzi": "阿姨",
@@ -19,6 +4401,19 @@
   {
     "id": "hsk3-002",
     "level": 3,
+    "hanzi": "啊",
+    "pinyin": "a",
+    "translations": [
+      "modal particle ending sentence",
+      "showing affirmation",
+      "approval",
+      "or consent"
+    ],
+    "partOfSpeech": "y"
+  },
+  {
+    "id": "hsk3-003",
+    "level": 3,
     "hanzi": "矮",
     "pinyin": "ǎi",
     "translations": [
@@ -33,7 +4428,7 @@
     }
   },
   {
-    "id": "hsk3-003",
+    "id": "hsk3-004",
     "level": 3,
     "hanzi": "爱好",
     "pinyin": "àihào",
@@ -49,7 +4444,7 @@
     }
   },
   {
-    "id": "hsk3-004",
+    "id": "hsk3-005",
     "level": 3,
     "hanzi": "安静",
     "pinyin": "ānjìng",
@@ -65,7 +4460,7 @@
     }
   },
   {
-    "id": "hsk3-005",
+    "id": "hsk3-006",
     "level": 3,
     "hanzi": "把",
     "pinyin": "bǎ",
@@ -78,23 +4473,6 @@
       "hanzi": "请把房间收拾得整整齐齐。",
       "pinyin": "Qǐng bǎ fángjiān shōushi de zhěngzhěng-qíqí.",
       "translation": "Please tidy up the room neat and orderly."
-    }
-  },
-  {
-    "id": "hsk3-006",
-    "level": 3,
-    "hanzi": "班",
-    "pinyin": "bān",
-    "translations": [
-      "class",
-      "shift",
-      "team"
-    ],
-    "partOfSpeech": "noun",
-    "exampleSentence": {
-      "hanzi": "我们全班同学积极组织了一场朗诵会。",
-      "pinyin": "Wǒmen quán bān tóngxué jījí zǔzhī le yì chǎng lǎngsònghuì.",
-      "translation": "Our entire class actively organized a poetry recital."
     }
   },
   {
@@ -115,6 +4493,38 @@
   {
     "id": "hsk3-008",
     "level": 3,
+    "hanzi": "班",
+    "pinyin": "bān",
+    "translations": [
+      "class",
+      "shift",
+      "team"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "我们全班同学积极组织了一场朗诵会。",
+      "pinyin": "Wǒmen quán bān tóngxué jījí zǔzhī le yì chǎng lǎngsònghuì.",
+      "translation": "Our entire class actively organized a poetry recital."
+    }
+  },
+  {
+    "id": "hsk3-009",
+    "level": 3,
+    "hanzi": "半",
+    "pinyin": "bàn",
+    "translations": [
+      "half"
+    ],
+    "partOfSpeech": "numeral",
+    "exampleSentence": {
+      "hanzi": "他用了一个半小时完成了复杂的编程任务。",
+      "pinyin": "Tā yòng le yí ge bàn xiǎoshí wánchéng le fùzá de biānchéng rènwù.",
+      "translation": "He spent an hour and a half completing the complex coding task."
+    }
+  },
+  {
+    "id": "hsk3-010",
+    "level": 3,
     "hanzi": "办法",
     "pinyin": "bànfǎ",
     "translations": [
@@ -130,7 +4540,7 @@
     }
   },
   {
-    "id": "hsk3-009",
+    "id": "hsk3-011",
     "level": 3,
     "hanzi": "办公室",
     "pinyin": "bàngōngshì",
@@ -145,22 +4555,20 @@
     }
   },
   {
-    "id": "hsk3-010",
+    "id": "hsk3-012",
     "level": 3,
-    "hanzi": "半",
-    "pinyin": "bàn",
+    "hanzi": "帮忙",
+    "pinyin": "bāng máng",
     "translations": [
-      "half"
+      "to help",
+      "to lend a hand",
+      "to do a favor",
+      "to do a good turn"
     ],
-    "partOfSpeech": "numeral",
-    "exampleSentence": {
-      "hanzi": "他用了一个半小时完成了复杂的编程任务。",
-      "pinyin": "Tā yòng le yí ge bàn xiǎoshí wánchéng le fùzá de biānchéng rènwù.",
-      "translation": "He spent an hour and a half completing the complex coding task."
-    }
+    "partOfSpeech": "verb"
   },
   {
-    "id": "hsk3-011",
+    "id": "hsk3-013",
     "level": 3,
     "hanzi": "包",
     "pinyin": "bāo",
@@ -177,7 +4585,7 @@
     }
   },
   {
-    "id": "hsk3-012",
+    "id": "hsk3-014",
     "level": 3,
     "hanzi": "饱",
     "pinyin": "bǎo",
@@ -192,7 +4600,7 @@
     }
   },
   {
-    "id": "hsk3-013",
+    "id": "hsk3-015",
     "level": 3,
     "hanzi": "北方",
     "pinyin": "běifāng",
@@ -208,7 +4616,7 @@
     }
   },
   {
-    "id": "hsk3-014",
+    "id": "hsk3-016",
     "level": 3,
     "hanzi": "被",
     "pinyin": "bèi",
@@ -223,7 +4631,7 @@
     }
   },
   {
-    "id": "hsk3-015",
+    "id": "hsk3-017",
     "level": 3,
     "hanzi": "鼻子",
     "pinyin": "bízi",
@@ -238,7 +4646,7 @@
     }
   },
   {
-    "id": "hsk3-016",
+    "id": "hsk3-018",
     "level": 3,
     "hanzi": "比较",
     "pinyin": "bǐjiào",
@@ -254,7 +4662,7 @@
     }
   },
   {
-    "id": "hsk3-017",
+    "id": "hsk3-019",
     "level": 3,
     "hanzi": "比赛",
     "pinyin": "bǐsài",
@@ -270,7 +4678,7 @@
     }
   },
   {
-    "id": "hsk3-018",
+    "id": "hsk3-020",
     "level": 3,
     "hanzi": "必须",
     "pinyin": "bìxū",
@@ -286,7 +4694,7 @@
     }
   },
   {
-    "id": "hsk3-019",
+    "id": "hsk3-021",
     "level": 3,
     "hanzi": "变化",
     "pinyin": "biànhuà",
@@ -302,7 +4710,7 @@
     }
   },
   {
-    "id": "hsk3-020",
+    "id": "hsk3-022",
     "level": 3,
     "hanzi": "表示",
     "pinyin": "biǎoshì",
@@ -318,7 +4726,7 @@
     }
   },
   {
-    "id": "hsk3-021",
+    "id": "hsk3-023",
     "level": 3,
     "hanzi": "表演",
     "pinyin": "biǎoyǎn",
@@ -334,7 +4742,7 @@
     }
   },
   {
-    "id": "hsk3-022",
+    "id": "hsk3-024",
     "level": 3,
     "hanzi": "别人",
     "pinyin": "biéren",
@@ -350,7 +4758,7 @@
     }
   },
   {
-    "id": "hsk3-023",
+    "id": "hsk3-025",
     "level": 3,
     "hanzi": "宾馆",
     "pinyin": "bīnguǎn",
@@ -365,7 +4773,7 @@
     }
   },
   {
-    "id": "hsk3-024",
+    "id": "hsk3-026",
     "level": 3,
     "hanzi": "冰箱",
     "pinyin": "bīngxiāng",
@@ -380,7 +4788,7 @@
     }
   },
   {
-    "id": "hsk3-025",
+    "id": "hsk3-027",
     "level": 3,
     "hanzi": "才",
     "pinyin": "cái",
@@ -396,7 +4804,7 @@
     }
   },
   {
-    "id": "hsk3-026",
+    "id": "hsk3-028",
     "level": 3,
     "hanzi": "菜单",
     "pinyin": "càidān",
@@ -411,7 +4819,7 @@
     }
   },
   {
-    "id": "hsk3-027",
+    "id": "hsk3-029",
     "level": 3,
     "hanzi": "参加",
     "pinyin": "cānjiā",
@@ -427,7 +4835,7 @@
     }
   },
   {
-    "id": "hsk3-028",
+    "id": "hsk3-030",
     "level": 3,
     "hanzi": "草",
     "pinyin": "cǎo",
@@ -443,7 +4851,7 @@
     }
   },
   {
-    "id": "hsk3-029",
+    "id": "hsk3-031",
     "level": 3,
     "hanzi": "层",
     "pinyin": "céng",
@@ -460,7 +4868,7 @@
     }
   },
   {
-    "id": "hsk3-030",
+    "id": "hsk3-032",
     "level": 3,
     "hanzi": "差",
     "pinyin": "chà",
@@ -477,7 +4885,7 @@
     }
   },
   {
-    "id": "hsk3-031",
+    "id": "hsk3-033",
     "level": 3,
     "hanzi": "超市",
     "pinyin": "chāoshì",
@@ -492,7 +4900,7 @@
     }
   },
   {
-    "id": "hsk3-032",
+    "id": "hsk3-034",
     "level": 3,
     "hanzi": "衬衫",
     "pinyin": "chènshān",
@@ -507,22 +4915,7 @@
     }
   },
   {
-    "id": "hsk3-033",
-    "level": 3,
-    "hanzi": "城市",
-    "pinyin": "chéngshì",
-    "translations": [
-      "city"
-    ],
-    "partOfSpeech": "noun",
-    "exampleSentence": {
-      "hanzi": "现代化城市应当兼顾绿色生态与人文底蕴。",
-      "pinyin": "Xiàndàihuà chéngshì yīngdāng jiāngù lǜsè shēngtài yǔ rénwén dǐyùn.",
-      "translation": "Modern cities should balance green ecology with cultural heritage."
-    }
-  },
-  {
-    "id": "hsk3-034",
+    "id": "hsk3-035",
     "level": 3,
     "hanzi": "成绩",
     "pinyin": "chéngjì",
@@ -538,7 +4931,22 @@
     }
   },
   {
-    "id": "hsk3-035",
+    "id": "hsk3-036",
+    "level": 3,
+    "hanzi": "城市",
+    "pinyin": "chéngshì",
+    "translations": [
+      "city"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "现代化城市应当兼顾绿色生态与人文底蕴。",
+      "pinyin": "Xiàndàihuà chéngshì yīngdāng jiāngù lǜsè shēngtài yǔ rénwén dǐyùn.",
+      "translation": "Modern cities should balance green ecology with cultural heritage."
+    }
+  },
+  {
+    "id": "hsk3-037",
     "level": 3,
     "hanzi": "迟到",
     "pinyin": "chídào",
@@ -550,6 +4958,3415 @@
       "hanzi": "在职场交流中，遵守约定不迟到是基本职业素养。",
       "pinyin": "Zài zhíchǎng jiāoliú zhōng, zūnshǒu yuēdìng bù chídào shì jīběn zhíyè sùyǎng.",
       "translation": "In professional interactions, keeping appointments without arriving late is essential literacy."
+    }
+  },
+  {
+    "id": "hsk3-038",
+    "level": 3,
+    "hanzi": "出现",
+    "pinyin": "chū xiàn",
+    "translations": [
+      "to appear",
+      "to arise",
+      "to emerge",
+      "to show up"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk3-039",
+    "level": 3,
+    "hanzi": "除了",
+    "pinyin": "chú le",
+    "translations": [
+      "besides",
+      "apart from (... also...)",
+      "in addition to",
+      "except (for)"
+    ],
+    "partOfSpeech": "preposition"
+  },
+  {
+    "id": "hsk3-040",
+    "level": 3,
+    "hanzi": "厨房",
+    "pinyin": "chú fáng",
+    "translations": [
+      "kitchen",
+      "CL:間|间[jiān]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-041",
+    "level": 3,
+    "hanzi": "春",
+    "pinyin": "chūn",
+    "translations": [
+      "spring (time)",
+      "gay",
+      "joyful",
+      "youthful",
+      "love",
+      "lust",
+      "life"
+    ],
+    "partOfSpeech": "tg"
+  },
+  {
+    "id": "hsk3-042",
+    "level": 3,
+    "hanzi": "词语",
+    "pinyin": "cí yǔ",
+    "translations": [
+      "word (general term including monosyllables through to short phrases)",
+      "term (e.g. technical term)",
+      "expression"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-043",
+    "level": 3,
+    "hanzi": "聪明",
+    "pinyin": "cōng ming",
+    "translations": [
+      "acute (of sight and hearing)",
+      "clever",
+      "intelligent",
+      "bright",
+      "smart"
+    ],
+    "partOfSpeech": "adjective"
+  },
+  {
+    "id": "hsk3-044",
+    "level": 3,
+    "hanzi": "打扫",
+    "pinyin": "dǎ sǎo",
+    "translations": [
+      "to clean",
+      "to sweep"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk3-045",
+    "level": 3,
+    "hanzi": "打算",
+    "pinyin": "dǎ suàn",
+    "translations": [
+      "to plan",
+      "to intend",
+      "to calculate",
+      "plan",
+      "intention",
+      "calculation",
+      "CL:個|个[gè]"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk3-046",
+    "level": 3,
+    "hanzi": "带",
+    "pinyin": "dài",
+    "translations": [
+      "band",
+      "belt",
+      "girdle",
+      "ribbon",
+      "tire",
+      "area",
+      "zone",
+      "region",
+      "CL:條|条[tiáo]",
+      "to wear",
+      "to carry",
+      "to take along",
+      "to bear (i.e. to have)",
+      "to lead",
+      "to bring",
+      "to look after",
+      "to raise"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk3-047",
+    "level": 3,
+    "hanzi": "担心",
+    "pinyin": "dān xīn",
+    "translations": [
+      "anxious",
+      "worried",
+      "uneasy",
+      "to worry",
+      "to be anxious"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk3-048",
+    "level": 3,
+    "hanzi": "蛋糕",
+    "pinyin": "dàn gāo",
+    "translations": [
+      "cake",
+      "CL:塊|块",
+      "個|个[gè]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-049",
+    "level": 3,
+    "hanzi": "当然",
+    "pinyin": "dāng rán",
+    "translations": [
+      "only natural",
+      "as it should be",
+      "certainly",
+      "of course",
+      "without doubt"
+    ],
+    "partOfSpeech": "adverb"
+  },
+  {
+    "id": "hsk3-050",
+    "level": 3,
+    "hanzi": "地",
+    "pinyin": "de",
+    "translations": [
+      "-ly",
+      "structural particle: used before a verb or adjective",
+      "linking it to preceding modifying adverbial adjunct"
+    ],
+    "partOfSpeech": "particle"
+  },
+  {
+    "id": "hsk3-051",
+    "level": 3,
+    "hanzi": "灯",
+    "pinyin": "dēng",
+    "translations": [
+      "lamp",
+      "light",
+      "lantern",
+      "CL:盞|盏[zhǎn]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-052",
+    "level": 3,
+    "hanzi": "低",
+    "pinyin": "dī",
+    "translations": [
+      "low",
+      "beneath",
+      "to lower (one's head)",
+      "to let droop",
+      "to hang down",
+      "to incline"
+    ],
+    "partOfSpeech": "adjective"
+  },
+  {
+    "id": "hsk3-053",
+    "level": 3,
+    "hanzi": "地方",
+    "pinyin": "dì fang",
+    "translations": [
+      "area",
+      "place",
+      "space",
+      "room",
+      "territory",
+      "CL:處|处",
+      "個|个",
+      "塊|块[kuài]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-054",
+    "level": 3,
+    "hanzi": "地铁",
+    "pinyin": "dì tiě",
+    "translations": [
+      "subway",
+      "metro"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-055",
+    "level": 3,
+    "hanzi": "地图",
+    "pinyin": "dì tú",
+    "translations": [
+      "map",
+      "CL:張|张",
+      "本[běn]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-056",
+    "level": 3,
+    "hanzi": "电梯",
+    "pinyin": "diàn tī",
+    "translations": [
+      "elevator",
+      "escalator",
+      "CL:臺|台",
+      "部[bù]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-057",
+    "level": 3,
+    "hanzi": "电子",
+    "pinyin": "diàn zǐ",
+    "translations": [
+      "electronic",
+      "electron (particle physics)"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-058",
+    "level": 3,
+    "hanzi": "冬",
+    "pinyin": "dōng",
+    "translations": [
+      "sound of beating a drum",
+      "onomatopoeia for rat-a-tat etc"
+    ],
+    "partOfSpeech": "tg"
+  },
+  {
+    "id": "hsk3-059",
+    "level": 3,
+    "hanzi": "东",
+    "pinyin": "dōng",
+    "translations": [
+      "east",
+      "host (i.e. sitting on east side of guest)",
+      "landlord"
+    ],
+    "partOfSpeech": "f"
+  },
+  {
+    "id": "hsk3-060",
+    "level": 3,
+    "hanzi": "动物",
+    "pinyin": "dòng wù",
+    "translations": [
+      "animal",
+      "CL:隻|只",
+      "群",
+      "個|个[gè]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-061",
+    "level": 3,
+    "hanzi": "短",
+    "pinyin": "duǎn",
+    "translations": [
+      "short or brief",
+      "to lack",
+      "weak point",
+      "fault"
+    ],
+    "partOfSpeech": "adjective"
+  },
+  {
+    "id": "hsk3-062",
+    "level": 3,
+    "hanzi": "段",
+    "pinyin": "duàn",
+    "translations": [
+      "paragraph",
+      "section",
+      "segment",
+      "stage (of a process)",
+      "classifier for stories",
+      "periods of time",
+      "lengths of thread etc"
+    ],
+    "partOfSpeech": "measure word"
+  },
+  {
+    "id": "hsk3-063",
+    "level": 3,
+    "hanzi": "锻炼",
+    "pinyin": "duàn liàn",
+    "translations": [
+      "to engage in physical exercise",
+      "to work out",
+      "to toughen",
+      "to temper"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk3-064",
+    "level": 3,
+    "hanzi": "多么",
+    "pinyin": "duō me",
+    "translations": [
+      "how (wonderful etc)",
+      "what (a great idea etc)",
+      "however (difficult it may be etc)"
+    ],
+    "partOfSpeech": "adverb"
+  },
+  {
+    "id": "hsk3-065",
+    "level": 3,
+    "hanzi": "饿",
+    "pinyin": "è",
+    "translations": [
+      "to be hungry",
+      "hungry"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk3-066",
+    "level": 3,
+    "hanzi": "而且",
+    "pinyin": "ér qiě",
+    "translations": [
+      "(not only ...) but also",
+      "moreover",
+      "in addition",
+      "furthermore"
+    ],
+    "partOfSpeech": "conjunction"
+  },
+  {
+    "id": "hsk3-067",
+    "level": 3,
+    "hanzi": "耳朵",
+    "pinyin": "ěr duo",
+    "translations": [
+      "ear",
+      "CL:隻|只",
+      "個|个",
+      "對|对[duì]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-068",
+    "level": 3,
+    "hanzi": "发烧",
+    "pinyin": "fā shāo",
+    "translations": [
+      "to have a high temperature (from illness)",
+      "to have a fever"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk3-069",
+    "level": 3,
+    "hanzi": "发现",
+    "pinyin": "fā xiàn",
+    "translations": [
+      "to find",
+      "to discover"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk3-070",
+    "level": 3,
+    "hanzi": "方便",
+    "pinyin": "fāng biàn",
+    "translations": [
+      "convenient",
+      "to help out",
+      "to make things easy for people",
+      "convenience",
+      "suitable",
+      "having money to spare",
+      "(euphemism) to go to the toilet"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk3-071",
+    "level": 3,
+    "hanzi": "放",
+    "pinyin": "fàng",
+    "translations": [
+      "to release",
+      "to free",
+      "to let go",
+      "to put",
+      "to place",
+      "to let out",
+      "to set off (fireworks)"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk3-072",
+    "level": 3,
+    "hanzi": "放心",
+    "pinyin": "fàng xīn",
+    "translations": [
+      "to feel relieved",
+      "to feel reassured",
+      "to be at ease"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk3-073",
+    "level": 3,
+    "hanzi": "分",
+    "pinyin": "fēn",
+    "translations": [
+      "to divide",
+      "to separate",
+      "to allocate",
+      "to distinguish (good and bad)",
+      "part or subdivision",
+      "fraction",
+      "one tenth (of certain units)",
+      "unit of length equivalent to 0.33 cm",
+      "minute",
+      "a point (in sports or games)",
+      "0.01 yuan (unit of money)"
+    ],
+    "partOfSpeech": "t"
+  },
+  {
+    "id": "hsk3-074",
+    "level": 3,
+    "hanzi": "附近",
+    "pinyin": "fù jìn",
+    "translations": [
+      "(in the) vicinity",
+      "nearby",
+      "neighboring",
+      "next to"
+    ],
+    "partOfSpeech": "f"
+  },
+  {
+    "id": "hsk3-075",
+    "level": 3,
+    "hanzi": "复习",
+    "pinyin": "fù xí",
+    "translations": [
+      "variant of 復習|复习",
+      "to revise",
+      "to review",
+      "revision"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk3-076",
+    "level": 3,
+    "hanzi": "干净",
+    "pinyin": "gān jìng",
+    "translations": [
+      "clean",
+      "neat"
+    ],
+    "partOfSpeech": "adjective"
+  },
+  {
+    "id": "hsk3-077",
+    "level": 3,
+    "hanzi": "敢",
+    "pinyin": "gǎn",
+    "translations": [
+      "to dare",
+      "daring",
+      "(polite) may I venture"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk3-078",
+    "level": 3,
+    "hanzi": "感冒",
+    "pinyin": "gǎn mào",
+    "translations": [
+      "to catch cold",
+      "(common) cold",
+      "CL:場|场",
+      "次[cì]"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk3-079",
+    "level": 3,
+    "hanzi": "刚才",
+    "pinyin": "gāng cái",
+    "translations": [
+      "(just) a moment ago"
+    ],
+    "partOfSpeech": "t"
+  },
+  {
+    "id": "hsk3-080",
+    "level": 3,
+    "hanzi": "根据",
+    "pinyin": "gēn jù",
+    "translations": [
+      "according to",
+      "based on",
+      "basis",
+      "foundation",
+      "CL:個|个[gè]"
+    ],
+    "partOfSpeech": "preposition"
+  },
+  {
+    "id": "hsk3-081",
+    "level": 3,
+    "hanzi": "跟",
+    "pinyin": "gēn",
+    "translations": [
+      "heel",
+      "to follow closely",
+      "to go with",
+      "to marry sb (of woman)",
+      "with",
+      "towards",
+      "as (compared to)",
+      "from (different from)",
+      "and (in addition to)"
+    ],
+    "partOfSpeech": "preposition"
+  },
+  {
+    "id": "hsk3-082",
+    "level": 3,
+    "hanzi": "更",
+    "pinyin": "gèng",
+    "translations": [
+      "more",
+      "even more",
+      "further",
+      "still",
+      "still more"
+    ],
+    "partOfSpeech": "adverb"
+  },
+  {
+    "id": "hsk3-083",
+    "level": 3,
+    "hanzi": "公园",
+    "pinyin": "gōng yuán",
+    "translations": [
+      "public park",
+      "CL:場|场[chǎng]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-084",
+    "level": 3,
+    "hanzi": "故事",
+    "pinyin": "gù shi",
+    "translations": [
+      "narrative",
+      "story",
+      "tale"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-085",
+    "level": 3,
+    "hanzi": "刮",
+    "pinyin": "guā",
+    "translations": [
+      "to blow (of the wind)"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk3-086",
+    "level": 3,
+    "hanzi": "关",
+    "pinyin": "guān",
+    "translations": [
+      "mountain pass",
+      "to close",
+      "to shut",
+      "to turn off",
+      "to concern",
+      "to involve"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk3-087",
+    "level": 3,
+    "hanzi": "关系",
+    "pinyin": "guān xì",
+    "translations": [
+      "variant of 關係|关系[guān xì]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-088",
+    "level": 3,
+    "hanzi": "关心",
+    "pinyin": "guān xīn",
+    "translations": [
+      "to care for sth",
+      "caring",
+      "concerned"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk3-089",
+    "level": 3,
+    "hanzi": "关于",
+    "pinyin": "guān yú",
+    "translations": [
+      "pertaining to",
+      "concerning",
+      "regarding",
+      "with regards to",
+      "about",
+      "a matter of"
+    ],
+    "partOfSpeech": "preposition"
+  },
+  {
+    "id": "hsk3-090",
+    "level": 3,
+    "hanzi": "国家",
+    "pinyin": "guó jiā",
+    "translations": [
+      "country",
+      "nation",
+      "state",
+      "CL:個|个[gè]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-091",
+    "level": 3,
+    "hanzi": "果汁",
+    "pinyin": "guǒ zhī",
+    "translations": [
+      "fruit juice"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-092",
+    "level": 3,
+    "hanzi": "过去",
+    "pinyin": "guò qu",
+    "translations": [
+      "(in the) past",
+      "former",
+      "previous",
+      "to go over",
+      "to pass by"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk3-093",
+    "level": 3,
+    "hanzi": "还是",
+    "pinyin": "hái shi",
+    "translations": [
+      "or",
+      "still",
+      "nevertheless",
+      "had better"
+    ],
+    "partOfSpeech": "conjunction"
+  },
+  {
+    "id": "hsk3-094",
+    "level": 3,
+    "hanzi": "害怕",
+    "pinyin": "hài pà",
+    "translations": [
+      "to be afraid",
+      "to be scared"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk3-095",
+    "level": 3,
+    "hanzi": "河",
+    "pinyin": "hé",
+    "translations": [
+      "river",
+      "CL:條|条",
+      "道[dào]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-096",
+    "level": 3,
+    "hanzi": "黑板",
+    "pinyin": "hēi bǎn",
+    "translations": [
+      "blackboard",
+      "CL:塊|块",
+      "個|个[gè]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-097",
+    "level": 3,
+    "hanzi": "护照",
+    "pinyin": "hù zhào",
+    "translations": [
+      "passport",
+      "CL:本",
+      "個|个[gè]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-098",
+    "level": 3,
+    "hanzi": "花",
+    "pinyin": "huā",
+    "translations": [
+      "flower",
+      "blossom",
+      "CL:朵",
+      "支",
+      "束",
+      "把",
+      "盆",
+      "簇[cù]",
+      "fancy pattern",
+      "florid",
+      "to spend (money",
+      "time)"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk3-099",
+    "level": 3,
+    "hanzi": "花园",
+    "pinyin": "huā yuán",
+    "translations": [
+      "garden",
+      "CL:座",
+      "個|个[gè]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-100",
+    "level": 3,
+    "hanzi": "画",
+    "pinyin": "huà",
+    "translations": [
+      "to draw",
+      "picture",
+      "painting",
+      "CL:幅",
+      "張|张[zhāng]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-101",
+    "level": 3,
+    "hanzi": "坏",
+    "pinyin": "huài",
+    "translations": [
+      "bad",
+      "spoiled",
+      "broken",
+      "to break down"
+    ],
+    "partOfSpeech": "adjective"
+  },
+  {
+    "id": "hsk3-102",
+    "level": 3,
+    "hanzi": "环境",
+    "pinyin": "huán jìng",
+    "translations": [
+      "environment",
+      "circumstances",
+      "surroundings",
+      "CL:個|个[gè]",
+      "ambient"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-103",
+    "level": 3,
+    "hanzi": "换",
+    "pinyin": "huàn",
+    "translations": [
+      "to change",
+      "to exchange"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk3-104",
+    "level": 3,
+    "hanzi": "黄",
+    "pinyin": "huáng",
+    "translations": [
+      "yellow",
+      "pornographic",
+      "to fall through"
+    ],
+    "partOfSpeech": "nr"
+  },
+  {
+    "id": "hsk3-105",
+    "level": 3,
+    "hanzi": "会议",
+    "pinyin": "huì yì",
+    "translations": [
+      "meeting",
+      "conference",
+      "CL:場|场",
+      "屆|届[jiè]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-106",
+    "level": 3,
+    "hanzi": "或者",
+    "pinyin": "huò zhě",
+    "translations": [
+      "or",
+      "possibly",
+      "maybe",
+      "perhaps"
+    ],
+    "partOfSpeech": "conjunction"
+  },
+  {
+    "id": "hsk3-107",
+    "level": 3,
+    "hanzi": "机会",
+    "pinyin": "jī huì",
+    "translations": [
+      "opportunity",
+      "chance",
+      "occasion",
+      "CL:個|个[gè]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-108",
+    "level": 3,
+    "hanzi": "几乎",
+    "pinyin": "jī hū",
+    "translations": [
+      "almost",
+      "nearly",
+      "practically"
+    ],
+    "partOfSpeech": "adverb"
+  },
+  {
+    "id": "hsk3-109",
+    "level": 3,
+    "hanzi": "极",
+    "pinyin": "jí",
+    "translations": [
+      "extremely",
+      "pole (geography",
+      "physics)",
+      "utmost",
+      "top"
+    ],
+    "partOfSpeech": "adverb"
+  },
+  {
+    "id": "hsk3-110",
+    "level": 3,
+    "hanzi": "记得",
+    "pinyin": "jì de",
+    "translations": [
+      "to remember"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk3-111",
+    "level": 3,
+    "hanzi": "季节",
+    "pinyin": "jì jié",
+    "translations": [
+      "time",
+      "season",
+      "period",
+      "CL:個|个[gè]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-112",
+    "level": 3,
+    "hanzi": "检查",
+    "pinyin": "jiǎn chá",
+    "translations": [
+      "inspection",
+      "to examine",
+      "to inspect",
+      "CL:次[cì]"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk3-113",
+    "level": 3,
+    "hanzi": "简单",
+    "pinyin": "jiǎn dān",
+    "translations": [
+      "simple",
+      "not complicated"
+    ],
+    "partOfSpeech": "adjective"
+  },
+  {
+    "id": "hsk3-114",
+    "level": 3,
+    "hanzi": "见面",
+    "pinyin": "jiàn miàn",
+    "translations": [
+      "to meet",
+      "to see sb",
+      "CL:次[cì]"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk3-115",
+    "level": 3,
+    "hanzi": "健康",
+    "pinyin": "jiàn kāng",
+    "translations": [
+      "health",
+      "healthy"
+    ],
+    "partOfSpeech": "adjective"
+  },
+  {
+    "id": "hsk3-116",
+    "level": 3,
+    "hanzi": "讲",
+    "pinyin": "jiǎng",
+    "translations": [
+      "to speak",
+      "to explain",
+      "to negotiate",
+      "to emphasise",
+      "to be particular about",
+      "as far as sth is concerned",
+      "speech",
+      "lecture"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk3-117",
+    "level": 3,
+    "hanzi": "教",
+    "pinyin": "jiāo",
+    "translations": [
+      "to teach"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk3-118",
+    "level": 3,
+    "hanzi": "脚",
+    "pinyin": "jiǎo",
+    "translations": [
+      "foot",
+      "leg",
+      "base",
+      "kick",
+      "CL:雙|双",
+      "隻|只[zhī]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-119",
+    "level": 3,
+    "hanzi": "角",
+    "pinyin": "jiǎo",
+    "translations": [
+      "angle",
+      "corner",
+      "horn",
+      "horn-shaped",
+      "unit of money equal to 0.1 yuan",
+      "CL:個|个[gè]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-120",
+    "level": 3,
+    "hanzi": "接",
+    "pinyin": "jiē",
+    "translations": [
+      "to receive",
+      "to answer (the phone)",
+      "to meet or welcome sb",
+      "to connect",
+      "to catch",
+      "to join",
+      "to extend",
+      "to take one's turn on duty",
+      "to take over for sb"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk3-121",
+    "level": 3,
+    "hanzi": "街道",
+    "pinyin": "jiē dào",
+    "translations": [
+      "street",
+      "CL:條|条[tiáo]",
+      "subdistrict",
+      "residential district"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-122",
+    "level": 3,
+    "hanzi": "节目",
+    "pinyin": "jié mù",
+    "translations": [
+      "program",
+      "item (on a program)",
+      "CL:臺|台",
+      "個|个",
+      "套[tào]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-123",
+    "level": 3,
+    "hanzi": "节日",
+    "pinyin": "jié rì",
+    "translations": [
+      "holiday",
+      "festival",
+      "CL:個|个[gè]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-124",
+    "level": 3,
+    "hanzi": "结婚",
+    "pinyin": "jié hūn",
+    "translations": [
+      "to marry",
+      "to get married",
+      "CL:次[cì]"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk3-125",
+    "level": 3,
+    "hanzi": "结束",
+    "pinyin": "jié shù",
+    "translations": [
+      "termination",
+      "to finish",
+      "to end",
+      "to conclude",
+      "to close"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk3-126",
+    "level": 3,
+    "hanzi": "解决",
+    "pinyin": "jiě jué",
+    "translations": [
+      "to settle (a dispute)",
+      "to resolve",
+      "to solve",
+      "to dispose of",
+      "to dispatch"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk3-127",
+    "level": 3,
+    "hanzi": "借",
+    "pinyin": "jiè",
+    "translations": [
+      "to lend",
+      "to borrow",
+      "by means of",
+      "to take (an opportunity)"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk3-128",
+    "level": 3,
+    "hanzi": "经常",
+    "pinyin": "jīng cháng",
+    "translations": [
+      "day to day",
+      "everyday",
+      "daily",
+      "frequently",
+      "constantly",
+      "regularly",
+      "often"
+    ],
+    "partOfSpeech": "adverb"
+  },
+  {
+    "id": "hsk3-129",
+    "level": 3,
+    "hanzi": "经过",
+    "pinyin": "jīng guò",
+    "translations": [
+      "to pass",
+      "to go through",
+      "process",
+      "course",
+      "CL:個|个[gè]"
+    ],
+    "partOfSpeech": "preposition"
+  },
+  {
+    "id": "hsk3-130",
+    "level": 3,
+    "hanzi": "经理",
+    "pinyin": "jīng lǐ",
+    "translations": [
+      "manager",
+      "director",
+      "CL:個|个",
+      "位",
+      "名[míng]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-131",
+    "level": 3,
+    "hanzi": "久",
+    "pinyin": "jiǔ",
+    "translations": [
+      "(long) time",
+      "(long) duration of time"
+    ],
+    "partOfSpeech": "adjective"
+  },
+  {
+    "id": "hsk3-132",
+    "level": 3,
+    "hanzi": "旧",
+    "pinyin": "jiù",
+    "translations": [
+      "old",
+      "opposite: new 新",
+      "former",
+      "worn (with age)"
+    ],
+    "partOfSpeech": "adjective"
+  },
+  {
+    "id": "hsk3-133",
+    "level": 3,
+    "hanzi": "举行",
+    "pinyin": "jǔ xíng",
+    "translations": [
+      "to hold (a meeting",
+      "ceremony etc)"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk3-134",
+    "level": 3,
+    "hanzi": "句子",
+    "pinyin": "jù zi",
+    "translations": [
+      "sentence",
+      "CL:個|个[gè]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-135",
+    "level": 3,
+    "hanzi": "决定",
+    "pinyin": "jué dìng",
+    "translations": [
+      "to decide (to do something)",
+      "to resolve",
+      "decision",
+      "CL:個|个",
+      "項|项[xiàng]",
+      "certainly"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk3-136",
+    "level": 3,
+    "hanzi": "渴",
+    "pinyin": "kě",
+    "translations": [
+      "thirsty"
+    ],
+    "partOfSpeech": "adjective"
+  },
+  {
+    "id": "hsk3-137",
+    "level": 3,
+    "hanzi": "可爱",
+    "pinyin": "kě ài",
+    "translations": [
+      "adorable",
+      "cute",
+      "lovely"
+    ],
+    "partOfSpeech": "adjective"
+  },
+  {
+    "id": "hsk3-138",
+    "level": 3,
+    "hanzi": "刻",
+    "pinyin": "kè",
+    "translations": [
+      "quarter (hour)",
+      "moment",
+      "to carve",
+      "to engrave",
+      "to cut",
+      "oppressive",
+      "classifier for short time intervals"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk3-139",
+    "level": 3,
+    "hanzi": "客人",
+    "pinyin": "kè rén",
+    "translations": [
+      "visitor",
+      "guest",
+      "customer",
+      "client",
+      "CL:位[wèi]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-140",
+    "level": 3,
+    "hanzi": "空调",
+    "pinyin": "kōng tiáo",
+    "translations": [
+      "air conditioning"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-141",
+    "level": 3,
+    "hanzi": "口",
+    "pinyin": "kǒu",
+    "translations": [
+      "mouth",
+      "classifier for things with mouths (people",
+      "domestic animals",
+      "cannons",
+      "wells etc)",
+      "classifier for bites or mouthfuls"
+    ],
+    "partOfSpeech": "measure word"
+  },
+  {
+    "id": "hsk3-142",
+    "level": 3,
+    "hanzi": "哭",
+    "pinyin": "kū",
+    "translations": [
+      "to cry",
+      "to weep"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk3-143",
+    "level": 3,
+    "hanzi": "裤子",
+    "pinyin": "kù zi",
+    "translations": [
+      "trousers",
+      "pants",
+      "CL:條|条[tiáo]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-144",
+    "level": 3,
+    "hanzi": "筷子",
+    "pinyin": "kuài zi",
+    "translations": [
+      "chopsticks",
+      "CL:對|对",
+      "根",
+      "把",
+      "雙|双[shuāng]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-145",
+    "level": 3,
+    "hanzi": "蓝",
+    "pinyin": "lán",
+    "translations": [
+      "blue",
+      "indigo plant"
+    ],
+    "partOfSpeech": "adjective"
+  },
+  {
+    "id": "hsk3-146",
+    "level": 3,
+    "hanzi": "老",
+    "pinyin": "lǎo",
+    "translations": [
+      "prefix used before the surname of a person or a numeral indicating the order of birth of the children in a family or to indicate affection or familiarity",
+      "old (of people)",
+      "venerable (person)",
+      "experienced",
+      "of long standing",
+      "always",
+      "all the time",
+      "of the past",
+      "very",
+      "outdated",
+      "(of meat etc) tough"
+    ],
+    "partOfSpeech": "adjective"
+  },
+  {
+    "id": "hsk3-147",
+    "level": 3,
+    "hanzi": "离开",
+    "pinyin": "lí kāi",
+    "translations": [
+      "to depart",
+      "to leave"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk3-148",
+    "level": 3,
+    "hanzi": "礼物",
+    "pinyin": "lǐ wù",
+    "translations": [
+      "gift",
+      "present",
+      "CL:件",
+      "個|个",
+      "份[fèn]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-149",
+    "level": 3,
+    "hanzi": "历史",
+    "pinyin": "lì shǐ",
+    "translations": [
+      "history",
+      "CL:門|门",
+      "段[duàn]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-150",
+    "level": 3,
+    "hanzi": "脸",
+    "pinyin": "liǎn",
+    "translations": [
+      "face",
+      "CL:張|张",
+      "個|个[gè]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-151",
+    "level": 3,
+    "hanzi": "练习",
+    "pinyin": "liàn xí",
+    "translations": [
+      "exercise",
+      "drill",
+      "practice",
+      "CL:個|个[gè]"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk3-152",
+    "level": 3,
+    "hanzi": "辆",
+    "pinyin": "liàng",
+    "translations": [
+      "classifier for vehicles"
+    ],
+    "partOfSpeech": "measure word"
+  },
+  {
+    "id": "hsk3-153",
+    "level": 3,
+    "hanzi": "了解",
+    "pinyin": "liǎo jiě",
+    "translations": [
+      "to understand",
+      "to realize",
+      "to find out"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk3-154",
+    "level": 3,
+    "hanzi": "邻居",
+    "pinyin": "lín jū",
+    "translations": [
+      "neighbor",
+      "next door",
+      "CL:個|个[gè]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-155",
+    "level": 3,
+    "hanzi": "楼",
+    "pinyin": "lóu",
+    "translations": [
+      "house with more than 1 story",
+      "storied building",
+      "floor",
+      "CL:層|层",
+      "座",
+      "棟|栋[dòng]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-156",
+    "level": 3,
+    "hanzi": "绿",
+    "pinyin": "lǜ",
+    "translations": [
+      "green"
+    ],
+    "partOfSpeech": "adjective"
+  },
+  {
+    "id": "hsk3-157",
+    "level": 3,
+    "hanzi": "马",
+    "pinyin": "mǎ",
+    "translations": [
+      "horse",
+      "CL:匹pi",
+      "horse or cavalry piece in Chinese chess",
+      "knight in Western chess"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-158",
+    "level": 3,
+    "hanzi": "马上",
+    "pinyin": "mǎ shàng",
+    "translations": [
+      "at once",
+      "right away",
+      "immediately",
+      "on horseback (i.e. by military force)"
+    ],
+    "partOfSpeech": "adverb"
+  },
+  {
+    "id": "hsk3-159",
+    "level": 3,
+    "hanzi": "满意",
+    "pinyin": "mǎn yì",
+    "translations": [
+      "satisfied",
+      "pleased",
+      "to one's satisfaction"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk3-160",
+    "level": 3,
+    "hanzi": "帽子",
+    "pinyin": "mào zi",
+    "translations": [
+      "hat",
+      "cap",
+      "(fig.) label",
+      "bad name",
+      "CL:頂|顶[dǐng]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-161",
+    "level": 3,
+    "hanzi": "米",
+    "pinyin": "mǐ",
+    "translations": [
+      "rice",
+      "CL:粒[lì]",
+      "meter (classifier)"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-162",
+    "level": 3,
+    "hanzi": "面包",
+    "pinyin": "miàn bāo",
+    "translations": [
+      "bread",
+      "CL:片",
+      "袋",
+      "塊|块[kuài]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-163",
+    "level": 3,
+    "hanzi": "面条",
+    "pinyin": "miàn tiáo",
+    "translations": [
+      "noodles"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-164",
+    "level": 3,
+    "hanzi": "明白",
+    "pinyin": "míng bai",
+    "translations": [
+      "clear",
+      "obvious",
+      "unequivocal",
+      "to understand",
+      "to realize"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk3-165",
+    "level": 3,
+    "hanzi": "拿",
+    "pinyin": "ná",
+    "translations": [
+      "to hold",
+      "to seize",
+      "to catch",
+      "to apprehend",
+      "to take"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk3-166",
+    "level": 3,
+    "hanzi": "奶奶",
+    "pinyin": "nǎi nai",
+    "translations": [
+      "(informal) grandma (paternal grandmother)",
+      "(respectful) mistress of the house",
+      "CL:位[wèi]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-167",
+    "level": 3,
+    "hanzi": "南",
+    "pinyin": "nán",
+    "translations": [
+      "south"
+    ],
+    "partOfSpeech": "morpheme"
+  },
+  {
+    "id": "hsk3-168",
+    "level": 3,
+    "hanzi": "难",
+    "pinyin": "nán",
+    "translations": [
+      "difficult (to...)",
+      "problem",
+      "difficulty",
+      "difficult",
+      "not good"
+    ],
+    "partOfSpeech": "adverbial adjective"
+  },
+  {
+    "id": "hsk3-169",
+    "level": 3,
+    "hanzi": "难过",
+    "pinyin": "nán guò",
+    "translations": [
+      "to feel sad",
+      "to feel unwell",
+      "(of life) to be difficult"
+    ],
+    "partOfSpeech": "adjective"
+  },
+  {
+    "id": "hsk3-170",
+    "level": 3,
+    "hanzi": "年级",
+    "pinyin": "nián jí",
+    "translations": [
+      "grade",
+      "CL:個|个[gè]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-171",
+    "level": 3,
+    "hanzi": "年轻",
+    "pinyin": "nián qīng",
+    "translations": [
+      "young"
+    ],
+    "partOfSpeech": "adjective"
+  },
+  {
+    "id": "hsk3-172",
+    "level": 3,
+    "hanzi": "鸟",
+    "pinyin": "niǎo",
+    "translations": [
+      "bird",
+      "CL:隻|只",
+      "群[qún]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-173",
+    "level": 3,
+    "hanzi": "努力",
+    "pinyin": "nǔ lì",
+    "translations": [
+      "great effort",
+      "to strive",
+      "to try hard"
+    ],
+    "partOfSpeech": "adverbial adjective"
+  },
+  {
+    "id": "hsk3-174",
+    "level": 3,
+    "hanzi": "爬山",
+    "pinyin": "pá shān",
+    "translations": [
+      "to climb a mountain",
+      "to mountaineer",
+      "hiking",
+      "mountaineering"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk3-175",
+    "level": 3,
+    "hanzi": "盘子",
+    "pinyin": "pán zi",
+    "translations": [
+      "tray",
+      "plate",
+      "dish",
+      "CL:個|个[gè]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-176",
+    "level": 3,
+    "hanzi": "胖",
+    "pinyin": "pàng",
+    "translations": [
+      "fat",
+      "plump"
+    ],
+    "partOfSpeech": "adjective"
+  },
+  {
+    "id": "hsk3-177",
+    "level": 3,
+    "hanzi": "啤酒",
+    "pinyin": "pí jiǔ",
+    "translations": [
+      "beer",
+      "CL:杯",
+      "瓶",
+      "罐",
+      "桶",
+      "缸[gāng]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-178",
+    "level": 3,
+    "hanzi": "葡萄",
+    "pinyin": "pú tao",
+    "translations": [
+      "grape"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-179",
+    "level": 3,
+    "hanzi": "普通话",
+    "pinyin": "pǔ tōng huà",
+    "translations": [
+      "Mandarin (common language)",
+      "Putonghua (common speech of the Chinese language)",
+      "ordinary speech"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-180",
+    "level": 3,
+    "hanzi": "骑",
+    "pinyin": "qí",
+    "translations": [
+      "to ride (an animal or bike)",
+      "to sit astride"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk3-181",
+    "level": 3,
+    "hanzi": "其实",
+    "pinyin": "qí shí",
+    "translations": [
+      "actually",
+      "in fact",
+      "really"
+    ],
+    "partOfSpeech": "adverb"
+  },
+  {
+    "id": "hsk3-182",
+    "level": 3,
+    "hanzi": "其他",
+    "pinyin": "qí tā",
+    "translations": [
+      "other",
+      "the others",
+      "else",
+      "other than (that person)",
+      "in addition to the person mentioned above"
+    ],
+    "partOfSpeech": "pronoun"
+  },
+  {
+    "id": "hsk3-183",
+    "level": 3,
+    "hanzi": "奇怪",
+    "pinyin": "qí guài",
+    "translations": [
+      "strange",
+      "odd",
+      "to marvel",
+      "to be baffled"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk3-184",
+    "level": 3,
+    "hanzi": "铅笔",
+    "pinyin": "qiān bǐ",
+    "translations": [
+      "(lead) pencil",
+      "CL:支",
+      "枝",
+      "桿|杆[gǎn]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-185",
+    "level": 3,
+    "hanzi": "清楚",
+    "pinyin": "qīng chu",
+    "translations": [
+      "clear",
+      "distinct",
+      "to understand thoroughly",
+      "to be clear about"
+    ],
+    "partOfSpeech": "adjective"
+  },
+  {
+    "id": "hsk3-186",
+    "level": 3,
+    "hanzi": "秋",
+    "pinyin": "qiū",
+    "translations": [
+      "a swing"
+    ],
+    "partOfSpeech": "tg"
+  },
+  {
+    "id": "hsk3-187",
+    "level": 3,
+    "hanzi": "裙子",
+    "pinyin": "qún zi",
+    "translations": [
+      "skirt",
+      "CL:條|条[tiáo]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-188",
+    "level": 3,
+    "hanzi": "然后",
+    "pinyin": "rán hòu",
+    "translations": [
+      "after",
+      "then (afterwards)",
+      "after that",
+      "afterwards"
+    ],
+    "partOfSpeech": "conjunction"
+  },
+  {
+    "id": "hsk3-189",
+    "level": 3,
+    "hanzi": "热情",
+    "pinyin": "rè qíng",
+    "translations": [
+      "cordial",
+      "enthusiastic",
+      "passion",
+      "passionate",
+      "passionately"
+    ],
+    "partOfSpeech": "nominal adjective"
+  },
+  {
+    "id": "hsk3-190",
+    "level": 3,
+    "hanzi": "认为",
+    "pinyin": "rèn wéi",
+    "translations": [
+      "to believe",
+      "to think",
+      "to consider",
+      "to feel"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk3-191",
+    "level": 3,
+    "hanzi": "认真",
+    "pinyin": "rèn zhēn",
+    "translations": [
+      "conscientious",
+      "earnest",
+      "serious",
+      "to take seriously",
+      "to take to heart"
+    ],
+    "partOfSpeech": "adjective"
+  },
+  {
+    "id": "hsk3-192",
+    "level": 3,
+    "hanzi": "容易",
+    "pinyin": "róng yì",
+    "translations": [
+      "easy",
+      "likely",
+      "liable (to)"
+    ],
+    "partOfSpeech": "adjective"
+  },
+  {
+    "id": "hsk3-193",
+    "level": 3,
+    "hanzi": "如果",
+    "pinyin": "rú guǒ",
+    "translations": [
+      "if",
+      "in case",
+      "in the event that"
+    ],
+    "partOfSpeech": "conjunction"
+  },
+  {
+    "id": "hsk3-194",
+    "level": 3,
+    "hanzi": "伞",
+    "pinyin": "sǎn",
+    "translations": [
+      "umbrella",
+      "parasol",
+      "CL:把[bǎ]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-195",
+    "level": 3,
+    "hanzi": "上网",
+    "pinyin": "shàng wǎng",
+    "translations": [
+      "to be on the internet",
+      "to stretch a net (in a sports game or for covering sth)",
+      "to be netted (of fish)"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk3-196",
+    "level": 3,
+    "hanzi": "生气",
+    "pinyin": "shēng qì",
+    "translations": [
+      "angry",
+      "mad",
+      "offended",
+      "animated",
+      "to get angry",
+      "to be enraged",
+      "to take offense",
+      "animation"
+    ],
+    "partOfSpeech": "adjective"
+  },
+  {
+    "id": "hsk3-197",
+    "level": 3,
+    "hanzi": "声音",
+    "pinyin": "shēng yīn",
+    "translations": [
+      "voice",
+      "sound",
+      "CL:個|个[gè]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-198",
+    "level": 3,
+    "hanzi": "使",
+    "pinyin": "shǐ",
+    "translations": [
+      "to make",
+      "to cause",
+      "to enable",
+      "to use",
+      "to employ",
+      "to send",
+      "to instruct sb to do sth",
+      "envoy",
+      "messenger"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk3-199",
+    "level": 3,
+    "hanzi": "世界",
+    "pinyin": "shì jiè",
+    "translations": [
+      "world",
+      "CL:個|个[gè]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-200",
+    "level": 3,
+    "hanzi": "瘦",
+    "pinyin": "shòu",
+    "translations": [
+      "thin",
+      "to lose weight",
+      "(of clothing) tight",
+      "(of meat) lean",
+      "(of land) unproductive"
+    ],
+    "partOfSpeech": "adjective"
+  },
+  {
+    "id": "hsk3-201",
+    "level": 3,
+    "hanzi": "舒服",
+    "pinyin": "shū fu",
+    "translations": [
+      "comfortable",
+      "feeling well"
+    ],
+    "partOfSpeech": "adjective"
+  },
+  {
+    "id": "hsk3-202",
+    "level": 3,
+    "hanzi": "叔叔",
+    "pinyin": "shū shu",
+    "translations": [
+      "father's younger brother",
+      "uncle",
+      "Taiwan pr. [shú shu]",
+      "CL:個|个[gè]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-203",
+    "level": 3,
+    "hanzi": "树",
+    "pinyin": "shù",
+    "translations": [
+      "tree",
+      "CL:棵[kē]",
+      "to cultivate",
+      "to set up"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-204",
+    "level": 3,
+    "hanzi": "数学",
+    "pinyin": "shù xué",
+    "translations": [
+      "mathematics",
+      "mathematical"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-205",
+    "level": 3,
+    "hanzi": "刷",
+    "pinyin": "shuā",
+    "translations": [
+      "to brush",
+      "to paint",
+      "to daub",
+      "to paste up",
+      "to skip class (of students)",
+      "to fire from a job"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk3-206",
+    "level": 3,
+    "hanzi": "双",
+    "pinyin": "shuāng",
+    "translations": [
+      "two",
+      "double",
+      "pair",
+      "both"
+    ],
+    "partOfSpeech": "numeral"
+  },
+  {
+    "id": "hsk3-207",
+    "level": 3,
+    "hanzi": "水平",
+    "pinyin": "shuǐ píng",
+    "translations": [
+      "level (of achievement etc)",
+      "standard",
+      "horizontal"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-208",
+    "level": 3,
+    "hanzi": "司机",
+    "pinyin": "sī jī",
+    "translations": [
+      "chauffeur",
+      "driver",
+      "CL:個|个[gè]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-209",
+    "level": 3,
+    "hanzi": "虽然",
+    "pinyin": "suī rán",
+    "translations": [
+      "although",
+      "even though",
+      "even if"
+    ],
+    "partOfSpeech": "conjunction"
+  },
+  {
+    "id": "hsk3-210",
+    "level": 3,
+    "hanzi": "太阳",
+    "pinyin": "tài yáng",
+    "translations": [
+      "sun",
+      "CL:個|个[gè]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-211",
+    "level": 3,
+    "hanzi": "糖",
+    "pinyin": "táng",
+    "translations": [
+      "sugar",
+      "sweets",
+      "candy",
+      "CL:顆|颗",
+      "塊|块[kuài]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-212",
+    "level": 3,
+    "hanzi": "特别",
+    "pinyin": "tè bié",
+    "translations": [
+      "especially",
+      "special",
+      "particular",
+      "unusual"
+    ],
+    "partOfSpeech": "adverb"
+  },
+  {
+    "id": "hsk3-213",
+    "level": 3,
+    "hanzi": "疼",
+    "pinyin": "téng",
+    "translations": [
+      "(it) hurts",
+      "sore",
+      "to love dearly"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk3-214",
+    "level": 3,
+    "hanzi": "提高",
+    "pinyin": "tí gāo",
+    "translations": [
+      "to raise",
+      "to increase"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk3-215",
+    "level": 3,
+    "hanzi": "体育",
+    "pinyin": "tǐ yù",
+    "translations": [
+      "sports",
+      "physical education"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-216",
+    "level": 3,
+    "hanzi": "甜",
+    "pinyin": "tián",
+    "translations": [
+      "sweet"
+    ],
+    "partOfSpeech": "adjective"
+  },
+  {
+    "id": "hsk3-217",
+    "level": 3,
+    "hanzi": "条",
+    "pinyin": "tiáo",
+    "translations": [
+      "strip",
+      "item",
+      "article",
+      "clause (of law or treaty)",
+      "classifier for long thin things (ribbon",
+      "river",
+      "road",
+      "trousers etc)"
+    ],
+    "partOfSpeech": "measure word"
+  },
+  {
+    "id": "hsk3-218",
+    "level": 3,
+    "hanzi": "同事",
+    "pinyin": "tóng shì",
+    "translations": [
+      "colleague",
+      "co-worker",
+      "CL:個|个",
+      "位[wèi]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-219",
+    "level": 3,
+    "hanzi": "同意",
+    "pinyin": "tóng yì",
+    "translations": [
+      "to agree",
+      "to consent",
+      "to approve"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk3-220",
+    "level": 3,
+    "hanzi": "头发",
+    "pinyin": "tóu fa",
+    "translations": [
+      "hair (on the head)"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-221",
+    "level": 3,
+    "hanzi": "突然",
+    "pinyin": "tū rán",
+    "translations": [
+      "sudden",
+      "abrupt",
+      "unexpected"
+    ],
+    "partOfSpeech": "adverbial adjective"
+  },
+  {
+    "id": "hsk3-222",
+    "level": 3,
+    "hanzi": "图书馆",
+    "pinyin": "tú shū guǎn",
+    "translations": [
+      "library",
+      "CL:家",
+      "個|个[gè]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-223",
+    "level": 3,
+    "hanzi": "腿",
+    "pinyin": "tuǐ",
+    "translations": [
+      "leg",
+      "CL:條|条[tiáo]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-224",
+    "level": 3,
+    "hanzi": "完成",
+    "pinyin": "wán chéng",
+    "translations": [
+      "to complete",
+      "to accomplish"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk3-225",
+    "level": 3,
+    "hanzi": "碗",
+    "pinyin": "wǎn",
+    "translations": [
+      "bowl",
+      "cup",
+      "CL:隻|只",
+      "個|个[gè]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-226",
+    "level": 3,
+    "hanzi": "万",
+    "pinyin": "wàn",
+    "translations": [
+      "ten thousand",
+      "a great number"
+    ],
+    "partOfSpeech": "numeral"
+  },
+  {
+    "id": "hsk3-227",
+    "level": 3,
+    "hanzi": "忘记",
+    "pinyin": "wàng jì",
+    "translations": [
+      "to forget"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk3-228",
+    "level": 3,
+    "hanzi": "为了",
+    "pinyin": "wèi le",
+    "translations": [
+      "in order to",
+      "for the purpose of",
+      "so as to"
+    ],
+    "partOfSpeech": "preposition"
+  },
+  {
+    "id": "hsk3-229",
+    "level": 3,
+    "hanzi": "为什么",
+    "pinyin": "wèi shén me",
+    "translations": [
+      "why?",
+      "for what reason?"
+    ],
+    "partOfSpeech": "pronoun"
+  },
+  {
+    "id": "hsk3-230",
+    "level": 3,
+    "hanzi": "位",
+    "pinyin": "wèi",
+    "translations": [
+      "position",
+      "location",
+      "place",
+      "seat",
+      "classifier for people (honorific)",
+      "classifier for binary bits (e.g. 十六位 16-bit or 2 bytes)"
+    ],
+    "partOfSpeech": "measure word"
+  },
+  {
+    "id": "hsk3-231",
+    "level": 3,
+    "hanzi": "文化",
+    "pinyin": "wén huà",
+    "translations": [
+      "culture",
+      "civilization",
+      "cultural",
+      "CL:個|个",
+      "種|种[zhǒng]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-232",
+    "level": 3,
+    "hanzi": "西",
+    "pinyin": "xī",
+    "translations": [
+      "west"
+    ],
+    "partOfSpeech": "f"
+  },
+  {
+    "id": "hsk3-233",
+    "level": 3,
+    "hanzi": "习惯",
+    "pinyin": "xí guàn",
+    "translations": [
+      "habit",
+      "custom",
+      "usual practice",
+      "to be used to",
+      "CL:個|个[gè]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-234",
+    "level": 3,
+    "hanzi": "洗手间",
+    "pinyin": "xǐ shǒu jiān",
+    "translations": [
+      "toilet",
+      "lavatory",
+      "washroom"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-235",
+    "level": 3,
+    "hanzi": "洗澡",
+    "pinyin": "xǐ zǎo",
+    "translations": [
+      "to bathe",
+      "to take a shower"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk3-236",
+    "level": 3,
+    "hanzi": "夏",
+    "pinyin": "xià",
+    "translations": [
+      "summer"
+    ],
+    "partOfSpeech": "tg"
+  },
+  {
+    "id": "hsk3-237",
+    "level": 3,
+    "hanzi": "先",
+    "pinyin": "xiān",
+    "translations": [
+      "early",
+      "prior",
+      "former",
+      "in advance",
+      "first"
+    ],
+    "partOfSpeech": "adverb"
+  },
+  {
+    "id": "hsk3-238",
+    "level": 3,
+    "hanzi": "香蕉",
+    "pinyin": "xiāng jiāo",
+    "translations": [
+      "banana",
+      "CL:枝",
+      "根",
+      "個|个",
+      "把[bǎ]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-239",
+    "level": 3,
+    "hanzi": "相同",
+    "pinyin": "xiāng tóng",
+    "translations": [
+      "identical",
+      "same"
+    ],
+    "partOfSpeech": "adjective"
+  },
+  {
+    "id": "hsk3-240",
+    "level": 3,
+    "hanzi": "相信",
+    "pinyin": "xiāng xìn",
+    "translations": [
+      "to be convinced (that sth is true)",
+      "to believe",
+      "to accept sth as true"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk3-241",
+    "level": 3,
+    "hanzi": "像",
+    "pinyin": "xiàng",
+    "translations": [
+      "to resemble",
+      "to be like",
+      "to look as if",
+      "such as",
+      "appearance",
+      "image",
+      "portrait",
+      "image under a mapping (math.)"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk3-242",
+    "level": 3,
+    "hanzi": "小心",
+    "pinyin": "xiǎo xīn",
+    "translations": [
+      "to be careful",
+      "to take care"
+    ],
+    "partOfSpeech": "adjective"
+  },
+  {
+    "id": "hsk3-243",
+    "level": 3,
+    "hanzi": "校长",
+    "pinyin": "xiào zhǎng",
+    "translations": [
+      "(college",
+      "university) president",
+      "headmaster",
+      "CL:個|个",
+      "位",
+      "名[míng]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-244",
+    "level": 3,
+    "hanzi": "鞋",
+    "pinyin": "xié",
+    "translations": [
+      "shoe",
+      "CL:雙|双",
+      "隻|只[zhī]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-245",
+    "level": 3,
+    "hanzi": "新闻",
+    "pinyin": "xīn wén",
+    "translations": [
+      "news",
+      "CL:條|条",
+      "個|个[gè]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-246",
+    "level": 3,
+    "hanzi": "新鲜",
+    "pinyin": "xīn xiān",
+    "translations": [
+      "fresh (experience",
+      "food etc)",
+      "freshness",
+      "novel",
+      "uncommon"
+    ],
+    "partOfSpeech": "adjective"
+  },
+  {
+    "id": "hsk3-247",
+    "level": 3,
+    "hanzi": "信",
+    "pinyin": "xìn",
+    "translations": [
+      "letter",
+      "mail",
+      "CL:封[fēng]",
+      "to trust",
+      "to believe",
+      "to profess faith in",
+      "truthful",
+      "confidence",
+      "trust",
+      "at will",
+      "at random"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-248",
+    "level": 3,
+    "hanzi": "行李箱",
+    "pinyin": "xíng li xiāng",
+    "translations": [
+      "suitcase"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-249",
+    "level": 3,
+    "hanzi": "兴趣",
+    "pinyin": "xìng qù",
+    "translations": [
+      "interest (desire to know about sth)",
+      "interest (thing in which one is interested)",
+      "hobby",
+      "CL:個|个[gè]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-250",
+    "level": 3,
+    "hanzi": "熊猫",
+    "pinyin": "xióng māo",
+    "translations": [
+      "panda",
+      "CL:隻|只[zhī]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-251",
+    "level": 3,
+    "hanzi": "需要",
+    "pinyin": "xū yào",
+    "translations": [
+      "to need",
+      "to want",
+      "to demand",
+      "to require",
+      "requirement",
+      "need"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk3-252",
+    "level": 3,
+    "hanzi": "选择",
+    "pinyin": "xuǎn zé",
+    "translations": [
+      "to select",
+      "to pick",
+      "choice",
+      "option",
+      "alternative"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk3-253",
+    "level": 3,
+    "hanzi": "眼镜",
+    "pinyin": "yǎn jìng",
+    "translations": [
+      "spectacles",
+      "eyeglasses",
+      "CL:副[fù]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-254",
+    "level": 3,
+    "hanzi": "要求",
+    "pinyin": "yāo qiú",
+    "translations": [
+      "to request",
+      "to require",
+      "to stake a claim",
+      "to ask",
+      "to demand",
+      "CL:點|点[diǎn]"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk3-255",
+    "level": 3,
+    "hanzi": "爷爷",
+    "pinyin": "yé ye",
+    "translations": [
+      "(informal) father's father",
+      "paternal grandfather",
+      "CL:個|个[gè]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-256",
+    "level": 3,
+    "hanzi": "一定",
+    "pinyin": "yī dìng",
+    "translations": [
+      "surely",
+      "certainly",
+      "necessarily",
+      "fixed",
+      "a certain (extent etc)",
+      "given",
+      "particular",
+      "must"
+    ],
+    "partOfSpeech": "adverb"
+  },
+  {
+    "id": "hsk3-257",
+    "level": 3,
+    "hanzi": "一共",
+    "pinyin": "yī gòng",
+    "translations": [
+      "altogether"
+    ],
+    "partOfSpeech": "adverb"
+  },
+  {
+    "id": "hsk3-258",
+    "level": 3,
+    "hanzi": "一会儿",
+    "pinyin": "yī huì r",
+    "translations": [
+      "a while",
+      "also pr. [yī huǐ r]"
+    ],
+    "partOfSpeech": "mq"
+  },
+  {
+    "id": "hsk3-259",
+    "level": 3,
+    "hanzi": "一样",
+    "pinyin": "yī yàng",
+    "translations": [
+      "same",
+      "like",
+      "equal to",
+      "the same as",
+      "just like"
+    ],
+    "partOfSpeech": "particle"
+  },
+  {
+    "id": "hsk3-260",
+    "level": 3,
+    "hanzi": "以后",
+    "pinyin": "yǐ hòu",
+    "translations": [
+      "after",
+      "later",
+      "afterwards",
+      "following",
+      "later on",
+      "in the future"
+    ],
+    "partOfSpeech": "f"
+  },
+  {
+    "id": "hsk3-261",
+    "level": 3,
+    "hanzi": "以前",
+    "pinyin": "yǐ qián",
+    "translations": [
+      "before",
+      "formerly",
+      "previous",
+      "ago"
+    ],
+    "partOfSpeech": "f"
+  },
+  {
+    "id": "hsk3-262",
+    "level": 3,
+    "hanzi": "以为",
+    "pinyin": "yǐ wéi",
+    "translations": [
+      "to believe",
+      "to think",
+      "to consider",
+      "to be under the impression"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk3-263",
+    "level": 3,
+    "hanzi": "一般",
+    "pinyin": "yī bān",
+    "translations": [
+      "same",
+      "ordinary",
+      "so-so",
+      "common",
+      "general",
+      "generally",
+      "in general"
+    ],
+    "partOfSpeech": "adjective"
+  },
+  {
+    "id": "hsk3-264",
+    "level": 3,
+    "hanzi": "一边",
+    "pinyin": "yī biān",
+    "translations": [
+      "one side",
+      "either side",
+      "on the one hand",
+      "on the other hand",
+      "doing while"
+    ],
+    "partOfSpeech": "adverb"
+  },
+  {
+    "id": "hsk3-265",
+    "level": 3,
+    "hanzi": "一直",
+    "pinyin": "yī zhí",
+    "translations": [
+      "straight (in a straight line)",
+      "continuously",
+      "always",
+      "from the beginning of ... up to ...",
+      "all along"
+    ],
+    "partOfSpeech": "adverb"
+  },
+  {
+    "id": "hsk3-266",
+    "level": 3,
+    "hanzi": "音乐",
+    "pinyin": "yīn yuè",
+    "translations": [
+      "music",
+      "CL:張|张",
+      "曲",
+      "段[duàn]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-267",
+    "level": 3,
+    "hanzi": "银行",
+    "pinyin": "yín háng",
+    "translations": [
+      "bank",
+      "CL:家",
+      "個|个[gè]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-268",
+    "level": 3,
+    "hanzi": "应该",
+    "pinyin": "yīng gāi",
+    "translations": [
+      "ought to",
+      "should",
+      "must"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk3-269",
+    "level": 3,
+    "hanzi": "影响",
+    "pinyin": "yǐng xiǎng",
+    "translations": [
+      "an influence",
+      "an effect",
+      "to influence",
+      "to affect (usually adversely)",
+      "to disturb",
+      "CL:股[gǔ]"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk3-270",
+    "level": 3,
+    "hanzi": "用",
+    "pinyin": "yòng",
+    "translations": [
+      "to use",
+      "to employ",
+      "to have to",
+      "to eat or drink",
+      "expense or outlay",
+      "usefulness",
+      "hence",
+      "therefore"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk3-271",
+    "level": 3,
+    "hanzi": "游戏",
+    "pinyin": "yóu xì",
+    "translations": [
+      "game",
+      "CL:場|场[chǎng]",
+      "to play"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-272",
+    "level": 3,
+    "hanzi": "有名",
+    "pinyin": "yǒu míng",
+    "translations": [
+      "famous",
+      "well-known"
+    ],
+    "partOfSpeech": "adjective"
+  },
+  {
+    "id": "hsk3-273",
+    "level": 3,
+    "hanzi": "又",
+    "pinyin": "yòu",
+    "translations": [
+      "(once) again",
+      "also",
+      "both... and...",
+      "and yet",
+      "(used for emphasis) anyway"
+    ],
+    "partOfSpeech": "adverb"
+  },
+  {
+    "id": "hsk3-274",
+    "level": 3,
+    "hanzi": "遇到",
+    "pinyin": "yù dào",
+    "translations": [
+      "to meet",
+      "to run into",
+      "to come across"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk3-275",
+    "level": 3,
+    "hanzi": "愿意",
+    "pinyin": "yuàn yì",
+    "translations": [
+      "to wish",
+      "to want",
+      "ready",
+      "willing (to do sth)"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk3-276",
+    "level": 3,
+    "hanzi": "越",
+    "pinyin": "yuè",
+    "translations": [
+      "to exceed",
+      "to climb over",
+      "to surpass",
+      "the more... the more"
+    ],
+    "partOfSpeech": "adverb"
+  },
+  {
+    "id": "hsk3-277",
+    "level": 3,
+    "hanzi": "月亮",
+    "pinyin": "yuè liang",
+    "translations": [
+      "moon"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-278",
+    "level": 3,
+    "hanzi": "云",
+    "pinyin": "yún",
+    "translations": [
+      "cloud",
+      "CL:朵[duǒ]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-279",
+    "level": 3,
+    "hanzi": "站",
+    "pinyin": "zhàn",
+    "translations": [
+      "station",
+      "to stand",
+      "to halt",
+      "to stop",
+      "branch of a company or organization",
+      "website"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk3-280",
+    "level": 3,
+    "hanzi": "着急",
+    "pinyin": "zháo jí",
+    "translations": [
+      "to worry",
+      "to feel anxious",
+      "Taiwan pron. [zhāo jí]"
+    ],
+    "partOfSpeech": "adjective"
+  },
+  {
+    "id": "hsk3-281",
+    "level": 3,
+    "hanzi": "照顾",
+    "pinyin": "zhào gu",
+    "translations": [
+      "to take care of",
+      "to show consideration",
+      "to attend to",
+      "to look after"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk3-282",
+    "level": 3,
+    "hanzi": "照片",
+    "pinyin": "zhào piàn",
+    "translations": [
+      "photograph",
+      "picture",
+      "CL:張|张",
+      "套",
+      "幅[fú]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-283",
+    "level": 3,
+    "hanzi": "照相机",
+    "pinyin": "zhào xiàng jī",
+    "translations": [
+      "camera",
+      "CL:個|个",
+      "架",
+      "部",
+      "台",
+      "隻|只[zhī]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-284",
+    "level": 3,
+    "hanzi": "只",
+    "pinyin": "zhī",
+    "translations": [
+      "classifier for birds and certain animals",
+      "one of a pair",
+      "some utensils",
+      "vessels etc"
+    ],
+    "partOfSpeech": "adverb"
+  },
+  {
+    "id": "hsk3-285",
+    "level": 3,
+    "hanzi": "只",
+    "pinyin": "zhǐ",
+    "translations": [
+      "but",
+      "only"
+    ],
+    "partOfSpeech": "adverb"
+  },
+  {
+    "id": "hsk3-286",
+    "level": 3,
+    "hanzi": "终于",
+    "pinyin": "zhōng yú",
+    "translations": [
+      "at last",
+      "in the end",
+      "finally",
+      "eventually"
+    ],
+    "partOfSpeech": "adverb"
+  },
+  {
+    "id": "hsk3-287",
+    "level": 3,
+    "hanzi": "中间",
+    "pinyin": "zhōng jiān",
+    "translations": [
+      "between",
+      "intermediate",
+      "mid",
+      "middle"
+    ],
+    "partOfSpeech": "f"
+  },
+  {
+    "id": "hsk3-288",
+    "level": 3,
+    "hanzi": "种",
+    "pinyin": "zhǒng",
+    "translations": [
+      "abbr. for 物種|物种",
+      "genus",
+      "race",
+      "seed",
+      "breed",
+      "species",
+      "strain",
+      "kind",
+      "type",
+      "has guts (i.e. courage)",
+      "nerve",
+      "classifier for types: kind",
+      "sort",
+      "classifier for languages"
+    ],
+    "partOfSpeech": "measure word"
+  },
+  {
+    "id": "hsk3-289",
+    "level": 3,
+    "hanzi": "重要",
+    "pinyin": "zhòng yào",
+    "translations": [
+      "important",
+      "significant",
+      "major"
+    ],
+    "partOfSpeech": "adjective"
+  },
+  {
+    "id": "hsk3-290",
+    "level": 3,
+    "hanzi": "周末",
+    "pinyin": "zhōu mò",
+    "translations": [
+      "weekend"
+    ],
+    "partOfSpeech": "t"
+  },
+  {
+    "id": "hsk3-291",
+    "level": 3,
+    "hanzi": "主要",
+    "pinyin": "zhǔ yào",
+    "translations": [
+      "main",
+      "principal",
+      "major",
+      "primary"
+    ],
+    "partOfSpeech": "morpheme"
+  },
+  {
+    "id": "hsk3-292",
+    "level": 3,
+    "hanzi": "祝",
+    "pinyin": "zhù",
+    "translations": [
+      "to wish",
+      "to express good wishes",
+      "to pray",
+      "(old) wizard"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk3-293",
+    "level": 3,
+    "hanzi": "注意",
+    "pinyin": "zhù yì",
+    "translations": [
+      "to take note of",
+      "to pay attention to"
+    ],
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "hsk3-294",
+    "level": 3,
+    "hanzi": "字典",
+    "pinyin": "zì diǎn",
+    "translations": [
+      "dictionary",
+      "character dictionary",
+      "CL:本[běn]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-295",
+    "level": 3,
+    "hanzi": "自己",
+    "pinyin": "zì jǐ",
+    "translations": [
+      "oneself",
+      "one's own"
+    ],
+    "partOfSpeech": "pronoun"
+  },
+  {
+    "id": "hsk3-296",
+    "level": 3,
+    "hanzi": "总是",
+    "pinyin": "zǒng shì",
+    "translations": [
+      "always"
+    ],
+    "partOfSpeech": "adverb"
+  },
+  {
+    "id": "hsk3-297",
+    "level": 3,
+    "hanzi": "最近",
+    "pinyin": "zuì jìn",
+    "translations": [
+      "recent",
+      "recently",
+      "these days",
+      "latest",
+      "soon",
+      "nearest (of locations)",
+      "shortest (of routes)"
+    ],
+    "partOfSpeech": "t"
+  },
+  {
+    "id": "hsk3-298",
+    "level": 3,
+    "hanzi": "作业",
+    "pinyin": "zuò yè",
+    "translations": [
+      "school assignment",
+      "homework",
+      "work",
+      "task",
+      "operation",
+      "CL:個|个[gè]",
+      "to operate"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-299",
+    "level": 3,
+    "hanzi": "作用",
+    "pinyin": "zuò yòng",
+    "translations": [
+      "to act on",
+      "to affect",
+      "action",
+      "function",
+      "activity",
+      "impact",
+      "result",
+      "effect",
+      "purpose",
+      "intent",
+      "to play a role",
+      "corresponds to English -ity",
+      "-ism",
+      "-ization",
+      "CL:個|个[gè]"
+    ],
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "hsk3-300",
+    "level": 3,
+    "hanzi": "爱情",
+    "pinyin": "àiqíng",
+    "translations": [
+      "romantic love",
+      "affection"
+    ],
+    "partOfSpeech": "noun",
+    "exampleSentence": {
+      "hanzi": "真挚的爱情需要彼此坦诚相待与共同成长。",
+      "pinyin": "Zhēnzhì de àiqíng xūyào bǐcǐ tǎnchéng xiāngdài yǔ gòngtóng chéngzhǎng.",
+      "translation": "Sincere romantic love demands reciprocal honesty and joint growth."
     }
   }
 ]

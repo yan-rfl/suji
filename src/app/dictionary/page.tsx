@@ -45,6 +45,7 @@ export default function DictionaryPage() {
   const [loading, setLoading] = useState<boolean>(true);
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [statusFilter, setStatusFilter] = useState<'all' | MasteryStatus>('all');
+  const [levelScope, setLevelScope] = useState<'all' | 'new-only'>('all');
   const [activeModalWord, setActiveModalWord] = useState<HSKWord | null>(null);
 
   // Fetch words for global currentLevel
@@ -71,6 +72,11 @@ export default function DictionaryPage() {
   const filteredWords = useMemo(() => {
     let result = words;
 
+    // Filter by level scope (e.g. only new words for current level)
+    if (levelScope === 'new-only') {
+      result = result.filter((w) => w.level === currentLevel);
+    }
+
     // Filter by mastery status
     if (statusFilter !== 'all') {
       result = result.filter((w) => getWordStatus(w.id) === statusFilter);
@@ -82,23 +88,25 @@ export default function DictionaryPage() {
     }
 
     return result;
-  }, [words, searchQuery, statusFilter, getWordStatus]);
+  }, [words, searchQuery, statusFilter, levelScope, currentLevel, getWordStatus]);
 
   // Counts by status
   const counts = useMemo(() => {
     let newCount = 0;
     let learningCount = 0;
     let masteredCount = 0;
+    let currentLevelCount = 0;
 
     words.forEach((w) => {
+      if (w.level === currentLevel) currentLevelCount++;
       const status = getWordStatus(w.id);
       if (status === 'mastered') masteredCount++;
       else if (status === 'learning') learningCount++;
       else newCount++;
     });
 
-    return { total: words.length, newCount, learningCount, masteredCount };
-  }, [words, getWordStatus]);
+    return { total: words.length, newCount, learningCount, masteredCount, currentLevelCount };
+  }, [words, currentLevel, getWordStatus]);
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
@@ -117,7 +125,7 @@ export default function DictionaryPage() {
 
           {/* HSK Level Switcher with persistent global level */}
           <div className="flex items-center gap-1.5 p-1 rounded-2xl bg-zinc-900 border border-zinc-800 overflow-x-auto max-w-full">
-            {[1, 2, 3, 4, 5].map((lvl) => {
+            {[1, 2, 3, 4, 5, 6].map((lvl) => {
               const isSelected = currentLevel === lvl;
               const lvlTheme = HSK_THEMES[lvl] || HSK_THEMES[1];
               return (
@@ -220,6 +228,38 @@ export default function DictionaryPage() {
             </button>
           </div>
         </div>
+
+        {/* Scope Selector: Full Syllabus vs Level-Specific New Words */}
+        {currentLevel > 1 && (
+          <div className="flex items-center gap-2 pt-1 flex-wrap">
+            <span className="text-xs text-zinc-400 font-medium">Syllabus Scope:</span>
+            <div className="flex items-center gap-1.5 p-1 rounded-2xl bg-zinc-900 border border-zinc-800">
+              <button
+                type="button"
+                onClick={() => setLevelScope('all')}
+                className={`px-3 py-1.5 rounded-xl text-xs font-semibold transition-colors cursor-pointer ${
+                  levelScope === 'all'
+                    ? 'bg-zinc-800 text-white shadow-sm'
+                    : 'text-zinc-400 hover:text-zinc-200'
+                }`}
+              >
+                All HSK {currentLevel} Syllabus ({words.length})
+              </button>
+              <button
+                type="button"
+                onClick={() => setLevelScope('new-only')}
+                className={`px-3 py-1.5 rounded-xl text-xs font-semibold transition-colors cursor-pointer ${
+                  levelScope === 'new-only'
+                    ? 'text-white shadow-sm'
+                    : 'text-zinc-400 hover:text-zinc-200'
+                }`}
+                style={levelScope === 'new-only' ? { backgroundColor: theme.primary } : undefined}
+              >
+                HSK {currentLevel} New Only ({counts.currentLevelCount})
+              </button>
+            </div>
+          </div>
+        )}
       </div>
 
       {/* Vocabulary Cards Grid */}
@@ -278,9 +318,21 @@ export default function DictionaryPage() {
 
                 {/* Card Bottom: Part of Speech & Mastery Badge */}
                 <div className="flex items-center justify-between pt-2 border-t border-zinc-800/60 text-[11px]">
-                  <span className="text-zinc-500 capitalize">
-                    {word.partOfSpeech || 'word'}
-                  </span>
+                  <div className="flex items-center gap-1.5">
+                    <span 
+                      className="px-1.5 py-0.2 rounded text-[10px] font-bold"
+                      style={{
+                        backgroundColor: HSK_THEMES[word.level]?.badgeBg || theme.badgeBg,
+                        color: HSK_THEMES[word.level]?.badgeText || theme.badgeText,
+                        border: `1px solid ${HSK_THEMES[word.level]?.badgeBorder || theme.badgeBorder}`
+                      }}
+                    >
+                      HSK {word.level}
+                    </span>
+                    <span className="text-zinc-500 capitalize">
+                      {word.partOfSpeech || 'word'}
+                    </span>
+                  </div>
                   <span
                     className={`px-2 py-0.5 rounded-full font-semibold uppercase tracking-wider text-[10px] border ${style.bg} ${style.text} ${style.border}`}
                   >

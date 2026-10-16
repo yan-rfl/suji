@@ -54,7 +54,7 @@ function QuizEngineContent() {
   useEffect(() => {
     if (levelParam) {
       const parsed = parseInt(levelParam, 10);
-      if (parsed >= 1 && parsed <= 5 && parsed !== currentLevel) {
+      if (parsed >= 1 && parsed <= 6 && parsed !== currentLevel) {
         setCurrentLevel(parsed);
       }
     }
