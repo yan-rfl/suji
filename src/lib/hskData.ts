@@ -75,3 +75,133 @@ export function searchWords(words: HSKWord[], query: string): HSKWord[] {
     return false;
   });
 }
+
+export interface ClozeToken {
+  hanzi: string;
+  pinyin?: string;
+  isTarget?: boolean;
+  isPunctuation?: boolean;
+  showPinyin?: boolean;
+}
+
+const COMMON_EXTRA_WORDS: Record<string, { level: number; pinyin: string }> = {
+  '父母': { level: 4, pinyin: 'fùmǔ' },
+  '绿茶': { level: 2, pinyin: 'lǜchá' },
+  '饮品': { level: 4, pinyin: 'yǐnpǐn' },
+  '路边': { level: 2, pinyin: 'lùbiān' },
+  '桌上': { level: 1, pinyin: 'zhuōshàng' },
+  '菜肴': { level: 5, pinyin: 'càiyáo' },
+  '丰盛': { level: 5, pinyin: 'fēngshèng' },
+  '活力': { level: 4, pinyin: 'huólì' },
+  '充满': { level: 4, pinyin: 'chōngmǎn' },
+  '大城市': { level: 2, pinyin: 'dàchéngshì' },
+  '词典': { level: 3, pinyin: 'cídiǎn' },
+};
+
+/**
+ * Tokenize a cloze example sentence, annotating words that are above the selected level
+ * with their pinyin so learners can read the sentence context without struggling.
+ */
+export function tokenizeClozeSentence(
+  sentenceHanzi: string,
+  sentencePinyin: string,
+  targetWord: string,
+  selectedLevel: number,
+  allWords?: HSKWord[]
+): ClozeToken[] {
+  const tokens: ClozeToken[] = [];
+  let i = 0;
+
+  // Build quick map of known words if available
+  const wordsMap = new Map<string, { level: number; pinyin: string }>();
+  if (allWords) {
+    allWords.forEach((w) => {
+      if (!wordsMap.has(w.hanzi) || wordsMap.get(w.hanzi)!.level > w.level) {
+        wordsMap.set(w.hanzi, { level: w.level, pinyin: w.pinyin });
+      }
+    });
+  }
+
+  const pinyinWords = sentencePinyin
+    ? sentencePinyin
+        .trim()
+        .split(/\s+/)
+        .map((w) => w.replace(/[.,!?:;\"()]/g, ''))
+    : [];
+
+  while (i < sentenceHanzi.length) {
+    if (sentenceHanzi.startsWith(targetWord, i)) {
+      tokens.push({
+        hanzi: targetWord,
+        isTarget: true,
+        showPinyin: false,
+      });
+      i += targetWord.length;
+      continue;
+    }
+
+    const ch = sentenceHanzi[i];
+    if (!/[\u4e00-\u9fa5]/.test(ch)) {
+      tokens.push({
+        hanzi: ch,
+        isPunctuation: true,
+        showPinyin: false,
+      });
+      i++;
+      continue;
+    }
+
+    // Try multi-character match (longest match 4 down to 2)
+    let matched: { hanzi: string; level: number; pinyin: string } | null = null;
+    for (let len = Math.min(4, sentenceHanzi.length - i); len >= 2; len--) {
+      const sub = sentenceHanzi.slice(i, i + len);
+      if (sub === targetWord) continue;
+
+      if (COMMON_EXTRA_WORDS[sub]) {
+        matched = { hanzi: sub, ...COMMON_EXTRA_WORDS[sub] };
+        break;
+      }
+      if (wordsMap.has(sub)) {
+        matched = { hanzi: sub, ...wordsMap.get(sub)! };
+        break;
+      }
+    }
+
+    if (matched) {
+      tokens.push({
+        hanzi: matched.hanzi,
+        pinyin: matched.pinyin,
+        showPinyin: matched.level > selectedLevel,
+      });
+      i += matched.hanzi.length;
+    } else {
+      // Single character
+      const singleInfo = wordsMap.get(ch) || COMMON_EXTRA_WORDS[ch];
+      const level = singleInfo ? singleInfo.level : 6;
+      tokens.push({
+        hanzi: ch,
+        pinyin: singleInfo ? singleInfo.pinyin : undefined,
+        showPinyin: level > selectedLevel,
+      });
+      i++;
+    }
+  }
+
+  // Align any missing pinyin for words that need it from sentence pinyin words
+  let pIdx = 0;
+  for (const token of tokens) {
+    if (token.isPunctuation) continue;
+    if (token.isTarget) {
+      if (pIdx < pinyinWords.length) pIdx++;
+      continue;
+    }
+    if (pIdx < pinyinWords.length) {
+      if (!token.pinyin && token.showPinyin) {
+        token.pinyin = pinyinWords[pIdx];
+      }
+      pIdx++;
+    }
+  }
+
+  return tokens;
+}

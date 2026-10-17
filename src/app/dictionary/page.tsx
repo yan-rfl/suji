@@ -10,10 +10,12 @@ import {
   CheckCircle2, 
   Clock, 
   Sparkles,
-  Layers
+  Layers,
+  FileDown
 } from 'lucide-react';
 import { HSKWord, MasteryStatus } from '@/types/hsk';
 import { getHSKWords, searchWords } from '@/lib/hskData';
+import { exportVocabularyToPDF } from '@/lib/pdfExport';
 import { useProgress } from '@/context/ProgressContext';
 import { useLevel, HSK_THEMES } from '@/context/LevelContext';
 import { AudioButton } from '@/components/AudioButton';
@@ -123,34 +125,49 @@ export default function DictionaryPage() {
             </p>
           </div>
 
-          {/* HSK Level Switcher with persistent global level */}
-          <div className="flex items-center gap-1.5 p-1 rounded-2xl bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 overflow-x-auto max-w-full">
-            {[1, 2, 3, 4, 5, 6].map((lvl) => {
-              const isSelected = currentLevel === lvl;
-              const lvlTheme = HSK_THEMES[lvl] || HSK_THEMES[1];
-              return (
-                <button
-                  key={lvl}
-                  type="button"
-                  onClick={() => setCurrentLevel(lvl)}
-                  className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all whitespace-nowrap cursor-pointer ${
-                    isSelected
-                      ? 'text-white shadow-md'
-                      : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200 hover:bg-zinc-200/60 dark:hover:bg-zinc-800'
-                  }`}
-                  style={
-                    isSelected
-                      ? {
-                          backgroundColor: lvlTheme.primary,
-                          boxShadow: `0 2px 10px rgba(${lvlTheme.rgb}, 0.35)`
-                        }
-                      : undefined
-                  }
-                >
-                  HSK {lvl}
-                </button>
-              );
-            })}
+          {/* Action Row: PDF Export & Level Switcher */}
+          <div className="flex items-center gap-2.5 flex-wrap">
+            {/* PDF Export Button */}
+            <button
+              type="button"
+              onClick={() => exportVocabularyToPDF(currentLevel, words)}
+              className="flex items-center gap-2 px-3.5 py-2.5 rounded-2xl text-xs sm:text-sm font-bold bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-800 dark:text-zinc-200 hover:text-red-600 dark:hover:text-red-400 hover:border-red-300 dark:hover:border-red-900/60 transition-all shadow-sm active:scale-95 cursor-pointer shrink-0"
+              title={`Download / Print PDF for all HSK ${currentLevel} vocabulary`}
+              aria-label={`Export HSK ${currentLevel} PDF`}
+            >
+              <FileDown size={16} className="text-red-500 shrink-0" />
+              <span>Export HSK {currentLevel} PDF</span>
+            </button>
+
+            {/* HSK Level Switcher with persistent global level */}
+            <div className="flex items-center gap-1.5 p-1 rounded-2xl bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 overflow-x-auto max-w-full">
+              {[1, 2, 3, 4, 5, 6].map((lvl) => {
+                const isSelected = currentLevel === lvl;
+                const lvlTheme = HSK_THEMES[lvl] || HSK_THEMES[1];
+                return (
+                  <button
+                    key={lvl}
+                    type="button"
+                    onClick={() => setCurrentLevel(lvl)}
+                    className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all whitespace-nowrap cursor-pointer ${
+                      isSelected
+                        ? 'text-white shadow-md'
+                        : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200 hover:bg-zinc-200/60 dark:hover:bg-zinc-800'
+                    }`}
+                    style={
+                      isSelected
+                        ? {
+                            backgroundColor: lvlTheme.primary,
+                            boxShadow: `0 2px 10px rgba(${lvlTheme.rgb}, 0.35)`
+                          }
+                        : undefined
+                    }
+                  >
+                    HSK {lvl}
+                  </button>
+                );
+              })}
+            </div>
           </div>
         </div>
 
