@@ -128,9 +128,9 @@ export default function DictionaryPage() {
         </div>
 
         {/* Row 2: HSK Level Selection and PDF Export Button */}
-        <div className="flex items-stretch sm:items-center justify-between gap-2.5">
-          {/* HSK Level Switcher (2 rows of 3 on mobile, 1 row on desktop to avoid scrolling) */}
-          <div className="flex-1 grid grid-cols-3 sm:flex items-center gap-1 sm:gap-1.5 p-1 rounded-2xl bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800">
+        <div className="flex items-stretch sm:items-center justify-between sm:justify-start gap-2.5 sm:gap-3">
+          {/* HSK Level Switcher (2 rows of 3 on mobile, fits snugly until HSK 6 on desktop) */}
+          <div className="flex-1 sm:flex-none sm:w-auto grid grid-cols-3 sm:flex items-center gap-1 sm:gap-1.5 p-1 rounded-2xl bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800">
             {[1, 2, 3, 4, 5, 6].map((lvl) => {
               const isSelected = currentLevel === lvl;
               const lvlTheme = HSK_THEMES[lvl] || HSK_THEMES[1];
@@ -159,17 +159,16 @@ export default function DictionaryPage() {
             })}
           </div>
 
-          {/* PDF Export Button (Icon on mobile, full text on desktop) */}
+          {/* PDF Export Button (Square on mobile, rests directly next to levels on desktop) */}
           <button
             type="button"
             onClick={() => exportVocabularyToPDF(currentLevel, words)}
-            className="flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 px-3 sm:px-4 py-2 sm:py-2.5 rounded-2xl text-xs sm:text-sm font-bold bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-800 dark:text-zinc-200 hover:text-red-600 dark:hover:text-red-400 hover:border-red-300 dark:hover:border-red-900/60 transition-all shadow-sm active:scale-95 cursor-pointer shrink-0"
+            className="aspect-square sm:aspect-auto self-stretch sm:self-auto flex items-center justify-center gap-2 p-0 sm:px-4 sm:py-2.5 sm:h-11 rounded-2xl text-xs sm:text-sm font-bold bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-800 dark:text-zinc-200 hover:text-red-600 dark:hover:text-red-400 hover:border-red-300 dark:hover:border-red-900/60 transition-all shadow-sm active:scale-95 cursor-pointer shrink-0"
             title={`Export HSK ${currentLevel} PDF`}
             aria-label={`Export HSK ${currentLevel} PDF`}
           >
-            <FileDown size={18} className="text-red-500 shrink-0" />
+            <FileDown size={20} className="text-red-500 shrink-0" />
             <span className="hidden sm:inline">Export PDF</span>
-            <span className="text-[10px] font-bold text-zinc-600 dark:text-zinc-300 sm:hidden">PDF</span>
           </button>
         </div>
 
