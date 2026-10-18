@@ -205,3 +205,28 @@ export function tokenizeClozeSentence(
 
   return tokens;
 }
+
+/**
+ * Format raw/abbreviated part-of-speech tags into user-friendly English labels
+ */
+export function formatPartOfSpeech(pos?: string): string {
+  if (!pos) return 'word';
+  const mapping: Record<string, string> = {
+    f: 'noun (location)',
+    t: 'noun (time)',
+    tg: 'noun (time)',
+    qt: 'measure word (time)',
+    qv: 'measure word (action)',
+    mq: 'numeral-measure',
+    y: 'modal particle',
+    cc: 'conjunction',
+    nr: 'proper noun',
+    ns: 'proper noun (place)',
+    nt: 'proper noun (org)',
+    Mg: 'numeral',
+    s: 'noun (place)',
+    g: 'morpheme',
+    z: 'adjective',
+  };
+  return mapping[pos] || pos;
+}

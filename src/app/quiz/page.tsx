@@ -380,79 +380,93 @@ function QuizEngineContent() {
     <div className="max-w-3xl mx-auto px-4 py-6 space-y-6">
       {/* Top Session Navigation & Progress Bar */}
       <div className="flex flex-col gap-3">
+        {/* Row 1: Back navigation & Counter */}
         <div className="flex items-center justify-between gap-3">
           <Link
             href="/"
-            className="flex items-center gap-1.5 text-xs font-semibold text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200 transition-colors"
+            className="flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200 transition-colors"
           >
             <ArrowLeft size={16} />
-            <span className="hidden sm:inline">Dashboard</span>
+            <span>Dashboard</span>
           </Link>
 
-          {/* Active Mode Pill with Shuffle indicator & Mode Toggler */}
           <div className="flex items-center gap-2">
-            <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-xs font-medium text-zinc-800 dark:text-zinc-200 shadow-sm">
-              {activeModes.length > 1 && (
-                <span title={`Randomizing across ${activeModes.length} active modes`}>
-                  <Shuffle size={13} style={{ color: theme.primary }} className="animate-pulse" />
-                </span>
-              )}
-              <CurrentModeIcon size={14} style={{ color: theme.primary }} />
-              <span className="font-semibold">{currentModeInfo.name}</span>
-            </div>
-
-            {/* 5 Mode Toggle Buttons to actively enable/disable modes from the shuffle */}
-            <div className="flex items-center gap-1 bg-zinc-100 dark:bg-zinc-900 p-1 rounded-xl border border-zinc-200 dark:border-zinc-800 shadow-inner">
-              {ALL_MODES.map((mode) => {
-                const info = modeDescriptions[mode];
-                const Icon = info.icon;
-                const isCurrent = currentCard.mode === mode;
-                const isInPool = activeModes.includes(mode);
-
-                return (
-                  <button
-                    key={mode}
-                    type="button"
-                    onClick={() => toggleActiveMode(mode)}
-                    className={`p-1.5 rounded-lg transition-all duration-150 relative cursor-pointer ${
-                      isCurrent
-                        ? 'text-white shadow-md ring-2 ring-white/40'
-                        : isInPool
-                        ? 'bg-white dark:bg-zinc-800 text-zinc-800 dark:text-zinc-200 hover:text-zinc-900 dark:hover:text-white hover:bg-zinc-50 dark:hover:bg-zinc-700 border border-zinc-200 dark:border-zinc-700/60 shadow-sm'
-                        : 'text-zinc-400 dark:text-zinc-600 hover:text-zinc-600 dark:hover:text-zinc-400 hover:bg-zinc-200/50 dark:hover:bg-zinc-800/40 opacity-40 hover:opacity-75'
-                    }`}
-                    style={
-                      isCurrent
-                        ? {
-                            backgroundColor: theme.primary,
-                            borderColor: theme.primary,
-                            boxShadow: `0 2px 10px rgba(${theme.rgb}, 0.35)`
-                          }
-                        : undefined
-                    }
-                    title={
-                      isInPool
-                        ? activeModes.length === 1
-                          ? `${info.name} (Active - only mode remaining)`
-                          : `Active: Click to disable ${info.name} from shuffle`
-                        : `Inactive: Click to enable ${info.name} in shuffle`
-                    }
-                  >
-                    <Icon size={15} />
-                    {isInPool && !isCurrent && (
-                      <span 
-                        className="absolute bottom-0.5 right-0.5 w-1.5 h-1.5 rounded-full shadow-sm"
-                        style={{ backgroundColor: theme.primary }}
-                      />
-                    )}
-                  </button>
-                );
-              })}
+            <span 
+              className="px-2 py-0.5 rounded text-[11px] font-bold"
+              style={{
+                backgroundColor: theme.badgeBg,
+                color: theme.badgeText,
+                border: `1px solid ${theme.badgeBorder}`
+              }}
+            >
+              HSK {currentCard.word.level}
+            </span>
+            <div className="text-xs font-mono font-bold text-zinc-500 dark:text-zinc-400">
+              {currentIndex + 1} / {sessionCards.length}
             </div>
           </div>
+        </div>
 
-          <div className="text-xs font-mono font-bold text-zinc-500 dark:text-zinc-400">
-            {currentIndex + 1} / {sessionCards.length}
+        {/* Row 2: Active Mode Pill & Mode Selector (matching h-10 height, dedicated row to avoid text cramping) */}
+        <div className="flex items-center justify-between sm:justify-center gap-2 sm:gap-3">
+          {/* Active Mode Pill with Shuffle indicator */}
+          <div className="h-10 px-3 sm:px-3.5 flex items-center gap-2 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-xs sm:text-sm font-semibold text-zinc-800 dark:text-zinc-200 shadow-sm whitespace-nowrap shrink-0">
+            {activeModes.length > 1 && (
+              <span title={`Randomizing across ${activeModes.length} active modes`}>
+                <Shuffle size={13} style={{ color: theme.primary }} className="animate-pulse shrink-0" />
+              </span>
+            )}
+            <CurrentModeIcon size={15} style={{ color: theme.primary }} className="shrink-0" />
+            <span className="font-semibold">{currentModeInfo.name}</span>
+          </div>
+
+          {/* 5 Mode Toggle Buttons with matching h-10 container height */}
+          <div className="h-10 px-1 flex items-center gap-1 bg-zinc-100 dark:bg-zinc-900 rounded-xl border border-zinc-200 dark:border-zinc-800 shadow-inner shrink-0">
+            {ALL_MODES.map((mode) => {
+              const info = modeDescriptions[mode];
+              const Icon = info.icon;
+              const isCurrent = currentCard.mode === mode;
+              const isInPool = activeModes.includes(mode);
+
+              return (
+                <button
+                  key={mode}
+                  type="button"
+                  onClick={() => toggleActiveMode(mode)}
+                  className={`w-7 h-7 sm:w-8 sm:h-8 flex items-center justify-center rounded-lg transition-all duration-150 relative cursor-pointer ${
+                    isCurrent
+                      ? 'text-white shadow-md ring-2 ring-white/40'
+                      : isInPool
+                      ? 'bg-white dark:bg-zinc-800 text-zinc-800 dark:text-zinc-200 hover:text-zinc-900 dark:hover:text-white hover:bg-zinc-50 dark:hover:bg-zinc-700 border border-zinc-200 dark:border-zinc-700/60 shadow-sm'
+                      : 'text-zinc-400 dark:text-zinc-600 hover:text-zinc-600 dark:hover:text-zinc-400 hover:bg-zinc-200/50 dark:hover:bg-zinc-800/40 opacity-40 hover:opacity-75'
+                  }`}
+                  style={
+                    isCurrent
+                      ? {
+                          backgroundColor: theme.primary,
+                          borderColor: theme.primary,
+                          boxShadow: `0 2px 10px rgba(${theme.rgb}, 0.35)`
+                        }
+                      : undefined
+                  }
+                  title={
+                    isInPool
+                      ? activeModes.length === 1
+                        ? `${info.name} (Active - only mode remaining)`
+                        : `Active: Click to disable ${info.name} from shuffle`
+                      : `Inactive: Click to enable ${info.name} in shuffle`
+                  }
+                >
+                  <Icon size={14} />
+                  {isInPool && !isCurrent && (
+                    <span 
+                      className="absolute bottom-0.5 right-0.5 w-1.5 h-1.5 rounded-full shadow-sm"
+                      style={{ backgroundColor: theme.primary }}
+                    />
+                  )}
+                </button>
+              );
+            })}
           </div>
         </div>
 

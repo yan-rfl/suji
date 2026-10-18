@@ -12,7 +12,7 @@ export function exportVocabularyToPDF(level: number, words: HSKWord[]) {
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8">
-  <title>Suji (速记) - HSK ${level} Vocabulary Sheet</title>
+  <title>Suji 速记 - HSK ${level} Vocabulary Sheet</title>
   <style>
     @page {
       size: A4 portrait;
@@ -197,7 +197,7 @@ export function exportVocabularyToPDF(level: number, words: HSKWord[]) {
 
   <div class="sheet-header">
     <div>
-      <div class="sheet-title">Suji (速记) — HSK ${level} Vocabulary Sheet</div>
+      <div class="sheet-title">Suji 速记 — HSK ${level} Vocabulary Sheet</div>
       <div class="sheet-subtitle">Complete vocabulary list with Hanzi, Pinyin & Meanings • ${wordsToPrint.length} Words</div>
     </div>
     <div class="sheet-badge">HSK Level ${level}</div>
@@ -231,7 +231,7 @@ export function exportVocabularyToPDF(level: number, words: HSKWord[]) {
   </table>
 
   <div class="sheet-footer">
-    Generated with Suji (速记) Mandarin Learning Platform • Master HSK 1–6 with Spaced Repetition
+    Generated with Suji 速记 Mandarin Learning Platform • Master HSK 1–6 with Spaced Repetition
   </div>
 </body>
 </html>`;

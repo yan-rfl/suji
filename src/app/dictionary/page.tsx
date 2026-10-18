@@ -14,7 +14,7 @@ import {
   FileDown
 } from 'lucide-react';
 import { HSKWord, MasteryStatus } from '@/types/hsk';
-import { getHSKWords, searchWords } from '@/lib/hskData';
+import { getHSKWords, searchWords, formatPartOfSpeech } from '@/lib/hskData';
 import { exportVocabularyToPDF } from '@/lib/pdfExport';
 import { useProgress } from '@/context/ProgressContext';
 import { useLevel, HSK_THEMES } from '@/context/LevelContext';
@@ -112,66 +112,68 @@ export default function DictionaryPage() {
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
-      {/* Header & Level Tabs */}
+      {/* Header & Controls Rows */}
       <div className="space-y-4">
-        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
-          <div>
-            <h1 className="text-3xl font-black text-zinc-900 dark:text-zinc-100 flex items-center gap-3">
-              <BookOpen style={{ color: theme.primary }} size={30} />
-              <span>HSK Dictionary & Vocabulary</span>
+        {/* Row 1: Header and subheader */}
+        <div className="flex items-center gap-2.5 sm:gap-3">
+          <BookOpen style={{ color: theme.primary }} size={26} className="shrink-0" />
+          <div className="flex items-baseline gap-2 flex-wrap">
+            <h1 className="text-xl sm:text-2xl font-black text-zinc-900 dark:text-zinc-100 tracking-tight whitespace-nowrap">
+              HSK Dictionary
             </h1>
-            <p className="text-sm text-zinc-500 dark:text-zinc-400 mt-1">
-              Search vocabulary, hear authentic pronunciation, and explore stroke order animations
-            </p>
-          </div>
-
-          {/* Action Row: PDF Export & Level Switcher */}
-          <div className="flex items-center gap-2.5 flex-wrap">
-            {/* PDF Export Button */}
-            <button
-              type="button"
-              onClick={() => exportVocabularyToPDF(currentLevel, words)}
-              className="flex items-center gap-2 px-3.5 py-2.5 rounded-2xl text-xs sm:text-sm font-bold bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-800 dark:text-zinc-200 hover:text-red-600 dark:hover:text-red-400 hover:border-red-300 dark:hover:border-red-900/60 transition-all shadow-sm active:scale-95 cursor-pointer shrink-0"
-              title={`Download / Print PDF for all HSK ${currentLevel} vocabulary`}
-              aria-label={`Export HSK ${currentLevel} PDF`}
-            >
-              <FileDown size={16} className="text-red-500 shrink-0" />
-              <span>Export HSK {currentLevel} PDF</span>
-            </button>
-
-            {/* HSK Level Switcher with persistent global level */}
-            <div className="flex items-center gap-1.5 p-1 rounded-2xl bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 overflow-x-auto max-w-full">
-              {[1, 2, 3, 4, 5, 6].map((lvl) => {
-                const isSelected = currentLevel === lvl;
-                const lvlTheme = HSK_THEMES[lvl] || HSK_THEMES[1];
-                return (
-                  <button
-                    key={lvl}
-                    type="button"
-                    onClick={() => setCurrentLevel(lvl)}
-                    className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all whitespace-nowrap cursor-pointer ${
-                      isSelected
-                        ? 'text-white shadow-md'
-                        : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200 hover:bg-zinc-200/60 dark:hover:bg-zinc-800'
-                    }`}
-                    style={
-                      isSelected
-                        ? {
-                            backgroundColor: lvlTheme.primary,
-                            boxShadow: `0 2px 10px rgba(${lvlTheme.rgb}, 0.35)`
-                          }
-                        : undefined
-                    }
-                  >
-                    HSK {lvl}
-                  </button>
-                );
-              })}
-            </div>
+            <span className="text-xs sm:text-sm text-zinc-500 dark:text-zinc-400 font-medium">
+              HSK 1–6 Vocabulary
+            </span>
           </div>
         </div>
 
-        {/* Search Bar & Status Filter Bar */}
+        {/* Row 2: HSK Level Selection and PDF Export Button */}
+        <div className="flex items-stretch sm:items-center justify-between gap-2.5">
+          {/* HSK Level Switcher (2 rows of 3 on mobile, 1 row on desktop to avoid scrolling) */}
+          <div className="flex-1 grid grid-cols-3 sm:flex items-center gap-1 sm:gap-1.5 p-1 rounded-2xl bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800">
+            {[1, 2, 3, 4, 5, 6].map((lvl) => {
+              const isSelected = currentLevel === lvl;
+              const lvlTheme = HSK_THEMES[lvl] || HSK_THEMES[1];
+              return (
+                <button
+                  key={lvl}
+                  type="button"
+                  onClick={() => setCurrentLevel(lvl)}
+                  className={`py-2 px-2 sm:px-4 rounded-xl text-xs sm:text-sm font-bold transition-all text-center whitespace-nowrap cursor-pointer ${
+                    isSelected
+                      ? 'text-white shadow-md'
+                      : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200 hover:bg-zinc-200/60 dark:hover:bg-zinc-800'
+                  }`}
+                  style={
+                    isSelected
+                      ? {
+                          backgroundColor: lvlTheme.primary,
+                          boxShadow: `0 2px 10px rgba(${lvlTheme.rgb}, 0.35)`
+                        }
+                      : undefined
+                  }
+                >
+                  HSK {lvl}
+                </button>
+              );
+            })}
+          </div>
+
+          {/* PDF Export Button (Icon on mobile, full text on desktop) */}
+          <button
+            type="button"
+            onClick={() => exportVocabularyToPDF(currentLevel, words)}
+            className="flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 px-3 sm:px-4 py-2 sm:py-2.5 rounded-2xl text-xs sm:text-sm font-bold bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-800 dark:text-zinc-200 hover:text-red-600 dark:hover:text-red-400 hover:border-red-300 dark:hover:border-red-900/60 transition-all shadow-sm active:scale-95 cursor-pointer shrink-0"
+            title={`Export HSK ${currentLevel} PDF`}
+            aria-label={`Export HSK ${currentLevel} PDF`}
+          >
+            <FileDown size={18} className="text-red-500 shrink-0" />
+            <span className="hidden sm:inline">Export PDF</span>
+            <span className="text-[10px] font-bold text-zinc-600 dark:text-zinc-300 sm:hidden">PDF</span>
+          </button>
+        </div>
+
+        {/* Row 3: Search Bar & Status Filter Bar with matching height (h-12) */}
         <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
           {/* Search Input */}
           <div className="relative flex-1">
@@ -183,8 +185,8 @@ export default function DictionaryPage() {
               type="text"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="Search Hanzi, Pinyin (e.g. ni hao), or English..."
-              className="w-full pl-11 pr-10 py-3 rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 focus:border-[var(--theme-primary)] text-zinc-900 dark:text-zinc-100 placeholder:text-zinc-400 dark:placeholder:text-zinc-500 text-sm outline-none transition-all shadow-sm"
+              placeholder="Search Hanzi, Pinyin, or English..."
+              className="w-full h-12 pl-11 pr-10 rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 focus:border-[var(--theme-primary)] text-zinc-900 dark:text-zinc-100 placeholder:text-zinc-400 dark:placeholder:text-zinc-500 text-sm outline-none transition-all shadow-sm"
             />
             {searchQuery && (
               <button
@@ -197,12 +199,12 @@ export default function DictionaryPage() {
             )}
           </div>
 
-          {/* Status Filter Buttons */}
-          <div className="flex items-center gap-1.5 p-1 rounded-2xl bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 overflow-x-auto">
+          {/* Status Filter Buttons (space-between / grid on mobile to fill width without gaps, matching h-12 height) */}
+          <div className="h-12 w-full sm:w-auto p-1 rounded-2xl bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 grid grid-cols-4 sm:flex items-center gap-1 sm:gap-1.5 shrink-0">
             <button
               type="button"
               onClick={() => setStatusFilter('all')}
-              className={`px-3 py-2 rounded-xl text-xs font-semibold transition-colors whitespace-nowrap cursor-pointer ${
+              className={`h-full px-2.5 sm:px-3 rounded-xl text-xs font-semibold transition-colors flex items-center justify-center whitespace-nowrap cursor-pointer ${
                 statusFilter === 'all'
                   ? 'bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white shadow-sm'
                   : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200'
@@ -213,7 +215,7 @@ export default function DictionaryPage() {
             <button
               type="button"
               onClick={() => setStatusFilter('new')}
-              className={`px-3 py-2 rounded-xl text-xs font-semibold transition-colors whitespace-nowrap cursor-pointer ${
+              className={`h-full px-2.5 sm:px-3 rounded-xl text-xs font-semibold transition-colors flex items-center justify-center whitespace-nowrap cursor-pointer ${
                 statusFilter === 'new'
                   ? 'bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white shadow-sm'
                   : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200'
@@ -224,7 +226,7 @@ export default function DictionaryPage() {
             <button
               type="button"
               onClick={() => setStatusFilter('learning')}
-              className={`px-3 py-2 rounded-xl text-xs font-semibold transition-colors whitespace-nowrap cursor-pointer ${
+              className={`h-full px-2.5 sm:px-3 rounded-xl text-xs font-semibold transition-colors flex items-center justify-center whitespace-nowrap cursor-pointer ${
                 statusFilter === 'learning'
                   ? 'bg-amber-100 dark:bg-amber-500/20 text-amber-700 dark:text-amber-300 shadow-sm'
                   : 'text-zinc-600 dark:text-zinc-400 hover:text-amber-600 dark:hover:text-amber-300'
@@ -235,7 +237,7 @@ export default function DictionaryPage() {
             <button
               type="button"
               onClick={() => setStatusFilter('mastered')}
-              className={`px-3 py-2 rounded-xl text-xs font-semibold transition-colors whitespace-nowrap cursor-pointer ${
+              className={`h-full px-2.5 sm:px-3 rounded-xl text-xs font-semibold transition-colors flex items-center justify-center whitespace-nowrap cursor-pointer ${
                 statusFilter === 'mastered'
                   ? 'bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300 shadow-sm'
                   : 'text-zinc-600 dark:text-zinc-400 hover:text-emerald-600 dark:hover:text-emerald-300'
@@ -246,15 +248,15 @@ export default function DictionaryPage() {
           </div>
         </div>
 
-        {/* Scope Selector: Full Syllabus vs Level-Specific New Words */}
+        {/* Row 4: Scope Selector: Full Syllabus vs Level-Specific New Words (full width on mobile) */}
         {currentLevel > 1 && (
-          <div className="flex items-center gap-2 pt-1 flex-wrap">
+          <div className="flex flex-col sm:flex-row sm:items-center gap-2 pt-1">
             <span className="text-xs text-zinc-500 dark:text-zinc-400 font-medium">Syllabus Scope:</span>
-            <div className="flex items-center gap-1.5 p-1 rounded-2xl bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800">
+            <div className="w-full sm:w-auto grid grid-cols-2 sm:flex items-center gap-1.5 p-1 rounded-2xl bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800">
               <button
                 type="button"
                 onClick={() => setLevelScope('all')}
-                className={`px-3 py-1.5 rounded-xl text-xs font-semibold transition-colors cursor-pointer ${
+                className={`w-full sm:w-auto text-center px-3 py-1.5 rounded-xl text-xs font-semibold transition-colors cursor-pointer ${
                   levelScope === 'all'
                     ? 'bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white shadow-sm'
                     : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200'
@@ -265,9 +267,9 @@ export default function DictionaryPage() {
               <button
                 type="button"
                 onClick={() => setLevelScope('new-only')}
-                className={`px-3 py-1.5 rounded-xl text-xs font-semibold transition-colors cursor-pointer ${
+                className={`w-full sm:w-auto text-center px-3 py-1.5 rounded-xl text-xs font-semibold transition-colors cursor-pointer ${
                   levelScope === 'new-only'
-                    ? 'text-white shadow-sm'
+                    ? 'text-white shadow-md'
                     : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200'
                 }`}
                 style={levelScope === 'new-only' ? { backgroundColor: theme.primary } : undefined}
@@ -347,7 +349,7 @@ export default function DictionaryPage() {
                       HSK {word.level}
                     </span>
                     <span className="text-zinc-400 dark:text-zinc-500 capitalize">
-                      {word.partOfSpeech || 'word'}
+                      {formatPartOfSpeech(word.partOfSpeech) || 'word'}
                     </span>
                   </div>
                   <span

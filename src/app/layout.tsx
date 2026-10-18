@@ -8,7 +8,7 @@ import { Navbar } from '@/components/Navbar';
 import { ThemeProvider } from '@/context/ThemeContext';
 
 export const metadata: Metadata = {
-  title: 'Suji (速记) - Personal HSK 1–6 Learning App',
+  title: 'Suji 速记',
   description:
     'Master HSK 1–6 Mandarin vocabulary using spaced repetition (SM-2), device-adaptive quizzes, stroke-order drawing, and native audio.',
   manifest: '/manifest.json',

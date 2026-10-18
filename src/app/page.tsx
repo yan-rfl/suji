@@ -172,7 +172,7 @@ export default function DashboardPage() {
               </span>
             </div>
             <h1 className="text-3xl md:text-4xl font-black text-zinc-900 dark:text-white tracking-tight">
-              Suji <span className="font-serif font-medium" style={{ color: theme.primary }}>速记</span> Flashcards
+              Suji <span className="font-serif font-medium" style={{ color: theme.primary }}>速记</span>
             </h1>
             <p className="text-zinc-600 dark:text-zinc-300 text-sm md:text-base max-w-xl">
               Master HSK 1–6 Mandarin through science-backed SM-2 active recall, device-adaptive typing, stroke drawing, and authentic speech.

@@ -248,7 +248,7 @@
       "dot stroke in Chinese characters",
       "classifier for items"
     ],
-    "partOfSpeech": "qt"
+    "partOfSpeech": "measure word (time)"
   },
   {
     "id": "hsk1-017",
@@ -450,7 +450,7 @@
     "translations": [
       "minute"
     ],
-    "partOfSpeech": "qt"
+    "partOfSpeech": "measure word (time)"
   },
   {
     "id": "hsk1-031",
@@ -600,7 +600,7 @@
       "later",
       "afterwards"
     ],
-    "partOfSpeech": "f"
+    "partOfSpeech": "noun (location)"
   },
   {
     "id": "hsk1-041",
@@ -711,7 +711,7 @@
       "at the present",
       "now"
     ],
-    "partOfSpeech": "t"
+    "partOfSpeech": "noun (time)"
   },
   {
     "id": "hsk1-048",
@@ -866,7 +866,7 @@
       "neighborhood",
       "administrative unit"
     ],
-    "partOfSpeech": "f"
+    "partOfSpeech": "noun (location)"
   },
   {
     "id": "hsk1-058",
@@ -1020,7 +1020,7 @@
     "translations": [
       "tomorrow"
     ],
-    "partOfSpeech": "t"
+    "partOfSpeech": "noun (time)"
   },
   {
     "id": "hsk1-068",
@@ -1119,7 +1119,7 @@
       "year",
       "CL:個|个[gè]"
     ],
-    "partOfSpeech": "qt"
+    "partOfSpeech": "measure word (time)"
   },
   {
     "id": "hsk1-075",
@@ -1223,7 +1223,7 @@
       "preceding",
       "above"
     ],
-    "partOfSpeech": "f"
+    "partOfSpeech": "noun (location)"
   },
   {
     "id": "hsk1-082",
@@ -1315,7 +1315,7 @@
       "day of the month",
       "abbr. for 日本 Japan"
     ],
-    "partOfSpeech": "t"
+    "partOfSpeech": "noun (time)"
   },
   {
     "id": "hsk1-088",
@@ -1365,7 +1365,7 @@
       "to go up",
       "to attend (class or university)"
     ],
-    "partOfSpeech": "f"
+    "partOfSpeech": "noun (location)"
   },
   {
     "id": "hsk1-091",
@@ -1376,7 +1376,7 @@
       "morning",
       "CL:個|个[gè]"
     ],
-    "partOfSpeech": "t"
+    "partOfSpeech": "noun (time)"
   },
   {
     "id": "hsk1-092",
@@ -1759,7 +1759,7 @@
       "CL:個|个[gè]",
       "p.m."
     ],
-    "partOfSpeech": "t"
+    "partOfSpeech": "noun (time)"
   },
   {
     "id": "hsk1-118",
@@ -1802,7 +1802,7 @@
       "current",
       "nowadays"
     ],
-    "partOfSpeech": "t"
+    "partOfSpeech": "noun (time)"
   },
   {
     "id": "hsk1-121",
@@ -2160,7 +2160,7 @@
       "midday",
       "CL:個|个[gè]"
     ],
-    "partOfSpeech": "t"
+    "partOfSpeech": "noun (time)"
   },
   {
     "id": "hsk1-145",
@@ -2214,7 +2214,7 @@
     "translations": [
       "yesterday"
     ],
-    "partOfSpeech": "t"
+    "partOfSpeech": "noun (time)"
   },
   {
     "id": "hsk1-149",
@@ -2270,7 +2270,7 @@
       "...OK?",
       "...I presume."
     ],
-    "partOfSpeech": "y"
+    "partOfSpeech": "modal particle"
   },
   {
     "id": "hsk2-002",
@@ -3446,7 +3446,7 @@
       "to the side",
       "beside"
     ],
-    "partOfSpeech": "f"
+    "partOfSpeech": "noun (location)"
   },
   {
     "id": "hsk2-079",
@@ -3540,7 +3540,7 @@
     "translations": [
       "last year"
     ],
-    "partOfSpeech": "t"
+    "partOfSpeech": "noun (time)"
   },
   {
     "id": "hsk2-087",
@@ -3740,7 +3740,7 @@
       "foreign",
       "external"
     ],
-    "partOfSpeech": "f"
+    "partOfSpeech": "noun (location)"
   },
   {
     "id": "hsk2-103",
@@ -3783,7 +3783,7 @@
       "CL:個|个[gè]",
       "in the evening"
     ],
-    "partOfSpeech": "t"
+    "partOfSpeech": "noun (time)"
   },
   {
     "id": "hsk2-106",
@@ -4049,7 +4049,7 @@
       "with",
       "altogether (in total)"
     ],
-    "partOfSpeech": "s"
+    "partOfSpeech": "adverb"
   },
   {
     "id": "hsk2-127",
@@ -4118,7 +4118,7 @@
       "right",
       "to the right"
     ],
-    "partOfSpeech": "f"
+    "partOfSpeech": "noun (location)"
   },
   {
     "id": "hsk2-132",
@@ -4199,7 +4199,7 @@
       "early morning",
       "CL:個|个[gè]"
     ],
-    "partOfSpeech": "t"
+    "partOfSpeech": "noun (time)"
   },
   {
     "id": "hsk2-138",
@@ -4379,7 +4379,7 @@
       "the left side",
       "to the left of"
     ],
-    "partOfSpeech": "f"
+    "partOfSpeech": "noun (location)"
   },
   {
     "id": "hsk3-001",
@@ -4409,7 +4409,7 @@
       "approval",
       "or consent"
     ],
-    "partOfSpeech": "y"
+    "partOfSpeech": "modal particle"
   },
   {
     "id": "hsk3-003",
@@ -5011,7 +5011,7 @@
       "lust",
       "life"
     ],
-    "partOfSpeech": "tg"
+    "partOfSpeech": "noun (time)"
   },
   {
     "id": "hsk3-042",
@@ -5245,7 +5245,7 @@
       "sound of beating a drum",
       "onomatopoeia for rat-a-tat etc"
     ],
-    "partOfSpeech": "tg"
+    "partOfSpeech": "noun (time)"
   },
   {
     "id": "hsk3-059",
@@ -5257,7 +5257,7 @@
       "host (i.e. sitting on east side of guest)",
       "landlord"
     ],
-    "partOfSpeech": "f"
+    "partOfSpeech": "noun (location)"
   },
   {
     "id": "hsk3-060",
@@ -5447,7 +5447,7 @@
       "a point (in sports or games)",
       "0.01 yuan (unit of money)"
     ],
-    "partOfSpeech": "t"
+    "partOfSpeech": "noun (time)"
   },
   {
     "id": "hsk3-074",
@@ -5460,7 +5460,7 @@
       "neighboring",
       "next to"
     ],
-    "partOfSpeech": "f"
+    "partOfSpeech": "noun (location)"
   },
   {
     "id": "hsk3-075",
@@ -5519,7 +5519,7 @@
     "translations": [
       "(just) a moment ago"
     ],
-    "partOfSpeech": "t"
+    "partOfSpeech": "noun (time)"
   },
   {
     "id": "hsk3-080",
@@ -5844,7 +5844,7 @@
       "pornographic",
       "to fall through"
     ],
-    "partOfSpeech": "nr"
+    "partOfSpeech": "proper noun (person)"
   },
   {
     "id": "hsk3-105",
@@ -6885,7 +6885,7 @@
     "translations": [
       "a swing"
     ],
-    "partOfSpeech": "tg"
+    "partOfSpeech": "noun (time)"
   },
   {
     "id": "hsk3-187",
@@ -7458,7 +7458,7 @@
     "translations": [
       "west"
     ],
-    "partOfSpeech": "f"
+    "partOfSpeech": "noun (location)"
   },
   {
     "id": "hsk3-233",
@@ -7505,7 +7505,7 @@
     "translations": [
       "summer"
     ],
-    "partOfSpeech": "tg"
+    "partOfSpeech": "noun (time)"
   },
   {
     "id": "hsk3-237",
@@ -7797,7 +7797,7 @@
       "a while",
       "also pr. [yī huǐ r]"
     ],
-    "partOfSpeech": "mq"
+    "partOfSpeech": "numeral-measure"
   },
   {
     "id": "hsk3-259",
@@ -7826,7 +7826,7 @@
       "later on",
       "in the future"
     ],
-    "partOfSpeech": "f"
+    "partOfSpeech": "noun (location)"
   },
   {
     "id": "hsk3-261",
@@ -7839,7 +7839,7 @@
       "previous",
       "ago"
     ],
-    "partOfSpeech": "f"
+    "partOfSpeech": "noun (location)"
   },
   {
     "id": "hsk3-262",
@@ -8180,7 +8180,7 @@
       "mid",
       "middle"
     ],
-    "partOfSpeech": "f"
+    "partOfSpeech": "noun (location)"
   },
   {
     "id": "hsk3-288",
@@ -8225,7 +8225,7 @@
     "translations": [
       "weekend"
     ],
-    "partOfSpeech": "t"
+    "partOfSpeech": "noun (time)"
   },
   {
     "id": "hsk3-291",
@@ -8311,7 +8311,7 @@
       "nearest (of locations)",
       "shortest (of routes)"
     ],
-    "partOfSpeech": "t"
+    "partOfSpeech": "noun (time)"
   },
   {
     "id": "hsk3-298",

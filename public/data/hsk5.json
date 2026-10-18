@@ -248,7 +248,7 @@
       "dot stroke in Chinese characters",
       "classifier for items"
     ],
-    "partOfSpeech": "qt"
+    "partOfSpeech": "measure word (time)"
   },
   {
     "id": "hsk1-017",
@@ -450,7 +450,7 @@
     "translations": [
       "minute"
     ],
-    "partOfSpeech": "qt"
+    "partOfSpeech": "measure word (time)"
   },
   {
     "id": "hsk1-031",
@@ -600,7 +600,7 @@
       "later",
       "afterwards"
     ],
-    "partOfSpeech": "f"
+    "partOfSpeech": "noun (location)"
   },
   {
     "id": "hsk1-041",
@@ -711,7 +711,7 @@
       "at the present",
       "now"
     ],
-    "partOfSpeech": "t"
+    "partOfSpeech": "noun (time)"
   },
   {
     "id": "hsk1-048",
@@ -866,7 +866,7 @@
       "neighborhood",
       "administrative unit"
     ],
-    "partOfSpeech": "f"
+    "partOfSpeech": "noun (location)"
   },
   {
     "id": "hsk1-058",
@@ -1020,7 +1020,7 @@
     "translations": [
       "tomorrow"
     ],
-    "partOfSpeech": "t"
+    "partOfSpeech": "noun (time)"
   },
   {
     "id": "hsk1-068",
@@ -1119,7 +1119,7 @@
       "year",
       "CL:個|个[gè]"
     ],
-    "partOfSpeech": "qt"
+    "partOfSpeech": "measure word (time)"
   },
   {
     "id": "hsk1-075",
@@ -1223,7 +1223,7 @@
       "preceding",
       "above"
     ],
-    "partOfSpeech": "f"
+    "partOfSpeech": "noun (location)"
   },
   {
     "id": "hsk1-082",
@@ -1315,7 +1315,7 @@
       "day of the month",
       "abbr. for 日本 Japan"
     ],
-    "partOfSpeech": "t"
+    "partOfSpeech": "noun (time)"
   },
   {
     "id": "hsk1-088",
@@ -1365,7 +1365,7 @@
       "to go up",
       "to attend (class or university)"
     ],
-    "partOfSpeech": "f"
+    "partOfSpeech": "noun (location)"
   },
   {
     "id": "hsk1-091",
@@ -1376,7 +1376,7 @@
       "morning",
       "CL:個|个[gè]"
     ],
-    "partOfSpeech": "t"
+    "partOfSpeech": "noun (time)"
   },
   {
     "id": "hsk1-092",
@@ -1759,7 +1759,7 @@
       "CL:個|个[gè]",
       "p.m."
     ],
-    "partOfSpeech": "t"
+    "partOfSpeech": "noun (time)"
   },
   {
     "id": "hsk1-118",
@@ -1802,7 +1802,7 @@
       "current",
       "nowadays"
     ],
-    "partOfSpeech": "t"
+    "partOfSpeech": "noun (time)"
   },
   {
     "id": "hsk1-121",
@@ -2160,7 +2160,7 @@
       "midday",
       "CL:個|个[gè]"
     ],
-    "partOfSpeech": "t"
+    "partOfSpeech": "noun (time)"
   },
   {
     "id": "hsk1-145",
@@ -2214,7 +2214,7 @@
     "translations": [
       "yesterday"
     ],
-    "partOfSpeech": "t"
+    "partOfSpeech": "noun (time)"
   },
   {
     "id": "hsk1-149",
@@ -2270,7 +2270,7 @@
       "...OK?",
       "...I presume."
     ],
-    "partOfSpeech": "y"
+    "partOfSpeech": "modal particle"
   },
   {
     "id": "hsk2-002",
@@ -3446,7 +3446,7 @@
       "to the side",
       "beside"
     ],
-    "partOfSpeech": "f"
+    "partOfSpeech": "noun (location)"
   },
   {
     "id": "hsk2-079",
@@ -3540,7 +3540,7 @@
     "translations": [
       "last year"
     ],
-    "partOfSpeech": "t"
+    "partOfSpeech": "noun (time)"
   },
   {
     "id": "hsk2-087",
@@ -3740,7 +3740,7 @@
       "foreign",
       "external"
     ],
-    "partOfSpeech": "f"
+    "partOfSpeech": "noun (location)"
   },
   {
     "id": "hsk2-103",
@@ -3783,7 +3783,7 @@
       "CL:個|个[gè]",
       "in the evening"
     ],
-    "partOfSpeech": "t"
+    "partOfSpeech": "noun (time)"
   },
   {
     "id": "hsk2-106",
@@ -4049,7 +4049,7 @@
       "with",
       "altogether (in total)"
     ],
-    "partOfSpeech": "s"
+    "partOfSpeech": "adverb"
   },
   {
     "id": "hsk2-127",
@@ -4118,7 +4118,7 @@
       "right",
       "to the right"
     ],
-    "partOfSpeech": "f"
+    "partOfSpeech": "noun (location)"
   },
   {
     "id": "hsk2-132",
@@ -4199,7 +4199,7 @@
       "early morning",
       "CL:個|个[gè]"
     ],
-    "partOfSpeech": "t"
+    "partOfSpeech": "noun (time)"
   },
   {
     "id": "hsk2-138",
@@ -4379,7 +4379,7 @@
       "the left side",
       "to the left of"
     ],
-    "partOfSpeech": "f"
+    "partOfSpeech": "noun (location)"
   },
   {
     "id": "hsk3-001",
@@ -4409,7 +4409,7 @@
       "approval",
       "or consent"
     ],
-    "partOfSpeech": "y"
+    "partOfSpeech": "modal particle"
   },
   {
     "id": "hsk3-003",
@@ -5011,7 +5011,7 @@
       "lust",
       "life"
     ],
-    "partOfSpeech": "tg"
+    "partOfSpeech": "noun (time)"
   },
   {
     "id": "hsk3-042",
@@ -5245,7 +5245,7 @@
       "sound of beating a drum",
       "onomatopoeia for rat-a-tat etc"
     ],
-    "partOfSpeech": "tg"
+    "partOfSpeech": "noun (time)"
   },
   {
     "id": "hsk3-059",
@@ -5257,7 +5257,7 @@
       "host (i.e. sitting on east side of guest)",
       "landlord"
     ],
-    "partOfSpeech": "f"
+    "partOfSpeech": "noun (location)"
   },
   {
     "id": "hsk3-060",
@@ -5447,7 +5447,7 @@
       "a point (in sports or games)",
       "0.01 yuan (unit of money)"
     ],
-    "partOfSpeech": "t"
+    "partOfSpeech": "noun (time)"
   },
   {
     "id": "hsk3-074",
@@ -5460,7 +5460,7 @@
       "neighboring",
       "next to"
     ],
-    "partOfSpeech": "f"
+    "partOfSpeech": "noun (location)"
   },
   {
     "id": "hsk3-075",
@@ -5519,7 +5519,7 @@
     "translations": [
       "(just) a moment ago"
     ],
-    "partOfSpeech": "t"
+    "partOfSpeech": "noun (time)"
   },
   {
     "id": "hsk3-080",
@@ -5844,7 +5844,7 @@
       "pornographic",
       "to fall through"
     ],
-    "partOfSpeech": "nr"
+    "partOfSpeech": "proper noun (person)"
   },
   {
     "id": "hsk3-105",
@@ -6885,7 +6885,7 @@
     "translations": [
       "a swing"
     ],
-    "partOfSpeech": "tg"
+    "partOfSpeech": "noun (time)"
   },
   {
     "id": "hsk3-187",
@@ -7458,7 +7458,7 @@
     "translations": [
       "west"
     ],
-    "partOfSpeech": "f"
+    "partOfSpeech": "noun (location)"
   },
   {
     "id": "hsk3-233",
@@ -7505,7 +7505,7 @@
     "translations": [
       "summer"
     ],
-    "partOfSpeech": "tg"
+    "partOfSpeech": "noun (time)"
   },
   {
     "id": "hsk3-237",
@@ -7797,7 +7797,7 @@
       "a while",
       "also pr. [yī huǐ r]"
     ],
-    "partOfSpeech": "mq"
+    "partOfSpeech": "numeral-measure"
   },
   {
     "id": "hsk3-259",
@@ -7826,7 +7826,7 @@
       "later on",
       "in the future"
     ],
-    "partOfSpeech": "f"
+    "partOfSpeech": "noun (location)"
   },
   {
     "id": "hsk3-261",
@@ -7839,7 +7839,7 @@
       "previous",
       "ago"
     ],
-    "partOfSpeech": "f"
+    "partOfSpeech": "noun (location)"
   },
   {
     "id": "hsk3-262",
@@ -8180,7 +8180,7 @@
       "mid",
       "middle"
     ],
-    "partOfSpeech": "f"
+    "partOfSpeech": "noun (location)"
   },
   {
     "id": "hsk3-288",
@@ -8225,7 +8225,7 @@
     "translations": [
       "weekend"
     ],
-    "partOfSpeech": "t"
+    "partOfSpeech": "noun (time)"
   },
   {
     "id": "hsk3-291",
@@ -8311,7 +8311,7 @@
       "nearest (of locations)",
       "shortest (of routes)"
     ],
-    "partOfSpeech": "t"
+    "partOfSpeech": "noun (time)"
   },
   {
     "id": "hsk3-298",
@@ -8909,7 +8909,7 @@
     "translations": [
       "the Great Wall"
     ],
-    "partOfSpeech": "ns"
+    "partOfSpeech": "proper noun (place)"
   },
   {
     "id": "hsk4-038",
@@ -8920,7 +8920,7 @@
       "Yangtze River",
       "or Chang Jiang"
     ],
-    "partOfSpeech": "ns"
+    "partOfSpeech": "proper noun (place)"
   },
   {
     "id": "hsk4-039",
@@ -8944,7 +8944,7 @@
       "classifier for sporting or recreational activities",
       "classifier for number of exams"
     ],
-    "partOfSpeech": "qv"
+    "partOfSpeech": "measure word (action)"
   },
   {
     "id": "hsk4-041",
@@ -9357,7 +9357,7 @@
     "translations": [
       "local"
     ],
-    "partOfSpeech": "s"
+    "partOfSpeech": "noun (place)"
   },
   {
     "id": "hsk4-074",
@@ -9369,7 +9369,7 @@
       "at that time",
       "while"
     ],
-    "partOfSpeech": "t"
+    "partOfSpeech": "noun (time)"
   },
   {
     "id": "hsk4-075",
@@ -9487,7 +9487,7 @@
       "the end of a period of time",
       "towards the end of (last month)"
     ],
-    "partOfSpeech": "f"
+    "partOfSpeech": "noun (location)"
   },
   {
     "id": "hsk4-084",
@@ -9675,7 +9675,7 @@
       "directly in front",
       "to be face to face"
     ],
-    "partOfSpeech": "f"
+    "partOfSpeech": "noun (location)"
   },
   {
     "id": "hsk4-097",
@@ -9697,7 +9697,7 @@
       "spell",
       "meal"
     ],
-    "partOfSpeech": "qv"
+    "partOfSpeech": "measure word (action)"
   },
   {
     "id": "hsk4-098",
@@ -9728,7 +9728,7 @@
       "(indicates change of state)",
       "(indicates contrast)"
     ],
-    "partOfSpeech": "cc"
+    "partOfSpeech": "conjunction"
   },
   {
     "id": "hsk4-100",
@@ -10036,7 +10036,7 @@
       "abundant",
       "wealthy"
     ],
-    "partOfSpeech": "g"
+    "partOfSpeech": "morpheme"
   },
   {
     "id": "hsk4-123",
@@ -10620,7 +10620,7 @@
     "translations": [
       "winter vacation"
     ],
-    "partOfSpeech": "t"
+    "partOfSpeech": "noun (time)"
   },
   {
     "id": "hsk4-168",
@@ -10773,7 +10773,7 @@
       "afterwards",
       "later"
     ],
-    "partOfSpeech": "t"
+    "partOfSpeech": "noun (time)"
   },
   {
     "id": "hsk4-180",
@@ -11183,7 +11183,7 @@
       "the future",
       "CL:個|个[gè]"
     ],
-    "partOfSpeech": "t"
+    "partOfSpeech": "noun (time)"
   },
   {
     "id": "hsk4-212",
@@ -12396,7 +12396,7 @@
       "within",
       "interior"
     ],
-    "partOfSpeech": "f"
+    "partOfSpeech": "noun (location)"
   },
   {
     "id": "hsk4-306",
@@ -12618,7 +12618,7 @@
       "in normal times",
       "in peacetime"
     ],
-    "partOfSpeech": "t"
+    "partOfSpeech": "noun (time)"
   },
   {
     "id": "hsk4-323",
@@ -13649,7 +13649,7 @@
       "smart",
       "commander in chief"
     ],
-    "partOfSpeech": "nr"
+    "partOfSpeech": "adjective"
   },
   {
     "id": "hsk4-404",
@@ -13933,7 +13933,7 @@
       "a time",
       "a trip"
     ],
-    "partOfSpeech": "qv"
+    "partOfSpeech": "measure word (action)"
   },
   {
     "id": "hsk4-426",
@@ -14417,7 +14417,7 @@
       "modern age",
       "modern era"
     ],
-    "partOfSpeech": "t"
+    "partOfSpeech": "noun (time)"
   },
   {
     "id": "hsk4-463",
@@ -14771,7 +14771,7 @@
       "Asia",
       "Asian"
     ],
-    "partOfSpeech": "ns"
+    "partOfSpeech": "proper noun (place)"
   },
   {
     "id": "hsk4-490",
@@ -14782,7 +14782,7 @@
       "(particle equivalent to 啊 after a vowel",
       "expressing surprise or doubt)"
     ],
-    "partOfSpeech": "y"
+    "partOfSpeech": "modal particle"
   },
   {
     "id": "hsk4-491",
@@ -15266,7 +15266,7 @@
       "thus",
       "hence"
     ],
-    "partOfSpeech": "cc"
+    "partOfSpeech": "conjunction"
   },
   {
     "id": "hsk4-529",
@@ -15339,7 +15339,7 @@
       "tactful",
       "to justify"
     ],
-    "partOfSpeech": "g"
+    "partOfSpeech": "morpheme"
   },
   {
     "id": "hsk4-535",
@@ -15596,7 +15596,7 @@
       "by chance",
       "it just so happens that"
     ],
-    "partOfSpeech": "z"
+    "partOfSpeech": "adverb"
   },
   {
     "id": "hsk4-555",
@@ -15851,7 +15851,7 @@
       "environment",
       "to encompass"
     ],
-    "partOfSpeech": "f"
+    "partOfSpeech": "noun (location)"
   },
   {
     "id": "hsk4-575",
@@ -16125,7 +16125,7 @@
       "finally",
       "ultimate"
     ],
-    "partOfSpeech": "f"
+    "partOfSpeech": "noun (location)"
   },
   {
     "id": "hsk4-596",
@@ -16927,7 +16927,7 @@
       "III\" etc",
       "propyl"
     ],
-    "partOfSpeech": "Mg"
+    "partOfSpeech": "numeral"
   },
   {
     "id": "hsk5-0051",
@@ -18119,7 +18119,7 @@
     "translations": [
       "(New Year's) Eve"
     ],
-    "partOfSpeech": "t"
+    "partOfSpeech": "noun (time)"
   },
   {
     "id": "hsk5-0144",
@@ -18355,7 +18355,7 @@
       "formerly",
       "once upon a time"
     ],
-    "partOfSpeech": "t"
+    "partOfSpeech": "noun (time)"
   },
   {
     "id": "hsk5-0163",
@@ -18761,7 +18761,7 @@
       "the present age",
       "the contemporary era"
     ],
-    "partOfSpeech": "t"
+    "partOfSpeech": "noun (time)"
   },
   {
     "id": "hsk5-0195",
@@ -19135,7 +19135,7 @@
       "butyl",
       "cubes (of food)"
     ],
-    "partOfSpeech": "nr"
+    "partOfSpeech": "proper noun (person)"
   },
   {
     "id": "hsk5-0225",
@@ -20357,7 +20357,7 @@
       "next door",
       "neighbor"
     ],
-    "partOfSpeech": "s"
+    "partOfSpeech": "noun (place)"
   },
   {
     "id": "hsk5-0321",
@@ -20690,7 +20690,7 @@
       "ancient times",
       "olden times"
     ],
-    "partOfSpeech": "t"
+    "partOfSpeech": "noun (time)"
   },
   {
     "id": "hsk5-0348",
@@ -21166,7 +21166,7 @@
     "translations": [
       "PRC National Day (October 1st)"
     ],
-    "partOfSpeech": "t"
+    "partOfSpeech": "noun (time)"
   },
   {
     "id": "hsk5-0386",
@@ -21418,7 +21418,7 @@
       "across",
       "(horizontal character stroke)"
     ],
-    "partOfSpeech": "g"
+    "partOfSpeech": "morpheme"
   },
   {
     "id": "hsk5-0408",
@@ -21461,7 +21461,7 @@
       "pot",
       "classifier for bottled liquid"
     ],
-    "partOfSpeech": "g"
+    "partOfSpeech": "morpheme"
   },
   {
     "id": "hsk5-0412",
@@ -21691,7 +21691,7 @@
       "discouraged",
       "dejected"
     ],
-    "partOfSpeech": "g"
+    "partOfSpeech": "morpheme"
   },
   {
     "id": "hsk5-0432",
@@ -22443,7 +22443,7 @@
       "suburbs",
       "CL:個|个[gè]"
     ],
-    "partOfSpeech": "s"
+    "partOfSpeech": "noun (place)"
   },
   {
     "id": "hsk5-0494",
@@ -22860,7 +22860,7 @@
     "translations": [
       "modern times"
     ],
-    "partOfSpeech": "t"
+    "partOfSpeech": "noun (time)"
   },
   {
     "id": "hsk5-0526",
@@ -23398,7 +23398,7 @@
       "to overthrow",
       "to restrain"
     ],
-    "partOfSpeech": "g"
+    "partOfSpeech": "morpheme"
   },
   {
     "id": "hsk5-0570",
@@ -23774,7 +23774,7 @@
     "translations": [
       "Sunday"
     ],
-    "partOfSpeech": "t"
+    "partOfSpeech": "noun (time)"
   },
   {
     "id": "hsk5-0601",
@@ -24330,7 +24330,7 @@
       "= 1",
       "10 yuan or 10 fen 分)"
     ],
-    "partOfSpeech": "nr"
+    "partOfSpeech": "proper noun (person)"
   },
   {
     "id": "hsk5-0645",
@@ -24581,7 +24581,7 @@
       "second (of time)",
       "unit of angle or arc equivalent to one sixtieth of a degree"
     ],
-    "partOfSpeech": "t"
+    "partOfSpeech": "noun (time)"
   },
   {
     "id": "hsk5-0666",
@@ -24811,7 +24811,7 @@
       "at the present time",
       "currently"
     ],
-    "partOfSpeech": "t"
+    "partOfSpeech": "noun (time)"
   },
   {
     "id": "hsk5-0685",
@@ -25553,7 +25553,7 @@
       "period",
       "CL:個|个[gè]"
     ],
-    "partOfSpeech": "f"
+    "partOfSpeech": "noun (location)"
   },
   {
     "id": "hsk5-0741",
@@ -26081,7 +26081,7 @@
       "to surround",
       "to circle"
     ],
-    "partOfSpeech": "qv"
+    "partOfSpeech": "measure word (action)"
   },
   {
     "id": "hsk5-0783",
@@ -26483,7 +26483,7 @@
       "nowadays",
       "now"
     ],
-    "partOfSpeech": "t"
+    "partOfSpeech": "noun (time)"
   },
   {
     "id": "hsk5-0814",
@@ -28771,7 +28771,7 @@
       "coming",
       "pending"
     ],
-    "partOfSpeech": "t"
+    "partOfSpeech": "noun (time)"
   },
   {
     "id": "hsk5-1002",
@@ -29813,7 +29813,7 @@
       "mind",
       "thorax"
     ],
-    "partOfSpeech": "g"
+    "partOfSpeech": "morpheme"
   },
   {
     "id": "hsk5-1086",
@@ -30159,7 +30159,7 @@
     "translations": [
       "night"
     ],
-    "partOfSpeech": "tg"
+    "partOfSpeech": "noun (time)"
   },
   {
     "id": "hsk5-1114",
@@ -30215,7 +30215,7 @@
     "translations": [
       "(for) a lifetime"
     ],
-    "partOfSpeech": "mq"
+    "partOfSpeech": "numeral-measure"
   },
   {
     "id": "hsk5-1119",
@@ -30245,7 +30245,7 @@
       "going in the same direction",
       "of the same kind"
     ],
-    "partOfSpeech": "mq"
+    "partOfSpeech": "numeral-measure"
   },
   {
     "id": "hsk5-1121",
@@ -30343,7 +30343,7 @@
       "too",
       "and"
     ],
-    "partOfSpeech": "cc"
+    "partOfSpeech": "conjunction"
   },
   {
     "id": "hsk5-1128",
@@ -30353,7 +30353,7 @@
     "translations": [
       "since (a previous event)"
     ],
-    "partOfSpeech": "f"
+    "partOfSpeech": "noun (location)"
   },
   {
     "id": "hsk5-1129",
@@ -30841,7 +30841,7 @@
     "translations": [
       "New Year's Day"
     ],
-    "partOfSpeech": "t"
+    "partOfSpeech": "noun (time)"
   },
   {
     "id": "hsk5-1170",
@@ -31305,7 +31305,7 @@
       "short period of time",
       "classifier for events or states of short duration"
     ],
-    "partOfSpeech": "g"
+    "partOfSpeech": "morpheme"
   },
   {
     "id": "hsk5-1207",
@@ -31747,7 +31747,7 @@
     "translations": [
       "middle third of a month"
     ],
-    "partOfSpeech": "t"
+    "partOfSpeech": "noun (time)"
   },
   {
     "id": "hsk5-1241",

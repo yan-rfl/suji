@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect, useMemo } from 'react';
 import { HSKWord, QuizMode, SRSGrade } from '@/types/hsk';
-import { tokenizeClozeSentence } from '@/lib/hskData';
+import { tokenizeClozeSentence, formatPartOfSpeech } from '@/lib/hskData';
 import { AudioButton } from './AudioButton';
 import { HanziCanvas } from './HanziCanvas';
 import { DesktopInput } from './DesktopInput';
@@ -134,7 +134,7 @@ export const QuizCard: React.FC<QuizCardProps> = ({
           </span>
           {word.partOfSpeech && (
             <span className="text-xs text-zinc-400 dark:text-zinc-500 font-medium capitalize">
-              {word.partOfSpeech}
+              {formatPartOfSpeech(word.partOfSpeech)}
             </span>
           )}
         </div>

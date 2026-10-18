@@ -7,6 +7,7 @@ import { AudioButton } from './AudioButton';
 import { X, Calendar, Award, Zap, Repeat } from 'lucide-react';
 import { useProgress } from '@/context/ProgressContext';
 import { formatInterval } from '@/lib/srs';
+import { formatPartOfSpeech } from '@/lib/hskData';
 import { HSK_THEMES } from '@/context/LevelContext';
 
 interface WordDetailModalProps {
@@ -61,7 +62,7 @@ export const WordDetailModal: React.FC<WordDetailModalProps> = ({ word, onClose 
           </span>
           {word.partOfSpeech && (
             <span className="text-xs text-zinc-500 dark:text-zinc-400 capitalize">
-              • {word.partOfSpeech}
+              • {formatPartOfSpeech(word.partOfSpeech)}
             </span>
           )}
         </div>
